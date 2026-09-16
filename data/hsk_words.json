@@ -1,0 +1,1802 @@
+[
+  {
+    "chinese": "爸爸",
+    "pinyin": "bàba",
+    "meaning": "dad; father",
+    "hsk": 1
+  },
+  {
+    "chinese": "不",
+    "pinyin": "bù",
+    "meaning": "not; no",
+    "hsk": 1
+  },
+  {
+    "chinese": "不客气",
+    "pinyin": "bú kèqi",
+    "meaning": "you're welcome",
+    "hsk": 1
+  },
+  {
+    "chinese": "八",
+    "pinyin": "bā",
+    "meaning": "eight",
+    "hsk": 1
+  },
+  {
+    "chinese": "杯子",
+    "pinyin": "bēizi",
+    "meaning": "cup; glass",
+    "hsk": 1
+  },
+  {
+    "chinese": "北京",
+    "pinyin": "běijīng",
+    "meaning": "Beijing",
+    "hsk": 1
+  },
+  {
+    "chinese": "茶",
+    "pinyin": "chá",
+    "meaning": "tea",
+    "hsk": 1
+  },
+  {
+    "chinese": "吃",
+    "pinyin": "chī",
+    "meaning": "to eat",
+    "hsk": 1
+  },
+  {
+    "chinese": "菜",
+    "pinyin": "cài",
+    "meaning": "dish; cuisine; vegetable",
+    "hsk": 1
+  },
+  {
+    "chinese": "电脑",
+    "pinyin": "diànnǎo",
+    "meaning": "computer",
+    "hsk": 1
+  },
+  {
+    "chinese": "电视",
+    "pinyin": "diànshì",
+    "meaning": "television",
+    "hsk": 1
+  },
+  {
+    "chinese": "电影",
+    "pinyin": "diànyǐng",
+    "meaning": "movie",
+    "hsk": 1
+  },
+  {
+    "chinese": "点",
+    "pinyin": "diǎn",
+    "meaning": "o'clock; point",
+    "hsk": 1
+  },
+  {
+    "chinese": "对不起",
+    "pinyin": "duìbuqǐ",
+    "meaning": "sorry",
+    "hsk": 1
+  },
+  {
+    "chinese": "多",
+    "pinyin": "duō",
+    "meaning": "many; much",
+    "hsk": 1
+  },
+  {
+    "chinese": "大",
+    "pinyin": "dà",
+    "meaning": "big; large",
+    "hsk": 1
+  },
+  {
+    "chinese": "读",
+    "pinyin": "dú",
+    "meaning": "to read",
+    "hsk": 1
+  },
+  {
+    "chinese": "东西",
+    "pinyin": "dōngxi",
+    "meaning": "thing; stuff",
+    "hsk": 1
+  },
+  {
+    "chinese": "打电话",
+    "pinyin": "dǎ diànhuà",
+    "meaning": "to make a phone call",
+    "hsk": 1
+  },
+  {
+    "chinese": "飞机",
+    "pinyin": "fēijī",
+    "meaning": "airplane",
+    "hsk": 1
+  },
+  {
+    "chinese": "分钟",
+    "pinyin": "fēnzhōng",
+    "meaning": "minute",
+    "hsk": 1
+  },
+  {
+    "chinese": "高兴",
+    "pinyin": "gāoxìng",
+    "meaning": "happy; glad",
+    "hsk": 1
+  },
+  {
+    "chinese": "工作",
+    "pinyin": "gōngzuò",
+    "meaning": "work; job",
+    "hsk": 1
+  },
+  {
+    "chinese": "会",
+    "pinyin": "huì",
+    "meaning": "can; will; meeting",
+    "hsk": 1
+  },
+  {
+    "chinese": "回",
+    "pinyin": "huí",
+    "meaning": "to return",
+    "hsk": 1
+  },
+  {
+    "chinese": "汉语",
+    "pinyin": "hànyǔ",
+    "meaning": "Chinese language",
+    "hsk": 1
+  },
+  {
+    "chinese": "和",
+    "pinyin": "hé",
+    "meaning": "and",
+    "hsk": 1
+  },
+  {
+    "chinese": "喝",
+    "pinyin": "hē",
+    "meaning": "to drink",
+    "hsk": 1
+  },
+  {
+    "chinese": "很",
+    "pinyin": "hěn",
+    "meaning": "very",
+    "hsk": 1
+  },
+  {
+    "chinese": "好",
+    "pinyin": "hǎo",
+    "meaning": "good",
+    "hsk": 1
+  },
+  {
+    "chinese": "叫",
+    "pinyin": "jiào",
+    "meaning": "to be called; to call",
+    "hsk": 1
+  },
+  {
+    "chinese": "家",
+    "pinyin": "jiā",
+    "meaning": "home; family",
+    "hsk": 1
+  },
+  {
+    "chinese": "今天",
+    "pinyin": "jīntiān",
+    "meaning": "today",
+    "hsk": 1
+  },
+  {
+    "chinese": "看",
+    "pinyin": "kàn",
+    "meaning": "to look; to watch",
+    "hsk": 1
+  },
+  {
+    "chinese": "开",
+    "pinyin": "kāi",
+    "meaning": "to open; to drive",
+    "hsk": 1
+  },
+  {
+    "chinese": "了",
+    "pinyin": "le",
+    "meaning": "aspect particle",
+    "hsk": 1
+  },
+  {
+    "chinese": "来",
+    "pinyin": "lái",
+    "meaning": "to come",
+    "hsk": 1
+  },
+  {
+    "chinese": "冷",
+    "pinyin": "lěng",
+    "meaning": "cold",
+    "hsk": 1
+  },
+  {
+    "chinese": "老师",
+    "pinyin": "lǎoshī",
+    "meaning": "teacher",
+    "hsk": 1
+  },
+  {
+    "chinese": "明天",
+    "pinyin": "míngtiān",
+    "meaning": "tomorrow",
+    "hsk": 1
+  },
+  {
+    "chinese": "名字",
+    "pinyin": "míngzi",
+    "meaning": "name",
+    "hsk": 1
+  },
+  {
+    "chinese": "妈妈",
+    "pinyin": "māma",
+    "meaning": "mom; mother",
+    "hsk": 1
+  },
+  {
+    "chinese": "猫",
+    "pinyin": "māo",
+    "meaning": "cat",
+    "hsk": 1
+  },
+  {
+    "chinese": "买",
+    "pinyin": "mǎi",
+    "meaning": "to buy",
+    "hsk": 1
+  },
+  {
+    "chinese": "年",
+    "pinyin": "nián",
+    "meaning": "year",
+    "hsk": 1
+  },
+  {
+    "chinese": "你",
+    "pinyin": "nǐ",
+    "meaning": "you",
+    "hsk": 1
+  },
+  {
+    "chinese": "朋友",
+    "pinyin": "péngyou",
+    "meaning": "friend",
+    "hsk": 1
+  },
+  {
+    "chinese": "爱",
+    "pinyin": "ài",
+    "meaning": "to love; to like",
+    "hsk": 1
+  },
+  {
+    "chinese": "二",
+    "pinyin": "èr",
+    "meaning": "two",
+    "hsk": 1
+  },
+  {
+    "chinese": "儿子",
+    "pinyin": "érzi",
+    "meaning": "son",
+    "hsk": 1
+  },
+  {
+    "chinese": "吧",
+    "pinyin": "ba",
+    "meaning": "suggestion particle",
+    "hsk": 2
+  },
+  {
+    "chinese": "别",
+    "pinyin": "bié",
+    "meaning": "don't; other",
+    "hsk": 2
+  },
+  {
+    "chinese": "报纸",
+    "pinyin": "bàozhǐ",
+    "meaning": "newspaper",
+    "hsk": 2
+  },
+  {
+    "chinese": "白",
+    "pinyin": "bái",
+    "meaning": "white",
+    "hsk": 2
+  },
+  {
+    "chinese": "帮助",
+    "pinyin": "bāngzhù",
+    "meaning": "to help",
+    "hsk": 2
+  },
+  {
+    "chinese": "百",
+    "pinyin": "bǎi",
+    "meaning": "hundred",
+    "hsk": 2
+  },
+  {
+    "chinese": "比",
+    "pinyin": "bǐ",
+    "meaning": "to compare; than",
+    "hsk": 2
+  },
+  {
+    "chinese": "穿",
+    "pinyin": "chuān",
+    "meaning": "to wear",
+    "hsk": 2
+  },
+  {
+    "chinese": "唱歌",
+    "pinyin": "chànggē",
+    "meaning": "to sing",
+    "hsk": 2
+  },
+  {
+    "chinese": "长",
+    "pinyin": "cháng",
+    "meaning": "long",
+    "hsk": 2
+  },
+  {
+    "chinese": "出",
+    "pinyin": "chū",
+    "meaning": "to go out",
+    "hsk": 2
+  },
+  {
+    "chinese": "错",
+    "pinyin": "cuò",
+    "meaning": "wrong; mistake",
+    "hsk": 2
+  },
+  {
+    "chinese": "次",
+    "pinyin": "cì",
+    "meaning": "time (occurrence)",
+    "hsk": 2
+  },
+  {
+    "chinese": "从",
+    "pinyin": "cóng",
+    "meaning": "from",
+    "hsk": 2
+  },
+  {
+    "chinese": "得",
+    "pinyin": "de",
+    "meaning": "structural particle",
+    "hsk": 2
+  },
+  {
+    "chinese": "对",
+    "pinyin": "duì",
+    "meaning": "right; toward",
+    "hsk": 2
+  },
+  {
+    "chinese": "大家",
+    "pinyin": "dàjiā",
+    "meaning": "everyone",
+    "hsk": 2
+  },
+  {
+    "chinese": "到",
+    "pinyin": "dào",
+    "meaning": "to arrive; to",
+    "hsk": 2
+  },
+  {
+    "chinese": "第一",
+    "pinyin": "dì-yī",
+    "meaning": "first",
+    "hsk": 2
+  },
+  {
+    "chinese": "弟弟",
+    "pinyin": "dìdi",
+    "meaning": "younger brother",
+    "hsk": 2
+  },
+  {
+    "chinese": "等",
+    "pinyin": "děng",
+    "meaning": "to wait",
+    "hsk": 2
+  },
+  {
+    "chinese": "打篮球",
+    "pinyin": "dǎ lánqiú",
+    "meaning": "to play basketball",
+    "hsk": 2
+  },
+  {
+    "chinese": "懂",
+    "pinyin": "dǒng",
+    "meaning": "to understand",
+    "hsk": 2
+  },
+  {
+    "chinese": "房间",
+    "pinyin": "fángjiān",
+    "meaning": "room",
+    "hsk": 2
+  },
+  {
+    "chinese": "服务员",
+    "pinyin": "fúwùyuán",
+    "meaning": "waiter; attendant",
+    "hsk": 2
+  },
+  {
+    "chinese": "非常",
+    "pinyin": "fēicháng",
+    "meaning": "extremely; very",
+    "hsk": 2
+  },
+  {
+    "chinese": "过",
+    "pinyin": "guo",
+    "meaning": "experiential particle",
+    "hsk": 2
+  },
+  {
+    "chinese": "贵",
+    "pinyin": "guì",
+    "meaning": "expensive",
+    "hsk": 2
+  },
+  {
+    "chinese": "告诉",
+    "pinyin": "gàosu",
+    "meaning": "to tell",
+    "hsk": 2
+  },
+  {
+    "chinese": "高",
+    "pinyin": "gāo",
+    "meaning": "tall; high",
+    "hsk": 2
+  },
+  {
+    "chinese": "哥哥",
+    "pinyin": "gēge",
+    "meaning": "older brother",
+    "hsk": 2
+  },
+  {
+    "chinese": "给",
+    "pinyin": "gěi",
+    "meaning": "to give",
+    "hsk": 2
+  },
+  {
+    "chinese": "公共汽车",
+    "pinyin": "gōnggòng qìchē",
+    "meaning": "bus",
+    "hsk": 2
+  },
+  {
+    "chinese": "公司",
+    "pinyin": "gōngsī",
+    "meaning": "company",
+    "hsk": 2
+  },
+  {
+    "chinese": "火车站",
+    "pinyin": "huǒchēzhàn",
+    "meaning": "train station",
+    "hsk": 2
+  },
+  {
+    "chinese": "还",
+    "pinyin": "hái",
+    "meaning": "still; also",
+    "hsk": 2
+  },
+  {
+    "chinese": "孩子",
+    "pinyin": "háizi",
+    "meaning": "child",
+    "hsk": 2
+  },
+  {
+    "chinese": "红",
+    "pinyin": "hóng",
+    "meaning": "red",
+    "hsk": 2
+  },
+  {
+    "chinese": "黑",
+    "pinyin": "hēi",
+    "meaning": "black",
+    "hsk": 2
+  },
+  {
+    "chinese": "好吃",
+    "pinyin": "hǎochī",
+    "meaning": "delicious",
+    "hsk": 2
+  },
+  {
+    "chinese": "件",
+    "pinyin": "jiàn",
+    "meaning": "measure word for clothes/matters",
+    "hsk": 2
+  },
+  {
+    "chinese": "教室",
+    "pinyin": "jiàoshì",
+    "meaning": "classroom",
+    "hsk": 2
+  },
+  {
+    "chinese": "介绍",
+    "pinyin": "jièshào",
+    "meaning": "to introduce",
+    "hsk": 2
+  },
+  {
+    "chinese": "就",
+    "pinyin": "jiù",
+    "meaning": "then; right away",
+    "hsk": 2
+  },
+  {
+    "chinese": "姐姐",
+    "pinyin": "jiějie",
+    "meaning": "older sister",
+    "hsk": 2
+  },
+  {
+    "chinese": "觉得",
+    "pinyin": "juéde",
+    "meaning": "to feel; to think",
+    "hsk": 2
+  },
+  {
+    "chinese": "近",
+    "pinyin": "jìn",
+    "meaning": "near",
+    "hsk": 2
+  },
+  {
+    "chinese": "进",
+    "pinyin": "jìn",
+    "meaning": "to enter",
+    "hsk": 2
+  },
+  {
+    "chinese": "机场",
+    "pinyin": "jīchǎng",
+    "meaning": "airport",
+    "hsk": 2
+  },
+  {
+    "chinese": "鸡蛋",
+    "pinyin": "jīdàn",
+    "meaning": "egg",
+    "hsk": 2
+  },
+  {
+    "chinese": "啊",
+    "pinyin": "a",
+    "meaning": "modal particle",
+    "hsk": 3
+  },
+  {
+    "chinese": "变化",
+    "pinyin": "biànhuà",
+    "meaning": "change",
+    "hsk": 3
+  },
+  {
+    "chinese": "别人",
+    "pinyin": "biérén",
+    "meaning": "other people",
+    "hsk": 3
+  },
+  {
+    "chinese": "表示",
+    "pinyin": "biǎoshì",
+    "meaning": "to express; to indicate",
+    "hsk": 3
+  },
+  {
+    "chinese": "表演",
+    "pinyin": "biǎoyǎn",
+    "meaning": "performance; to perform",
+    "hsk": 3
+  },
+  {
+    "chinese": "半",
+    "pinyin": "bàn",
+    "meaning": "half",
+    "hsk": 3
+  },
+  {
+    "chinese": "办法",
+    "pinyin": "bànfǎ",
+    "meaning": "method; way",
+    "hsk": 3
+  },
+  {
+    "chinese": "办公室",
+    "pinyin": "bàngōngshì",
+    "meaning": "office",
+    "hsk": 3
+  },
+  {
+    "chinese": "被",
+    "pinyin": "bèi",
+    "meaning": "passive marker",
+    "hsk": 3
+  },
+  {
+    "chinese": "必须",
+    "pinyin": "bìxū",
+    "meaning": "must",
+    "hsk": 3
+  },
+  {
+    "chinese": "鼻子",
+    "pinyin": "bízi",
+    "meaning": "nose",
+    "hsk": 3
+  },
+  {
+    "chinese": "搬",
+    "pinyin": "bān",
+    "meaning": "to move",
+    "hsk": 3
+  },
+  {
+    "chinese": "班",
+    "pinyin": "bān",
+    "meaning": "class; team",
+    "hsk": 3
+  },
+  {
+    "chinese": "帮忙",
+    "pinyin": "bāngmáng",
+    "meaning": "to help",
+    "hsk": 3
+  },
+  {
+    "chinese": "包",
+    "pinyin": "bāo",
+    "meaning": "bag; to wrap",
+    "hsk": 3
+  },
+  {
+    "chinese": "北方",
+    "pinyin": "běifāng",
+    "meaning": "north; northern region",
+    "hsk": 3
+  },
+  {
+    "chinese": "宾馆",
+    "pinyin": "bīnguǎn",
+    "meaning": "hotel",
+    "hsk": 3
+  },
+  {
+    "chinese": "冰箱",
+    "pinyin": "bīngxiāng",
+    "meaning": "refrigerator",
+    "hsk": 3
+  },
+  {
+    "chinese": "把",
+    "pinyin": "bǎ",
+    "meaning": "disposal particle; handle",
+    "hsk": 3
+  },
+  {
+    "chinese": "饱",
+    "pinyin": "bǎo",
+    "meaning": "full (from eating)",
+    "hsk": 3
+  },
+  {
+    "chinese": "比较",
+    "pinyin": "bǐjiào",
+    "meaning": "comparatively; to compare",
+    "hsk": 3
+  },
+  {
+    "chinese": "比赛",
+    "pinyin": "bǐsài",
+    "meaning": "competition; match",
+    "hsk": 3
+  },
+  {
+    "chinese": "船",
+    "pinyin": "chuán",
+    "meaning": "boat",
+    "hsk": 3
+  },
+  {
+    "chinese": "差",
+    "pinyin": "chà",
+    "meaning": "poor; to differ",
+    "hsk": 3
+  },
+  {
+    "chinese": "衬衫",
+    "pinyin": "chènshān",
+    "meaning": "shirt",
+    "hsk": 3
+  },
+  {
+    "chinese": "成绩",
+    "pinyin": "chéngjì",
+    "meaning": "grade; achievement",
+    "hsk": 3
+  },
+  {
+    "chinese": "城市",
+    "pinyin": "chéngshì",
+    "meaning": "city",
+    "hsk": 3
+  },
+  {
+    "chinese": "迟到",
+    "pinyin": "chídào",
+    "meaning": "to be late",
+    "hsk": 3
+  },
+  {
+    "chinese": "除了",
+    "pinyin": "chúle",
+    "meaning": "except; besides",
+    "hsk": 3
+  },
+  {
+    "chinese": "超市",
+    "pinyin": "chāoshì",
+    "meaning": "supermarket",
+    "hsk": 3
+  },
+  {
+    "chinese": "春",
+    "pinyin": "chūn",
+    "meaning": "spring",
+    "hsk": 3
+  },
+  {
+    "chinese": "菜单",
+    "pinyin": "càidān",
+    "meaning": "menu",
+    "hsk": 3
+  },
+  {
+    "chinese": "才",
+    "pinyin": "cái",
+    "meaning": "only then; just",
+    "hsk": 3
+  },
+  {
+    "chinese": "层",
+    "pinyin": "céng",
+    "meaning": "floor; layer",
+    "hsk": 3
+  },
+  {
+    "chinese": "词典",
+    "pinyin": "cídiǎn",
+    "meaning": "dictionary",
+    "hsk": 3
+  },
+  {
+    "chinese": "参加",
+    "pinyin": "cānjiā",
+    "meaning": "to participate",
+    "hsk": 3
+  },
+  {
+    "chinese": "聪明",
+    "pinyin": "cōngming",
+    "meaning": "smart",
+    "hsk": 3
+  },
+  {
+    "chinese": "草",
+    "pinyin": "cǎo",
+    "meaning": "grass",
+    "hsk": 3
+  },
+  {
+    "chinese": "地",
+    "pinyin": "de",
+    "meaning": "adverbial particle",
+    "hsk": 3
+  },
+  {
+    "chinese": "带",
+    "pinyin": "dài",
+    "meaning": "to bring; to wear (accessories)",
+    "hsk": 3
+  },
+  {
+    "chinese": "蛋糕",
+    "pinyin": "dàngāo",
+    "meaning": "cake",
+    "hsk": 3
+  },
+  {
+    "chinese": "地方",
+    "pinyin": "dìfang",
+    "meaning": "place",
+    "hsk": 3
+  },
+  {
+    "chinese": "当然",
+    "pinyin": "dāngrán",
+    "meaning": "of course",
+    "hsk": 3
+  },
+  {
+    "chinese": "担心",
+    "pinyin": "dānxīn",
+    "meaning": "to worry",
+    "hsk": 3
+  },
+  {
+    "chinese": "灯",
+    "pinyin": "dēng",
+    "meaning": "lamp",
+    "hsk": 3
+  },
+  {
+    "chinese": "打算",
+    "pinyin": "dǎsuàn",
+    "meaning": "to plan",
+    "hsk": 3
+  },
+  {
+    "chinese": "打扫",
+    "pinyin": "dǎsǎo",
+    "meaning": "to clean",
+    "hsk": 3
+  },
+  {
+    "chinese": "爱好",
+    "pinyin": "àihào",
+    "meaning": "hobby",
+    "hsk": 3
+  },
+  {
+    "chinese": "安静",
+    "pinyin": "ānjìng",
+    "meaning": "quiet",
+    "hsk": 3
+  },
+  {
+    "chinese": "矮",
+    "pinyin": "ǎi",
+    "meaning": "short (height)",
+    "hsk": 3
+  },
+  {
+    "chinese": "遍",
+    "pinyin": "biàn",
+    "meaning": "time (once through)",
+    "hsk": 4
+  },
+  {
+    "chinese": "标准",
+    "pinyin": "biāozhǔn",
+    "meaning": "standard",
+    "hsk": 4
+  },
+  {
+    "chinese": "表格",
+    "pinyin": "biǎogé",
+    "meaning": "form; table",
+    "hsk": 4
+  },
+  {
+    "chinese": "表示",
+    "pinyin": "biǎoshì",
+    "meaning": "to indicate",
+    "hsk": 4
+  },
+  {
+    "chinese": "表扬",
+    "pinyin": "biǎoyáng",
+    "meaning": "to praise",
+    "hsk": 4
+  },
+  {
+    "chinese": "表演",
+    "pinyin": "biǎoyǎn",
+    "meaning": "to perform",
+    "hsk": 4
+  },
+  {
+    "chinese": "棒",
+    "pinyin": "bàng",
+    "meaning": "awesome; stick",
+    "hsk": 4
+  },
+  {
+    "chinese": "抱",
+    "pinyin": "bào",
+    "meaning": "to hug; to hold",
+    "hsk": 4
+  },
+  {
+    "chinese": "报名",
+    "pinyin": "bàomíng",
+    "meaning": "to sign up",
+    "hsk": 4
+  },
+  {
+    "chinese": "抱歉",
+    "pinyin": "bàoqiàn",
+    "meaning": "sorry; apologetic",
+    "hsk": 4
+  },
+  {
+    "chinese": "倍",
+    "pinyin": "bèi",
+    "meaning": "times (multiplier)",
+    "hsk": 4
+  },
+  {
+    "chinese": "笨",
+    "pinyin": "bèn",
+    "meaning": "stupid",
+    "hsk": 4
+  },
+  {
+    "chinese": "并且",
+    "pinyin": "bìngqiě",
+    "meaning": "and; moreover",
+    "hsk": 4
+  },
+  {
+    "chinese": "毕业",
+    "pinyin": "bìyè",
+    "meaning": "to graduate",
+    "hsk": 4
+  },
+  {
+    "chinese": "博士",
+    "pinyin": "bóshì",
+    "meaning": "PhD; doctor",
+    "hsk": 4
+  },
+  {
+    "chinese": "不得不",
+    "pinyin": "bùdébù",
+    "meaning": "have to",
+    "hsk": 4
+  },
+  {
+    "chinese": "部分",
+    "pinyin": "bùfen",
+    "meaning": "part; section",
+    "hsk": 4
+  },
+  {
+    "chinese": "不管",
+    "pinyin": "bùguǎn",
+    "meaning": "no matter",
+    "hsk": 4
+  },
+  {
+    "chinese": "不仅",
+    "pinyin": "bùjǐn",
+    "meaning": "not only",
+    "hsk": 4
+  },
+  {
+    "chinese": "不过",
+    "pinyin": "búguò",
+    "meaning": "but; however",
+    "hsk": 4
+  },
+  {
+    "chinese": "包子",
+    "pinyin": "bāozi",
+    "meaning": "steamed bun",
+    "hsk": 4
+  },
+  {
+    "chinese": "本来",
+    "pinyin": "běnlái",
+    "meaning": "originally",
+    "hsk": 4
+  },
+  {
+    "chinese": "百分之",
+    "pinyin": "bǎi fēn zhī",
+    "meaning": "percent",
+    "hsk": 4
+  },
+  {
+    "chinese": "保护",
+    "pinyin": "bǎohù",
+    "meaning": "to protect",
+    "hsk": 4
+  },
+  {
+    "chinese": "保证",
+    "pinyin": "bǎozhèng",
+    "meaning": "to guarantee",
+    "hsk": 4
+  },
+  {
+    "chinese": "饼干",
+    "pinyin": "bǐnggān",
+    "meaning": "biscuit; cookie",
+    "hsk": 4
+  },
+  {
+    "chinese": "比如",
+    "pinyin": "bǐrú",
+    "meaning": "for example",
+    "hsk": 4
+  },
+  {
+    "chinese": "差不多",
+    "pinyin": "chàbuduō",
+    "meaning": "almost; about the same",
+    "hsk": 4
+  },
+  {
+    "chinese": "尝",
+    "pinyin": "cháng",
+    "meaning": "to taste",
+    "hsk": 4
+  },
+  {
+    "chinese": "长城",
+    "pinyin": "chángchéng",
+    "meaning": "the Great Wall",
+    "hsk": 4
+  },
+  {
+    "chinese": "长江",
+    "pinyin": "chángjiāng",
+    "meaning": "Yangtze River",
+    "hsk": 4
+  },
+  {
+    "chinese": "成功",
+    "pinyin": "chénggōng",
+    "meaning": "success; to succeed",
+    "hsk": 4
+  },
+  {
+    "chinese": "诚实",
+    "pinyin": "chéngshí",
+    "meaning": "honest",
+    "hsk": 4
+  },
+  {
+    "chinese": "成为",
+    "pinyin": "chéngwéi",
+    "meaning": "to become",
+    "hsk": 4
+  },
+  {
+    "chinese": "乘坐",
+    "pinyin": "chéngzuò",
+    "meaning": "to ride (transport)",
+    "hsk": 4
+  },
+  {
+    "chinese": "重新",
+    "pinyin": "chóngxīn",
+    "meaning": "again; anew",
+    "hsk": 4
+  },
+  {
+    "chinese": "超过",
+    "pinyin": "chāoguò",
+    "meaning": "to exceed",
+    "hsk": 4
+  },
+  {
+    "chinese": "吃惊",
+    "pinyin": "chījīng",
+    "meaning": "to be surprised",
+    "hsk": 4
+  },
+  {
+    "chinese": "场",
+    "pinyin": "chǎng",
+    "meaning": "field; measure for events",
+    "hsk": 4
+  },
+  {
+    "chinese": "材料",
+    "pinyin": "cáiliào",
+    "meaning": "material",
+    "hsk": 4
+  },
+  {
+    "chinese": "厕所",
+    "pinyin": "cèsuǒ",
+    "meaning": "toilet",
+    "hsk": 4
+  },
+  {
+    "chinese": "擦",
+    "pinyin": "cā",
+    "meaning": "to wipe",
+    "hsk": 4
+  },
+  {
+    "chinese": "猜",
+    "pinyin": "cāi",
+    "meaning": "to guess",
+    "hsk": 4
+  },
+  {
+    "chinese": "参观",
+    "pinyin": "cānguān",
+    "meaning": "to visit (a place)",
+    "hsk": 4
+  },
+  {
+    "chinese": "餐厅",
+    "pinyin": "cāntīng",
+    "meaning": "dining hall; restaurant",
+    "hsk": 4
+  },
+  {
+    "chinese": "爱情",
+    "pinyin": "àiqíng",
+    "meaning": "romantic love",
+    "hsk": 4
+  },
+  {
+    "chinese": "按时",
+    "pinyin": "ànshí",
+    "meaning": "on time",
+    "hsk": 4
+  },
+  {
+    "chinese": "按照",
+    "pinyin": "ànzhào",
+    "meaning": "according to",
+    "hsk": 4
+  },
+  {
+    "chinese": "安排",
+    "pinyin": "ānpái",
+    "meaning": "to arrange",
+    "hsk": 4
+  },
+  {
+    "chinese": "安全",
+    "pinyin": "ānquán",
+    "meaning": "safe; safety",
+    "hsk": 4
+  },
+  {
+    "chinese": "便",
+    "pinyin": "biàn",
+    "meaning": "convenient; then",
+    "hsk": 5
+  },
+  {
+    "chinese": "辩论",
+    "pinyin": "biànlùn",
+    "meaning": "debate",
+    "hsk": 5
+  },
+  {
+    "chinese": "编辑",
+    "pinyin": "biānjí",
+    "meaning": "to edit; editor",
+    "hsk": 5
+  },
+  {
+    "chinese": "鞭炮",
+    "pinyin": "biānpào",
+    "meaning": "firecracker",
+    "hsk": 5
+  },
+  {
+    "chinese": "标点",
+    "pinyin": "biāodiǎn",
+    "meaning": "punctuation",
+    "hsk": 5
+  },
+  {
+    "chinese": "标志",
+    "pinyin": "biāozhì",
+    "meaning": "sign; symbol",
+    "hsk": 5
+  },
+  {
+    "chinese": "表达",
+    "pinyin": "biǎodá",
+    "meaning": "to express",
+    "hsk": 5
+  },
+  {
+    "chinese": "表面",
+    "pinyin": "biǎomiàn",
+    "meaning": "surface",
+    "hsk": 5
+  },
+  {
+    "chinese": "表明",
+    "pinyin": "biǎomíng",
+    "meaning": "to make clear",
+    "hsk": 5
+  },
+  {
+    "chinese": "表情",
+    "pinyin": "biǎoqíng",
+    "meaning": "facial expression",
+    "hsk": 5
+  },
+  {
+    "chinese": "表现",
+    "pinyin": "biǎoxiàn",
+    "meaning": "to show; performance",
+    "hsk": 5
+  },
+  {
+    "chinese": "傍晚",
+    "pinyin": "bàngwǎn",
+    "meaning": "dusk; evening",
+    "hsk": 5
+  },
+  {
+    "chinese": "办理",
+    "pinyin": "bànlǐ",
+    "meaning": "to handle (formalities)",
+    "hsk": 5
+  },
+  {
+    "chinese": "报告",
+    "pinyin": "bàogào",
+    "meaning": "report; to report",
+    "hsk": 5
+  },
+  {
+    "chinese": "薄",
+    "pinyin": "báo",
+    "meaning": "thin",
+    "hsk": 5
+  },
+  {
+    "chinese": "背",
+    "pinyin": "bèi",
+    "meaning": "back; to recite",
+    "hsk": 5
+  },
+  {
+    "chinese": "背景",
+    "pinyin": "bèijǐng",
+    "meaning": "background",
+    "hsk": 5
+  },
+  {
+    "chinese": "被子",
+    "pinyin": "bèizi",
+    "meaning": "quilt",
+    "hsk": 5
+  },
+  {
+    "chinese": "毕竟",
+    "pinyin": "bìjìng",
+    "meaning": "after all",
+    "hsk": 5
+  },
+  {
+    "chinese": "避免",
+    "pinyin": "bìmiǎn",
+    "meaning": "to avoid",
+    "hsk": 5
+  },
+  {
+    "chinese": "必然",
+    "pinyin": "bìrán",
+    "meaning": "inevitable",
+    "hsk": 5
+  },
+  {
+    "chinese": "必要",
+    "pinyin": "bìyào",
+    "meaning": "necessary",
+    "hsk": 5
+  },
+  {
+    "chinese": "包裹",
+    "pinyin": "bāoguǒ",
+    "meaning": "parcel; package",
+    "hsk": 5
+  },
+  {
+    "chinese": "包含",
+    "pinyin": "bāohán",
+    "meaning": "to contain",
+    "hsk": 5
+  },
+  {
+    "chinese": "包括",
+    "pinyin": "bāokuò",
+    "meaning": "to include",
+    "hsk": 5
+  },
+  {
+    "chinese": "悲观",
+    "pinyin": "bēiguān",
+    "meaning": "pessimistic",
+    "hsk": 5
+  },
+  {
+    "chinese": "本科",
+    "pinyin": "běnkē",
+    "meaning": "undergraduate",
+    "hsk": 5
+  },
+  {
+    "chinese": "本领",
+    "pinyin": "běnlǐng",
+    "meaning": "ability; skill",
+    "hsk": 5
+  },
+  {
+    "chinese": "本质",
+    "pinyin": "běnzhì",
+    "meaning": "essence; nature",
+    "hsk": 5
+  },
+  {
+    "chinese": "冰激凌",
+    "pinyin": "bīngjīlíng",
+    "meaning": "ice cream",
+    "hsk": 5
+  },
+  {
+    "chinese": "摆",
+    "pinyin": "bǎi",
+    "meaning": "to put; to sway",
+    "hsk": 5
+  },
+  {
+    "chinese": "宝",
+    "pinyin": "bǎo",
+    "meaning": "treasure",
+    "hsk": 5
+  },
+  {
+    "chinese": "宝贝",
+    "pinyin": "bǎobèi",
+    "meaning": "baby; treasure",
+    "hsk": 5
+  },
+  {
+    "chinese": "保持",
+    "pinyin": "bǎochí",
+    "meaning": "to maintain",
+    "hsk": 5
+  },
+  {
+    "chinese": "保存",
+    "pinyin": "bǎocún",
+    "meaning": "to preserve",
+    "hsk": 5
+  },
+  {
+    "chinese": "宝贵",
+    "pinyin": "bǎoguì",
+    "meaning": "valuable",
+    "hsk": 5
+  },
+  {
+    "chinese": "保留",
+    "pinyin": "bǎoliú",
+    "meaning": "to retain",
+    "hsk": 5
+  },
+  {
+    "chinese": "保险",
+    "pinyin": "bǎoxiǎn",
+    "meaning": "insurance",
+    "hsk": 5
+  },
+  {
+    "chinese": "把握",
+    "pinyin": "bǎwò",
+    "meaning": "to grasp; assurance",
+    "hsk": 5
+  },
+  {
+    "chinese": "比例",
+    "pinyin": "bǐlì",
+    "meaning": "proportion; ratio",
+    "hsk": 5
+  },
+  {
+    "chinese": "爱护",
+    "pinyin": "àihù",
+    "meaning": "to cherish; to take care of",
+    "hsk": 5
+  },
+  {
+    "chinese": "爱惜",
+    "pinyin": "àixī",
+    "meaning": "to treasure",
+    "hsk": 5
+  },
+  {
+    "chinese": "爱心",
+    "pinyin": "àixīn",
+    "meaning": "compassion; loving heart",
+    "hsk": 5
+  },
+  {
+    "chinese": "岸",
+    "pinyin": "àn",
+    "meaning": "bank; shore",
+    "hsk": 5
+  },
+  {
+    "chinese": "暗",
+    "pinyin": "àn",
+    "meaning": "dark; secret",
+    "hsk": 5
+  },
+  {
+    "chinese": "昂扬",
+    "pinyin": "ángyáng",
+    "meaning": "high-spirited",
+    "hsk": 5
+  },
+  {
+    "chinese": "熬",
+    "pinyin": "áo",
+    "meaning": "to endure; to stew",
+    "hsk": 5
+  },
+  {
+    "chinese": "唉",
+    "pinyin": "āi",
+    "meaning": "sigh (interjection)",
+    "hsk": 5
+  },
+  {
+    "chinese": "安慰",
+    "pinyin": "ānwèi",
+    "meaning": "to comfort",
+    "hsk": 5
+  },
+  {
+    "chinese": "安装",
+    "pinyin": "ānzhuāng",
+    "meaning": "to install",
+    "hsk": 5
+  },
+  {
+    "chinese": "霸道",
+    "pinyin": "bàdào",
+    "meaning": "overbearing",
+    "hsk": 6
+  },
+  {
+    "chinese": "拜访",
+    "pinyin": "bàifǎng",
+    "meaning": "to pay a visit",
+    "hsk": 6
+  },
+  {
+    "chinese": "败坏",
+    "pinyin": "bàihuài",
+    "meaning": "to ruin; corrupt",
+    "hsk": 6
+  },
+  {
+    "chinese": "拜年",
+    "pinyin": "bàinián",
+    "meaning": "to wish a Happy New Year",
+    "hsk": 6
+  },
+  {
+    "chinese": "拜托",
+    "pinyin": "bàituō",
+    "meaning": "please (request)",
+    "hsk": 6
+  },
+  {
+    "chinese": "半途而废",
+    "pinyin": "bàn tú ér fèi",
+    "meaning": "to give up halfway",
+    "hsk": 6
+  },
+  {
+    "chinese": "磅",
+    "pinyin": "bàng",
+    "meaning": "pound (weight)",
+    "hsk": 6
+  },
+  {
+    "chinese": "伴侣",
+    "pinyin": "bànlǚ",
+    "meaning": "partner; companion",
+    "hsk": 6
+  },
+  {
+    "chinese": "伴随",
+    "pinyin": "bànsuí",
+    "meaning": "to accompany",
+    "hsk": 6
+  },
+  {
+    "chinese": "扮演",
+    "pinyin": "bànyǎn",
+    "meaning": "to play the role of",
+    "hsk": 6
+  },
+  {
+    "chinese": "报酬",
+    "pinyin": "bàochou",
+    "meaning": "reward; pay",
+    "hsk": 6
+  },
+  {
+    "chinese": "报仇",
+    "pinyin": "bàochóu",
+    "meaning": "to take revenge",
+    "hsk": 6
+  },
+  {
+    "chinese": "报答",
+    "pinyin": "bàodá",
+    "meaning": "to repay; to requite",
+    "hsk": 6
+  },
+  {
+    "chinese": "报复",
+    "pinyin": "bàofù",
+    "meaning": "to retaliate",
+    "hsk": 6
+  },
+  {
+    "chinese": "爆发",
+    "pinyin": "bàofā",
+    "meaning": "to erupt; to break out",
+    "hsk": 6
+  },
+  {
+    "chinese": "报警",
+    "pinyin": "bàojǐng",
+    "meaning": "to report to the police",
+    "hsk": 6
+  },
+  {
+    "chinese": "报销",
+    "pinyin": "bàoxiāo",
+    "meaning": "to submit expenses for reimbursement",
+    "hsk": 6
+  },
+  {
+    "chinese": "抱怨",
+    "pinyin": "bàoyuàn",
+    "meaning": "to complain",
+    "hsk": 6
+  },
+  {
+    "chinese": "扒",
+    "pinyin": "bā",
+    "meaning": "to hold on; to strip",
+    "hsk": 6
+  },
+  {
+    "chinese": "疤",
+    "pinyin": "bā",
+    "meaning": "scar",
+    "hsk": 6
+  },
+  {
+    "chinese": "巴不得",
+    "pinyin": "bābudé",
+    "meaning": "to be eager to",
+    "hsk": 6
+  },
+  {
+    "chinese": "掰",
+    "pinyin": "bāi",
+    "meaning": "to break apart with hands",
+    "hsk": 6
+  },
+  {
+    "chinese": "斑",
+    "pinyin": "bān",
+    "meaning": "spot; speck",
+    "hsk": 6
+  },
+  {
+    "chinese": "颁布",
+    "pinyin": "bānbù",
+    "meaning": "to promulgate; to issue",
+    "hsk": 6
+  },
+  {
+    "chinese": "颁发",
+    "pinyin": "bānfā",
+    "meaning": "to issue; to award",
+    "hsk": 6
+  },
+  {
+    "chinese": "包庇",
+    "pinyin": "bāobì",
+    "meaning": "to cover up; to shield",
+    "hsk": 6
+  },
+  {
+    "chinese": "包袱",
+    "pinyin": "bāofu",
+    "meaning": "burden; bundle",
+    "hsk": 6
+  },
+  {
+    "chinese": "包围",
+    "pinyin": "bāowéi",
+    "meaning": "to surround",
+    "hsk": 6
+  },
+  {
+    "chinese": "包装",
+    "pinyin": "bāozhuāng",
+    "meaning": "packaging",
+    "hsk": 6
+  },
+  {
+    "chinese": "摆脱",
+    "pinyin": "bǎituō",
+    "meaning": "to cast off; to free oneself from",
+    "hsk": 6
+  },
+  {
+    "chinese": "版本",
+    "pinyin": "bǎnběn",
+    "meaning": "version; edition",
+    "hsk": 6
+  },
+  {
+    "chinese": "绑架",
+    "pinyin": "bǎngjià",
+    "meaning": "to kidnap",
+    "hsk": 6
+  },
+  {
+    "chinese": "榜样",
+    "pinyin": "bǎngyàng",
+    "meaning": "example; model",
+    "hsk": 6
+  },
+  {
+    "chinese": "保管",
+    "pinyin": "bǎoguǎn",
+    "meaning": "to keep; to take care of",
+    "hsk": 6
+  },
+  {
+    "chinese": "饱和",
+    "pinyin": "bǎohé",
+    "meaning": "saturation; saturated",
+    "hsk": 6
+  },
+  {
+    "chinese": "保密",
+    "pinyin": "bǎomì",
+    "meaning": "to keep secret",
+    "hsk": 6
+  },
+  {
+    "chinese": "保姆",
+    "pinyin": "bǎomǔ",
+    "meaning": "nanny; housekeeper",
+    "hsk": 6
+  },
+  {
+    "chinese": "保守",
+    "pinyin": "bǎoshǒu",
+    "meaning": "conservative; to guard",
+    "hsk": 6
+  },
+  {
+    "chinese": "爱不释手",
+    "pinyin": "ài bù shì shǒu",
+    "meaning": "to love something too much to put it down",
+    "hsk": 6
+  },
+  {
+    "chinese": "爱戴",
+    "pinyin": "àidài",
+    "meaning": "to love and respect",
+    "hsk": 6
+  },
+  {
+    "chinese": "暧昧",
+    "pinyin": "àimèi",
+    "meaning": "ambiguous; dubious",
+    "hsk": 6
+  },
+  {
+    "chinese": "按劳分配",
+    "pinyin": "àn láo fēnpèi",
+    "meaning": "distribution according to work",
+    "hsk": 6
+  },
+  {
+    "chinese": "暗示",
+    "pinyin": "ànshì",
+    "meaning": "to hint; implication",
+    "hsk": 6
+  },
+  {
+    "chinese": "奥秘",
+    "pinyin": "àomì",
+    "meaning": "mystery; secret",
+    "hsk": 6
+  },
+  {
+    "chinese": "挨",
+    "pinyin": "ái",
+    "meaning": "to endure; to suffer",
+    "hsk": 6
+  },
+  {
+    "chinese": "昂贵",
+    "pinyin": "ángguì",
+    "meaning": "expensive; costly",
+    "hsk": 6
+  },
+  {
+    "chinese": "熬夜",
+    "pinyin": "áoyè",
+    "meaning": "to stay up late",
+    "hsk": 6
+  },
+  {
+    "chinese": "安详",
+    "pinyin": "ānxiáng",
+    "meaning": "serene",
+    "hsk": 6
+  },
+  {
+    "chinese": "安置",
+    "pinyin": "ānzhì",
+    "meaning": "to arrange for; to resettle",
+    "hsk": 6
+  },
+  {
+    "chinese": "凹凸",
+    "pinyin": "āotū",
+    "meaning": "concave-convex; bumpy",
+    "hsk": 6
+  }
+]

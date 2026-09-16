@@ -1,5 +1,5 @@
 use std::io::{self, Write};
-use crate::data::card::{ Card, Grade };
+use crate::models::card::{ Card, Grade };
 
 pub fn review_card(card: &Card) -> Grade {
     println!("{}", card.chinese);
@@ -31,7 +31,7 @@ pub fn next_interval(grade: Grade, previous: u32) -> u32 {
 #[cfg(test)]
 mod tests {
     use super::*;
-    use crate::data::card::Grade;
+    use crate::models::card::Grade;
 
     #[test]
     fn again_is_due_immediately() {
