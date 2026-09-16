@@ -1,8 +1,9 @@
 use serde::Deserialize;
 use std::convert::TryFrom;
 
-#[derive(Debug, Deserialize)]
+#[derive(Debug)]
 pub struct Card {
+    pub id: String,
     pub chinese: String, // 汉字 / the word you show
     pub pinyin: String, // Hanyu pinyin (hidden during the prompt)
     pub meaning: String, // English gloss (what you type as the answer)
@@ -19,6 +20,19 @@ pub enum HskLevel {
     Hsk4,
     Hsk5,
     Hsk6,
+}
+
+impl HskLevel {
+    pub fn as_u8(self) -> u8 {
+        match self {
+            Self::Hsk1 => 1,
+            Self::Hsk2 => 2,
+            Self::Hsk3 => 3,
+            Self::Hsk4 => 4,
+            Self::Hsk5 => 5,
+            Self::Hsk6 => 6,
+        }
+    }
 }
 
 
@@ -52,6 +66,27 @@ impl TryFrom<u8> for HskLevel {
             5 => Ok(Self::Hsk5),
             6 => Ok(Self::Hsk6),
             other => Err(format!("invalid hsk level: {other}")),
+        }
+    }
+}
+
+#[derive(Debug, Deserialize)]
+pub struct CardRecord {
+    chinese: String,
+    pinyin: String,
+    meaning: String,
+    hsk: HskLevel,
+}
+
+impl CardRecord {
+    pub fn into_card(self) -> Card {
+        let id = format!("hsk{}:{}", self.hsk.as_u8(), self.chinese);
+        Card {
+            id,
+            chinese: self.chinese,
+            pinyin: self.pinyin,
+            meaning: self.meaning,
+            hsk: self.hsk,
         }
     }
 }

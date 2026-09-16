@@ -1,7 +1,7 @@
 use std::fs;
 use std::path::Path;
 
-use super::card::{ Card, HskLevel };
+use super::card::{ Card, CardRecord };
 
 #[derive(Debug)]
 pub struct Deck {
@@ -13,8 +13,10 @@ impl Deck {
 
     pub fn from_json_path(path: impl AsRef<Path>) -> Result<Self, Box<dyn std::error::Error>> {
         let text = fs::read_to_string(path)?;
-        let cards: Vec<Card> = serde_json::from_str(&text)?;
-        Ok(Self {cards})
+        
+        let records: Vec<CardRecord> = serde_json::from_str(&text)?;
+        let cards = records.into_iter().map(CardRecord::into_card).collect();
+        Ok(Self { cards })
     }
 
 }
