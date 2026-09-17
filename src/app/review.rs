@@ -1,7 +1,12 @@
 use std::io::{self, Write};
 use crate::models::card::{ Card, Grade };
 
-pub fn review_card(card: &Card) -> Grade {
+pub enum ReviewAction {
+    Graded(Grade),
+    Quit,
+}
+
+pub fn review_card(card: &Card) -> ReviewAction {
     println!("{}", card.chinese);
     print!("> ");
 
@@ -11,13 +16,19 @@ pub fn review_card(card: &Card) -> Grade {
     io::stdin().read_line(&mut guess).expect("failed to read line");
 
     println!("You typed: {guess}");
+
+    let guess = guess.trim();
+    if guess.eq_ignore_ascii_case("q") || guess.eq_ignore_ascii_case("quit") {
+        return ReviewAction::Quit;
+    }
+
     println!("Meaning: {} - Pinyin: {}", card.meaning, card.pinyin);
     if card.meaning_matches(&guess) {
         println!("Correct");
-        Grade::Good
+        ReviewAction::Graded(Grade::Good)
     } else {
         println!("Incorrect");
-        Grade::Again
+        ReviewAction::Graded(Grade::Again)
     }
 }
 

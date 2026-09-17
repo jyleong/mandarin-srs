@@ -1,12 +1,11 @@
-use std::collections::HashMap;
 mod models;
 mod app;
 use models::deck::Deck;
-use models::progress::{CardProgress, ProgressMap};
+use models::progress::{CardProgress};
 
-use app::review::{review_card, next_interval};
+use app::review::{review_card, next_interval, ReviewAction};
 
-use crate::models::card::{Card, HskLevel};
+use crate::models::card::{HskLevel};
 const PROGRESS_PATH: &str = "data/progress.json";
 
 fn main() {
@@ -25,17 +24,25 @@ fn main() {
             .map(|p| p.interval_days)
             .unwrap_or(0);
 
-        let grade = review_card(&card);
-        let days = next_interval(grade, previous);
-
-        progress.insert(
-            card.id.clone(),
-            CardProgress { interval_days: days },
-        );
-        println!("{} → {} day(s)", card.id, days);
+        match review_card(&card) {
+            ReviewAction::Quit => {
+                println!("Saving and exiting.");
+                break;
+            }
+            ReviewAction::Graded(grade) => {
+                let days = next_interval(grade, previous);
+                progress.insert(
+                    card.id.clone(),
+                    CardProgress { interval_days: days },
+                );
+                println!("{} → {} day(s)", card.id, days);
+                models::progress::save(PROGRESS_PATH, &progress).expect("save progress");
+            }
+        }
         
     }
     models::progress::save(PROGRESS_PATH, &progress).expect("save progress");
+
 
 }
 
