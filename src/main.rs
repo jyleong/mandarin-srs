@@ -6,25 +6,36 @@ use models::progress::{CardProgress, ProgressMap};
 
 use app::review::{review_card, next_interval};
 
+use crate::models::card::{Card, HskLevel};
+const PROGRESS_PATH: &str = "data/progress.json";
+
 fn main() {
     let deck = Deck::from_json_path("data/hsk_words.json").expect("load deck");
-    let mut progress: ProgressMap = HashMap::new();
+    let mut progress = models::progress::load(PROGRESS_PATH).expect("load progress");
     
-    for card in &deck.cards {
-    let previous = progress
-        .get(&card.id)
-        .map(|p| p.interval_days)
-        .unwrap_or(0);
+    let session: Vec<_> = deck
+        .cards
+        .iter()
+        .filter(|c| c.hsk == HskLevel::Hsk1)
+        .collect();    
+ 
+    for card in session {
+        let previous = progress
+            .get(&card.id)
+            .map(|p| p.interval_days)
+            .unwrap_or(0);
 
-    let grade = review_card(card);
-    let days = next_interval(grade, previous);
+        let grade = review_card(&card);
+        let days = next_interval(grade, previous);
 
-    progress.insert(
-        card.id.clone(),
-        CardProgress { interval_days: days },
-    );
+        progress.insert(
+            card.id.clone(),
+            CardProgress { interval_days: days },
+        );
+        println!("{} → {} day(s)", card.id, days);
+        
+    }
+    models::progress::save(PROGRESS_PATH, &progress).expect("save progress");
 
-    println!("{} → {} day(s)", card.id, days);
 }
 
-}

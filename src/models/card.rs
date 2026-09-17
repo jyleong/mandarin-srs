@@ -72,10 +72,10 @@ impl TryFrom<u8> for HskLevel {
 
 #[derive(Debug, Deserialize)]
 pub struct CardRecord {
-    chinese: String,
-    pinyin: String,
-    meaning: String,
-    hsk: HskLevel,
+    pub chinese: String,
+    pub pinyin: String,
+    pub meaning: String,
+    pub hsk: HskLevel,
 }
 
 impl CardRecord {
