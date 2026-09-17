@@ -1,7 +1,7 @@
 use serde::Deserialize;
 use std::convert::TryFrom;
 
-#[derive(Debug)]
+#[derive(Debug, Clone)]
 pub struct Card {
     pub id: String,
     pub chinese: String, // 汉字 / the word you show
@@ -31,6 +31,40 @@ impl HskLevel {
             Self::Hsk4 => 4,
             Self::Hsk5 => 5,
             Self::Hsk6 => 6,
+        }
+    }
+
+    pub fn next(self) -> Self {
+        match self {
+            Self::Hsk1 => Self::Hsk2,
+            Self::Hsk2 => Self::Hsk3,
+            Self::Hsk3 => Self::Hsk4,
+            Self::Hsk4 => Self::Hsk5,
+            Self::Hsk5 => Self::Hsk6,
+            Self::Hsk6 => Self::Hsk1,
+        }
+    }
+
+    pub fn prev(self) -> Self {
+        match self {
+            Self::Hsk1 => Self::Hsk6,
+            Self::Hsk2 => Self::Hsk1,
+            Self::Hsk3 => Self::Hsk2,
+            Self::Hsk4 => Self::Hsk3,
+            Self::Hsk5 => Self::Hsk4,
+            Self::Hsk6 => Self::Hsk5,
+        }
+    }
+
+    pub fn from_digit(d: u8) -> Option<Self> {
+        match d {
+            1 => Some(Self::Hsk1),
+            2 => Some(Self::Hsk2),
+            3 => Some(Self::Hsk3),
+            4 => Some(Self::Hsk4),
+            5 => Some(Self::Hsk5),
+            6 => Some(Self::Hsk6),
+            _ => None,
         }
     }
 }

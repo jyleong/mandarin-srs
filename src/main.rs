@@ -1,7 +1,7 @@
 mod models;
 mod app;
 
-use models::card::{Card, HskLevel};
+use models::card::Card;
 use models::deck::Deck;
 
 const PROGRESS_PATH: &str = "data/progress.json";
@@ -12,7 +12,6 @@ fn main() -> std::io::Result<()> {
     let session: Vec<Card> = deck
         .cards
         .into_iter()
-        .filter(|c| c.hsk == HskLevel::Hsk1)
         .collect();
 
     let progress = app::tui::run(session, progress)?;
