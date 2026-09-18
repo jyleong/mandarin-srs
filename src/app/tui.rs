@@ -3,10 +3,13 @@ use ratatui::layout::{Alignment, Constraint, Flex, Layout, Rect};
 use ratatui::style::{Color, Modifier, Style};
 use ratatui::text::{Line, Span, Text};
 use ratatui::widgets::{Block, Borders, Clear, Padding, Paragraph, Wrap};
+use rand::seq::SliceRandom;
 
 use crate::app::review::next_interval;
 use crate::models::card::{Card, Grade, HskLevel};
-use crate::models::progress::{CardProgress, ProgressMap};
+use crate::models::progress::{self, CardProgress, ProgressMap};
+use crate::utils::date_utils::today;
+use chrono::Days;
 
 enum Phase {
     SelectLevel,
@@ -189,10 +192,12 @@ impl App {
 
     /// Filter `all_cards` → `cards`, then enter Prompt.
     fn start_session(&mut self) {
+        let today = today();
         self.cards = self
             .all_cards
             .iter()
             .filter(|c| c.hsk == self.selected_level)
+            .filter(|c| progress::is_due(&self.progress, &c.id, today))
             .cloned()
             .collect();
 
@@ -200,6 +205,11 @@ impl App {
             // Stay on select if this level has no words.
             return;
         }
+
+
+        self.cards.shuffle(&mut rand::rng());
+
+        self.cards.truncate(50);
 
         // 5h later: shuffle here
         self.index = 0;
@@ -438,11 +448,14 @@ impl App {
             Grade::Again
         };
         let days = next_interval(grade, previous);
+        // Again (0 days) → due today; Good (N) → today + N calendar days.
+        let due_date = today() + Days::new(u64::from(days));
 
         self.progress.insert(
             card.id.clone(),
             CardProgress {
                 interval_days: days,
+                due_date,
             },
         );
 

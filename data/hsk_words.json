@@ -1,5 +1,23 @@
 [
   {
+    "chinese": "日",
+    "pinyin": "Rì",
+    "meaning": "abbr. for 本, Japan",
+    "hsk": 1
+  },
+  {
+    "chinese": "书",
+    "pinyin": "Shū",
+    "meaning": "abbr. for 书经",
+    "hsk": 1
+  },
+  {
+    "chinese": "中国",
+    "pinyin": "Zhōng guó",
+    "meaning": "China",
+    "hsk": 1
+  },
+  {
     "chinese": "爸爸",
     "pinyin": "bàba",
     "meaning": "dad; father",
@@ -36,6 +54,12 @@
     "hsk": 1
   },
   {
+    "chinese": "本",
+    "pinyin": "běn",
+    "meaning": "root; stem",
+    "hsk": 1
+  },
+  {
     "chinese": "茶",
     "pinyin": "chá",
     "meaning": "tea",
@@ -48,9 +72,21 @@
     "hsk": 1
   },
   {
+    "chinese": "出租车",
+    "pinyin": "chū zū chē",
+    "meaning": "taxi; (Tw) rental car",
+    "hsk": 1
+  },
+  {
     "chinese": "菜",
     "pinyin": "cài",
     "meaning": "dish; cuisine; vegetable",
+    "hsk": 1
+  },
+  {
+    "chinese": "的",
+    "pinyin": "de",
+    "meaning": "of; ~'s (possessive particle); (used after an attribute)",
     "hsk": 1
   },
   {
@@ -90,6 +126,12 @@
     "hsk": 1
   },
   {
+    "chinese": "多少",
+    "pinyin": "duō shǎo",
+    "meaning": "number; amount",
+    "hsk": 1
+  },
+  {
     "chinese": "大",
     "pinyin": "dà",
     "meaning": "big; large",
@@ -114,6 +156,12 @@
     "hsk": 1
   },
   {
+    "chinese": "饭馆",
+    "pinyin": "fàn guǎn",
+    "meaning": "restaurant",
+    "hsk": 1
+  },
+  {
     "chinese": "飞机",
     "pinyin": "fēijī",
     "meaning": "airplane",
@@ -132,9 +180,21 @@
     "hsk": 1
   },
   {
+    "chinese": "个",
+    "pinyin": "gě",
+    "meaning": "used in 自个儿",
+    "hsk": 1
+  },
+  {
     "chinese": "工作",
     "pinyin": "gōngzuò",
     "meaning": "work; job",
+    "hsk": 1
+  },
+  {
+    "chinese": "狗",
+    "pinyin": "gǒu",
+    "meaning": "dog",
     "hsk": 1
   },
   {
@@ -150,6 +210,12 @@
     "hsk": 1
   },
   {
+    "chinese": "火车站",
+    "pinyin": "huǒ chē zhàn",
+    "meaning": "train station",
+    "hsk": 1
+  },
+  {
     "chinese": "汉语",
     "pinyin": "hànyǔ",
     "meaning": "Chinese language",
@@ -159,6 +225,12 @@
     "chinese": "和",
     "pinyin": "hé",
     "meaning": "and",
+    "hsk": 1
+  },
+  {
+    "chinese": "后面",
+    "pinyin": "hòu mian",
+    "meaning": "the back; the rear; the last bit; behind; near the end; at the back",
     "hsk": 1
   },
   {
@@ -192,15 +264,39 @@
     "hsk": 1
   },
   {
+    "chinese": "九",
+    "pinyin": "jiǔ",
+    "meaning": "nine; 9",
+    "hsk": 1
+  },
+  {
+    "chinese": "几",
+    "pinyin": "jī",
+    "meaning": "small table",
+    "hsk": 1
+  },
+  {
     "chinese": "今天",
     "pinyin": "jīntiān",
     "meaning": "today",
     "hsk": 1
   },
   {
+    "chinese": "块",
+    "pinyin": "kuài",
+    "meaning": "lump; chunk; piece; classifier for pieces of cloth, cake, soap etc",
+    "hsk": 1
+  },
+  {
     "chinese": "看",
     "pinyin": "kàn",
     "meaning": "to look; to watch",
+    "hsk": 1
+  },
+  {
+    "chinese": "看见",
+    "pinyin": "kàn jiàn",
+    "meaning": "to see; to catch sight of",
     "hsk": 1
   },
   {
@@ -216,9 +312,21 @@
     "hsk": 1
   },
   {
+    "chinese": "六",
+    "pinyin": "liù",
+    "meaning": "six; 6",
+    "hsk": 1
+  },
+  {
     "chinese": "来",
     "pinyin": "lái",
     "meaning": "to come",
+    "hsk": 1
+  },
+  {
+    "chinese": "零",
+    "pinyin": "líng",
+    "meaning": "zero; nought",
     "hsk": 1
   },
   {
@@ -231,6 +339,30 @@
     "chinese": "老师",
     "pinyin": "lǎoshī",
     "meaning": "teacher",
+    "hsk": 1
+  },
+  {
+    "chinese": "里",
+    "pinyin": "lǐ",
+    "meaning": "variant of 里",
+    "hsk": 1
+  },
+  {
+    "chinese": "吗",
+    "pinyin": "má",
+    "meaning": "(coll.) what?",
+    "hsk": 1
+  },
+  {
+    "chinese": "没",
+    "pinyin": "méi",
+    "meaning": "(negative prefix for verbs) have not; not",
+    "hsk": 1
+  },
+  {
+    "chinese": "没关系",
+    "pinyin": "méi guān xi",
+    "meaning": "it doesn't matter",
     "hsk": 1
   },
   {
@@ -264,9 +396,27 @@
     "hsk": 1
   },
   {
+    "chinese": "米饭",
+    "pinyin": "mǐ fàn",
+    "meaning": "(cooked) rice",
+    "hsk": 1
+  },
+  {
+    "chinese": "呢",
+    "pinyin": "ne",
+    "meaning": "particle indicating that a previously asked question is to be applied to the preceding word (\"What about ...?\", \"And ...?\")",
+    "hsk": 1
+  },
+  {
     "chinese": "年",
     "pinyin": "nián",
     "meaning": "year",
+    "hsk": 1
+  },
+  {
+    "chinese": "哪",
+    "pinyin": "nǎ",
+    "meaning": "how; which",
     "hsk": 1
   },
   {
@@ -276,9 +426,417 @@
     "hsk": 1
   },
   {
+    "chinese": "女儿",
+    "pinyin": "nǚ ér",
+    "meaning": "daughter",
+    "hsk": 1
+  },
+  {
+    "chinese": "漂亮",
+    "pinyin": "piào liang",
+    "meaning": "pretty; beautiful",
+    "hsk": 1
+  },
+  {
     "chinese": "朋友",
     "pinyin": "péngyou",
     "meaning": "friend",
+    "hsk": 1
+  },
+  {
+    "chinese": "苹果",
+    "pinyin": "píng guǒ",
+    "meaning": "apple",
+    "hsk": 1
+  },
+  {
+    "chinese": "前面",
+    "pinyin": "qián miàn",
+    "meaning": "ahead; in front",
+    "hsk": 1
+  },
+  {
+    "chinese": "去",
+    "pinyin": "qù",
+    "meaning": "to go; to go to (a place)",
+    "hsk": 1
+  },
+  {
+    "chinese": "七",
+    "pinyin": "qī",
+    "meaning": "seven; 7",
+    "hsk": 1
+  },
+  {
+    "chinese": "请",
+    "pinyin": "qǐng",
+    "meaning": "to ask; to invite",
+    "hsk": 1
+  },
+  {
+    "chinese": "热",
+    "pinyin": "rè",
+    "meaning": "to warm up; to heat up",
+    "hsk": 1
+  },
+  {
+    "chinese": "认识",
+    "pinyin": "rèn shi",
+    "meaning": "to know; to recognize",
+    "hsk": 1
+  },
+  {
+    "chinese": "人",
+    "pinyin": "rén",
+    "meaning": "person; people",
+    "hsk": 1
+  },
+  {
+    "chinese": "睡觉",
+    "pinyin": "shuì jiào",
+    "meaning": "to go to bed; to sleep",
+    "hsk": 1
+  },
+  {
+    "chinese": "说话",
+    "pinyin": "shuō huà",
+    "meaning": "to speak; to say",
+    "hsk": 1
+  },
+  {
+    "chinese": "水果",
+    "pinyin": "shuǐ guǒ",
+    "meaning": "fruit",
+    "hsk": 1
+  },
+  {
+    "chinese": "上午",
+    "pinyin": "shàng wǔ",
+    "meaning": "morning",
+    "hsk": 1
+  },
+  {
+    "chinese": "谁",
+    "pinyin": "shéi",
+    "meaning": "who; also pr. [shuí]",
+    "hsk": 1
+  },
+  {
+    "chinese": "什么",
+    "pinyin": "shén me",
+    "meaning": "what?; something",
+    "hsk": 1
+  },
+  {
+    "chinese": "是",
+    "pinyin": "shì",
+    "meaning": "to be (followed by substantives only); correct; right; true",
+    "hsk": 1
+  },
+  {
+    "chinese": "十",
+    "pinyin": "shí",
+    "meaning": "ten; 10",
+    "hsk": 1
+  },
+  {
+    "chinese": "时候",
+    "pinyin": "shí hou",
+    "meaning": "time; length of time",
+    "hsk": 1
+  },
+  {
+    "chinese": "商店",
+    "pinyin": "shāng diàn",
+    "meaning": "store; shop",
+    "hsk": 1
+  },
+  {
+    "chinese": "上",
+    "pinyin": "shǎng",
+    "meaning": "used in 上声",
+    "hsk": 1
+  },
+  {
+    "chinese": "少",
+    "pinyin": "shǎo",
+    "meaning": "few; less",
+    "hsk": 1
+  },
+  {
+    "chinese": "岁",
+    "pinyin": "suì",
+    "meaning": "variant of 岁, year; years old",
+    "hsk": 1
+  },
+  {
+    "chinese": "四",
+    "pinyin": "sì",
+    "meaning": "four; 4",
+    "hsk": 1
+  },
+  {
+    "chinese": "天气",
+    "pinyin": "tiān qì",
+    "meaning": "weather",
+    "hsk": 1
+  },
+  {
+    "chinese": "太",
+    "pinyin": "tài",
+    "meaning": "highest; greatest",
+    "hsk": 1
+  },
+  {
+    "chinese": "同学",
+    "pinyin": "tóng xué",
+    "meaning": "to study at the same school; fellow student",
+    "hsk": 1
+  },
+  {
+    "chinese": "他",
+    "pinyin": "tā",
+    "meaning": "he; him (used for either sex when the sex is unknown or unimportant)",
+    "hsk": 1
+  },
+  {
+    "chinese": "她",
+    "pinyin": "tā",
+    "meaning": "she",
+    "hsk": 1
+  },
+  {
+    "chinese": "喂",
+    "pinyin": "wéi",
+    "meaning": "hello (when answering the phone)",
+    "hsk": 1
+  },
+  {
+    "chinese": "我",
+    "pinyin": "wǒ",
+    "meaning": "I; me; my",
+    "hsk": 1
+  },
+  {
+    "chinese": "我们",
+    "pinyin": "wǒ men",
+    "meaning": "we; us",
+    "hsk": 1
+  },
+  {
+    "chinese": "五",
+    "pinyin": "wǔ",
+    "meaning": "five; 5",
+    "hsk": 1
+  },
+  {
+    "chinese": "下",
+    "pinyin": "xià",
+    "meaning": "down; downwards",
+    "hsk": 1
+  },
+  {
+    "chinese": "下午",
+    "pinyin": "xià wǔ",
+    "meaning": "afternoon; p.m.",
+    "hsk": 1
+  },
+  {
+    "chinese": "下雨",
+    "pinyin": "xià yǔ",
+    "meaning": "to rain",
+    "hsk": 1
+  },
+  {
+    "chinese": "现在",
+    "pinyin": "xiàn zài",
+    "meaning": "now; at present",
+    "hsk": 1
+  },
+  {
+    "chinese": "谢谢",
+    "pinyin": "xiè xie",
+    "meaning": "to thank; thanks",
+    "hsk": 1
+  },
+  {
+    "chinese": "先生",
+    "pinyin": "xiān sheng",
+    "meaning": "teacher; gentleman; sir; mister (Mr.)",
+    "hsk": 1
+  },
+  {
+    "chinese": "些",
+    "pinyin": "xiē",
+    "meaning": "classifier indicating a small amount or small number greater than 1: some, a few, several",
+    "hsk": 1
+  },
+  {
+    "chinese": "写",
+    "pinyin": "xiě",
+    "meaning": "to write",
+    "hsk": 1
+  },
+  {
+    "chinese": "想",
+    "pinyin": "xiǎng",
+    "meaning": "to think (about); to think of; to devise",
+    "hsk": 1
+  },
+  {
+    "chinese": "小",
+    "pinyin": "xiǎo",
+    "meaning": "small; tiny",
+    "hsk": 1
+  },
+  {
+    "chinese": "小姐",
+    "pinyin": "xiǎo jie",
+    "meaning": "young lady; miss",
+    "hsk": 1
+  },
+  {
+    "chinese": "学生",
+    "pinyin": "xué sheng",
+    "meaning": "student; schoolchild",
+    "hsk": 1
+  },
+  {
+    "chinese": "学校",
+    "pinyin": "xué xiào",
+    "meaning": "school",
+    "hsk": 1
+  },
+  {
+    "chinese": "学习",
+    "pinyin": "xué xí",
+    "meaning": "to learn; to study",
+    "hsk": 1
+  },
+  {
+    "chinese": "星期",
+    "pinyin": "xīng qī",
+    "meaning": "week; day of the week",
+    "hsk": 1
+  },
+  {
+    "chinese": "喜欢",
+    "pinyin": "xǐ huan",
+    "meaning": "to like; to be fond of",
+    "hsk": 1
+  },
+  {
+    "chinese": "月",
+    "pinyin": "yuè",
+    "meaning": "moon; month",
+    "hsk": 1
+  },
+  {
+    "chinese": "一",
+    "pinyin": "yī",
+    "meaning": "one; single",
+    "hsk": 1
+  },
+  {
+    "chinese": "衣服",
+    "pinyin": "yī fu",
+    "meaning": "clothes",
+    "hsk": 1
+  },
+  {
+    "chinese": "医生",
+    "pinyin": "yī shēng",
+    "meaning": "doctor",
+    "hsk": 1
+  },
+  {
+    "chinese": "医院",
+    "pinyin": "yī yuàn",
+    "meaning": "hospital",
+    "hsk": 1
+  },
+  {
+    "chinese": "椅子",
+    "pinyin": "yǐ zi",
+    "meaning": "chair",
+    "hsk": 1
+  },
+  {
+    "chinese": "听",
+    "pinyin": "yǐn",
+    "meaning": "smile (archaic)",
+    "hsk": 1
+  },
+  {
+    "chinese": "有",
+    "pinyin": "yǒu",
+    "meaning": "to have; there is; (bound form) having; with; -ful; -ed; -al (as in 意 intentional)",
+    "hsk": 1
+  },
+  {
+    "chinese": "桌子",
+    "pinyin": "zhuō zi",
+    "meaning": "table; desk",
+    "hsk": 1
+  },
+  {
+    "chinese": "这",
+    "pinyin": "zhè",
+    "meaning": "(pronoun) this; these; (bound form) this; the (followed by a noun)",
+    "hsk": 1
+  },
+  {
+    "chinese": "住",
+    "pinyin": "zhù",
+    "meaning": "to live; to dwell",
+    "hsk": 1
+  },
+  {
+    "chinese": "中午",
+    "pinyin": "zhōng wǔ",
+    "meaning": "noon; midday",
+    "hsk": 1
+  },
+  {
+    "chinese": "做",
+    "pinyin": "zuò",
+    "meaning": "to make; to produce; to write; to compose",
+    "hsk": 1
+  },
+  {
+    "chinese": "昨天",
+    "pinyin": "zuó tiān",
+    "meaning": "yesterday",
+    "hsk": 1
+  },
+  {
+    "chinese": "在",
+    "pinyin": "zài",
+    "meaning": "to exist; to be alive; (of sb or sth) to be (located) at",
+    "hsk": 1
+  },
+  {
+    "chinese": "再见",
+    "pinyin": "zài jiàn",
+    "meaning": "goodbye; see you again later",
+    "hsk": 1
+  },
+  {
+    "chinese": "字",
+    "pinyin": "zì",
+    "meaning": "letter; symbol",
+    "hsk": 1
+  },
+  {
+    "chinese": "怎么",
+    "pinyin": "zěn me",
+    "meaning": "how?; what?",
+    "hsk": 1
+  },
+  {
+    "chinese": "怎么样",
+    "pinyin": "zěn me yàng",
+    "meaning": "how?; how about?",
     "hsk": 1
   },
   {
@@ -300,9 +858,27 @@
     "hsk": 1
   },
   {
+    "chinese": "新",
+    "pinyin": "Xīn",
+    "meaning": "abbr. for Xinjiang 疆 or Singapore 坡",
+    "hsk": 2
+  },
+  {
+    "chinese": "元",
+    "pinyin": "Yuán",
+    "meaning": "the Yuan or Mongol dynasty (1279-1368)",
+    "hsk": 2
+  },
+  {
     "chinese": "吧",
     "pinyin": "ba",
     "meaning": "suggestion particle",
+    "hsk": 2
+  },
+  {
+    "chinese": "便宜",
+    "pinyin": "biàn yí",
+    "meaning": "convenient",
     "hsk": 2
   },
   {
@@ -342,6 +918,12 @@
     "hsk": 2
   },
   {
+    "chinese": "船",
+    "pinyin": "chuán",
+    "meaning": "variant of 船",
+    "hsk": 2
+  },
+  {
     "chinese": "穿",
     "pinyin": "chuān",
     "meaning": "to wear",
@@ -357,6 +939,12 @@
     "chinese": "长",
     "pinyin": "cháng",
     "meaning": "long",
+    "hsk": 2
+  },
+  {
+    "chinese": "离",
+    "pinyin": "chī",
+    "meaning": "mythical beast (archaic)",
     "hsk": 2
   },
   {
@@ -399,6 +987,12 @@
     "chinese": "大家",
     "pinyin": "dàjiā",
     "meaning": "everyone",
+    "hsk": 2
+  },
+  {
+    "chinese": "但是",
+    "pinyin": "dàn shì",
+    "meaning": "but; however",
     "hsk": 2
   },
   {
@@ -492,6 +1086,12 @@
     "hsk": 2
   },
   {
+    "chinese": "公斤",
+    "pinyin": "gōng jīn",
+    "meaning": "kilogram (kg)",
+    "hsk": 2
+  },
+  {
     "chinese": "公共汽车",
     "pinyin": "gōnggòng qìchē",
     "meaning": "bus",
@@ -501,6 +1101,18 @@
     "chinese": "公司",
     "pinyin": "gōngsī",
     "meaning": "company",
+    "hsk": 2
+  },
+  {
+    "chinese": "回答",
+    "pinyin": "huí dá",
+    "meaning": "to reply; to answer; reply; answer",
+    "hsk": 2
+  },
+  {
+    "chinese": "欢迎",
+    "pinyin": "huān yíng",
+    "meaning": "to welcome; welcome",
     "hsk": 2
   },
   {
@@ -519,6 +1131,12 @@
     "chinese": "孩子",
     "pinyin": "háizi",
     "meaning": "child",
+    "hsk": 2
+  },
+  {
+    "chinese": "号",
+    "pinyin": "háo",
+    "meaning": "roar; cry",
     "hsk": 2
   },
   {
@@ -598,6 +1216,516 @@
     "pinyin": "jīdàn",
     "meaning": "egg",
     "hsk": 2
+  },
+  {
+    "chinese": "快",
+    "pinyin": "kuài",
+    "meaning": "rapid; quick",
+    "hsk": 2
+  },
+  {
+    "chinese": "快乐",
+    "pinyin": "kuài lè",
+    "meaning": "happy; joyful",
+    "hsk": 2
+  },
+  {
+    "chinese": "课",
+    "pinyin": "kè",
+    "meaning": "subject; course",
+    "hsk": 2
+  },
+  {
+    "chinese": "咖啡",
+    "pinyin": "kā fēi",
+    "meaning": "coffee (loanword)",
+    "hsk": 2
+  },
+  {
+    "chinese": "开始",
+    "pinyin": "kāi shǐ",
+    "meaning": "to begin; beginning",
+    "hsk": 2
+  },
+  {
+    "chinese": "可能",
+    "pinyin": "kě néng",
+    "meaning": "might (happen); possible",
+    "hsk": 2
+  },
+  {
+    "chinese": "可以",
+    "pinyin": "kě yǐ",
+    "meaning": "can; may",
+    "hsk": 2
+  },
+  {
+    "chinese": "考试",
+    "pinyin": "kǎo shì",
+    "meaning": "to take an exam; exam",
+    "hsk": 2
+  },
+  {
+    "chinese": "两",
+    "pinyin": "liǎng",
+    "meaning": "two; both",
+    "hsk": 2
+  },
+  {
+    "chinese": "累",
+    "pinyin": "lěi",
+    "meaning": "to accumulate; to involve or implicate (Taiwan pr. [lèi])",
+    "hsk": 2
+  },
+  {
+    "chinese": "旅游",
+    "pinyin": "lǚ yóu",
+    "meaning": "trip; journey",
+    "hsk": 2
+  },
+  {
+    "chinese": "卖",
+    "pinyin": "mài",
+    "meaning": "to sell; to betray",
+    "hsk": 2
+  },
+  {
+    "chinese": "慢",
+    "pinyin": "màn",
+    "meaning": "slow",
+    "hsk": 2
+  },
+  {
+    "chinese": "忙",
+    "pinyin": "máng",
+    "meaning": "busy; hurriedly",
+    "hsk": 2
+  },
+  {
+    "chinese": "妹妹",
+    "pinyin": "mèi mei",
+    "meaning": "younger sister; young woman",
+    "hsk": 2
+  },
+  {
+    "chinese": "每",
+    "pinyin": "měi",
+    "meaning": "each; every",
+    "hsk": 2
+  },
+  {
+    "chinese": "牛奶",
+    "pinyin": "niú nǎi",
+    "meaning": "cow's milk",
+    "hsk": 2
+  },
+  {
+    "chinese": "男人",
+    "pinyin": "nán rén",
+    "meaning": "a man; a male",
+    "hsk": 2
+  },
+  {
+    "chinese": "您",
+    "pinyin": "nín",
+    "meaning": "you (courteous, as opposed to informal 你)",
+    "hsk": 2
+  },
+  {
+    "chinese": "女人",
+    "pinyin": "nǚ rén",
+    "meaning": "woman",
+    "hsk": 2
+  },
+  {
+    "chinese": "票",
+    "pinyin": "piào",
+    "meaning": "ticket; ballot",
+    "hsk": 2
+  },
+  {
+    "chinese": "旁边",
+    "pinyin": "páng biān",
+    "meaning": "side; adjacent place",
+    "hsk": 2
+  },
+  {
+    "chinese": "跑步",
+    "pinyin": "pǎo bù",
+    "meaning": "to run; to jog",
+    "hsk": 2
+  },
+  {
+    "chinese": "千",
+    "pinyin": "qiān",
+    "meaning": "thousand",
+    "hsk": 2
+  },
+  {
+    "chinese": "晴",
+    "pinyin": "qíng",
+    "meaning": "clear; fine (weather)",
+    "hsk": 2
+  },
+  {
+    "chinese": "去年",
+    "pinyin": "qù nián",
+    "meaning": "last year",
+    "hsk": 2
+  },
+  {
+    "chinese": "妻子",
+    "pinyin": "qī zǐ",
+    "meaning": "wife and children",
+    "hsk": 2
+  },
+  {
+    "chinese": "起床",
+    "pinyin": "qǐ chuáng",
+    "meaning": "to get out of bed; to get up",
+    "hsk": 2
+  },
+  {
+    "chinese": "让",
+    "pinyin": "ràng",
+    "meaning": "to yield; to permit",
+    "hsk": 2
+  },
+  {
+    "chinese": "上班",
+    "pinyin": "shàng bān",
+    "meaning": "to go to work; to be on duty",
+    "hsk": 2
+  },
+  {
+    "chinese": "事情",
+    "pinyin": "shì qing",
+    "meaning": "affair; matter; thing; business",
+    "hsk": 2
+  },
+  {
+    "chinese": "时间",
+    "pinyin": "shí jiān",
+    "meaning": "time; period",
+    "hsk": 2
+  },
+  {
+    "chinese": "身体",
+    "pinyin": "shēn tǐ",
+    "meaning": "the body; one's health",
+    "hsk": 2
+  },
+  {
+    "chinese": "生病",
+    "pinyin": "shēng bìng",
+    "meaning": "to fall ill",
+    "hsk": 2
+  },
+  {
+    "chinese": "生日",
+    "pinyin": "shēng rì",
+    "meaning": "birthday",
+    "hsk": 2
+  },
+  {
+    "chinese": "手表",
+    "pinyin": "shǒu biǎo",
+    "meaning": "wristwatch",
+    "hsk": 2
+  },
+  {
+    "chinese": "手机",
+    "pinyin": "shǒu jī",
+    "meaning": "cell phone; mobile phone",
+    "hsk": 2
+  },
+  {
+    "chinese": "所以",
+    "pinyin": "suǒ yǐ",
+    "meaning": "therefore; as a result",
+    "hsk": 2
+  },
+  {
+    "chinese": "送",
+    "pinyin": "sòng",
+    "meaning": "to send; to deliver; to transmit; to give (as a present)",
+    "hsk": 2
+  },
+  {
+    "chinese": "跳舞",
+    "pinyin": "tiào wǔ",
+    "meaning": "to dance",
+    "hsk": 2
+  },
+  {
+    "chinese": "它",
+    "pinyin": "tā",
+    "meaning": "it",
+    "hsk": 2
+  },
+  {
+    "chinese": "踢",
+    "pinyin": "tī",
+    "meaning": "to kick; to play (e.g. soccer)",
+    "hsk": 2
+  },
+  {
+    "chinese": "外",
+    "pinyin": "wài",
+    "meaning": "outside; in addition",
+    "hsk": 2
+  },
+  {
+    "chinese": "完",
+    "pinyin": "wán",
+    "meaning": "to finish; to be over",
+    "hsk": 2
+  },
+  {
+    "chinese": "玩",
+    "pinyin": "wán",
+    "meaning": "to play; to have fun",
+    "hsk": 2
+  },
+  {
+    "chinese": "问",
+    "pinyin": "wèn",
+    "meaning": "to ask; to inquire",
+    "hsk": 2
+  },
+  {
+    "chinese": "问题",
+    "pinyin": "wèn tí",
+    "meaning": "question; problem",
+    "hsk": 2
+  },
+  {
+    "chinese": "为",
+    "pinyin": "wéi",
+    "meaning": "as (in the capacity of); to take sth as",
+    "hsk": 2
+  },
+  {
+    "chinese": "晚上",
+    "pinyin": "wǎn shang",
+    "meaning": "evening; night",
+    "hsk": 2
+  },
+  {
+    "chinese": "笑",
+    "pinyin": "xiào",
+    "meaning": "old variant of 笑",
+    "hsk": 2
+  },
+  {
+    "chinese": "休息",
+    "pinyin": "xiū xi",
+    "meaning": "rest; to rest",
+    "hsk": 2
+  },
+  {
+    "chinese": "小时",
+    "pinyin": "xiǎo shí",
+    "meaning": "hour",
+    "hsk": 2
+  },
+  {
+    "chinese": "姓",
+    "pinyin": "xìng",
+    "meaning": "family name; surname",
+    "hsk": 2
+  },
+  {
+    "chinese": "西瓜",
+    "pinyin": "xī guā",
+    "meaning": "watermelon",
+    "hsk": 2
+  },
+  {
+    "chinese": "希望",
+    "pinyin": "xī wàng",
+    "meaning": "to hope; a hope; a wish",
+    "hsk": 2
+  },
+  {
+    "chinese": "洗",
+    "pinyin": "xǐ",
+    "meaning": "to wash; to bathe; to develop (photographs)",
+    "hsk": 2
+  },
+  {
+    "chinese": "远",
+    "pinyin": "yuǎn",
+    "meaning": "far; distant",
+    "hsk": 2
+  },
+  {
+    "chinese": "药",
+    "pinyin": "yào",
+    "meaning": "leaf of the iris; variant of 药",
+    "hsk": 2
+  },
+  {
+    "chinese": "颜色",
+    "pinyin": "yán sè",
+    "meaning": "color; countenance",
+    "hsk": 2
+  },
+  {
+    "chinese": "羊肉",
+    "pinyin": "yáng ròu",
+    "meaning": "mutton; goat meat",
+    "hsk": 2
+  },
+  {
+    "chinese": "意思",
+    "pinyin": "yì si",
+    "meaning": "idea; opinion",
+    "hsk": 2
+  },
+  {
+    "chinese": "右边",
+    "pinyin": "yòu bian",
+    "meaning": "right side; right, to the right",
+    "hsk": 2
+  },
+  {
+    "chinese": "游泳",
+    "pinyin": "yóu yǒng",
+    "meaning": "swimming; to swim",
+    "hsk": 2
+  },
+  {
+    "chinese": "运动",
+    "pinyin": "yùn dòng",
+    "meaning": "to move; to exercise",
+    "hsk": 2
+  },
+  {
+    "chinese": "要",
+    "pinyin": "yāo",
+    "meaning": "(bound form) to demand; to coerce",
+    "hsk": 2
+  },
+  {
+    "chinese": "一起",
+    "pinyin": "yī qǐ",
+    "meaning": "in the same place; together",
+    "hsk": 2
+  },
+  {
+    "chinese": "因为",
+    "pinyin": "yīn wèi",
+    "meaning": "because; owing to",
+    "hsk": 2
+  },
+  {
+    "chinese": "眼睛",
+    "pinyin": "yǎn jing",
+    "meaning": "eye",
+    "hsk": 2
+  },
+  {
+    "chinese": "已经",
+    "pinyin": "yǐ jīng",
+    "meaning": "already",
+    "hsk": 2
+  },
+  {
+    "chinese": "丈夫",
+    "pinyin": "zhàng fu",
+    "meaning": "husband",
+    "hsk": 2
+  },
+  {
+    "chinese": "正在",
+    "pinyin": "zhèng zài",
+    "meaning": "just at (that time); right in (that place)",
+    "hsk": 2
+  },
+  {
+    "chinese": "着",
+    "pinyin": "zhāo",
+    "meaning": "(chess) move; trick",
+    "hsk": 2
+  },
+  {
+    "chinese": "真",
+    "pinyin": "zhēn",
+    "meaning": "really; truly",
+    "hsk": 2
+  },
+  {
+    "chinese": "知道",
+    "pinyin": "zhī dào",
+    "meaning": "to know; to become aware of; also pr. [zhī dao]",
+    "hsk": 2
+  },
+  {
+    "chinese": "找",
+    "pinyin": "zhǎo",
+    "meaning": "to try to find; to look for",
+    "hsk": 2
+  },
+  {
+    "chinese": "准备",
+    "pinyin": "zhǔn bèi",
+    "meaning": "preparation; to prepare",
+    "hsk": 2
+  },
+  {
+    "chinese": "最",
+    "pinyin": "zuì",
+    "meaning": "variant of 最",
+    "hsk": 2
+  },
+  {
+    "chinese": "左边",
+    "pinyin": "zuǒ bian",
+    "meaning": "left; the left side",
+    "hsk": 2
+  },
+  {
+    "chinese": "再",
+    "pinyin": "zài",
+    "meaning": "again; once more; re-; second; another",
+    "hsk": 2
+  },
+  {
+    "chinese": "自行车",
+    "pinyin": "zì xíng chē",
+    "meaning": "bicycle; bike",
+    "hsk": 2
+  },
+  {
+    "chinese": "早上",
+    "pinyin": "zǎo shang",
+    "meaning": "early morning",
+    "hsk": 2
+  },
+  {
+    "chinese": "走",
+    "pinyin": "zǒu",
+    "meaning": "to walk; to go",
+    "hsk": 2
+  },
+  {
+    "chinese": "马",
+    "pinyin": "Mǎ",
+    "meaning": "abbr. for Malaysia 马来西亚",
+    "hsk": 3
+  },
+  {
+    "chinese": "西",
+    "pinyin": "Xī",
+    "meaning": "the West; abbr. for Spain 牙",
+    "hsk": 3
+  },
+  {
+    "chinese": "越",
+    "pinyin": "Yuè",
+    "meaning": "generic word for peoples or states of south China or south Asia at different historical periods",
+    "hsk": 3
   },
   {
     "chinese": "啊",
@@ -780,6 +1908,12 @@
     "hsk": 3
   },
   {
+    "chinese": "出现",
+    "pinyin": "chū xiàn",
+    "meaning": "to appear; to arise",
+    "hsk": 3
+  },
+  {
     "chinese": "春",
     "pinyin": "chūn",
     "meaning": "spring",
@@ -834,6 +1968,30 @@
     "hsk": 3
   },
   {
+    "chinese": "电子",
+    "pinyin": "diàn zǐ",
+    "meaning": "electronic; electron (particle physics)",
+    "hsk": 3
+  },
+  {
+    "chinese": "鸟",
+    "pinyin": "diǎo",
+    "meaning": "variant of 屌; penis",
+    "hsk": 3
+  },
+  {
+    "chinese": "多么",
+    "pinyin": "duō me",
+    "meaning": "how (wonderful etc); what (a great idea etc)",
+    "hsk": 3
+  },
+  {
+    "chinese": "短",
+    "pinyin": "duǎn",
+    "meaning": "short; brief",
+    "hsk": 3
+  },
+  {
     "chinese": "带",
     "pinyin": "dài",
     "meaning": "to bring; to wear (accessories)",
@@ -849,6 +2007,12 @@
     "chinese": "地方",
     "pinyin": "dìfang",
     "meaning": "place",
+    "hsk": 3
+  },
+  {
+    "chinese": "动物",
+    "pinyin": "dòng wù",
+    "meaning": "animal",
     "hsk": 3
   },
   {
@@ -870,6 +2034,12 @@
     "hsk": 3
   },
   {
+    "chinese": "低",
+    "pinyin": "dī",
+    "meaning": "low; beneath",
+    "hsk": 3
+  },
+  {
     "chinese": "打算",
     "pinyin": "dǎsuàn",
     "meaning": "to plan",
@@ -882,9 +2052,849 @@
     "hsk": 3
   },
   {
+    "chinese": "放",
+    "pinyin": "fàng",
+    "meaning": "to put; to place",
+    "hsk": 3
+  },
+  {
+    "chinese": "附近",
+    "pinyin": "fù jìn",
+    "meaning": "nearby; neighboring; (in the) vicinity (of); neighborhood",
+    "hsk": 3
+  },
+  {
+    "chinese": "发现",
+    "pinyin": "fā xiàn",
+    "meaning": "to notice; to become aware of; to discover; to find; to detect",
+    "hsk": 3
+  },
+  {
+    "chinese": "分",
+    "pinyin": "fēn",
+    "meaning": "to divide; to separate; to distribute; to allocate",
+    "hsk": 3
+  },
+  {
+    "chinese": "过去",
+    "pinyin": "guò qù",
+    "meaning": "(in the) past; former",
+    "hsk": 3
+  },
+  {
+    "chinese": "国家",
+    "pinyin": "guó jiā",
+    "meaning": "country; nation; state",
+    "hsk": 3
+  },
+  {
+    "chinese": "关系",
+    "pinyin": "guān xi",
+    "meaning": "relation; relationship",
+    "hsk": 3
+  },
+  {
+    "chinese": "关心",
+    "pinyin": "guān xīn",
+    "meaning": "to be concerned about; to care about",
+    "hsk": 3
+  },
+  {
+    "chinese": "关于",
+    "pinyin": "guān yú",
+    "meaning": "pertaining to; concerning",
+    "hsk": 3
+  },
+  {
+    "chinese": "故事",
+    "pinyin": "gù shì",
+    "meaning": "old practice",
+    "hsk": 3
+  },
+  {
+    "chinese": "刚才",
+    "pinyin": "gāng cái",
+    "meaning": "just now; a moment ago",
+    "hsk": 3
+  },
+  {
+    "chinese": "跟",
+    "pinyin": "gēn",
+    "meaning": "heel; to follow closely",
+    "hsk": 3
+  },
+  {
+    "chinese": "根据",
+    "pinyin": "gēn jù",
+    "meaning": "according to; based on",
+    "hsk": 3
+  },
+  {
+    "chinese": "更",
+    "pinyin": "gēng",
+    "meaning": "to change or replace; to experience",
+    "hsk": 3
+  },
+  {
+    "chinese": "敢",
+    "pinyin": "gǎn",
+    "meaning": "to dare; daring",
+    "hsk": 3
+  },
+  {
+    "chinese": "画",
+    "pinyin": "huà",
+    "meaning": "to draw; to paint; picture; painting",
+    "hsk": 3
+  },
+  {
+    "chinese": "坏",
+    "pinyin": "huài",
+    "meaning": "bad; spoiled",
+    "hsk": 3
+  },
+  {
+    "chinese": "换",
+    "pinyin": "huàn",
+    "meaning": "to exchange; to change (clothes etc)",
+    "hsk": 3
+  },
+  {
+    "chinese": "环境",
+    "pinyin": "huán jìng",
+    "meaning": "environment; circumstances",
+    "hsk": 3
+  },
+  {
+    "chinese": "会议",
+    "pinyin": "huì yì",
+    "meaning": "meeting; conference",
+    "hsk": 3
+  },
+  {
+    "chinese": "或者",
+    "pinyin": "huò zhě",
+    "meaning": "or; possibly; maybe; perhaps",
+    "hsk": 3
+  },
+  {
+    "chinese": "害怕",
+    "pinyin": "hài pà",
+    "meaning": "to be afraid; to be scared",
+    "hsk": 3
+  },
+  {
+    "chinese": "还是",
+    "pinyin": "hái shi",
+    "meaning": "still (as before); had better",
+    "hsk": 3
+  },
+  {
+    "chinese": "健康",
+    "pinyin": "jiàn kāng",
+    "meaning": "health; healthy",
+    "hsk": 3
+  },
+  {
+    "chinese": "见面",
+    "pinyin": "jiàn miàn",
+    "meaning": "to meet; to see each other",
+    "hsk": 3
+  },
+  {
+    "chinese": "借",
+    "pinyin": "jiè",
+    "meaning": "to lend; to borrow",
+    "hsk": 3
+  },
+  {
+    "chinese": "结婚",
+    "pinyin": "jié hūn",
+    "meaning": "to marry; to get married",
+    "hsk": 3
+  },
+  {
+    "chinese": "节目",
+    "pinyin": "jié mù",
+    "meaning": "program; item (on a program)",
+    "hsk": 3
+  },
+  {
+    "chinese": "结束",
+    "pinyin": "jié shù",
+    "meaning": "termination; to finish",
+    "hsk": 3
+  },
+  {
+    "chinese": "旧",
+    "pinyin": "jiù",
+    "meaning": "old; opposite: new 新",
+    "hsk": 3
+  },
+  {
+    "chinese": "接",
+    "pinyin": "jiē",
+    "meaning": "to receive; to answer (the phone)",
+    "hsk": 3
+  },
+  {
+    "chinese": "解决",
+    "pinyin": "jiě jué",
+    "meaning": "to solve; to resolve; to settle (a problem); to eliminate; to wipe out (an enemy, bandits etc)",
+    "hsk": 3
+  },
+  {
+    "chinese": "检查",
+    "pinyin": "jiǎn chá",
+    "meaning": "inspection; to examine",
+    "hsk": 3
+  },
+  {
+    "chinese": "简单",
+    "pinyin": "jiǎn dān",
+    "meaning": "simple; not complicated",
+    "hsk": 3
+  },
+  {
+    "chinese": "讲",
+    "pinyin": "jiǎng",
+    "meaning": "to speak; to explain",
+    "hsk": 3
+  },
+  {
+    "chinese": "脚",
+    "pinyin": "jiǎo",
+    "meaning": "foot; leg (of an animal or an object)",
+    "hsk": 3
+  },
+  {
+    "chinese": "久",
+    "pinyin": "jiǔ",
+    "meaning": "(long) time; (long) duration of time",
+    "hsk": 3
+  },
+  {
+    "chinese": "决定",
+    "pinyin": "jué dìng",
+    "meaning": "to decide (to do something); to resolve",
+    "hsk": 3
+  },
+  {
+    "chinese": "记得",
+    "pinyin": "jì de",
+    "meaning": "to remember",
+    "hsk": 3
+  },
+  {
+    "chinese": "极",
+    "pinyin": "jí",
+    "meaning": "extremely; pole (geography, physics)",
+    "hsk": 3
+  },
+  {
+    "chinese": "机会",
+    "pinyin": "jī huì",
+    "meaning": "opportunity; chance",
+    "hsk": 3
+  },
+  {
+    "chinese": "几乎",
+    "pinyin": "jī hū",
+    "meaning": "almost; nearly; practically",
+    "hsk": 3
+  },
+  {
+    "chinese": "经常",
+    "pinyin": "jīng cháng",
+    "meaning": "frequently; constantly; regularly; often; day-to-day; everyday; daily",
+    "hsk": 3
+  },
+  {
+    "chinese": "经过",
+    "pinyin": "jīng guò",
+    "meaning": "to pass; to go through",
+    "hsk": 3
+  },
+  {
+    "chinese": "经理",
+    "pinyin": "jīng lǐ",
+    "meaning": "manager; director",
+    "hsk": 3
+  },
+  {
+    "chinese": "举行",
+    "pinyin": "jǔ xíng",
+    "meaning": "to hold (a meeting, ceremony etc)",
+    "hsk": 3
+  },
+  {
+    "chinese": "可爱",
+    "pinyin": "kě ài",
+    "meaning": "adorable; cute",
+    "hsk": 3
+  },
+  {
+    "chinese": "哭",
+    "pinyin": "kū",
+    "meaning": "to cry; to weep",
+    "hsk": 3
+  },
+  {
+    "chinese": "口",
+    "pinyin": "kǒu",
+    "meaning": "mouth; classifier for things with mouths (people, domestic animals, cannons, wells etc)",
+    "hsk": 3
+  },
+  {
+    "chinese": "辆",
+    "pinyin": "liàng",
+    "meaning": "classifier for vehicles",
+    "hsk": 3
+  },
+  {
+    "chinese": "脸",
+    "pinyin": "liǎn",
+    "meaning": "face",
+    "hsk": 3
+  },
+  {
+    "chinese": "了解",
+    "pinyin": "liǎo jiě",
+    "meaning": "to understand; to realize",
+    "hsk": 3
+  },
+  {
+    "chinese": "历史",
+    "pinyin": "lì shǐ",
+    "meaning": "history",
+    "hsk": 3
+  },
+  {
+    "chinese": "离开",
+    "pinyin": "lí kāi",
+    "meaning": "to depart; to leave",
+    "hsk": 3
+  },
+  {
+    "chinese": "老",
+    "pinyin": "lǎo",
+    "meaning": "prefix used before the surname of a person or a numeral indicating the order of birth of the children in a family or to indicate affection or familiarity",
+    "hsk": 3
+  },
+  {
+    "chinese": "礼物",
+    "pinyin": "lǐ wù",
+    "meaning": "gift; present",
+    "hsk": 3
+  },
+  {
+    "chinese": "明白",
+    "pinyin": "míng bai",
+    "meaning": "clear; obvious",
+    "hsk": 3
+  },
+  {
+    "chinese": "万",
+    "pinyin": "mò",
+    "meaning": "used in 俟",
+    "hsk": 3
+  },
+  {
+    "chinese": "马上",
+    "pinyin": "mǎ shàng",
+    "meaning": "at once; right away",
+    "hsk": 3
+  },
+  {
+    "chinese": "满意",
+    "pinyin": "mǎn yì",
+    "meaning": "satisfied; pleased",
+    "hsk": 3
+  },
+  {
+    "chinese": "年轻",
+    "pinyin": "nián qīng",
+    "meaning": "young",
+    "hsk": 3
+  },
+  {
+    "chinese": "拿",
+    "pinyin": "ná",
+    "meaning": "old variant of 拿",
+    "hsk": 3
+  },
+  {
+    "chinese": "难",
+    "pinyin": "nán",
+    "meaning": "difficult (to...); problem",
+    "hsk": 3
+  },
+  {
+    "chinese": "努力",
+    "pinyin": "nǔ lì",
+    "meaning": "to make an effort; to try hard; to strive; hard-working; conscientious",
+    "hsk": 3
+  },
+  {
+    "chinese": "奇怪",
+    "pinyin": "qí guài",
+    "meaning": "strange; odd",
+    "hsk": 3
+  },
+  {
+    "chinese": "其实",
+    "pinyin": "qí shí",
+    "meaning": "actually; in fact; really",
+    "hsk": 3
+  },
+  {
+    "chinese": "其他",
+    "pinyin": "qí tā",
+    "meaning": "other; (sth or sb) else",
+    "hsk": 3
+  },
+  {
+    "chinese": "清楚",
+    "pinyin": "qīng chu",
+    "meaning": "clear; distinct",
+    "hsk": 3
+  },
+  {
+    "chinese": "然后",
+    "pinyin": "rán hòu",
+    "meaning": "then; after that; afterwards",
+    "hsk": 3
+  },
+  {
+    "chinese": "认为",
+    "pinyin": "rèn wéi",
+    "meaning": "to believe; to think; to consider; to feel",
+    "hsk": 3
+  },
+  {
+    "chinese": "认真",
+    "pinyin": "rèn zhēn",
+    "meaning": "conscientious; earnest",
+    "hsk": 3
+  },
+  {
+    "chinese": "容易",
+    "pinyin": "róng yì",
+    "meaning": "easy; straightforward; likely; liable to; apt to",
+    "hsk": 3
+  },
+  {
+    "chinese": "如果",
+    "pinyin": "rú guǒ",
+    "meaning": "if; in case",
+    "hsk": 3
+  },
+  {
+    "chinese": "水平",
+    "pinyin": "shuǐ píng",
+    "meaning": "level (of achievement etc); standard",
+    "hsk": 3
+  },
+  {
+    "chinese": "世界",
+    "pinyin": "shì jiè",
+    "meaning": "world",
+    "hsk": 3
+  },
+  {
+    "chinese": "树",
+    "pinyin": "shù",
+    "meaning": "tree; to cultivate",
+    "hsk": 3
+  },
+  {
+    "chinese": "声音",
+    "pinyin": "shēng yīn",
+    "meaning": "voice; sound",
+    "hsk": 3
+  },
+  {
+    "chinese": "使",
+    "pinyin": "shǐ",
+    "meaning": "to make; to cause",
+    "hsk": 3
+  },
+  {
+    "chinese": "虽然",
+    "pinyin": "suī rán",
+    "meaning": "although; even though (often used correlatively with 是 or 是 etc)",
+    "hsk": 3
+  },
+  {
+    "chinese": "司机",
+    "pinyin": "sī jī",
+    "meaning": "chauffeur; driver",
+    "hsk": 3
+  },
+  {
+    "chinese": "条",
+    "pinyin": "tiáo",
+    "meaning": "strip; item",
+    "hsk": 3
+  },
+  {
+    "chinese": "腿",
+    "pinyin": "tuǐ",
+    "meaning": "leg",
+    "hsk": 3
+  },
+  {
+    "chinese": "特别",
+    "pinyin": "tè bié",
+    "meaning": "unusual; special; very; especially; particularly",
+    "hsk": 3
+  },
+  {
+    "chinese": "疼",
+    "pinyin": "téng",
+    "meaning": "(it) hurts; sore; to love dearly",
+    "hsk": 3
+  },
+  {
+    "chinese": "提高",
+    "pinyin": "tí gāo",
+    "meaning": "to raise; to increase",
+    "hsk": 3
+  },
+  {
+    "chinese": "同意",
+    "pinyin": "tóng yì",
+    "meaning": "to agree; to consent",
+    "hsk": 3
+  },
+  {
+    "chinese": "头发",
+    "pinyin": "tóu fa",
+    "meaning": "hair (on the head)",
+    "hsk": 3
+  },
+  {
+    "chinese": "突然",
+    "pinyin": "tū rán",
+    "meaning": "sudden; abrupt; unexpected",
+    "hsk": 3
+  },
+  {
+    "chinese": "忘记",
+    "pinyin": "wàng jì",
+    "meaning": "to forget",
+    "hsk": 3
+  },
+  {
+    "chinese": "完成",
+    "pinyin": "wán chéng",
+    "meaning": "to complete; to accomplish",
+    "hsk": 3
+  },
+  {
+    "chinese": "位",
+    "pinyin": "wèi",
+    "meaning": "position; location",
+    "hsk": 3
+  },
+  {
+    "chinese": "为了",
+    "pinyin": "wèi le",
+    "meaning": "for; for the purpose of; in order to",
+    "hsk": 3
+  },
+  {
+    "chinese": "为什么",
+    "pinyin": "wèi shén me",
+    "meaning": "why?; for what reason?",
+    "hsk": 3
+  },
+  {
+    "chinese": "文化",
+    "pinyin": "wén huà",
+    "meaning": "culture; civilization",
+    "hsk": 3
+  },
+  {
+    "chinese": "像",
+    "pinyin": "xiàng",
+    "meaning": "to resemble; to be like",
+    "hsk": 3
+  },
+  {
+    "chinese": "鞋",
+    "pinyin": "xié",
+    "meaning": "shoe",
+    "hsk": 3
+  },
+  {
+    "chinese": "先",
+    "pinyin": "xiān",
+    "meaning": "early; prior",
+    "hsk": 3
+  },
+  {
+    "chinese": "相信",
+    "pinyin": "xiāng xìn",
+    "meaning": "to be convinced (that sth is true); to believe; to accept sth as true",
+    "hsk": 3
+  },
+  {
+    "chinese": "小心",
+    "pinyin": "xiǎo xīn",
+    "meaning": "to be careful; to take care",
+    "hsk": 3
+  },
+  {
+    "chinese": "选择",
+    "pinyin": "xuǎn zé",
+    "meaning": "to select; to pick",
+    "hsk": 3
+  },
+  {
+    "chinese": "信",
+    "pinyin": "xìn",
+    "meaning": "letter; mail",
+    "hsk": 3
+  },
+  {
+    "chinese": "兴趣",
+    "pinyin": "xìng qù",
+    "meaning": "interest (desire to know about sth); interest (thing in which one is interested); hobby",
+    "hsk": 3
+  },
+  {
+    "chinese": "习惯",
+    "pinyin": "xí guàn",
+    "meaning": "habit; custom",
+    "hsk": 3
+  },
+  {
+    "chinese": "新闻",
+    "pinyin": "xīn wén",
+    "meaning": "news",
+    "hsk": 3
+  },
+  {
+    "chinese": "需要",
+    "pinyin": "xū yào",
+    "meaning": "to need; to want; to demand; to require; needs",
+    "hsk": 3
+  },
+  {
+    "chinese": "愿意",
+    "pinyin": "yuàn yì",
+    "meaning": "to wish; to want",
+    "hsk": 3
+  },
+  {
+    "chinese": "银行",
+    "pinyin": "yín háng",
+    "meaning": "bank",
+    "hsk": 3
+  },
+  {
+    "chinese": "用",
+    "pinyin": "yòng",
+    "meaning": "to use; to employ",
+    "hsk": 3
+  },
+  {
+    "chinese": "又",
+    "pinyin": "yòu",
+    "meaning": "(once) again; also",
+    "hsk": 3
+  },
+  {
+    "chinese": "游戏",
+    "pinyin": "yóu xì",
+    "meaning": "game; to play",
+    "hsk": 3
+  },
+  {
+    "chinese": "遇到",
+    "pinyin": "yù dào",
+    "meaning": "to meet; to run into; to come across",
+    "hsk": 3
+  },
+  {
+    "chinese": "要求",
+    "pinyin": "yāo qiú",
+    "meaning": "to request; to require",
+    "hsk": 3
+  },
+  {
+    "chinese": "一边",
+    "pinyin": "yī biān",
+    "meaning": "one side; either side",
+    "hsk": 3
+  },
+  {
+    "chinese": "一般",
+    "pinyin": "yī bān",
+    "meaning": "same; ordinary",
+    "hsk": 3
+  },
+  {
+    "chinese": "一定",
+    "pinyin": "yī dìng",
+    "meaning": "surely; certainly",
+    "hsk": 3
+  },
+  {
+    "chinese": "一样",
+    "pinyin": "yī yàng",
+    "meaning": "same; like",
+    "hsk": 3
+  },
+  {
+    "chinese": "一直",
+    "pinyin": "yī zhí",
+    "meaning": "straight (in a straight line); continuously; always; all the way through",
+    "hsk": 3
+  },
+  {
+    "chinese": "音乐",
+    "pinyin": "yīn yuè",
+    "meaning": "music",
+    "hsk": 3
+  },
+  {
+    "chinese": "应该",
+    "pinyin": "yīng gāi",
+    "meaning": "ought to; should",
+    "hsk": 3
+  },
+  {
+    "chinese": "以后",
+    "pinyin": "yǐ hòu",
+    "meaning": "after; later",
+    "hsk": 3
+  },
+  {
+    "chinese": "以前",
+    "pinyin": "yǐ qián",
+    "meaning": "before; formerly",
+    "hsk": 3
+  },
+  {
+    "chinese": "以为",
+    "pinyin": "yǐ wéi",
+    "meaning": "to think (i.e. to take it to be true that ...) (Usually there is an implication that the notion is mistaken – except when expressing one's own current opinion.)",
+    "hsk": 3
+  },
+  {
+    "chinese": "影响",
+    "pinyin": "yǐng xiǎng",
+    "meaning": "influence; effect",
+    "hsk": 3
+  },
+  {
+    "chinese": "站",
+    "pinyin": "zhàn",
+    "meaning": "station; to stand",
+    "hsk": 3
+  },
+  {
+    "chinese": "照顾",
+    "pinyin": "zhào gu",
+    "meaning": "to take care of; to show consideration",
+    "hsk": 3
+  },
+  {
+    "chinese": "照片",
+    "pinyin": "zhào piàn",
+    "meaning": "photograph; picture",
+    "hsk": 3
+  },
+  {
+    "chinese": "重要",
+    "pinyin": "zhòng yào",
+    "meaning": "important; significant",
+    "hsk": 3
+  },
+  {
+    "chinese": "注意",
+    "pinyin": "zhù yì",
+    "meaning": "to take note of; to pay attention to",
+    "hsk": 3
+  },
+  {
+    "chinese": "中间",
+    "pinyin": "zhōng jiān",
+    "meaning": "the middle; the inside; in the middle; within; between; among",
+    "hsk": 3
+  },
+  {
+    "chinese": "终于",
+    "pinyin": "zhōng yú",
+    "meaning": "at last; in the end",
+    "hsk": 3
+  },
+  {
+    "chinese": "周末",
+    "pinyin": "zhōu mò",
+    "meaning": "weekend",
+    "hsk": 3
+  },
+  {
+    "chinese": "只",
+    "pinyin": "zhǐ",
+    "meaning": "only; merely",
+    "hsk": 3
+  },
+  {
+    "chinese": "种",
+    "pinyin": "zhǒng",
+    "meaning": "seed; species",
+    "hsk": 3
+  },
+  {
+    "chinese": "主要",
+    "pinyin": "zhǔ yào",
+    "meaning": "main; principal",
+    "hsk": 3
+  },
+  {
+    "chinese": "最近",
+    "pinyin": "zuì jìn",
+    "meaning": "recently; soon",
+    "hsk": 3
+  },
+  {
+    "chinese": "作用",
+    "pinyin": "zuò yòng",
+    "meaning": "to act on; to affect",
+    "hsk": 3
+  },
+  {
+    "chinese": "自己",
+    "pinyin": "zì jǐ",
+    "meaning": "oneself; one's own",
+    "hsk": 3
+  },
+  {
+    "chinese": "总是",
+    "pinyin": "zǒng shì",
+    "meaning": "always",
+    "hsk": 3
+  },
+  {
     "chinese": "爱好",
     "pinyin": "àihào",
     "meaning": "hobby",
+    "hsk": 3
+  },
+  {
+    "chinese": "饿",
+    "pinyin": "è",
+    "meaning": "to be hungry; hungry",
+    "hsk": 3
+  },
+  {
+    "chinese": "而且",
+    "pinyin": "ér qiě",
+    "meaning": "(not only ...) but also; moreover",
     "hsk": 3
   },
   {
@@ -898,6 +2908,18 @@
     "pinyin": "ǎi",
     "meaning": "short (height)",
     "hsk": 3
+  },
+  {
+    "chinese": "满",
+    "pinyin": "Mǎn",
+    "meaning": "Manchu ethnic group",
+    "hsk": 4
+  },
+  {
+    "chinese": "台",
+    "pinyin": "Tái",
+    "meaning": "Taiwan (abbr.)",
+    "hsk": 4
   },
   {
     "chinese": "遍",
@@ -945,6 +2967,12 @@
     "chinese": "抱",
     "pinyin": "bào",
     "meaning": "to hug; to hold",
+    "hsk": 4
+  },
+  {
+    "chinese": "报道",
+    "pinyin": "bào dào",
+    "meaning": "to report (news); report",
     "hsk": 4
   },
   {
@@ -1017,6 +3045,12 @@
     "chinese": "不过",
     "pinyin": "búguò",
     "meaning": "but; however",
+    "hsk": 4
+  },
+  {
+    "chinese": "包括",
+    "pinyin": "bāo kuò",
+    "meaning": "to comprise; to include",
     "hsk": 4
   },
   {
@@ -1170,6 +3204,876 @@
     "hsk": 4
   },
   {
+    "chinese": "底",
+    "pinyin": "de",
+    "meaning": "(equivalent to 的 as possessive particle)",
+    "hsk": 4
+  },
+  {
+    "chinese": "掉",
+    "pinyin": "diào",
+    "meaning": "to fall; to drop",
+    "hsk": 4
+  },
+  {
+    "chinese": "调查",
+    "pinyin": "diào chá",
+    "meaning": "investigation; inquiry",
+    "hsk": 4
+  },
+  {
+    "chinese": "对",
+    "pinyin": "duì",
+    "meaning": "right; correct; towards; at; for",
+    "hsk": 4
+  },
+  {
+    "chinese": "代表",
+    "pinyin": "dài biǎo",
+    "meaning": "representative; delegate",
+    "hsk": 4
+  },
+  {
+    "chinese": "到底",
+    "pinyin": "dào dǐ",
+    "meaning": "finally; in the end",
+    "hsk": 4
+  },
+  {
+    "chinese": "地址",
+    "pinyin": "dì zhǐ",
+    "meaning": "address",
+    "hsk": 4
+  },
+  {
+    "chinese": "当",
+    "pinyin": "dāng",
+    "meaning": "(onom.) dong; ding dong (bell)",
+    "hsk": 4
+  },
+  {
+    "chinese": "当时",
+    "pinyin": "dāng shí",
+    "meaning": "then; at that time",
+    "hsk": 4
+  },
+  {
+    "chinese": "等",
+    "pinyin": "děng",
+    "meaning": "class; rank",
+    "hsk": 4
+  },
+  {
+    "chinese": "放弃",
+    "pinyin": "fàng qì",
+    "meaning": "to renounce; to abandon; to give up",
+    "hsk": 4
+  },
+  {
+    "chinese": "份",
+    "pinyin": "fèn",
+    "meaning": "classifier for gifts, newspaper, magazine, papers, reports, contracts etc; variant of 分",
+    "hsk": 4
+  },
+  {
+    "chinese": "父亲",
+    "pinyin": "fù qīn",
+    "meaning": "father; also pr. [fù qin]",
+    "hsk": 4
+  },
+  {
+    "chinese": "负责",
+    "pinyin": "fù zé",
+    "meaning": "to be in charge of; to take responsibility for",
+    "hsk": 4
+  },
+  {
+    "chinese": "发",
+    "pinyin": "fā",
+    "meaning": "to send out; to show (one's feeling)",
+    "hsk": 4
+  },
+  {
+    "chinese": "发生",
+    "pinyin": "fā shēng",
+    "meaning": "to happen; to occur; to take place; to break out",
+    "hsk": 4
+  },
+  {
+    "chinese": "发展",
+    "pinyin": "fā zhǎn",
+    "meaning": "development; growth",
+    "hsk": 4
+  },
+  {
+    "chinese": "方法",
+    "pinyin": "fāng fǎ",
+    "meaning": "method; way",
+    "hsk": 4
+  },
+  {
+    "chinese": "方面",
+    "pinyin": "fāng miàn",
+    "meaning": "respect; aspect",
+    "hsk": 4
+  },
+  {
+    "chinese": "法律",
+    "pinyin": "fǎ lǜ",
+    "meaning": "law",
+    "hsk": 4
+  },
+  {
+    "chinese": "挂",
+    "pinyin": "guà",
+    "meaning": "to hang or suspend (from a hook etc); to hang up (the phone)",
+    "hsk": 4
+  },
+  {
+    "chinese": "过程",
+    "pinyin": "guò chéng",
+    "meaning": "course of events; process",
+    "hsk": 4
+  },
+  {
+    "chinese": "关键",
+    "pinyin": "guān jiàn",
+    "meaning": "crucial point; crux",
+    "hsk": 4
+  },
+  {
+    "chinese": "光",
+    "pinyin": "guāng",
+    "meaning": "light; ray; bright; shiny",
+    "hsk": 4
+  },
+  {
+    "chinese": "规定",
+    "pinyin": "guī dìng",
+    "meaning": "to stipulate; to specify; to prescribe; to fix (a price); to set (a quota)",
+    "hsk": 4
+  },
+  {
+    "chinese": "广告",
+    "pinyin": "guǎng gào",
+    "meaning": "to advertise; a commercial",
+    "hsk": 4
+  },
+  {
+    "chinese": "各",
+    "pinyin": "gè",
+    "meaning": "each; every",
+    "hsk": 4
+  },
+  {
+    "chinese": "够",
+    "pinyin": "gòu",
+    "meaning": "enough (sufficient); enough (too much)",
+    "hsk": 4
+  },
+  {
+    "chinese": "干",
+    "pinyin": "gān",
+    "meaning": "old variant of 干",
+    "hsk": 4
+  },
+  {
+    "chinese": "刚刚",
+    "pinyin": "gāng gang",
+    "meaning": "just recently; just a moment ago",
+    "hsk": 4
+  },
+  {
+    "chinese": "假",
+    "pinyin": "gēi",
+    "meaning": "used in 掰",
+    "hsk": 4
+  },
+  {
+    "chinese": "改变",
+    "pinyin": "gǎi biàn",
+    "meaning": "to change; to alter",
+    "hsk": 4
+  },
+  {
+    "chinese": "感觉",
+    "pinyin": "gǎn jué",
+    "meaning": "feeling; impression; sensation; to feel; to perceive",
+    "hsk": 4
+  },
+  {
+    "chinese": "感谢",
+    "pinyin": "gǎn xiè",
+    "meaning": "(express) thanks; gratitude",
+    "hsk": 4
+  },
+  {
+    "chinese": "获得",
+    "pinyin": "huò dé",
+    "meaning": "to obtain; to receive; to get",
+    "hsk": 4
+  },
+  {
+    "chinese": "活动",
+    "pinyin": "huó dòng",
+    "meaning": "to exercise; to move about",
+    "hsk": 4
+  },
+  {
+    "chinese": "行",
+    "pinyin": "háng",
+    "meaning": "row; line",
+    "hsk": 4
+  },
+  {
+    "chinese": "后来",
+    "pinyin": "hòu lái",
+    "meaning": "afterwards; later; newly arrived",
+    "hsk": 4
+  },
+  {
+    "chinese": "好像",
+    "pinyin": "hǎo xiàng",
+    "meaning": "as if; to seem like",
+    "hsk": 4
+  },
+  {
+    "chinese": "坚持",
+    "pinyin": "jiān chí",
+    "meaning": "to persevere with; to persist in",
+    "hsk": 4
+  },
+  {
+    "chinese": "交",
+    "pinyin": "jiāo",
+    "meaning": "to hand over; to deliver",
+    "hsk": 4
+  },
+  {
+    "chinese": "结果",
+    "pinyin": "jiē guǒ",
+    "meaning": "to bear fruit",
+    "hsk": 4
+  },
+  {
+    "chinese": "接受",
+    "pinyin": "jiē shòu",
+    "meaning": "to accept; to receive",
+    "hsk": 4
+  },
+  {
+    "chinese": "解释",
+    "pinyin": "jiě shì",
+    "meaning": "explanation; to explain",
+    "hsk": 4
+  },
+  {
+    "chinese": "计划",
+    "pinyin": "jì huà",
+    "meaning": "plan; project",
+    "hsk": 4
+  },
+  {
+    "chinese": "技术",
+    "pinyin": "jì shù",
+    "meaning": "technology; technique; skill",
+    "hsk": 4
+  },
+  {
+    "chinese": "继续",
+    "pinyin": "jì xù",
+    "meaning": "to continue; to proceed with",
+    "hsk": 4
+  },
+  {
+    "chinese": "记者",
+    "pinyin": "jì zhě",
+    "meaning": "reporter; journalist",
+    "hsk": 4
+  },
+  {
+    "chinese": "进行",
+    "pinyin": "jìn xíng",
+    "meaning": "to advance; to conduct",
+    "hsk": 4
+  },
+  {
+    "chinese": "即使",
+    "pinyin": "jí shǐ",
+    "meaning": "even if; even though",
+    "hsk": 4
+  },
+  {
+    "chinese": "经历",
+    "pinyin": "jīng lì",
+    "meaning": "experience; to experience",
+    "hsk": 4
+  },
+  {
+    "chinese": "精神",
+    "pinyin": "jīng shén",
+    "meaning": "spirit; mind",
+    "hsk": 4
+  },
+  {
+    "chinese": "尽管",
+    "pinyin": "jǐn guǎn",
+    "meaning": "despite; although",
+    "hsk": 4
+  },
+  {
+    "chinese": "紧张",
+    "pinyin": "jǐn zhāng",
+    "meaning": "nervous; keyed up",
+    "hsk": 4
+  },
+  {
+    "chinese": "警察",
+    "pinyin": "jǐng chá",
+    "meaning": "police; police officer",
+    "hsk": 4
+  },
+  {
+    "chinese": "困难",
+    "pinyin": "kùn nan",
+    "meaning": "difficult; challenging",
+    "hsk": 4
+  },
+  {
+    "chinese": "可是",
+    "pinyin": "kě shì",
+    "meaning": "but; however; (used for emphasis) indeed",
+    "hsk": 4
+  },
+  {
+    "chinese": "肯定",
+    "pinyin": "kěn dìng",
+    "meaning": "to be certain; to be positive",
+    "hsk": 4
+  },
+  {
+    "chinese": "考虑",
+    "pinyin": "kǎo lǜ",
+    "meaning": "to think over; to consider",
+    "hsk": 4
+  },
+  {
+    "chinese": "联系",
+    "pinyin": "lián xì",
+    "meaning": "variant of 联系",
+    "hsk": 4
+  },
+  {
+    "chinese": "留",
+    "pinyin": "liú",
+    "meaning": "old variant of 留",
+    "hsk": 4
+  },
+  {
+    "chinese": "另外",
+    "pinyin": "lìng wài",
+    "meaning": "additional; in addition",
+    "hsk": 4
+  },
+  {
+    "chinese": "弄",
+    "pinyin": "lòng",
+    "meaning": "lane; alley",
+    "hsk": 4
+  },
+  {
+    "chinese": "拉",
+    "pinyin": "lā",
+    "meaning": "to pull; to play (a bowed instrument)",
+    "hsk": 4
+  },
+  {
+    "chinese": "理解",
+    "pinyin": "lǐ jiě",
+    "meaning": "to comprehend; to understand",
+    "hsk": 4
+  },
+  {
+    "chinese": "梦",
+    "pinyin": "mèng",
+    "meaning": "dream; (bound form) to dream",
+    "hsk": 4
+  },
+  {
+    "chinese": "母亲",
+    "pinyin": "mǔ qīn",
+    "meaning": "mother; also pr. [mǔ qin]",
+    "hsk": 4
+  },
+  {
+    "chinese": "难道",
+    "pinyin": "nán dào",
+    "meaning": "don't tell me ...; could it be that...?",
+    "hsk": 4
+  },
+  {
+    "chinese": "内",
+    "pinyin": "nèi",
+    "meaning": "inside; inner",
+    "hsk": 4
+  },
+  {
+    "chinese": "能力",
+    "pinyin": "néng lì",
+    "meaning": "capability; ability",
+    "hsk": 4
+  },
+  {
+    "chinese": "陪",
+    "pinyin": "péi",
+    "meaning": "to accompany; to keep sb company",
+    "hsk": 4
+  },
+  {
+    "chinese": "全部",
+    "pinyin": "quán bù",
+    "meaning": "whole; all",
+    "hsk": 4
+  },
+  {
+    "chinese": "却",
+    "pinyin": "què",
+    "meaning": "old variant of 却",
+    "hsk": 4
+  },
+  {
+    "chinese": "确实",
+    "pinyin": "què shí",
+    "meaning": "indeed; really",
+    "hsk": 4
+  },
+  {
+    "chinese": "其中",
+    "pinyin": "qí zhōng",
+    "meaning": "among; in",
+    "hsk": 4
+  },
+  {
+    "chinese": "情况",
+    "pinyin": "qíng kuàng",
+    "meaning": "circumstances; state of affairs; situation",
+    "hsk": 4
+  },
+  {
+    "chinese": "群",
+    "pinyin": "qún",
+    "meaning": "variant of 群",
+    "hsk": 4
+  },
+  {
+    "chinese": "起来",
+    "pinyin": "qǐ lai",
+    "meaning": "to stand up; to get up",
+    "hsk": 4
+  },
+  {
+    "chinese": "任何",
+    "pinyin": "rèn hé",
+    "meaning": "any; whatever",
+    "hsk": 4
+  },
+  {
+    "chinese": "任务",
+    "pinyin": "rèn wu",
+    "meaning": "mission; assignment; task; duty; role",
+    "hsk": 4
+  },
+  {
+    "chinese": "仍然",
+    "pinyin": "réng rán",
+    "meaning": "still; as before; yet",
+    "hsk": 4
+  },
+  {
+    "chinese": "说明",
+    "pinyin": "shuō míng",
+    "meaning": "to explain; to illustrate",
+    "hsk": 4
+  },
+  {
+    "chinese": "社会",
+    "pinyin": "shè huì",
+    "meaning": "society",
+    "hsk": 4
+  },
+  {
+    "chinese": "甚至",
+    "pinyin": "shèn zhì",
+    "meaning": "even; so much so that",
+    "hsk": 4
+  },
+  {
+    "chinese": "试",
+    "pinyin": "shì",
+    "meaning": "to test; to try",
+    "hsk": 4
+  },
+  {
+    "chinese": "十分",
+    "pinyin": "shí fēn",
+    "meaning": "very; completely",
+    "hsk": 4
+  },
+  {
+    "chinese": "受到",
+    "pinyin": "shòu dào",
+    "meaning": "to receive (praise, an education, punishment etc); to be ...ed (praised, educated, punished etc)",
+    "hsk": 4
+  },
+  {
+    "chinese": "深",
+    "pinyin": "shēn",
+    "meaning": "old variant of 深",
+    "hsk": 4
+  },
+  {
+    "chinese": "生活",
+    "pinyin": "shēng huó",
+    "meaning": "to live; life",
+    "hsk": 4
+  },
+  {
+    "chinese": "生命",
+    "pinyin": "shēng mìng",
+    "meaning": "life (as the characteristic of living beings); living being; creature",
+    "hsk": 4
+  },
+  {
+    "chinese": "省",
+    "pinyin": "shěng",
+    "meaning": "to save; to economize; to be frugal; to omit; to delete; to leave out",
+    "hsk": 4
+  },
+  {
+    "chinese": "收",
+    "pinyin": "shōu",
+    "meaning": "to receive; to accept",
+    "hsk": 4
+  },
+  {
+    "chinese": "使用",
+    "pinyin": "shǐ yòng",
+    "meaning": "to use; to employ",
+    "hsk": 4
+  },
+  {
+    "chinese": "首先",
+    "pinyin": "shǒu xiān",
+    "meaning": "first (of all); in the first place",
+    "hsk": 4
+  },
+  {
+    "chinese": "算",
+    "pinyin": "suàn",
+    "meaning": "to regard as; to figure",
+    "hsk": 4
+  },
+  {
+    "chinese": "所有",
+    "pinyin": "suǒ yǒu",
+    "meaning": "all; to have; to possess; to own",
+    "hsk": 4
+  },
+  {
+    "chinese": "死",
+    "pinyin": "sǐ",
+    "meaning": "to die; impassable",
+    "hsk": 4
+  },
+  {
+    "chinese": "条件",
+    "pinyin": "tiáo jiàn",
+    "meaning": "condition; circumstance; term; factor; requirement; prerequisite; qualification",
+    "hsk": 4
+  },
+  {
+    "chinese": "提供",
+    "pinyin": "tí gōng",
+    "meaning": "to offer; to supply",
+    "hsk": 4
+  },
+  {
+    "chinese": "通过",
+    "pinyin": "tōng guò",
+    "meaning": "to pass through; to get through; to adopt (a resolution); to pass (legislation)",
+    "hsk": 4
+  },
+  {
+    "chinese": "讨论",
+    "pinyin": "tǎo lùn",
+    "meaning": "to discuss; to talk over",
+    "hsk": 4
+  },
+  {
+    "chinese": "挺",
+    "pinyin": "tǐng",
+    "meaning": "straight; erect",
+    "hsk": 4
+  },
+  {
+    "chinese": "完全",
+    "pinyin": "wán quán",
+    "meaning": "complete; whole; totally; entirely",
+    "hsk": 4
+  },
+  {
+    "chinese": "无",
+    "pinyin": "wú",
+    "meaning": "not to have; no",
+    "hsk": 4
+  },
+  {
+    "chinese": "无论",
+    "pinyin": "wú lùn",
+    "meaning": "no matter what or how; regardless of whether...",
+    "hsk": 4
+  },
+  {
+    "chinese": "往",
+    "pinyin": "wǎng",
+    "meaning": "to go (in a direction); to",
+    "hsk": 4
+  },
+  {
+    "chinese": "消息",
+    "pinyin": "xiāo xi",
+    "meaning": "news; information",
+    "hsk": 4
+  },
+  {
+    "chinese": "血",
+    "pinyin": "xuè",
+    "meaning": "blood; colloquial pr. [xiě]",
+    "hsk": 4
+  },
+  {
+    "chinese": "幸福",
+    "pinyin": "xìng fú",
+    "meaning": "happiness; happy",
+    "hsk": 4
+  },
+  {
+    "chinese": "许多",
+    "pinyin": "xǔ duō",
+    "meaning": "many; a lot of",
+    "hsk": 4
+  },
+  {
+    "chinese": "呀",
+    "pinyin": "ya",
+    "meaning": "(particle equivalent to 啊 after a vowel, expressing surprise or doubt)",
+    "hsk": 4
+  },
+  {
+    "chinese": "原来",
+    "pinyin": "yuán lái",
+    "meaning": "original; former",
+    "hsk": 4
+  },
+  {
+    "chinese": "原因",
+    "pinyin": "yuán yīn",
+    "meaning": "cause; origin",
+    "hsk": 4
+  },
+  {
+    "chinese": "样子",
+    "pinyin": "yàng zi",
+    "meaning": "appearance; manner",
+    "hsk": 4
+  },
+  {
+    "chinese": "严重",
+    "pinyin": "yán zhòng",
+    "meaning": "grave; serious",
+    "hsk": 4
+  },
+  {
+    "chinese": "意见",
+    "pinyin": "yì jiàn",
+    "meaning": "idea; opinion",
+    "hsk": 4
+  },
+  {
+    "chinese": "赢",
+    "pinyin": "yíng",
+    "meaning": "to beat; to win",
+    "hsk": 4
+  },
+  {
+    "chinese": "由",
+    "pinyin": "yóu",
+    "meaning": "to follow; from",
+    "hsk": 4
+  },
+  {
+    "chinese": "由于",
+    "pinyin": "yóu yú",
+    "meaning": "due to; as a result of",
+    "hsk": 4
+  },
+  {
+    "chinese": "与",
+    "pinyin": "yú",
+    "meaning": "variant of 欤",
+    "hsk": 4
+  },
+  {
+    "chinese": "于是",
+    "pinyin": "yú shì",
+    "meaning": "thereupon; as a result; consequently; thus; hence",
+    "hsk": 4
+  },
+  {
+    "chinese": "压力",
+    "pinyin": "yā lì",
+    "meaning": "pressure",
+    "hsk": 4
+  },
+  {
+    "chinese": "也许",
+    "pinyin": "yě xǔ",
+    "meaning": "perhaps; maybe",
+    "hsk": 4
+  },
+  {
+    "chinese": "一切",
+    "pinyin": "yī qiè",
+    "meaning": "everything; every",
+    "hsk": 4
+  },
+  {
+    "chinese": "因此",
+    "pinyin": "yīn cǐ",
+    "meaning": "thus; consequently; as a result",
+    "hsk": 4
+  },
+  {
+    "chinese": "以",
+    "pinyin": "yǐ",
+    "meaning": "old variant of 以",
+    "hsk": 4
+  },
+  {
+    "chinese": "永远",
+    "pinyin": "yǒng yuǎn",
+    "meaning": "forever; eternal",
+    "hsk": 4
+  },
+  {
+    "chinese": "专业",
+    "pinyin": "zhuān yè",
+    "meaning": "specialty; specialized field",
+    "hsk": 4
+  },
+  {
+    "chinese": "正常",
+    "pinyin": "zhèng cháng",
+    "meaning": "regular; normal",
+    "hsk": 4
+  },
+  {
+    "chinese": "证明",
+    "pinyin": "zhèng míng",
+    "meaning": "proof; certificate",
+    "hsk": 4
+  },
+  {
+    "chinese": "正确",
+    "pinyin": "zhèng què",
+    "meaning": "correct; sound; right; proper",
+    "hsk": 4
+  },
+  {
+    "chinese": "至少",
+    "pinyin": "zhì shǎo",
+    "meaning": "at least; (to say the) least",
+    "hsk": 4
+  },
+  {
+    "chinese": "值得",
+    "pinyin": "zhí de",
+    "meaning": "to be worth; to deserve",
+    "hsk": 4
+  },
+  {
+    "chinese": "直接",
+    "pinyin": "zhí jiē",
+    "meaning": "direct (opposite: indirect 间接); immediate",
+    "hsk": 4
+  },
+  {
+    "chinese": "真正",
+    "pinyin": "zhēn zhèng",
+    "meaning": "genuine; real; true; really; indeed",
+    "hsk": 4
+  },
+  {
+    "chinese": "之",
+    "pinyin": "zhī",
+    "meaning": "(possessive particle, literary equivalent of 的); him",
+    "hsk": 4
+  },
+  {
+    "chinese": "支持",
+    "pinyin": "zhī chí",
+    "meaning": "to be in favor of; to support",
+    "hsk": 4
+  },
+  {
+    "chinese": "指",
+    "pinyin": "zhǐ",
+    "meaning": "finger; to point at or to",
+    "hsk": 4
+  },
+  {
+    "chinese": "只要",
+    "pinyin": "zhǐ yào",
+    "meaning": "if only; so long as",
+    "hsk": 4
+  },
+  {
+    "chinese": "最后",
+    "pinyin": "zuì hòu",
+    "meaning": "final; last",
+    "hsk": 4
+  },
+  {
+    "chinese": "座",
+    "pinyin": "zuò",
+    "meaning": "seat; base",
+    "hsk": 4
+  },
+  {
+    "chinese": "嘴",
+    "pinyin": "zuǐ",
+    "meaning": "mouth; beak",
+    "hsk": 4
+  },
+  {
+    "chinese": "责任",
+    "pinyin": "zé rèn",
+    "meaning": "responsibility; blame",
+    "hsk": 4
+  },
+  {
+    "chinese": "自然",
+    "pinyin": "zì rán",
+    "meaning": "nature; natural",
+    "hsk": 4
+  },
+  {
+    "chinese": "组织",
+    "pinyin": "zǔ zhī",
+    "meaning": "to organize; organization",
+    "hsk": 4
+  },
+  {
     "chinese": "爱情",
     "pinyin": "àiqíng",
     "meaning": "romantic love",
@@ -1188,6 +4092,12 @@
     "hsk": 4
   },
   {
+    "chinese": "而",
+    "pinyin": "ér",
+    "meaning": "and; as well as",
+    "hsk": 4
+  },
+  {
     "chinese": "安排",
     "pinyin": "ānpái",
     "meaning": "to arrange",
@@ -1198,6 +4108,42 @@
     "pinyin": "ānquán",
     "meaning": "safe; safety",
     "hsk": 4
+  },
+  {
+    "chinese": "朝",
+    "pinyin": "Cháo",
+    "meaning": "abbr. for 朝鲜 Korea",
+    "hsk": 5
+  },
+  {
+    "chinese": "非",
+    "pinyin": "Fēi",
+    "meaning": "abbr. for 洲, Africa",
+    "hsk": 5
+  },
+  {
+    "chinese": "哈",
+    "pinyin": "Hā",
+    "meaning": "abbr. for 哈萨克斯坦, Kazakhstan; abbr. for 哈尔滨, Harbin",
+    "hsk": 5
+  },
+  {
+    "chinese": "克",
+    "pinyin": "Kè",
+    "meaning": "abbr. for 克罗地亚, Croatia; (Tw) abbr. for 克罗埃西亚, Croatia",
+    "hsk": 5
+  },
+  {
+    "chinese": "时代",
+    "pinyin": "Shí dài",
+    "meaning": "Time, US weekly news magazine",
+    "hsk": 5
+  },
+  {
+    "chinese": "直",
+    "pinyin": "Zhí",
+    "meaning": "Zhi (c. 2000 BC), fifth of the legendary Flame Emperors 帝 descended from Shennong 神农 Farmer God",
+    "hsk": 5
   },
   {
     "chinese": "便",
@@ -1266,6 +4212,12 @@
     "hsk": 5
   },
   {
+    "chinese": "棒",
+    "pinyin": "bàng",
+    "meaning": "stick; club",
+    "hsk": 5
+  },
+  {
     "chinese": "傍晚",
     "pinyin": "bàngwǎn",
     "meaning": "dusk; evening",
@@ -1329,6 +4281,18 @@
     "chinese": "必要",
     "pinyin": "bìyào",
     "meaning": "necessary",
+    "hsk": 5
+  },
+  {
+    "chinese": "不断",
+    "pinyin": "bù duàn",
+    "meaning": "unceasing; uninterrupted",
+    "hsk": 5
+  },
+  {
+    "chinese": "部门",
+    "pinyin": "bù mén",
+    "meaning": "department; branch",
     "hsk": 5
   },
   {
@@ -1434,9 +4398,855 @@
     "hsk": 5
   },
   {
+    "chinese": "比如",
+    "pinyin": "bǐ rú",
+    "meaning": "for example; for instance",
+    "hsk": 5
+  },
+  {
     "chinese": "比例",
     "pinyin": "bǐlì",
     "meaning": "proportion; ratio",
+    "hsk": 5
+  },
+  {
+    "chinese": "传统",
+    "pinyin": "chuán tǒng",
+    "meaning": "tradition; traditional",
+    "hsk": 5
+  },
+  {
+    "chinese": "承认",
+    "pinyin": "chéng rèn",
+    "meaning": "to admit; to concede",
+    "hsk": 5
+  },
+  {
+    "chinese": "重",
+    "pinyin": "chóng",
+    "meaning": "to repeat; repetition",
+    "hsk": 5
+  },
+  {
+    "chinese": "冲",
+    "pinyin": "chōng",
+    "meaning": "(of water) to dash against; to mix with water",
+    "hsk": 5
+  },
+  {
+    "chinese": "充满",
+    "pinyin": "chōng mǎn",
+    "meaning": "full of; brimming with",
+    "hsk": 5
+  },
+  {
+    "chinese": "产品",
+    "pinyin": "chǎn pǐn",
+    "meaning": "goods; merchandise",
+    "hsk": 5
+  },
+  {
+    "chinese": "产生",
+    "pinyin": "chǎn shēng",
+    "meaning": "to arise; to come into being; to come about",
+    "hsk": 5
+  },
+  {
+    "chinese": "处理",
+    "pinyin": "chǔ lǐ",
+    "meaning": "to handle; to deal with; to punish",
+    "hsk": 5
+  },
+  {
+    "chinese": "错误",
+    "pinyin": "cuò wù",
+    "meaning": "mistaken; false; wrong; error; mistake",
+    "hsk": 5
+  },
+  {
+    "chinese": "曾经",
+    "pinyin": "céng jīng",
+    "meaning": "once; already",
+    "hsk": 5
+  },
+  {
+    "chinese": "存在",
+    "pinyin": "cún zài",
+    "meaning": "to exist; to be",
+    "hsk": 5
+  },
+  {
+    "chinese": "参与",
+    "pinyin": "cān yù",
+    "meaning": "to participate (in sth)",
+    "hsk": 5
+  },
+  {
+    "chinese": "对方",
+    "pinyin": "duì fāng",
+    "meaning": "the other person; the other side; the other party",
+    "hsk": 5
+  },
+  {
+    "chinese": "对于",
+    "pinyin": "duì yú",
+    "meaning": "regarding; as far as (sth) is concerned; with regard to",
+    "hsk": 5
+  },
+  {
+    "chinese": "达到",
+    "pinyin": "dá dào",
+    "meaning": "to reach; to achieve; to attain",
+    "hsk": 5
+  },
+  {
+    "chinese": "地区",
+    "pinyin": "dì qū",
+    "meaning": "local; regional",
+    "hsk": 5
+  },
+  {
+    "chinese": "的确",
+    "pinyin": "dí què",
+    "meaning": "really; indeed",
+    "hsk": 5
+  },
+  {
+    "chinese": "提",
+    "pinyin": "dī",
+    "meaning": "used in 防 and 溜",
+    "hsk": 5
+  },
+  {
+    "chinese": "倒",
+    "pinyin": "dǎo",
+    "meaning": "to fall; to collapse; to lie horizontally; to fail; to go bankrupt",
+    "hsk": 5
+  },
+  {
+    "chinese": "导致",
+    "pinyin": "dǎo zhì",
+    "meaning": "to lead to; to create",
+    "hsk": 5
+  },
+  {
+    "chinese": "翻",
+    "pinyin": "fān",
+    "meaning": "to turn over; to flip over",
+    "hsk": 5
+  },
+  {
+    "chinese": "方式",
+    "pinyin": "fāng shì",
+    "meaning": "way; manner; style; mode; pattern",
+    "hsk": 5
+  },
+  {
+    "chinese": "分析",
+    "pinyin": "fēn xī",
+    "meaning": "to analyze; analysis",
+    "hsk": 5
+  },
+  {
+    "chinese": "反应",
+    "pinyin": "fǎn yìng",
+    "meaning": "to react; to respond",
+    "hsk": 5
+  },
+  {
+    "chinese": "冠军",
+    "pinyin": "guàn jūn",
+    "meaning": "champion",
+    "hsk": 5
+  },
+  {
+    "chinese": "个人",
+    "pinyin": "gè rén",
+    "meaning": "individual; personal",
+    "hsk": 5
+  },
+  {
+    "chinese": "更加",
+    "pinyin": "gèng jiā",
+    "meaning": "more (than sth else); even more",
+    "hsk": 5
+  },
+  {
+    "chinese": "根",
+    "pinyin": "gēn",
+    "meaning": "root; basis",
+    "hsk": 5
+  },
+  {
+    "chinese": "根本",
+    "pinyin": "gēn běn",
+    "meaning": "fundamental; basic",
+    "hsk": 5
+  },
+  {
+    "chinese": "感受",
+    "pinyin": "gǎn shòu",
+    "meaning": "to sense; perception",
+    "hsk": 5
+  },
+  {
+    "chinese": "搞",
+    "pinyin": "gǎo",
+    "meaning": "to do; to make",
+    "hsk": 5
+  },
+  {
+    "chinese": "恢复",
+    "pinyin": "huī fù",
+    "meaning": "to reinstate; to resume",
+    "hsk": 5
+  },
+  {
+    "chinese": "合作",
+    "pinyin": "hé zuò",
+    "meaning": "to cooperate; to collaborate",
+    "hsk": 5
+  },
+  {
+    "chinese": "价值",
+    "pinyin": "jià zhí",
+    "meaning": "value; worth",
+    "hsk": 5
+  },
+  {
+    "chinese": "建立",
+    "pinyin": "jiàn lì",
+    "meaning": "to establish; to set up",
+    "hsk": 5
+  },
+  {
+    "chinese": "建议",
+    "pinyin": "jiàn yì",
+    "meaning": "to propose; to suggest; to recommend; proposal; suggestion; recommendation",
+    "hsk": 5
+  },
+  {
+    "chinese": "救",
+    "pinyin": "jiù",
+    "meaning": "variant of 救",
+    "hsk": 5
+  },
+  {
+    "chinese": "家庭",
+    "pinyin": "jiā tíng",
+    "meaning": "family; household",
+    "hsk": 5
+  },
+  {
+    "chinese": "节",
+    "pinyin": "jiē",
+    "meaning": "see 节骨眼",
+    "hsk": 5
+  },
+  {
+    "chinese": "接着",
+    "pinyin": "jiē zhe",
+    "meaning": "to catch and hold on; to continue",
+    "hsk": 5
+  },
+  {
+    "chinese": "绝对",
+    "pinyin": "jué duì",
+    "meaning": "absolute; unconditional",
+    "hsk": 5
+  },
+  {
+    "chinese": "记录",
+    "pinyin": "jì lù",
+    "meaning": "to record; record (written account)",
+    "hsk": 5
+  },
+  {
+    "chinese": "集中",
+    "pinyin": "jí zhōng",
+    "meaning": "to concentrate; to centralize",
+    "hsk": 5
+  },
+  {
+    "chinese": "基本",
+    "pinyin": "jī běn",
+    "meaning": "basic; fundamental",
+    "hsk": 5
+  },
+  {
+    "chinese": "居然",
+    "pinyin": "jū rán",
+    "meaning": "unexpectedly; to one's surprise",
+    "hsk": 5
+  },
+  {
+    "chinese": "看来",
+    "pinyin": "kàn lai",
+    "meaning": "apparently; it seems that",
+    "hsk": 5
+  },
+  {
+    "chinese": "控制",
+    "pinyin": "kòng zhì",
+    "meaning": "to control",
+    "hsk": 5
+  },
+  {
+    "chinese": "开心",
+    "pinyin": "kāi xīn",
+    "meaning": "to feel happy; to rejoice",
+    "hsk": 5
+  },
+  {
+    "chinese": "颗",
+    "pinyin": "kē",
+    "meaning": "classifier for small spheres, pearls, corn grains, teeth, hearts, satellites etc",
+    "hsk": 5
+  },
+  {
+    "chinese": "空间",
+    "pinyin": "kōng jiān",
+    "meaning": "space; room; (fig.) scope; leeway",
+    "hsk": 5
+  },
+  {
+    "chinese": "来自",
+    "pinyin": "lái zì",
+    "meaning": "to come from (a place); From: (in email header)",
+    "hsk": 5
+  },
+  {
+    "chinese": "类",
+    "pinyin": "lèi",
+    "meaning": "kind; type",
+    "hsk": 5
+  },
+  {
+    "chinese": "力量",
+    "pinyin": "lì liang",
+    "meaning": "power; force",
+    "hsk": 5
+  },
+  {
+    "chinese": "利用",
+    "pinyin": "lì yòng",
+    "meaning": "to exploit; to make use of",
+    "hsk": 5
+  },
+  {
+    "chinese": "老板",
+    "pinyin": "lǎo bǎn",
+    "meaning": "variant of 老板",
+    "hsk": 5
+  },
+  {
+    "chinese": "理由",
+    "pinyin": "lǐ yóu",
+    "meaning": "reason; grounds",
+    "hsk": 5
+  },
+  {
+    "chinese": "领导",
+    "pinyin": "lǐng dǎo",
+    "meaning": "lead; leading",
+    "hsk": 5
+  },
+  {
+    "chinese": "面对",
+    "pinyin": "miàn duì",
+    "meaning": "to face; to confront",
+    "hsk": 5
+  },
+  {
+    "chinese": "秒",
+    "pinyin": "miǎo",
+    "meaning": "second (unit of time); arc second (angular measurement unit)",
+    "hsk": 5
+  },
+  {
+    "chinese": "明显",
+    "pinyin": "míng xiǎn",
+    "meaning": "clear; distinct",
+    "hsk": 5
+  },
+  {
+    "chinese": "目标",
+    "pinyin": "mù biāo",
+    "meaning": "target; goal",
+    "hsk": 5
+  },
+  {
+    "chinese": "目前",
+    "pinyin": "mù qián",
+    "meaning": "at the present time; currently",
+    "hsk": 5
+  },
+  {
+    "chinese": "某",
+    "pinyin": "mǒu",
+    "meaning": "some; a certain",
+    "hsk": 5
+  },
+  {
+    "chinese": "年代",
+    "pinyin": "nián dài",
+    "meaning": "a decade of a century (e.g. the Sixties); age",
+    "hsk": 5
+  },
+  {
+    "chinese": "片",
+    "pinyin": "piān",
+    "meaning": "disk; sheet",
+    "hsk": 5
+  },
+  {
+    "chinese": "派",
+    "pinyin": "pài",
+    "meaning": "clique; school",
+    "hsk": 5
+  },
+  {
+    "chinese": "拍",
+    "pinyin": "pāi",
+    "meaning": "to pat; to clap",
+    "hsk": 5
+  },
+  {
+    "chinese": "抢",
+    "pinyin": "qiāng",
+    "meaning": "(literary) to knock against (esp. to knock one's head on the ground in grief or rage)",
+    "hsk": 5
+  },
+  {
+    "chinese": "确定",
+    "pinyin": "què dìng",
+    "meaning": "definite; certain",
+    "hsk": 5
+  },
+  {
+    "chinese": "期待",
+    "pinyin": "qī dài",
+    "meaning": "to look forward to; to await",
+    "hsk": 5
+  },
+  {
+    "chinese": "亲爱",
+    "pinyin": "qīn ài",
+    "meaning": "dear; beloved",
+    "hsk": 5
+  },
+  {
+    "chinese": "人类",
+    "pinyin": "rén lèi",
+    "meaning": "humanity; human race",
+    "hsk": 5
+  },
+  {
+    "chinese": "人生",
+    "pinyin": "rén shēng",
+    "meaning": "life (one's time on earth)",
+    "hsk": 5
+  },
+  {
+    "chinese": "人物",
+    "pinyin": "rén wù",
+    "meaning": "person; personage; figure (esp. sb of importance); character (in a play, novel etc)",
+    "hsk": 5
+  },
+  {
+    "chinese": "人员",
+    "pinyin": "rén yuán",
+    "meaning": "staff; crew",
+    "hsk": 5
+  },
+  {
+    "chinese": "如何",
+    "pinyin": "rú hé",
+    "meaning": "how; what way",
+    "hsk": 5
+  },
+  {
+    "chinese": "设计",
+    "pinyin": "shè jì",
+    "meaning": "to design; to plan; design; plan",
+    "hsk": 5
+  },
+  {
+    "chinese": "胜利",
+    "pinyin": "shèng lì",
+    "meaning": "victory",
+    "hsk": 5
+  },
+  {
+    "chinese": "是否",
+    "pinyin": "shì fǒu",
+    "meaning": "whether (or not); if",
+    "hsk": 5
+  },
+  {
+    "chinese": "事实",
+    "pinyin": "shì shí",
+    "meaning": "fact",
+    "hsk": 5
+  },
+  {
+    "chinese": "实现",
+    "pinyin": "shí xiàn",
+    "meaning": "to achieve; to implement",
+    "hsk": 5
+  },
+  {
+    "chinese": "杀",
+    "pinyin": "shā",
+    "meaning": "to kill; to murder",
+    "hsk": 5
+  },
+  {
+    "chinese": "身份",
+    "pinyin": "shēn fèn",
+    "meaning": "identity; aspect of one's identity (i.e. sth that one is – mayor, father, permanent resident etc)",
+    "hsk": 5
+  },
+  {
+    "chinese": "失去",
+    "pinyin": "shī qù",
+    "meaning": "to lose",
+    "hsk": 5
+  },
+  {
+    "chinese": "傻",
+    "pinyin": "shǎ",
+    "meaning": "foolish",
+    "hsk": 5
+  },
+  {
+    "chinese": "手术",
+    "pinyin": "shǒu shù",
+    "meaning": "(surgical) operation; surgery",
+    "hsk": 5
+  },
+  {
+    "chinese": "属于",
+    "pinyin": "shǔ yú",
+    "meaning": "to be classified as; to belong to",
+    "hsk": 5
+  },
+  {
+    "chinese": "所",
+    "pinyin": "suǒ",
+    "meaning": "actually; place",
+    "hsk": 5
+  },
+  {
+    "chinese": "似乎",
+    "pinyin": "sì hū",
+    "meaning": "it seems; seemingly; as if",
+    "hsk": 5
+  },
+  {
+    "chinese": "套",
+    "pinyin": "tào",
+    "meaning": "to cover; to encase",
+    "hsk": 5
+  },
+  {
+    "chinese": "痛苦",
+    "pinyin": "tòng kǔ",
+    "meaning": "pain; suffering",
+    "hsk": 5
+  },
+  {
+    "chinese": "同时",
+    "pinyin": "tóng shí",
+    "meaning": "at the same time; simultaneously",
+    "hsk": 5
+  },
+  {
+    "chinese": "投资",
+    "pinyin": "tóu zī",
+    "meaning": "investment; to invest",
+    "hsk": 5
+  },
+  {
+    "chinese": "完美",
+    "pinyin": "wán měi",
+    "meaning": "perfect",
+    "hsk": 5
+  },
+  {
+    "chinese": "未来",
+    "pinyin": "wèi lái",
+    "meaning": "future; tomorrow",
+    "hsk": 5
+  },
+  {
+    "chinese": "位置",
+    "pinyin": "wèi zhi",
+    "meaning": "position; place",
+    "hsk": 5
+  },
+  {
+    "chinese": "唯一",
+    "pinyin": "wéi yī",
+    "meaning": "only; sole",
+    "hsk": 5
+  },
+  {
+    "chinese": "文件",
+    "pinyin": "wén jiàn",
+    "meaning": "document; file",
+    "hsk": 5
+  },
+  {
+    "chinese": "伟大",
+    "pinyin": "wěi dà",
+    "meaning": "huge; great; grand; worthy of the greatest admiration; important (contribution etc)",
+    "hsk": 5
+  },
+  {
+    "chinese": "现实",
+    "pinyin": "xiàn shí",
+    "meaning": "reality; actuality",
+    "hsk": 5
+  },
+  {
+    "chinese": "项目",
+    "pinyin": "xiàng mù",
+    "meaning": "item; project",
+    "hsk": 5
+  },
+  {
+    "chinese": "相当",
+    "pinyin": "xiāng dāng",
+    "meaning": "equivalent to; appropriate",
+    "hsk": 5
+  },
+  {
+    "chinese": "兄弟",
+    "pinyin": "xiōng dì",
+    "meaning": "brothers; younger brother",
+    "hsk": 5
+  },
+  {
+    "chinese": "显然",
+    "pinyin": "xiǎn rán",
+    "meaning": "clearly; evidently; obviously",
+    "hsk": 5
+  },
+  {
+    "chinese": "显示",
+    "pinyin": "xiǎn shì",
+    "meaning": "to show; to illustrate",
+    "hsk": 5
+  },
+  {
+    "chinese": "享受",
+    "pinyin": "xiǎng shòu",
+    "meaning": "to enjoy; to live it up",
+    "hsk": 5
+  },
+  {
+    "chinese": "系",
+    "pinyin": "xì",
+    "meaning": "to connect; to relate to",
+    "hsk": 5
+  },
+  {
+    "chinese": "系统",
+    "pinyin": "xì tǒng",
+    "meaning": "system",
+    "hsk": 5
+  },
+  {
+    "chinese": "信息",
+    "pinyin": "xìn xī",
+    "meaning": "information; news",
+    "hsk": 5
+  },
+  {
+    "chinese": "行动",
+    "pinyin": "xíng dòng",
+    "meaning": "operation; action",
+    "hsk": 5
+  },
+  {
+    "chinese": "行为",
+    "pinyin": "xíng wéi",
+    "meaning": "action; conduct",
+    "hsk": 5
+  },
+  {
+    "chinese": "训练",
+    "pinyin": "xùn liàn",
+    "meaning": "to train; to drill",
+    "hsk": 5
+  },
+  {
+    "chinese": "寻找",
+    "pinyin": "xún zhǎo",
+    "meaning": "to seek; to look for",
+    "hsk": 5
+  },
+  {
+    "chinese": "心理",
+    "pinyin": "xīn lǐ",
+    "meaning": "psychology; mentality",
+    "hsk": 5
+  },
+  {
+    "chinese": "要是",
+    "pinyin": "yào shi",
+    "meaning": "(coll.) if",
+    "hsk": 5
+  },
+  {
+    "chinese": "夜",
+    "pinyin": "yè",
+    "meaning": "variant of 夜",
+    "hsk": 5
+  },
+  {
+    "chinese": "意义",
+    "pinyin": "yì yì",
+    "meaning": "sense; meaning",
+    "hsk": 5
+  },
+  {
+    "chinese": "一旦",
+    "pinyin": "yī dàn",
+    "meaning": "in case (sth happens); if",
+    "hsk": 5
+  },
+  {
+    "chinese": "以及",
+    "pinyin": "yǐ jí",
+    "meaning": "as well as; too",
+    "hsk": 5
+  },
+  {
+    "chinese": "以来",
+    "pinyin": "yǐ lái",
+    "meaning": "since (a previous event)",
+    "hsk": 5
+  },
+  {
+    "chinese": "状况",
+    "pinyin": "zhuàng kuàng",
+    "meaning": "condition; state; situation",
+    "hsk": 5
+  },
+  {
+    "chinese": "状态",
+    "pinyin": "zhuàng tài",
+    "meaning": "condition; state; state of affairs",
+    "hsk": 5
+  },
+  {
+    "chinese": "专家",
+    "pinyin": "zhuān jiā",
+    "meaning": "expert; specialist",
+    "hsk": 5
+  },
+  {
+    "chinese": "装",
+    "pinyin": "zhuāng",
+    "meaning": "adornment; to adorn",
+    "hsk": 5
+  },
+  {
+    "chinese": "战争",
+    "pinyin": "zhàn zhēng",
+    "meaning": "war; conflict",
+    "hsk": 5
+  },
+  {
+    "chinese": "政府",
+    "pinyin": "zhèng fǔ",
+    "meaning": "government",
+    "hsk": 5
+  },
+  {
+    "chinese": "政治",
+    "pinyin": "zhèng zhì",
+    "meaning": "politics; political",
+    "hsk": 5
+  },
+  {
+    "chinese": "治疗",
+    "pinyin": "zhì liáo",
+    "meaning": "to treat (an illness); medical treatment",
+    "hsk": 5
+  },
+  {
+    "chinese": "执行",
+    "pinyin": "zhí xíng",
+    "meaning": "to implement; to carry out",
+    "hsk": 5
+  },
+  {
+    "chinese": "真实",
+    "pinyin": "zhēn shí",
+    "meaning": "true; real",
+    "hsk": 5
+  },
+  {
+    "chinese": "正",
+    "pinyin": "zhēng",
+    "meaning": "first month of the lunar year",
+    "hsk": 5
+  },
+  {
+    "chinese": "整个",
+    "pinyin": "zhěng gè",
+    "meaning": "whole; entire",
+    "hsk": 5
+  },
+  {
+    "chinese": "中心",
+    "pinyin": "zhōng xīn",
+    "meaning": "center; heart",
+    "hsk": 5
+  },
+  {
+    "chinese": "作品",
+    "pinyin": "zuò pǐn",
+    "meaning": "work (of art); opus",
+    "hsk": 5
+  },
+  {
+    "chinese": "作为",
+    "pinyin": "zuò wéi",
+    "meaning": "one's conduct; deed",
+    "hsk": 5
+  },
+  {
+    "chinese": "造成",
+    "pinyin": "zào chéng",
+    "meaning": "to bring about; to create",
+    "hsk": 5
+  },
+  {
+    "chinese": "则",
+    "pinyin": "zé",
+    "meaning": "(literary) (conjunction used to express contrast with a previous clause) but; then",
+    "hsk": 5
+  },
+  {
+    "chinese": "自由",
+    "pinyin": "zì yóu",
+    "meaning": "freedom; liberty; free; unrestricted",
+    "hsk": 5
+  },
+  {
+    "chinese": "资料",
+    "pinyin": "zī liào",
+    "meaning": "material; resources",
+    "hsk": 5
+  },
+  {
+    "chinese": "总统",
+    "pinyin": "zǒng tǒng",
+    "meaning": "president (of a country)",
     "hsk": 5
   },
   {
@@ -1500,6 +5310,24 @@
     "hsk": 5
   },
   {
+    "chinese": "将军",
+    "pinyin": "Jiāng jūn",
+    "meaning": "(common place name)",
+    "hsk": 6
+  },
+  {
+    "chinese": "欧洲",
+    "pinyin": "Oū zhōu",
+    "meaning": "Europe (abbr. for 欧罗巴洲)",
+    "hsk": 6
+  },
+  {
+    "chinese": "网络",
+    "pinyin": "Wǎng luò",
+    "meaning": "Internet",
+    "hsk": 6
+  },
+  {
     "chinese": "霸道",
     "pinyin": "bàdào",
     "meaning": "overbearing",
@@ -1560,6 +5388,18 @@
     "hsk": 6
   },
   {
+    "chinese": "暴力",
+    "pinyin": "bào lì",
+    "meaning": "violence; force",
+    "hsk": 6
+  },
+  {
+    "chinese": "爆炸",
+    "pinyin": "bào zhà",
+    "meaning": "explosion; to explode",
+    "hsk": 6
+  },
+  {
     "chinese": "报酬",
     "pinyin": "bàochou",
     "meaning": "reward; pay",
@@ -1605,6 +5445,12 @@
     "chinese": "抱怨",
     "pinyin": "bàoyuàn",
     "meaning": "to complain",
+    "hsk": 6
+  },
+  {
+    "chinese": "并非",
+    "pinyin": "bìng fēi",
+    "meaning": "really isn't",
     "hsk": 6
   },
   {
@@ -1674,6 +5520,18 @@
     "hsk": 6
   },
   {
+    "chinese": "本人",
+    "pinyin": "běn rén",
+    "meaning": "I; me; myself; oneself; yourself; himself; herself; the person concerned",
+    "hsk": 6
+  },
+  {
+    "chinese": "本身",
+    "pinyin": "běn shēn",
+    "meaning": "itself; in itself",
+    "hsk": 6
+  },
+  {
     "chinese": "摆脱",
     "pinyin": "bǎituō",
     "meaning": "to cast off; to free oneself from",
@@ -1728,6 +5586,828 @@
     "hsk": 6
   },
   {
+    "chinese": "尝试",
+    "pinyin": "cháng shì",
+    "meaning": "to try; to attempt",
+    "hsk": 6
+  },
+  {
+    "chinese": "成交",
+    "pinyin": "chéng jiāo",
+    "meaning": "to complete a contract; to reach a deal",
+    "hsk": 6
+  },
+  {
+    "chinese": "承诺",
+    "pinyin": "chéng nuò",
+    "meaning": "to promise; to undertake to do something",
+    "hsk": 6
+  },
+  {
+    "chinese": "成员",
+    "pinyin": "chéng yuán",
+    "meaning": "member",
+    "hsk": 6
+  },
+  {
+    "chinese": "超级",
+    "pinyin": "chāo jí",
+    "meaning": "super-; ultra-",
+    "hsk": 6
+  },
+  {
+    "chinese": "操作",
+    "pinyin": "cāo zuò",
+    "meaning": "to work; to operate",
+    "hsk": 6
+  },
+  {
+    "chinese": "刺",
+    "pinyin": "cī",
+    "meaning": "(onom.) whoosh",
+    "hsk": 6
+  },
+  {
+    "chinese": "队伍",
+    "pinyin": "duì wǔ",
+    "meaning": "ranks; troops",
+    "hsk": 6
+  },
+  {
+    "chinese": "端",
+    "pinyin": "duān",
+    "meaning": "end; extremity",
+    "hsk": 6
+  },
+  {
+    "chinese": "代价",
+    "pinyin": "dài jià",
+    "meaning": "price; cost",
+    "hsk": 6
+  },
+  {
+    "chinese": "档案",
+    "pinyin": "dàng àn",
+    "meaning": "file; record",
+    "hsk": 6
+  },
+  {
+    "chinese": "达成",
+    "pinyin": "dá chéng",
+    "meaning": "to reach (an agreement); to accomplish",
+    "hsk": 6
+  },
+  {
+    "chinese": "动力",
+    "pinyin": "dòng lì",
+    "meaning": "motive power; force",
+    "hsk": 6
+  },
+  {
+    "chinese": "斗争",
+    "pinyin": "dòu zhēng",
+    "meaning": "a struggle; fight",
+    "hsk": 6
+  },
+  {
+    "chinese": "搭",
+    "pinyin": "dā",
+    "meaning": "to put up; to build (scaffolding)",
+    "hsk": 6
+  },
+  {
+    "chinese": "当初",
+    "pinyin": "dāng chū",
+    "meaning": "at that time; originally",
+    "hsk": 6
+  },
+  {
+    "chinese": "盯",
+    "pinyin": "dīng",
+    "meaning": "to watch attentively; to fix one's attention on",
+    "hsk": 6
+  },
+  {
+    "chinese": "打击",
+    "pinyin": "dǎ jī",
+    "meaning": "to hit; to strike",
+    "hsk": 6
+  },
+  {
+    "chinese": "副",
+    "pinyin": "fù",
+    "meaning": "secondary; auxiliary",
+    "hsk": 6
+  },
+  {
+    "chinese": "发布",
+    "pinyin": "fā bù",
+    "meaning": "to release; to issue",
+    "hsk": 6
+  },
+  {
+    "chinese": "发射",
+    "pinyin": "fā shè",
+    "meaning": "to shoot (a projectile); to fire (a rocket)",
+    "hsk": 6
+  },
+  {
+    "chinese": "非法",
+    "pinyin": "fēi fǎ",
+    "meaning": "illegal",
+    "hsk": 6
+  },
+  {
+    "chinese": "分手",
+    "pinyin": "fēn shǒu",
+    "meaning": "to part company; to split up",
+    "hsk": 6
+  },
+  {
+    "chinese": "夫人",
+    "pinyin": "fū ren",
+    "meaning": "lady; madam",
+    "hsk": 6
+  },
+  {
+    "chinese": "尴尬",
+    "pinyin": "gān gà",
+    "meaning": "awkward; embarrassed",
+    "hsk": 6
+  },
+  {
+    "chinese": "攻击",
+    "pinyin": "gōng jī",
+    "meaning": "to attack; to accuse",
+    "hsk": 6
+  },
+  {
+    "chinese": "公民",
+    "pinyin": "gōng mín",
+    "meaning": "citizen",
+    "hsk": 6
+  },
+  {
+    "chinese": "孤独",
+    "pinyin": "gū dú",
+    "meaning": "lonely; solitary",
+    "hsk": 6
+  },
+  {
+    "chinese": "感染",
+    "pinyin": "gǎn rǎn",
+    "meaning": "to infect; infection; (fig.) to influence",
+    "hsk": 6
+  },
+  {
+    "chinese": "患者",
+    "pinyin": "huàn zhě",
+    "meaning": "patient; sufferer",
+    "hsk": 6
+  },
+  {
+    "chinese": "或许",
+    "pinyin": "huò xǔ",
+    "meaning": "perhaps; maybe",
+    "hsk": 6
+  },
+  {
+    "chinese": "毫无",
+    "pinyin": "háo wú",
+    "meaning": "not in the least; to completely lack",
+    "hsk": 6
+  },
+  {
+    "chinese": "嗨",
+    "pinyin": "hāi",
+    "meaning": "oh alas; hey!",
+    "hsk": 6
+  },
+  {
+    "chinese": "嘿",
+    "pinyin": "hēi",
+    "meaning": "hey",
+    "hsk": 6
+  },
+  {
+    "chinese": "哼",
+    "pinyin": "hēng",
+    "meaning": "to groan; to snort",
+    "hsk": 6
+  },
+  {
+    "chinese": "家伙",
+    "pinyin": "jiā huo",
+    "meaning": "variant of 伙",
+    "hsk": 6
+  },
+  {
+    "chinese": "交易",
+    "pinyin": "jiāo yì",
+    "meaning": "to deal; to trade; to transact; transaction; deal",
+    "hsk": 6
+  },
+  {
+    "chinese": "奖励",
+    "pinyin": "jiǎng lì",
+    "meaning": "to reward; reward (as encouragement)",
+    "hsk": 6
+  },
+  {
+    "chinese": "进攻",
+    "pinyin": "jìn gōng",
+    "meaning": "to attack; to assault",
+    "hsk": 6
+  },
+  {
+    "chinese": "进展",
+    "pinyin": "jìn zhǎn",
+    "meaning": "to make headway; to make progress",
+    "hsk": 6
+  },
+  {
+    "chinese": "镜头",
+    "pinyin": "jìng tóu",
+    "meaning": "camera lens; camera shot (in a movie etc)",
+    "hsk": 6
+  },
+  {
+    "chinese": "疾病",
+    "pinyin": "jí bìng",
+    "meaning": "disease; sickness; ailment",
+    "hsk": 6
+  },
+  {
+    "chinese": "即将",
+    "pinyin": "jí jiāng",
+    "meaning": "on the eve of; to be about to",
+    "hsk": 6
+  },
+  {
+    "chinese": "集团",
+    "pinyin": "jí tuán",
+    "meaning": "group; bloc",
+    "hsk": 6
+  },
+  {
+    "chinese": "基地",
+    "pinyin": "jī dì",
+    "meaning": "base (of operations); industrial or military base",
+    "hsk": 6
+  },
+  {
+    "chinese": "机构",
+    "pinyin": "jī gòu",
+    "meaning": "mechanism; structure",
+    "hsk": 6
+  },
+  {
+    "chinese": "基金",
+    "pinyin": "jī jīn",
+    "meaning": "fund",
+    "hsk": 6
+  },
+  {
+    "chinese": "激情",
+    "pinyin": "jī qíng",
+    "meaning": "passion; fervor",
+    "hsk": 6
+  },
+  {
+    "chinese": "基因",
+    "pinyin": "jī yīn",
+    "meaning": "gene (loanword)",
+    "hsk": 6
+  },
+  {
+    "chinese": "军队",
+    "pinyin": "jūn duì",
+    "meaning": "armed forces; troops",
+    "hsk": 6
+  },
+  {
+    "chinese": "给予",
+    "pinyin": "jǐ yǔ",
+    "meaning": "(literary) to give; to accord; to render",
+    "hsk": 6
+  },
+  {
+    "chinese": "尽快",
+    "pinyin": "jǐn kuài",
+    "meaning": "as quickly as possible; as soon as possible",
+    "hsk": 6
+  },
+  {
+    "chinese": "警告",
+    "pinyin": "jǐng gào",
+    "meaning": "to warn; to admonish",
+    "hsk": 6
+  },
+  {
+    "chinese": "客户",
+    "pinyin": "kè hù",
+    "meaning": "client; customer",
+    "hsk": 6
+  },
+  {
+    "chinese": "联盟",
+    "pinyin": "lián méng",
+    "meaning": "alliance; union",
+    "hsk": 6
+  },
+  {
+    "chinese": "来源",
+    "pinyin": "lái yuán",
+    "meaning": "source (of information etc); origin",
+    "hsk": 6
+  },
+  {
+    "chinese": "类似",
+    "pinyin": "lèi sì",
+    "meaning": "similar; analogous",
+    "hsk": 6
+  },
+  {
+    "chinese": "凌晨",
+    "pinyin": "líng chén",
+    "meaning": "very early in the morning; in the wee hours",
+    "hsk": 6
+  },
+  {
+    "chinese": "灵魂",
+    "pinyin": "líng hún",
+    "meaning": "soul; spirit",
+    "hsk": 6
+  },
+  {
+    "chinese": "啦",
+    "pinyin": "lā",
+    "meaning": "(onom.) sound of singing, cheering etc; (phonetic)",
+    "hsk": 6
+  },
+  {
+    "chinese": "领先",
+    "pinyin": "lǐng xiān",
+    "meaning": "to lead; to be in front",
+    "hsk": 6
+  },
+  {
+    "chinese": "嘛",
+    "pinyin": "má",
+    "meaning": "used in 吽; (Tw) (coll.) what?",
+    "hsk": 6
+  },
+  {
+    "chinese": "梦想",
+    "pinyin": "mèng xiǎng",
+    "meaning": "(fig.) to dream of; dream",
+    "hsk": 6
+  },
+  {
+    "chinese": "媒体",
+    "pinyin": "méi tǐ",
+    "meaning": "media, esp. news media",
+    "hsk": 6
+  },
+  {
+    "chinese": "蒙",
+    "pinyin": "méng",
+    "meaning": "drizzle; mist",
+    "hsk": 6
+  },
+  {
+    "chinese": "模式",
+    "pinyin": "mó shì",
+    "meaning": "mode; method",
+    "hsk": 6
+  },
+  {
+    "chinese": "能量",
+    "pinyin": "néng liàng",
+    "meaning": "energy; capabilities",
+    "hsk": 6
+  },
+  {
+    "chinese": "评论",
+    "pinyin": "píng lùn",
+    "meaning": "to comment on; to discuss",
+    "hsk": 6
+  },
+  {
+    "chinese": "确保",
+    "pinyin": "què bǎo",
+    "meaning": "to ensure; to guarantee",
+    "hsk": 6
+  },
+  {
+    "chinese": "情报",
+    "pinyin": "qíng bào",
+    "meaning": "information; intelligence",
+    "hsk": 6
+  },
+  {
+    "chinese": "清理",
+    "pinyin": "qīng lǐ",
+    "meaning": "to clear up; to tidy up",
+    "hsk": 6
+  },
+  {
+    "chinese": "区域",
+    "pinyin": "qū yù",
+    "meaning": "area; region",
+    "hsk": 6
+  },
+  {
+    "chinese": "人家",
+    "pinyin": "rén jiā",
+    "meaning": "household; dwelling",
+    "hsk": 6
+  },
+  {
+    "chinese": "人士",
+    "pinyin": "rén shì",
+    "meaning": "person; figure",
+    "hsk": 6
+  },
+  {
+    "chinese": "啥",
+    "pinyin": "shá",
+    "meaning": "dialectal equivalent of 什么; also pr. [shà]",
+    "hsk": 6
+  },
+  {
+    "chinese": "社区",
+    "pinyin": "shè qū",
+    "meaning": "community; neighborhood",
+    "hsk": 6
+  },
+  {
+    "chinese": "神奇",
+    "pinyin": "shén qí",
+    "meaning": "magical; mystical",
+    "hsk": 6
+  },
+  {
+    "chinese": "释放",
+    "pinyin": "shì fàng",
+    "meaning": "to release; to set free",
+    "hsk": 6
+  },
+  {
+    "chinese": "事故",
+    "pinyin": "shì gù",
+    "meaning": "accident",
+    "hsk": 6
+  },
+  {
+    "chinese": "事件",
+    "pinyin": "shì jiàn",
+    "meaning": "event; happening",
+    "hsk": 6
+  },
+  {
+    "chinese": "试图",
+    "pinyin": "shì tú",
+    "meaning": "to attempt; to try",
+    "hsk": 6
+  },
+  {
+    "chinese": "试验",
+    "pinyin": "shì yàn",
+    "meaning": "experiment; test",
+    "hsk": 6
+  },
+  {
+    "chinese": "事业",
+    "pinyin": "shì yè",
+    "meaning": "undertaking; project",
+    "hsk": 6
+  },
+  {
+    "chinese": "时光",
+    "pinyin": "shí guāng",
+    "meaning": "time; era",
+    "hsk": 6
+  },
+  {
+    "chinese": "实力",
+    "pinyin": "shí lì",
+    "meaning": "strength",
+    "hsk": 6
+  },
+  {
+    "chinese": "实施",
+    "pinyin": "shí shī",
+    "meaning": "to implement; to carry out",
+    "hsk": 6
+  },
+  {
+    "chinese": "石油",
+    "pinyin": "shí yóu",
+    "meaning": "oil; petroleum",
+    "hsk": 6
+  },
+  {
+    "chinese": "生存",
+    "pinyin": "shēng cún",
+    "meaning": "to exist; to survive",
+    "hsk": 6
+  },
+  {
+    "chinese": "声明",
+    "pinyin": "shēng míng",
+    "meaning": "to state; to declare",
+    "hsk": 6
+  },
+  {
+    "chinese": "生物",
+    "pinyin": "shēng wù",
+    "meaning": "organism; living creature",
+    "hsk": 6
+  },
+  {
+    "chinese": "尸体",
+    "pinyin": "shī tǐ",
+    "meaning": "dead body; corpse",
+    "hsk": 6
+  },
+  {
+    "chinese": "数",
+    "pinyin": "shǔ",
+    "meaning": "to count; to count as; to regard as",
+    "hsk": 6
+  },
+  {
+    "chinese": "艘",
+    "pinyin": "sōu",
+    "meaning": "classifier for ships; Taiwan pr. [sāo]",
+    "hsk": 6
+  },
+  {
+    "chinese": "死亡",
+    "pinyin": "sǐ wáng",
+    "meaning": "to die; death",
+    "hsk": 6
+  },
+  {
+    "chinese": "团结",
+    "pinyin": "tuán jié",
+    "meaning": "to unite; unity",
+    "hsk": 6
+  },
+  {
+    "chinese": "淘汰",
+    "pinyin": "táo tài",
+    "meaning": "to wash out; (fig.) to cull",
+    "hsk": 6
+  },
+  {
+    "chinese": "同志",
+    "pinyin": "tóng zhì",
+    "meaning": "comrade; (slang) homosexual",
+    "hsk": 6
+  },
+  {
+    "chinese": "投票",
+    "pinyin": "tóu piào",
+    "meaning": "to vote; vote",
+    "hsk": 6
+  },
+  {
+    "chinese": "突破",
+    "pinyin": "tū pò",
+    "meaning": "to break through; to make a breakthrough",
+    "hsk": 6
+  },
+  {
+    "chinese": "维持",
+    "pinyin": "wéi chí",
+    "meaning": "to keep; to maintain",
+    "hsk": 6
+  },
+  {
+    "chinese": "哇",
+    "pinyin": "wā",
+    "meaning": "Wow!; sound of a child's crying",
+    "hsk": 6
+  },
+  {
+    "chinese": "危机",
+    "pinyin": "wēi jī",
+    "meaning": "crisis",
+    "hsk": 6
+  },
+  {
+    "chinese": "舞蹈",
+    "pinyin": "wǔ dǎo",
+    "meaning": "dance (performance art); dancing",
+    "hsk": 6
+  },
+  {
+    "chinese": "现场",
+    "pinyin": "xiàn chǎng",
+    "meaning": "the scene (of a crime, accident etc); (on) the spot",
+    "hsk": 6
+  },
+  {
+    "chinese": "线索",
+    "pinyin": "xiàn suǒ",
+    "meaning": "trail; clues",
+    "hsk": 6
+  },
+  {
+    "chinese": "协会",
+    "pinyin": "xié huì",
+    "meaning": "an association; a society",
+    "hsk": 6
+  },
+  {
+    "chinese": "协议",
+    "pinyin": "xié yì",
+    "meaning": "agreement; pact",
+    "hsk": 6
+  },
+  {
+    "chinese": "显著",
+    "pinyin": "xiǎn zhù",
+    "meaning": "outstanding; notable",
+    "hsk": 6
+  },
+  {
+    "chinese": "选手",
+    "pinyin": "xuǎn shǒu",
+    "meaning": "athlete; contestant",
+    "hsk": 6
+  },
+  {
+    "chinese": "细胞",
+    "pinyin": "xì bāo",
+    "meaning": "cell (biology)",
+    "hsk": 6
+  },
+  {
+    "chinese": "系列",
+    "pinyin": "xì liè",
+    "meaning": "series; set",
+    "hsk": 6
+  },
+  {
+    "chinese": "性感",
+    "pinyin": "xìng gǎn",
+    "meaning": "sex appeal; eroticism",
+    "hsk": 6
+  },
+  {
+    "chinese": "袭击",
+    "pinyin": "xí jī",
+    "meaning": "attack (esp. surprise attack); raid",
+    "hsk": 6
+  },
+  {
+    "chinese": "异常",
+    "pinyin": "yì cháng",
+    "meaning": "unusual; abnormal; extremely; exceptionally",
+    "hsk": 6
+  },
+  {
+    "chinese": "意识",
+    "pinyin": "yì shí",
+    "meaning": "consciousness; awareness",
+    "hsk": 6
+  },
+  {
+    "chinese": "意味着",
+    "pinyin": "yì wèi zhe",
+    "meaning": "to signify; to mean",
+    "hsk": 6
+  },
+  {
+    "chinese": "仪式",
+    "pinyin": "yí shì",
+    "meaning": "ceremony",
+    "hsk": 6
+  },
+  {
+    "chinese": "依靠",
+    "pinyin": "yī kào",
+    "meaning": "to rely on sth (for support etc); to depend on",
+    "hsk": 6
+  },
+  {
+    "chinese": "婴儿",
+    "pinyin": "yīng ér",
+    "meaning": "infant; baby",
+    "hsk": 6
+  },
+  {
+    "chinese": "拥有",
+    "pinyin": "yōng yǒu",
+    "meaning": "to have; to possess",
+    "hsk": 6
+  },
+  {
+    "chinese": "眼神",
+    "pinyin": "yǎn shén",
+    "meaning": "expression or emotion showing in one's eyes; meaningful glance",
+    "hsk": 6
+  },
+  {
+    "chinese": "装备",
+    "pinyin": "zhuāng bèi",
+    "meaning": "equipment; to equip",
+    "hsk": 6
+  },
+  {
+    "chinese": "转移",
+    "pinyin": "zhuǎn yí",
+    "meaning": "to shift; to relocate; to transfer; (fig.) to shift (attention); to change (the subject etc)",
+    "hsk": 6
+  },
+  {
+    "chinese": "战斗",
+    "pinyin": "zhàn dòu",
+    "meaning": "to fight; to engage in combat",
+    "hsk": 6
+  },
+  {
+    "chinese": "障碍",
+    "pinyin": "zhàng ài",
+    "meaning": "barrier; obstruction",
+    "hsk": 6
+  },
+  {
+    "chinese": "证实",
+    "pinyin": "zhèng shí",
+    "meaning": "to confirm (sth to be true); to verify",
+    "hsk": 6
+  },
+  {
+    "chinese": "症状",
+    "pinyin": "zhèng zhuàng",
+    "meaning": "symptom (of an illness)",
+    "hsk": 6
+  },
+  {
+    "chinese": "真相",
+    "pinyin": "zhēn xiàng",
+    "meaning": "the truth about sth; the actual facts",
+    "hsk": 6
+  },
+  {
+    "chinese": "中央",
+    "pinyin": "zhōng yāng",
+    "meaning": "central; middle",
+    "hsk": 6
+  },
+  {
+    "chinese": "州",
+    "pinyin": "zhōu",
+    "meaning": "prefecture; (old) province",
+    "hsk": 6
+  },
+  {
+    "chinese": "展示",
+    "pinyin": "zhǎn shì",
+    "meaning": "to reveal; to display; to show; to exhibit",
+    "hsk": 6
+  },
+  {
+    "chinese": "主管",
+    "pinyin": "zhǔ guǎn",
+    "meaning": "in charge; responsible for",
+    "hsk": 6
+  },
+  {
+    "chinese": "主题",
+    "pinyin": "zhǔ tí",
+    "meaning": "theme; subject",
+    "hsk": 6
+  },
+  {
+    "chinese": "左右",
+    "pinyin": "zuǒ yòu",
+    "meaning": "left and right; nearby",
+    "hsk": 6
+  },
+  {
+    "chinese": "在乎",
+    "pinyin": "zài hu",
+    "meaning": "to care about; equivalent of 在于",
+    "hsk": 6
+  },
+  {
+    "chinese": "造型",
+    "pinyin": "zào xíng",
+    "meaning": "to model; to shape",
+    "hsk": 6
+  },
+  {
+    "chinese": "砸",
+    "pinyin": "zá",
+    "meaning": "to smash; to pound",
+    "hsk": 6
+  },
+  {
     "chinese": "爱不释手",
     "pinyin": "ài bù shì shǒu",
     "meaning": "to love something too much to put it down",
@@ -1743,6 +6423,12 @@
     "chinese": "暧昧",
     "pinyin": "àimèi",
     "meaning": "ambiguous; dubious",
+    "hsk": 6
+  },
+  {
+    "chinese": "案件",
+    "pinyin": "àn jiàn",
+    "meaning": "case; instance",
     "hsk": 6
   },
   {
@@ -1782,6 +6468,18 @@
     "hsk": 6
   },
   {
+    "chinese": "哦",
+    "pinyin": "é",
+    "meaning": "to chant",
+    "hsk": 6
+  },
+  {
+    "chinese": "而已",
+    "pinyin": "ér yǐ",
+    "meaning": "that's all; nothing more",
+    "hsk": 6
+  },
+  {
     "chinese": "安详",
     "pinyin": "ānxiáng",
     "meaning": "serene",
@@ -1797,6 +6495,18 @@
     "chinese": "凹凸",
     "pinyin": "āotū",
     "meaning": "concave-convex; bumpy",
+    "hsk": 6
+  },
+  {
+    "chinese": "嗯",
+    "pinyin": "ēn",
+    "meaning": "(a groaning sound)",
+    "hsk": 6
+  },
+  {
+    "chinese": "恶心",
+    "pinyin": "ě xīn",
+    "meaning": "variant of 恶心",
     "hsk": 6
   }
 ]

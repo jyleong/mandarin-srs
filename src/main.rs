@@ -1,5 +1,6 @@
 mod models;
 mod app;
+mod utils;
 
 use models::card::Card;
 use models::deck::Deck;
