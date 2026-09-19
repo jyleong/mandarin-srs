@@ -1,4 +1,4 @@
-use ratatui::crossterm::event::{self, Event, KeyCode, KeyEventKind};
+use ratatui::crossterm::event::{self, Event, KeyCode, KeyEvent, KeyEventKind, KeyModifiers};
 use ratatui::layout::{Alignment, Constraint, Flex, Layout, Rect};
 use ratatui::style::{Color, Modifier, Style};
 use ratatui::text::{Line, Span, Text};
@@ -53,7 +53,7 @@ pub fn run(all_cards: Vec<Card>, progress: ProgressMap) -> std::io::Result<Progr
             terminal.draw(|frame| app.render(frame))?;
 
             if let Event::Key(key) = event::read()? {
-                if key.kind == KeyEventKind::Press && app.handle_key(key.code) {
+                if key.kind == KeyEventKind::Press && app.handle_key(key) {
                     break;
                 }
             }
@@ -346,10 +346,10 @@ impl App {
     fn render_footer(&self, frame: &mut ratatui::Frame, area: Rect) {
         let help = match self.phase {
             Phase::SelectLevel => {
-                "↑↓ / k j move   ·   1-6 jump   ·   Enter start   ·   Esc / q quit"
+                "↑↓ / k j move   ·   1-6 jump   ·   Enter start   ·   Esc / Ctrl+Q quit"
             }
-            Phase::Prompt => "Enter submit   ·   Backspace delete   ·   Esc / q quit",
-            Phase::Reveal => "Any key next card   ·   Esc quit",
+            Phase::Prompt => "Enter submit   ·   Backspace delete   ·   Esc / Ctrl+Q quit",
+            Phase::Reveal => "Any key next card   ·   Esc / Ctrl+Q quit",
         };
         let footer = Paragraph::new(Line::from(Span::styled(
             help,
@@ -362,11 +362,16 @@ impl App {
     }
 
     /// Returns `true` when the session should end.
-    fn handle_key(&mut self, code: KeyCode) -> bool {
+    fn handle_key(&mut self, key: KeyEvent) -> bool {
+        // Ctrl+Q quits from any phase (plain `q` is a normal letter while typing).
+        if is_ctrl_q(key) {
+            return true;
+        }
+
         match self.phase {
-            Phase::SelectLevel => self.handle_select_level_key(code),
-            Phase::Prompt => self.handle_prompt_key(code),
-            Phase::Reveal => self.handle_reveal_key(code),
+            Phase::SelectLevel => self.handle_select_level_key(key.code),
+            Phase::Prompt => self.handle_prompt_key(key.code),
+            Phase::Reveal => self.handle_reveal_key(key.code),
         }
     }
 
@@ -392,7 +397,7 @@ impl App {
                 self.start_session();
                 false
             }
-            KeyCode::Esc | KeyCode::Char('q') => true,
+            KeyCode::Esc => true,
             _ => false,
         }
     }
@@ -400,7 +405,6 @@ impl App {
     fn handle_prompt_key(&mut self, code: KeyCode) -> bool {
         match code {
             KeyCode::Esc => true,
-            KeyCode::Char('q') if self.input.is_empty() => true,
             KeyCode::Enter => {
                 self.submit_answer();
                 false
@@ -464,6 +468,11 @@ impl App {
         self.last_correct = Some(correct);
         self.phase = Phase::Reveal;
     }
+}
+
+fn is_ctrl_q(key: KeyEvent) -> bool {
+    key.modifiers.contains(KeyModifiers::CONTROL)
+        && matches!(key.code, KeyCode::Char('q') | KeyCode::Char('Q'))
 }
 
 /// Insert spaces between characters so Hanzi reads larger in a monospace grid.

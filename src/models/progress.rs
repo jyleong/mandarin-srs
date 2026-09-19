@@ -15,11 +15,6 @@ pub struct CardProgress {
     pub due_date: NaiveDate,
 }
 
-fn default_due_date() -> NaiveDate {
-    // 1970-01-01 → is_due is always true for migrated rows.
-    NaiveDate::from_ymd_opt(1970, 1, 1).expect("valid date")
-}
-
 /// card.id → learning state
 pub type ProgressMap = HashMap<String, CardProgress>;
 
@@ -57,6 +52,11 @@ pub fn save(path: impl AsRef<Path>, progress: &ProgressMap) -> Result<(), Box<dy
     let text = serde_json::to_string_pretty(progress)?;
     fs::write(path, text)?;
     Ok(())
+}
+
+fn default_due_date() -> NaiveDate {
+    // 1970-01-01 → is_due is always true for migrated rows.
+    NaiveDate::from_ymd_opt(1970, 1, 1).expect("valid date")
 }
 
 #[cfg(test)]
