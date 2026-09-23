@@ -48,7 +48,7 @@ pub fn run(all_cards: Vec<Card>, progress: ProgressMap) -> std::io::Result<Progr
         progress_path: String::from("data/progress.json"),
     };
 
-    ratatui::run(|mut terminal| -> std::io::Result<()> {
+    ratatui::run(|terminal| -> std::io::Result<()> {
         loop {
             terminal.draw(|frame| app.render(frame))?;
 

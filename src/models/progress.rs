@@ -19,12 +19,6 @@ pub struct CardProgress {
 pub type ProgressMap = HashMap<String, CardProgress>;
 
 impl CardProgress {
-    pub fn new() -> Self {
-        Self {
-            interval_days: 0,
-            due_date: default_due_date(),
-        }
-    }
 
     /// Ready to show if due today or earlier.
     pub fn is_due(&self, today: NaiveDate) -> bool {
