@@ -77,14 +77,57 @@ pub enum Grade {
 }
 
 impl Card {
-
     pub fn meaning_matches(&self, guess: &str) -> bool {
-        let guess = guess.trim();
+        let guess = normalize_answer(guess);
+        if guess.is_empty() {
+            return false;
+        }
         self.meaning
             .split(';')
-            .map(str::trim)
+            .map(normalize_answer)
             .filter(|s| !s.is_empty())
-            .any(|alt| alt == guess)
+            .any(|alt| alt.eq_ignore_ascii_case(&guess))
+    }
+}
+
+fn normalize_answer(s: &str) -> String {
+    s.split_whitespace().collect::<Vec<_>>().join(" ")
+}
+
+#[cfg(test)]
+mod meaning_tests {
+    use super::*;
+
+    fn card(meaning: &str) -> Card {
+        Card {
+            id: "hsk1:x".into(),
+            chinese: "x".into(),
+            pinyin: "x".into(),
+            meaning: meaning.into(),
+            hsk: HskLevel::Hsk1,
+        }
+    }
+
+    #[test]
+    fn ignores_case() {
+        assert!(card("hello").meaning_matches("Hello"));
+    }
+
+    #[test]
+    fn collapses_whitespace() {
+        assert!(card("thank you").meaning_matches("  thank   you  "));
+    }
+
+    #[test]
+    fn accepts_either_semicolon_gloss() {
+        let c = card("dad; father");
+        assert!(c.meaning_matches("dad"));
+        assert!(c.meaning_matches("Father"));
+    }
+
+    #[test]
+    fn empty_guess_does_not_match() {
+        assert!(!card("hello").meaning_matches("   "));
     }
 }
 

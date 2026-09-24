@@ -4,6 +4,8 @@ use ratatui::text::{Line, Span, Text};
 use ratatui::widgets::{Block, Borders, Clear, Padding, Paragraph, Wrap};
 
 use crate::models::card::{Card, HskLevel};
+use crate::models::progress;
+use crate::utils::date_utils::today;
 
 use super::app::{App, Phase};
 
@@ -60,7 +62,28 @@ impl App {
         self.render_footer(frame, chunks[3]);
     }
 
+    fn due_counts(&self, level: HskLevel) -> (usize, usize) {
+        let today = today();
+        let at_level: Vec<_> = self
+            .all_cards
+            .iter()
+            .filter(|c| c.hsk == level)
+            .collect();
+        let total = at_level.len();
+        let due = at_level
+            .iter()
+            .filter(|c| progress::is_due(&self.progress, &c.id, today))
+            .count();
+        (due, total)
+    }
+
     fn render_select_header(&self, frame: &mut ratatui::Frame, area: Rect) {
+        let (due, _) = self.due_counts(self.selected_level);
+        let subtitle = if due == 0 {
+            "nothing due at this level"
+        } else {
+            "choose a level"
+        };
         let title = Line::from(vec![
             Span::styled(
                 " Mandarin SRS ",
@@ -69,7 +92,7 @@ impl App {
                     .add_modifier(Modifier::BOLD),
             ),
             Span::raw("· "),
-            Span::styled("choose a level", Style::new().fg(Color::Gray)),
+            Span::styled(subtitle, Style::new().fg(Color::Gray)),
         ]);
         let header = Paragraph::new(title).block(
             Block::default()
@@ -93,10 +116,10 @@ impl App {
         lines.push(Line::from(""));
         for level in levels {
             let n = level.as_u8();
-            let count = self.all_cards.iter().filter(|c| c.hsk == level).count();
+            let (due, total) = self.due_counts(level);
             let selected = level == self.selected_level;
 
-            let label = format!("  HSK {n}   ({count} cards)");
+            let label = format!("  HSK {n}   ({due} due / {total})");
             let line = if selected {
                 Line::from(vec![
                     Span::styled(
@@ -325,7 +348,12 @@ impl App {
     fn render_footer(&self, frame: &mut ratatui::Frame, area: Rect) {
         let help = match self.phase {
             Phase::SelectLevel => {
-                "↑↓ / k j move   ·   1-6 jump   ·   Enter start   ·   Esc / Ctrl+Q quit"
+                let (due, _) = self.due_counts(self.selected_level);
+                if due == 0 {
+                    "Nothing due today — pick another level   ·   Esc / Ctrl+Q quit"
+                } else {
+                    "↑↓ / k j move   ·   1-6 jump   ·   Enter start   ·   Esc / Ctrl+Q quit"
+                }
             }
             Phase::Prompt => "Enter submit   ·   Backspace delete   ·   Esc / Ctrl+Q quit",
             Phase::Reveal => "← browse history   ·   → / any key next card   ·   Esc / Ctrl+Q quit",
