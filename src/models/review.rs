@@ -1,9 +1,8 @@
-use crate::models::card::{ Grade };
+use crate::models::card::Grade;
 
-
-/// One graded card in this session (for Browse later).
+/// One graded card in this session (for Browse).
 pub struct ReviewEntry {
-    /// Index into `App::cards` at the time of grading.
+    /// Index into the session `cards` vec at the time of grading.
     pub card_index: usize,
     pub correct: bool,
 }
@@ -35,4 +34,3 @@ mod tests {
         assert_eq!(next_interval(Grade::Good, 2), 4);
     }
 }
-

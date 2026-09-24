@@ -1,7 +1,7 @@
 use chrono::Days;
 use rand::seq::SliceRandom;
 
-use crate::app::review::{next_interval, ReviewEntry};
+use crate::models::review::{next_interval, ReviewEntry};
 use crate::models::card::{Card, Grade, HskLevel};
 use crate::models::progress::{self, CardProgress, ProgressMap};
 use crate::utils::date_utils::today;
