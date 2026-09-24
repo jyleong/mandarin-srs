@@ -14,6 +14,7 @@ impl App {
             Phase::Prompt => self.handle_prompt_key(key.code),
             Phase::Reveal => self.handle_reveal_key(key.code),
             Phase::Browse => self.handle_browse_key(key.code),
+            Phase::Summary => self.handle_summary_key(key.code),
         }
     }
 
@@ -96,6 +97,16 @@ impl App {
                 false
             }
             _ => false,
+        }
+    }
+
+    fn handle_summary_key(&mut self, code: KeyCode) -> bool {
+        match code {
+            KeyCode::Esc => true,
+            _ => {
+                self.return_to_select();
+                false
+            }
         }
     }
 }

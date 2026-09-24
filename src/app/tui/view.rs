@@ -34,6 +34,21 @@ impl App {
             return;
         }
 
+        if matches!(self.phase, Phase::Summary) {
+            let chunks = Layout::vertical([
+                Constraint::Length(3),
+                Constraint::Min(8),
+                Constraint::Length(2),
+            ])
+            .spacing(1)
+            .split(ui);
+
+            self.render_select_header(frame, chunks[0]);
+            self.render_summary(frame, chunks[1]);
+            self.render_footer(frame, chunks[2]);
+            return;
+        }
+
         let card = match self.phase {
             Phase::Browse => {
                 let entry = &self.history[self.browse_pos];
@@ -54,7 +69,7 @@ impl App {
         self.render_header(frame, chunks[0]);
         self.render_hanzi(frame, chunks[1], card);
         match self.phase {
-            Phase::SelectLevel => unreachable!(),
+            Phase::SelectLevel | Phase::Summary => unreachable!(),
             Phase::Prompt => self.render_input(frame, chunks[2]),
             Phase::Reveal => self.render_reveal(frame, chunks[2], card),
             Phase::Browse => self.render_browse(frame, chunks[2], card),
@@ -78,11 +93,16 @@ impl App {
     }
 
     fn render_select_header(&self, frame: &mut ratatui::Frame, area: Rect) {
-        let (due, _) = self.due_counts(self.selected_level);
-        let subtitle = if due == 0 {
-            "nothing due at this level"
-        } else {
-            "choose a level"
+        let subtitle = match self.phase {
+            Phase::Summary => "session complete",
+            _ => {
+                let (due, _) = self.due_counts(self.selected_level);
+                if due == 0 {
+                    "nothing due at this level"
+                } else {
+                    "choose a level"
+                }
+            }
         };
         let title = Line::from(vec![
             Span::styled(
@@ -345,6 +365,61 @@ impl App {
         frame.render_widget(browse, area);
     }
 
+    fn render_summary(&self, frame: &mut ratatui::Frame, area: Rect) {
+        let (answered, correct, wrong) = self.session_counts();
+        let level = self.selected_level.as_u8();
+
+        let text = Text::from(vec![
+            Line::from(""),
+            Line::from(Span::styled(
+                format!(" HSK {level} session complete "),
+                Style::new()
+                    .fg(Color::Black)
+                    .bg(Color::Cyan)
+                    .add_modifier(Modifier::BOLD),
+            )),
+            Line::from(""),
+            Line::from(vec![
+                Span::styled("Answered  ", Style::new().fg(Color::DarkGray)),
+                Span::styled(
+                    answered.to_string(),
+                    Style::new()
+                        .fg(Color::White)
+                        .add_modifier(Modifier::BOLD),
+                ),
+            ]),
+            Line::from(vec![
+                Span::styled("Correct   ", Style::new().fg(Color::DarkGray)),
+                Span::styled(
+                    format!("✓  {correct}"),
+                    Style::new()
+                        .fg(Color::Green)
+                        .add_modifier(Modifier::BOLD),
+                ),
+            ]),
+            Line::from(vec![
+                Span::styled("Wrong     ", Style::new().fg(Color::DarkGray)),
+                Span::styled(
+                    format!("✗  {wrong}"),
+                    Style::new()
+                        .fg(Color::Red)
+                        .add_modifier(Modifier::BOLD),
+                ),
+            ]),
+        ]);
+
+        let summary = Paragraph::new(text)
+            .alignment(Alignment::Left)
+            .block(
+                Block::bordered()
+                    .title(" Summary ")
+                    .title_alignment(Alignment::Center)
+                    .border_style(Style::new().fg(Color::Cyan))
+                    .padding(Padding::horizontal(2)),
+            );
+        frame.render_widget(summary, area);
+    }
+
     fn render_footer(&self, frame: &mut ratatui::Frame, area: Rect) {
         let help = match self.phase {
             Phase::SelectLevel => {
@@ -358,6 +433,7 @@ impl App {
             Phase::Prompt => "Enter submit   ·   Backspace delete   ·   Esc / Ctrl+Q quit",
             Phase::Reveal => "← browse history   ·   → / any key next card   ·   Esc / Ctrl+Q quit",
             Phase::Browse => "← previous   ·   → next (past end → quiz)   ·   Esc / Ctrl+Q quit",
+            Phase::Summary => "Enter / any key → level select   ·   Esc / Ctrl+Q quit",
         };
         let footer = Paragraph::new(Line::from(Span::styled(
             help,

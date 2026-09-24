@@ -11,6 +11,7 @@ pub(super) enum Phase {
     Prompt,
     Reveal,
     Browse,
+    Summary,
 }
 
 pub(super) struct App {
@@ -107,11 +108,13 @@ impl App {
         self.phase = Phase::Reveal;
     }
 
-    /// Advance quiz index after Reveal. `true` = session finished.
+    /// Advance quiz index after Reveal. `true` only if the whole app should quit
+    /// (not used for end-of-session; that goes to Summary).
     pub(super) fn advance_after_reveal(&mut self) -> bool {
         self.index += 1;
         if self.index >= self.cards.len() {
-            return true;
+            self.phase = Phase::Summary;
+            return false;
         }
         self.input.clear();
         self.last_correct = None;
@@ -123,5 +126,22 @@ impl App {
         self.input.clear();
         self.last_correct = None;
         self.phase = Phase::Prompt;
+    }
+
+    pub(super) fn return_to_select(&mut self) {
+        self.cards.clear();
+        self.history.clear();
+        self.index = 0;
+        self.browse_pos = 0;
+        self.input.clear();
+        self.last_correct = None;
+        self.phase = Phase::SelectLevel;
+    }
+
+    pub(super) fn session_counts(&self) -> (usize, usize, usize) {
+        let answered = self.history.len();
+        let correct = self.history.iter().filter(|e| e.correct).count();
+        let wrong = answered.saturating_sub(correct);
+        (answered, correct, wrong)
     }
 }
