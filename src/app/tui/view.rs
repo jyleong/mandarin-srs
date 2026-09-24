@@ -1,77 +1,14 @@
-use ratatui::crossterm::event::{self, Event, KeyCode, KeyEvent, KeyEventKind, KeyModifiers};
 use ratatui::layout::{Alignment, Constraint, Flex, Layout, Rect};
 use ratatui::style::{Color, Modifier, Style};
 use ratatui::text::{Line, Span, Text};
 use ratatui::widgets::{Block, Borders, Clear, Padding, Paragraph, Wrap};
-use rand::seq::SliceRandom;
 
-use crate::app::review::{ next_interval, ReviewEntry } ;
-use crate::models::card::{Card, Grade, HskLevel};
-use crate::models::progress::{self, CardProgress, ProgressMap};
-use crate::utils::date_utils::today;
-use chrono::Days;
+use crate::models::card::{Card, HskLevel};
 
-enum Phase {
-    SelectLevel,
-    Prompt, // Show Hanzi + type answer
-    Reveal, // show result, pinyin and meaning
-    Browse, // read-only walk through history (←/→)
-}
-
-struct App {
-    /// Full deck from disk (never filtered away).
-    all_cards: Vec<Card>,
-    /// Current review session (filled after level select).
-    cards: Vec<Card>,
-    index: usize,
-    input: String,
-    selected_level: HskLevel,
-    phase: Phase,
-    last_correct: Option<bool>,
-    /// Graded cards this session, in order — source of truth for Browse.
-    history: Vec<ReviewEntry>,
-    browse_pos: usize,
-    progress: ProgressMap,
-    progress_path: String,
-}
-
-pub fn run(all_cards: Vec<Card>, progress: ProgressMap) -> std::io::Result<ProgressMap> {
-    if all_cards.is_empty() {
-        return Ok(progress);
-    }
-
-    let mut app = App {
-        all_cards,
-        cards: Vec::new(),
-        index: 0,
-        input: String::new(),
-        selected_level: HskLevel::Hsk1,
-        phase: Phase::SelectLevel,
-        last_correct: None,
-        history: Vec::new(),
-        browse_pos: 0,
-        progress,
-        progress_path: String::from("data/progress.json"),
-    };
-
-    ratatui::run(|terminal| -> std::io::Result<()> {
-        loop {
-            terminal.draw(|frame| app.render(frame))?;
-
-            if let Event::Key(key) = event::read()? {
-                if key.kind == KeyEventKind::Press && app.handle_key(key) {
-                    break;
-                }
-            }
-        }
-        Ok(())
-    })?;
-
-    Ok(app.progress)
-}
+use super::app::{App, Phase};
 
 impl App {
-    fn render(&self, frame: &mut ratatui::Frame) {
+    pub(super) fn render(&self, frame: &mut ratatui::Frame) {
         let area = frame.area();
         frame.render_widget(Clear, area);
 
@@ -80,7 +17,6 @@ impl App {
             .margin(1)
             .areas(area);
 
-        // Select screen has its own layout — do not index into `cards` yet.
         if matches!(self.phase, Phase::SelectLevel) {
             let chunks = Layout::vertical([
                 Constraint::Length(3),
@@ -157,11 +93,7 @@ impl App {
         lines.push(Line::from(""));
         for level in levels {
             let n = level.as_u8();
-            let count = self
-                .all_cards
-                .iter()
-                .filter(|c| c.hsk == level)
-                .count();
+            let count = self.all_cards.iter().filter(|c| c.hsk == level).count();
             let selected = level == self.selected_level;
 
             let label = format!("  HSK {n}   ({count} cards)");
@@ -188,7 +120,7 @@ impl App {
                 ])
             };
             lines.push(line);
-            lines.push(Line::from("")); // breathing room between rows
+            lines.push(Line::from(""));
         }
 
         let list = Paragraph::new(Text::from(lines))
@@ -201,34 +133,6 @@ impl App {
                     .padding(Padding::horizontal(2)),
             );
         frame.render_widget(list, area);
-    }
-
-    /// Filter `all_cards` → `cards`, then enter Prompt.
-    fn start_session(&mut self) {
-        let today = today();
-        self.cards = self
-            .all_cards
-            .iter()
-            .filter(|c| c.hsk == self.selected_level)
-            .filter(|c| progress::is_due(&self.progress, &c.id, today))
-            .cloned()
-            .collect();
-
-        if self.cards.is_empty() {
-            // Stay on select if this level has no words.
-            return;
-        }
-
-
-        self.cards.shuffle(&mut rand::rng());
-        self.cards.truncate(50);
-
-        self.index = 0;
-        self.input.clear();
-        self.last_correct = None;
-        self.history.clear();
-        self.browse_pos = 0;
-        self.phase = Phase::Prompt;
     }
 
     fn render_header(&self, frame: &mut ratatui::Frame, area: Rect) {
@@ -436,164 +340,8 @@ impl App {
         .alignment(Alignment::Center);
         frame.render_widget(footer, area);
     }
-
-    /// Returns `true` when the session should end.
-    fn handle_key(&mut self, key: KeyEvent) -> bool {
-        // Ctrl+Q quits from any phase (plain `q` is a normal letter while typing).
-        if is_ctrl_q(key) {
-            return true;
-        }
-
-        match self.phase {
-            Phase::SelectLevel => self.handle_select_level_key(key.code),
-            Phase::Prompt => self.handle_prompt_key(key.code),
-            Phase::Reveal => self.handle_reveal_key(key.code),
-            Phase::Browse => self.handle_browse_key(key.code),
-        }
-    }
-
-    fn handle_select_level_key(&mut self, code: KeyCode) -> bool {
-        match code {
-            KeyCode::Down | KeyCode::Char('j') => {
-                self.selected_level = self.selected_level.next();
-                false
-            }
-            KeyCode::Up | KeyCode::Char('k') => {
-                self.selected_level = self.selected_level.prev();
-                false
-            }
-            KeyCode::Char(c) if c.is_ascii_digit() => {
-                if let Some(d) = c.to_digit(10) {
-                    if let Some(level) = HskLevel::from_digit(d as u8) {
-                        self.selected_level = level;
-                    }
-                }
-                false
-            }
-            KeyCode::Enter => {
-                self.start_session();
-                false
-            }
-            KeyCode::Esc => true,
-            _ => false,
-        }
-    }
-
-    fn handle_prompt_key(&mut self, code: KeyCode) -> bool {
-        match code {
-            KeyCode::Esc => true,
-            KeyCode::Enter => {
-                self.submit_answer();
-                false
-            }
-            KeyCode::Char(c) => {
-                self.input.push(c);
-                false
-            }
-            KeyCode::Backspace => {
-                self.input.pop();
-                false
-            }
-            _ => false,
-        }
-    }
-
-    fn handle_reveal_key(&mut self, code: KeyCode) -> bool {
-        match code {
-            KeyCode::Esc => true,
-            KeyCode::Left => {
-                if !self.history.is_empty() {
-                    self.browse_pos = self.history.len() - 1;
-                    self.phase = Phase::Browse;
-                }
-                false
-            }
-            KeyCode::Right => self.advance_after_reveal(),
-            // Keep “any other key advances” so Enter/space still work; ← is reserved.
-            _ => self.advance_after_reveal(),
-        }
-    }
-
-    fn handle_browse_key(&mut self, code: KeyCode) -> bool {
-        match code {
-            KeyCode::Esc => true,
-            KeyCode::Left => {
-                if self.browse_pos > 0 {
-                    self.browse_pos -= 1;
-                }
-                false
-            }
-            KeyCode::Right => {
-                if self.browse_pos + 1 < self.history.len() {
-                    self.browse_pos += 1;
-                } else {
-                    // Past last history entry → resume quiz at current index.
-                    self.input.clear();
-                    self.last_correct = None;
-                    self.phase = Phase::Prompt;
-                }
-                false
-            }
-            _ => false,
-        }
-    }
-
-    fn advance_after_reveal(&mut self) -> bool {
-        self.index += 1;
-        if self.index >= self.cards.len() {
-            return true;
-        }
-        self.input.clear();
-        self.last_correct = None;
-        self.phase = Phase::Prompt;
-        false
-    }
-
-    fn submit_answer(&mut self) {
-        let card = &self.cards[self.index];
-        let previous = self
-            .progress
-            .get(&card.id)
-            .map(|p| p.interval_days)
-            .unwrap_or(0);
-
-        let correct = card.meaning_matches(&self.input);
-        let grade = if correct {
-            Grade::Good
-        } else {
-            Grade::Again
-        };
-        let days = next_interval(grade, previous);
-        // Again (0 days) → due today; Good (N) → today + N calendar days.
-        let due_date = today() + Days::new(u64::from(days));
-
-        self.progress.insert(
-            card.id.clone(),
-            CardProgress {
-                interval_days: days,
-                due_date,
-            },
-        );
-
-        let _ = crate::models::progress::save(&self.progress_path, &self.progress);
-
-        self.history.push(ReviewEntry {
-            card_index: self.index,
-            correct,
-        });
-        self.browse_pos = self.history.len().saturating_sub(1);
-
-        self.last_correct = Some(correct);
-        self.phase = Phase::Reveal;
-    }
 }
 
-fn is_ctrl_q(key: KeyEvent) -> bool {
-    key.modifiers.contains(KeyModifiers::CONTROL)
-        && matches!(key.code, KeyCode::Char('q') | KeyCode::Char('Q'))
-}
-
-/// Insert spaces between characters so Hanzi reads larger in a monospace grid.
 fn space_cjk(s: &str) -> String {
     let chars: Vec<char> = s.chars().collect();
     if chars.len() <= 1 {
