@@ -1,5 +1,13 @@
 use crate::models::card::{ Grade };
 
+
+/// One graded card in this session (for Browse later).
+pub struct ReviewEntry {
+    /// Index into `App::cards` at the time of grading.
+    pub card_index: usize,
+    pub correct: bool,
+}
+
 pub fn next_interval(grade: Grade, previous: u32) -> u32 {
     match grade {
         Grade::Again => 0,

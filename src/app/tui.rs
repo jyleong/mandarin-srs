@@ -5,7 +5,7 @@ use ratatui::text::{Line, Span, Text};
 use ratatui::widgets::{Block, Borders, Clear, Padding, Paragraph, Wrap};
 use rand::seq::SliceRandom;
 
-use crate::app::review::next_interval;
+use crate::app::review::{ next_interval, ReviewEntry } ;
 use crate::models::card::{Card, Grade, HskLevel};
 use crate::models::progress::{self, CardProgress, ProgressMap};
 use crate::utils::date_utils::today;
@@ -15,6 +15,7 @@ enum Phase {
     SelectLevel,
     Prompt, // Show Hanzi + type answer
     Reveal, // show result, pinyin and meaning
+    Browse, // read-only walk through history (←/→)
 }
 
 struct App {
@@ -27,6 +28,9 @@ struct App {
     selected_level: HskLevel,
     phase: Phase,
     last_correct: Option<bool>,
+    /// Graded cards this session, in order — source of truth for Browse.
+    history: Vec<ReviewEntry>,
+    browse_pos: usize,
     progress: ProgressMap,
     progress_path: String,
 }
@@ -44,6 +48,8 @@ pub fn run(all_cards: Vec<Card>, progress: ProgressMap) -> std::io::Result<Progr
         selected_level: HskLevel::Hsk1,
         phase: Phase::SelectLevel,
         last_correct: None,
+        history: Vec::new(),
+        browse_pos: 0,
         progress,
         progress_path: String::from("data/progress.json"),
     };
@@ -90,7 +96,13 @@ impl App {
             return;
         }
 
-        let card = &self.cards[self.index];
+        let card = match self.phase {
+            Phase::Browse => {
+                let entry = &self.history[self.browse_pos];
+                &self.cards[entry.card_index]
+            }
+            _ => &self.cards[self.index],
+        };
 
         let chunks = Layout::vertical([
             Constraint::Length(3),
@@ -107,6 +119,7 @@ impl App {
             Phase::SelectLevel => unreachable!(),
             Phase::Prompt => self.render_input(frame, chunks[2]),
             Phase::Reveal => self.render_reveal(frame, chunks[2], card),
+            Phase::Browse => self.render_browse(frame, chunks[2], card),
         }
         self.render_footer(frame, chunks[3]);
     }
@@ -208,17 +221,32 @@ impl App {
 
 
         self.cards.shuffle(&mut rand::rng());
-
         self.cards.truncate(50);
 
-        // 5h later: shuffle here
         self.index = 0;
         self.input.clear();
         self.last_correct = None;
+        self.history.clear();
+        self.browse_pos = 0;
         self.phase = Phase::Prompt;
     }
 
     fn render_header(&self, frame: &mut ratatui::Frame, area: Rect) {
+        let status = match self.phase {
+            Phase::Browse => format!(
+                "HSK {} · browse {} / {} answered",
+                self.selected_level.as_u8(),
+                self.browse_pos + 1,
+                self.history.len()
+            ),
+            _ => format!(
+                "HSK {} · card {} / {}",
+                self.selected_level.as_u8(),
+                self.index + 1,
+                self.cards.len()
+            ),
+        };
+
         let title = Line::from(vec![
             Span::styled(
                 " Mandarin SRS ",
@@ -227,15 +255,7 @@ impl App {
                     .add_modifier(Modifier::BOLD),
             ),
             Span::raw("· "),
-            Span::styled(
-                format!(
-                    "HSK {} · card {} / {}",
-                    self.selected_level.as_u8(),
-                    self.index + 1,
-                    self.cards.len()
-                ),
-                Style::new().fg(Color::Gray),
-            ),
+            Span::styled(status, Style::new().fg(Color::Gray)),
         ]);
 
         let header = Paragraph::new(title).block(
@@ -343,13 +363,69 @@ impl App {
         frame.render_widget(reveal, area);
     }
 
+    fn render_browse(&self, frame: &mut ratatui::Frame, area: Rect, card: &Card) {
+        let entry = &self.history[self.browse_pos];
+        let (verdict, color) = if entry.correct {
+            (" ✓  Correct ", Color::Green)
+        } else {
+            (" ✗  Incorrect ", Color::Red)
+        };
+
+        let text = Text::from(vec![
+            Line::from(Span::styled(
+                " Browse ",
+                Style::new()
+                    .fg(Color::Black)
+                    .bg(Color::Magenta)
+                    .add_modifier(Modifier::BOLD),
+            )),
+            Line::from(""),
+            Line::from(Span::styled(
+                verdict,
+                Style::new()
+                    .fg(Color::Black)
+                    .bg(color)
+                    .add_modifier(Modifier::BOLD),
+            )),
+            Line::from(""),
+            Line::from(vec![
+                Span::styled("Pinyin  ", Style::new().fg(Color::DarkGray)),
+                Span::styled(
+                    &card.pinyin,
+                    Style::new()
+                        .fg(Color::Cyan)
+                        .add_modifier(Modifier::BOLD),
+                ),
+            ]),
+            Line::from(vec![
+                Span::styled("Meaning ", Style::new().fg(Color::DarkGray)),
+                Span::styled(
+                    &card.meaning,
+                    Style::new()
+                        .fg(Color::White)
+                        .add_modifier(Modifier::BOLD),
+                ),
+            ]),
+        ]);
+
+        let browse = Paragraph::new(text)
+            .block(
+                Block::bordered()
+                    .title(" History ")
+                    .border_style(Style::new().fg(Color::Magenta)),
+            )
+            .wrap(Wrap { trim: true });
+        frame.render_widget(browse, area);
+    }
+
     fn render_footer(&self, frame: &mut ratatui::Frame, area: Rect) {
         let help = match self.phase {
             Phase::SelectLevel => {
                 "↑↓ / k j move   ·   1-6 jump   ·   Enter start   ·   Esc / Ctrl+Q quit"
             }
             Phase::Prompt => "Enter submit   ·   Backspace delete   ·   Esc / Ctrl+Q quit",
-            Phase::Reveal => "Any key next card   ·   Esc / Ctrl+Q quit",
+            Phase::Reveal => "← browse history   ·   → / any key next card   ·   Esc / Ctrl+Q quit",
+            Phase::Browse => "← previous   ·   → next (past end → quiz)   ·   Esc / Ctrl+Q quit",
         };
         let footer = Paragraph::new(Line::from(Span::styled(
             help,
@@ -372,6 +448,7 @@ impl App {
             Phase::SelectLevel => self.handle_select_level_key(key.code),
             Phase::Prompt => self.handle_prompt_key(key.code),
             Phase::Reveal => self.handle_reveal_key(key.code),
+            Phase::Browse => self.handle_browse_key(key.code),
         }
     }
 
@@ -424,17 +501,52 @@ impl App {
     fn handle_reveal_key(&mut self, code: KeyCode) -> bool {
         match code {
             KeyCode::Esc => true,
-            _ => {
-                self.index += 1;
-                if self.index >= self.cards.len() {
-                    return true;
+            KeyCode::Left => {
+                if !self.history.is_empty() {
+                    self.browse_pos = self.history.len() - 1;
+                    self.phase = Phase::Browse;
                 }
-                self.input.clear();
-                self.last_correct = None;
-                self.phase = Phase::Prompt;
                 false
             }
+            KeyCode::Right => self.advance_after_reveal(),
+            // Keep “any other key advances” so Enter/space still work; ← is reserved.
+            _ => self.advance_after_reveal(),
         }
+    }
+
+    fn handle_browse_key(&mut self, code: KeyCode) -> bool {
+        match code {
+            KeyCode::Esc => true,
+            KeyCode::Left => {
+                if self.browse_pos > 0 {
+                    self.browse_pos -= 1;
+                }
+                false
+            }
+            KeyCode::Right => {
+                if self.browse_pos + 1 < self.history.len() {
+                    self.browse_pos += 1;
+                } else {
+                    // Past last history entry → resume quiz at current index.
+                    self.input.clear();
+                    self.last_correct = None;
+                    self.phase = Phase::Prompt;
+                }
+                false
+            }
+            _ => false,
+        }
+    }
+
+    fn advance_after_reveal(&mut self) -> bool {
+        self.index += 1;
+        if self.index >= self.cards.len() {
+            return true;
+        }
+        self.input.clear();
+        self.last_correct = None;
+        self.phase = Phase::Prompt;
+        false
     }
 
     fn submit_answer(&mut self) {
@@ -464,6 +576,12 @@ impl App {
         );
 
         let _ = crate::models::progress::save(&self.progress_path, &self.progress);
+
+        self.history.push(ReviewEntry {
+            card_index: self.index,
+            correct,
+        });
+        self.browse_pos = self.history.len().saturating_sub(1);
 
         self.last_correct = Some(correct);
         self.phase = Phase::Reveal;
