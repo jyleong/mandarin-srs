@@ -298,6 +298,8 @@ impl App {
                         .add_modifier(Modifier::BOLD),
                 ),
             ]),
+            Line::from(""),
+            grade_keys_line(self.last_correct == Some(true)),
         ]);
 
         let reveal = Paragraph::new(text)
@@ -431,7 +433,9 @@ impl App {
                 }
             }
             Phase::Prompt => "Enter submit   ·   Backspace delete   ·   Esc / Ctrl+Q quit",
-            Phase::Reveal => "← browse history   ·   → / any key next card   ·   Esc / Ctrl+Q quit",
+            Phase::Reveal => {
+                "1 Again  ·  2 Good  ·  3 Easy  ·  ← browse  ·  Esc / Ctrl+Q quit"
+            }
             Phase::Browse => "← previous   ·   → next (past end → quiz)   ·   Esc / Ctrl+Q quit",
             Phase::Summary => "Enter / any key → level select   ·   Esc / Ctrl+Q quit",
         };
@@ -444,6 +448,30 @@ impl App {
         .alignment(Alignment::Center);
         frame.render_widget(footer, area);
     }
+}
+
+fn grade_key_span(label: &str, suggested: bool) -> Span<'static> {
+    if suggested {
+        Span::styled(
+            format!(" {label} "),
+            Style::new()
+                .fg(Color::Black)
+                .bg(Color::Yellow)
+                .add_modifier(Modifier::BOLD),
+        )
+    } else {
+        Span::styled(format!(" {label} "), Style::new().fg(Color::Gray))
+    }
+}
+
+fn grade_keys_line(typed_correct: bool) -> Line<'static> {
+    Line::from(vec![
+        grade_key_span("1 Again", !typed_correct),
+        Span::raw("  "),
+        grade_key_span("2 Good", typed_correct),
+        Span::raw("  "),
+        grade_key_span("3 Easy", false),
+    ])
 }
 
 fn space_cjk(s: &str) -> String {

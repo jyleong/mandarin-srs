@@ -11,6 +11,7 @@ pub fn next_interval(grade: Grade, previous: u32) -> u32 {
     match grade {
         Grade::Again => 0,
         Grade::Good => previous.max(1) * 2, // 0 -> 2, 2 -> 4, 4 -> 8
+        Grade::Easy => previous.max(1) * 4, // 0 -> 4, 2 -> 8, 4 -> 16
     }
 }
 
@@ -32,5 +33,15 @@ mod tests {
     #[test]
     fn good_is_three_days_and_extra() {
         assert_eq!(next_interval(Grade::Good, 2), 4);
+    }
+
+    #[test]
+    fn easy_quadruples_from_zero() {
+        assert_eq!(next_interval(Grade::Easy, 0), 4);
+    }
+
+    #[test]
+    fn easy_quadruples_previous() {
+        assert_eq!(next_interval(Grade::Easy, 2), 8);
     }
 }

@@ -1,5 +1,7 @@
 use ratatui::crossterm::event::{KeyCode, KeyEvent, KeyModifiers};
 
+use crate::models::card::Grade;
+
 use super::app::{App, Phase};
 
 impl App {
@@ -49,7 +51,7 @@ impl App {
         match code {
             KeyCode::Esc => true,
             KeyCode::Enter => {
-                self.submit_answer();
+                self.check_answer();
                 false
             }
             KeyCode::Char(c) => {
@@ -67,6 +69,18 @@ impl App {
     fn handle_reveal_key(&mut self, code: KeyCode) -> bool {
         match code {
             KeyCode::Esc => true,
+            KeyCode::Char('1') | KeyCode::Char('a') => {
+                self.apply_grade(Grade::Again);
+                false
+            }
+            KeyCode::Char('2') | KeyCode::Char('g') => {
+                self.apply_grade(Grade::Good);
+                false
+            }
+            KeyCode::Char('3') | KeyCode::Char('e') => {
+                self.apply_grade(Grade::Easy);
+                false
+            }
             KeyCode::Left => {
                 if !self.history.is_empty() {
                     self.browse_pos = self.history.len() - 1;
@@ -74,8 +88,8 @@ impl App {
                 }
                 false
             }
-            KeyCode::Right => self.advance_after_reveal(),
-            _ => self.advance_after_reveal(),
+            // Wait for a grade — do not advance on → / leftover keys.
+            _ => false,
         }
     }
 

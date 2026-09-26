@@ -71,7 +71,21 @@ impl App {
         self.phase = Phase::Prompt;
     }
 
-    pub(super) fn submit_answer(&mut self) {
+    /// Type-in check only — no SRS write yet (that happens on 1/2/3 in Reveal).
+    pub(super) fn check_answer(&mut self) {
+        let card = &self.cards[self.index];
+        let correct = card.meaning_matches(&self.input);
+
+        self.history.push(ReviewEntry {
+            card_index: self.index,
+            correct,
+        });
+        self.browse_pos = self.history.len().saturating_sub(1);
+        self.last_correct = Some(correct);
+        self.phase = Phase::Reveal;
+    }
+
+    pub(super) fn apply_grade(&mut self, grade: Grade) {
         let card = &self.cards[self.index];
         let previous = self
             .progress
@@ -79,12 +93,6 @@ impl App {
             .map(|p| p.interval_days)
             .unwrap_or(0);
 
-        let correct = card.meaning_matches(&self.input);
-        let grade = if correct {
-            Grade::Good
-        } else {
-            Grade::Again
-        };
         let days = next_interval(grade, previous);
         let due_date = today() + Days::new(u64::from(days));
 
@@ -95,17 +103,9 @@ impl App {
                 due_date,
             },
         );
-
         let _ = crate::models::progress::save(&self.progress_path, &self.progress);
 
-        self.history.push(ReviewEntry {
-            card_index: self.index,
-            correct,
-        });
-        self.browse_pos = self.history.len().saturating_sub(1);
-
-        self.last_correct = Some(correct);
-        self.phase = Phase::Reveal;
+        let _ = self.advance_after_reveal();
     }
 
     /// Advance quiz index after Reveal. `true` only if the whole app should quit
@@ -124,8 +124,12 @@ impl App {
 
     pub(super) fn resume_quiz_from_browse(&mut self) {
         self.input.clear();
-        self.last_correct = None;
-        self.phase = Phase::Prompt;
+        // Still waiting for 1/2/3 on the current card.
+        if self.last_correct.is_some() {
+            self.phase = Phase::Reveal;
+        } else {
+            self.phase = Phase::Prompt;
+        }
     }
 
     pub(super) fn return_to_select(&mut self) {

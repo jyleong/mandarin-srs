@@ -72,8 +72,9 @@ impl HskLevel {
 
 #[derive(Debug, Clone, Copy, PartialEq, Eq)]
 pub enum Grade {
-    Again, // wrong or I forgot
-    Good, // right
+    Again, // wrong or I forgot — due today
+    Good,  // right — double interval
+    Easy,  // very sure — longer interval
 }
 
 impl Card {
