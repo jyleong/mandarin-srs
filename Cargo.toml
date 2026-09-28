@@ -2,6 +2,10 @@
 name = "mandarin-srs"
 version = "0.1.0"
 edition = "2024"
+description = "Terminal spaced-repetition TUI for Mandarin (Hanzi → English meaning)"
+license = "MIT"
+repository = "https://github.com/jyleong/mandarin-srs"
+readme = "README.md"
 
 [dependencies]
 chrono = { version = "0.4.45", features = ["serde"] }

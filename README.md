@@ -101,3 +101,7 @@ src/models/          Card, Deck, progress, next_interval
 src/app/tui/         terminal loop, App state, keys, view
 src/utils/           calendar today()
 ```
+
+## License
+
+MIT. See [LICENSE](LICENSE).
