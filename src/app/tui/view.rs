@@ -5,6 +5,9 @@ use ratatui::widgets::{Block, Borders, Clear, Padding, Paragraph, Wrap};
 
 use crate::models::card::{Card, HskLevel};
 use crate::models::progress;
+use crate::models::session::{
+    NEW_CARD_DAILY_LIMIT, SESSION_LIMIT, assemble_session, partition_due,
+};
 use crate::utils::date_utils::today;
 
 use super::app::{App, Phase};
@@ -77,28 +80,29 @@ impl App {
         self.render_footer(frame, chunks[3]);
     }
 
-    fn due_counts(&self, level: HskLevel) -> (usize, usize) {
+    /// `(reviews, new, total_at_level)` after the daily new-card cap.
+    fn session_preview(&self, level: HskLevel) -> (usize, usize, usize) {
         let today = today();
-        let at_level: Vec<_> = self
-            .all_cards
+        let total = self.all_cards.iter().filter(|c| c.hsk == level).count();
+        let (reviews, new) = partition_due(&self.all_cards, level, &self.progress, today);
+        let allowance =
+            progress::remaining_new_allowance(&self.progress, today, NEW_CARD_DAILY_LIMIT);
+        let session = assemble_session(reviews, new, allowance, SESSION_LIMIT);
+        let review_n = session
             .iter()
-            .filter(|c| c.hsk == level)
-            .collect();
-        let total = at_level.len();
-        let due = at_level
-            .iter()
-            .filter(|c| progress::is_due(&self.progress, &c.id, today))
+            .filter(|c| !progress::is_new(&self.progress, &c.id))
             .count();
-        (due, total)
+        let new_n = session.len() - review_n;
+        (review_n, new_n, total)
     }
 
     fn render_select_header(&self, frame: &mut ratatui::Frame, area: Rect) {
         let subtitle = match self.phase {
             Phase::Summary => "session complete",
             _ => {
-                let (due, _) = self.due_counts(self.selected_level);
-                if due == 0 {
-                    "nothing due at this level"
+                let (reviews, new, _) = self.session_preview(self.selected_level);
+                if reviews + new == 0 {
+                    "nothing in today's session — pick another level"
                 } else {
                     "choose a level"
                 }
@@ -107,9 +111,7 @@ impl App {
         let title = Line::from(vec![
             Span::styled(
                 " Mandarin SRS ",
-                Style::new()
-                    .fg(Color::Cyan)
-                    .add_modifier(Modifier::BOLD),
+                Style::new().fg(Color::Cyan).add_modifier(Modifier::BOLD),
             ),
             Span::raw("· "),
             Span::styled(subtitle, Style::new().fg(Color::Gray)),
@@ -136,17 +138,15 @@ impl App {
         lines.push(Line::from(""));
         for level in levels {
             let n = level.as_u8();
-            let (due, total) = self.due_counts(level);
+            let (reviews, new, total) = self.session_preview(level);
             let selected = level == self.selected_level;
 
-            let label = format!("  HSK {n}   ({due} due / {total})");
+            let label = format!("  HSK {n}   ({reviews} review · {new} new / {total})");
             let line = if selected {
                 Line::from(vec![
                     Span::styled(
                         " › ",
-                        Style::new()
-                            .fg(Color::Cyan)
-                            .add_modifier(Modifier::BOLD),
+                        Style::new().fg(Color::Cyan).add_modifier(Modifier::BOLD),
                     ),
                     Span::styled(
                         label,
@@ -186,20 +186,31 @@ impl App {
                 self.browse_pos + 1,
                 self.history.len()
             ),
-            _ => format!(
-                "HSK {} · card {} / {}",
-                self.selected_level.as_u8(),
-                self.index + 1,
-                self.cards.len()
-            ),
+            _ => {
+                let again = self.again_remaining();
+                if again == 0 {
+                    format!(
+                        "HSK {} · card {} / {}",
+                        self.selected_level.as_u8(),
+                        self.index + 1,
+                        self.cards.len()
+                    )
+                } else {
+                    format!(
+                        "HSK {} · card {} / {} · {} again",
+                        self.selected_level.as_u8(),
+                        self.index + 1,
+                        self.cards.len(),
+                        again
+                    )
+                }
+            }
         };
 
         let title = Line::from(vec![
             Span::styled(
                 " Mandarin SRS ",
-                Style::new()
-                    .fg(Color::Cyan)
-                    .add_modifier(Modifier::BOLD),
+                Style::new().fg(Color::Cyan).add_modifier(Modifier::BOLD),
             ),
             Span::raw("· "),
             Span::styled(status, Style::new().fg(Color::Gray)),
@@ -224,9 +235,7 @@ impl App {
 
         let hanzi = Paragraph::new(Line::from(Span::styled(
             spaced,
-            Style::new()
-                .fg(Color::White)
-                .add_modifier(Modifier::BOLD),
+            Style::new().fg(Color::White).add_modifier(Modifier::BOLD),
         )))
         .alignment(Alignment::Center)
         .block(block);
@@ -247,9 +256,7 @@ impl App {
             Span::raw("  "),
             Span::styled(
                 format!("{}{caret}", self.input),
-                Style::new()
-                    .fg(Color::Yellow)
-                    .add_modifier(Modifier::BOLD),
+                Style::new().fg(Color::Yellow).add_modifier(Modifier::BOLD),
             ),
         ]);
 
@@ -271,6 +278,8 @@ impl App {
             (" ✗  Incorrect ", Color::Red)
         };
 
+        let guess = self.history.last().map(|e| e.guess.as_str()).unwrap_or("");
+
         let text = Text::from(vec![
             Line::from(Span::styled(
                 verdict,
@@ -280,22 +289,20 @@ impl App {
                     .add_modifier(Modifier::BOLD),
             )),
             Line::from(""),
+            you_typed_line(guess),
+            Line::from(""),
             Line::from(vec![
                 Span::styled("Pinyin  ", Style::new().fg(Color::DarkGray)),
                 Span::styled(
                     &card.pinyin,
-                    Style::new()
-                        .fg(Color::Cyan)
-                        .add_modifier(Modifier::BOLD),
+                    Style::new().fg(Color::Cyan).add_modifier(Modifier::BOLD),
                 ),
             ]),
             Line::from(vec![
                 Span::styled("Meaning ", Style::new().fg(Color::DarkGray)),
                 Span::styled(
                     &card.meaning,
-                    Style::new()
-                        .fg(Color::White)
-                        .add_modifier(Modifier::BOLD),
+                    Style::new().fg(Color::White).add_modifier(Modifier::BOLD),
                 ),
             ]),
             Line::from(""),
@@ -337,22 +344,20 @@ impl App {
                     .add_modifier(Modifier::BOLD),
             )),
             Line::from(""),
+            you_typed_line(&entry.guess),
+            Line::from(""),
             Line::from(vec![
                 Span::styled("Pinyin  ", Style::new().fg(Color::DarkGray)),
                 Span::styled(
                     &card.pinyin,
-                    Style::new()
-                        .fg(Color::Cyan)
-                        .add_modifier(Modifier::BOLD),
+                    Style::new().fg(Color::Cyan).add_modifier(Modifier::BOLD),
                 ),
             ]),
             Line::from(vec![
                 Span::styled("Meaning ", Style::new().fg(Color::DarkGray)),
                 Span::styled(
                     &card.meaning,
-                    Style::new()
-                        .fg(Color::White)
-                        .add_modifier(Modifier::BOLD),
+                    Style::new().fg(Color::White).add_modifier(Modifier::BOLD),
                 ),
             ]),
         ]);
@@ -385,57 +390,47 @@ impl App {
                 Span::styled("Answered  ", Style::new().fg(Color::DarkGray)),
                 Span::styled(
                     answered.to_string(),
-                    Style::new()
-                        .fg(Color::White)
-                        .add_modifier(Modifier::BOLD),
+                    Style::new().fg(Color::White).add_modifier(Modifier::BOLD),
                 ),
             ]),
             Line::from(vec![
                 Span::styled("Correct   ", Style::new().fg(Color::DarkGray)),
                 Span::styled(
                     format!("✓  {correct}"),
-                    Style::new()
-                        .fg(Color::Green)
-                        .add_modifier(Modifier::BOLD),
+                    Style::new().fg(Color::Green).add_modifier(Modifier::BOLD),
                 ),
             ]),
             Line::from(vec![
                 Span::styled("Wrong     ", Style::new().fg(Color::DarkGray)),
                 Span::styled(
                     format!("✗  {wrong}"),
-                    Style::new()
-                        .fg(Color::Red)
-                        .add_modifier(Modifier::BOLD),
+                    Style::new().fg(Color::Red).add_modifier(Modifier::BOLD),
                 ),
             ]),
         ]);
 
-        let summary = Paragraph::new(text)
-            .alignment(Alignment::Left)
-            .block(
-                Block::bordered()
-                    .title(" Summary ")
-                    .title_alignment(Alignment::Center)
-                    .border_style(Style::new().fg(Color::Cyan))
-                    .padding(Padding::horizontal(2)),
-            );
+        let summary = Paragraph::new(text).alignment(Alignment::Left).block(
+            Block::bordered()
+                .title(" Summary ")
+                .title_alignment(Alignment::Center)
+                .border_style(Style::new().fg(Color::Cyan))
+                .padding(Padding::horizontal(2)),
+        );
         frame.render_widget(summary, area);
     }
 
     fn render_footer(&self, frame: &mut ratatui::Frame, area: Rect) {
         let help = match self.phase {
             Phase::SelectLevel => {
-                let (due, _) = self.due_counts(self.selected_level);
-                if due == 0 {
-                    "Nothing due today — pick another level   ·   Esc / Ctrl+Q quit"
+                let (reviews, new, _) = self.session_preview(self.selected_level);
+                if reviews + new == 0 {
+                    "Nothing in today's session — pick another level   ·   Esc / Ctrl+Q quit"
                 } else {
                     "↑↓ / k j move   ·   1-6 jump   ·   Enter start   ·   Esc / Ctrl+Q quit"
                 }
             }
             Phase::Prompt => "Enter submit   ·   Backspace delete   ·   Esc / Ctrl+Q quit",
-            Phase::Reveal => {
-                "1 Again  ·  2 Good  ·  3 Easy  ·  ← browse  ·  Esc / Ctrl+Q quit"
-            }
+            Phase::Reveal => "1 Again  ·  2 Good  ·  3 Easy  ·  ← browse  ·  Esc / Ctrl+Q quit",
             Phase::Browse => "← previous   ·   → next (past end → quiz)   ·   Esc / Ctrl+Q quit",
             Phase::Summary => "Enter / any key → level select   ·   Esc / Ctrl+Q quit",
         };
@@ -448,6 +443,21 @@ impl App {
         .alignment(Alignment::Center);
         frame.render_widget(footer, area);
     }
+}
+
+fn you_typed_line(guess: &str) -> Line<'_> {
+    let shown = if guess.trim().is_empty() {
+        "(empty)"
+    } else {
+        guess
+    };
+    Line::from(vec![
+        Span::styled("You typed ", Style::new().fg(Color::DarkGray)),
+        Span::styled(
+            shown,
+            Style::new().fg(Color::Yellow).add_modifier(Modifier::BOLD),
+        ),
+    ])
 }
 
 fn grade_key_span(label: &str, suggested: bool) -> Span<'static> {

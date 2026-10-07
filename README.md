@@ -39,11 +39,11 @@ Scheduling (after you press 1/2/3):
 
 | Grade | Next due |
 |-------|----------|
-| Again | today |
+| Again | today, and the card is queued again later in this session |
 | Good | previous interval × 2 (min 2 days from new) |
 | Easy | previous interval × 4 |
 
-A session is up to **50 due** cards at the chosen HSK level (shuffled). Cards not due yet are skipped.
+A session is up to **50** cards at the chosen HSK level (shuffled): due **reviews** first, then up to **10 new** cards per calendar day (shared across levels). Cards not due yet are skipped. Level select shows `review · new / total` after that cap. The quiz header adds `N again` while Again-queued cards are still waiting. Reveal and browse show **You typed** next to the gloss.
 
 ## Interaction flow
 

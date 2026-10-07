@@ -5,7 +5,7 @@ use std::convert::TryFrom;
 pub struct Card {
     pub id: String,
     pub chinese: String, // 汉字 / the word you show
-    pub pinyin: String, // Hanyu pinyin (hidden during the prompt)
+    pub pinyin: String,  // Hanyu pinyin (hidden during the prompt)
     pub meaning: String, // English gloss (what you type as the answer)
     pub hsk: HskLevel,
 }
@@ -68,7 +68,6 @@ impl HskLevel {
         }
     }
 }
-
 
 #[derive(Debug, Clone, Copy, PartialEq, Eq)]
 pub enum Grade {

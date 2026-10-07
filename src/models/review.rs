@@ -1,10 +1,12 @@
 use crate::models::card::Grade;
 
-/// One graded card in this session (for Browse).
+/// One typed check in this session (for Browse / Reveal).
 pub struct ReviewEntry {
-    /// Index into the session `cards` vec at the time of grading.
+    /// Index into the session `cards` vec at the time of the check.
     pub card_index: usize,
     pub correct: bool,
+    /// Raw input at Enter; may be empty.
+    pub guess: String,
 }
 
 pub fn next_interval(grade: Grade, previous: u32) -> u32 {
