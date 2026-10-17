@@ -26,7 +26,7 @@ cargo test    # domain tests (matching, intervals, due dates)
 
 | Where | Keys |
 |-------|------|
-| **Level select** | `↑` `↓` / `j` `k` · `1`–`6` · `Enter` start |
+| **Level select** | `↑` `↓` / `j` `k` · `1`–`6` · `[` `]` / `h` `l` batch (10/20/30/50) · `Enter` start |
 | **Prompt** | type English · `Enter` check · `Backspace` |
 | **Reveal** | `1` / `a` Again · `2` / `g` Good · `3` / `e` Easy · `←` browse |
 | **Browse** | `←` `→` history (read-only) · `→` past last returns to reveal/quiz |
@@ -43,7 +43,7 @@ Scheduling (after you press 1/2/3):
 | Good | previous interval × 2 (min 2 days from new) |
 | Easy | previous interval × 4 |
 
-A session is up to **50** cards at the chosen HSK level (shuffled): due **reviews** first, then up to **10 new** cards per calendar day (shared across levels). Cards not due yet are skipped. Level select shows `review · new / total` after that cap. The quiz header adds `N again` while Again-queued cards are still waiting. Reveal and browse show **You typed** next to the gloss.
+A session is a **batch** of 10 / 20 / 30 / 50 cards (default 50) at the chosen HSK level, shuffled: due **reviews** first, then up to **10 new** cards per calendar day (shared across levels), then **study ahead** (cards not due yet) so you can still start when the due/new queues are empty. Ahead grades still update intervals. Level select shows `review · new · ahead / total`. The quiz header adds `N again` while Again-queued cards are still waiting. Reveal and browse show **You typed** next to the gloss.
 
 ## Interaction flow
 

@@ -30,6 +30,14 @@ impl App {
                 self.selected_level = self.selected_level.prev();
                 false
             }
+            KeyCode::Char(']') | KeyCode::Char('l') | KeyCode::Right => {
+                self.bump_batch_size(true);
+                false
+            }
+            KeyCode::Char('[') | KeyCode::Char('h') | KeyCode::Left => {
+                self.bump_batch_size(false);
+                false
+            }
             KeyCode::Char(c) if c.is_ascii_digit() => {
                 if let Some(d) = c.to_digit(10) {
                     if let Some(level) = crate::models::card::HskLevel::from_digit(d as u8) {

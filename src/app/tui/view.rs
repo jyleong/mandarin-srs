@@ -5,9 +5,7 @@ use ratatui::widgets::{Block, Borders, Clear, Padding, Paragraph, Wrap};
 
 use crate::models::card::{Card, HskLevel};
 use crate::models::progress;
-use crate::models::session::{
-    NEW_CARD_DAILY_LIMIT, SESSION_LIMIT, assemble_session, partition_due,
-};
+use crate::models::session::{NEW_CARD_DAILY_LIMIT, assemble_session, partition_due};
 use crate::utils::date_utils::today;
 
 use super::app::{App, Phase};
@@ -80,32 +78,42 @@ impl App {
         self.render_footer(frame, chunks[3]);
     }
 
-    /// `(reviews, new, total_at_level)` after the daily new-card cap.
-    fn session_preview(&self, level: HskLevel) -> (usize, usize, usize) {
+    /// `(reviews, new, ahead, total_at_level)` after cap and `batch_size`.
+    fn session_preview(&self, level: HskLevel) -> (usize, usize, usize, usize) {
         let today = today();
         let total = self.all_cards.iter().filter(|c| c.hsk == level).count();
-        let (reviews, new) = partition_due(&self.all_cards, level, &self.progress, today);
+        let (reviews, new, ahead) = partition_due(&self.all_cards, level, &self.progress, today);
         let allowance =
             progress::remaining_new_allowance(&self.progress, today, NEW_CARD_DAILY_LIMIT);
-        let session = assemble_session(reviews, new, allowance, SESSION_LIMIT);
-        let review_n = session
-            .iter()
-            .filter(|c| !progress::is_new(&self.progress, &c.id))
-            .count();
-        let new_n = session.len() - review_n;
-        (review_n, new_n, total)
+        let session = assemble_session(reviews, new, ahead, allowance, self.batch_size);
+        let mut review_n = 0;
+        let mut new_n = 0;
+        let mut ahead_n = 0;
+        for card in &session {
+            if progress::is_new(&self.progress, &card.id) {
+                new_n += 1;
+            } else if progress::is_due(&self.progress, &card.id, today) {
+                review_n += 1;
+            } else {
+                ahead_n += 1;
+            }
+        }
+        (review_n, new_n, ahead_n, total)
     }
 
     fn render_select_header(&self, frame: &mut ratatui::Frame, area: Rect) {
         let subtitle = match self.phase {
-            Phase::Summary => "session complete",
+            Phase::Summary => "session complete".to_string(),
             _ => {
-                let (reviews, new, _) = self.session_preview(self.selected_level);
-                if reviews + new == 0 {
-                    "nothing in today's session — pick another level"
+                let (reviews, new, ahead, _) = self.session_preview(self.selected_level);
+                let mode = if reviews + new + ahead == 0 {
+                    "no cards to start"
+                } else if reviews + new == 0 {
+                    "study ahead"
                 } else {
                     "choose a level"
-                }
+                };
+                format!("{mode} · batch {}", self.batch_size)
             }
         };
         let title = Line::from(vec![
@@ -138,10 +146,11 @@ impl App {
         lines.push(Line::from(""));
         for level in levels {
             let n = level.as_u8();
-            let (reviews, new, total) = self.session_preview(level);
+            let (reviews, new, ahead, total) = self.session_preview(level);
             let selected = level == self.selected_level;
 
-            let label = format!("  HSK {n}   ({reviews} review · {new} new / {total})");
+            let label =
+                format!("  HSK {n}   ({reviews} review · {new} new · {ahead} ahead / {total})");
             let line = if selected {
                 Line::from(vec![
                     Span::styled(
@@ -422,11 +431,11 @@ impl App {
     fn render_footer(&self, frame: &mut ratatui::Frame, area: Rect) {
         let help = match self.phase {
             Phase::SelectLevel => {
-                let (reviews, new, _) = self.session_preview(self.selected_level);
-                if reviews + new == 0 {
-                    "Nothing in today's session — pick another level   ·   Esc / Ctrl+Q quit"
+                let (reviews, new, ahead, _) = self.session_preview(self.selected_level);
+                if reviews + new + ahead == 0 {
+                    "[ ] batch   ·   no cards to start   ·   Esc / Ctrl+Q quit"
                 } else {
-                    "↑↓ / k j move   ·   1-6 jump   ·   Enter start   ·   Esc / Ctrl+Q quit"
+                    "[ ] / h l batch   ·   ↑↓ / k j move   ·   1-6 jump   ·   Enter start   ·   Esc / Ctrl+Q quit"
                 }
             }
             Phase::Prompt => "Enter submit   ·   Backspace delete   ·   Esc / Ctrl+Q quit",

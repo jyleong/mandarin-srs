@@ -4,8 +4,8 @@ use crate::models::card::{Card, Grade, HskLevel};
 use crate::models::progress::{self, ProgressMap};
 use crate::models::review::ReviewEntry;
 use crate::models::session::{
-    NEW_CARD_DAILY_LIMIT, SESSION_LIMIT, assemble_session, partition_due, remaining_again,
-    requeue_again,
+    DEFAULT_BATCH_SIZE, NEW_CARD_DAILY_LIMIT, assemble_session, next_batch_size, partition_due,
+    prev_batch_size, remaining_again, requeue_again,
 };
 use crate::utils::date_utils::today;
 
@@ -30,6 +30,7 @@ pub(super) struct App {
     pub(super) progress: ProgressMap,
     /// Session length before any Again appends.
     pub(super) initial_len: usize,
+    pub(super) batch_size: usize,
     progress_path: String,
 }
 
@@ -47,21 +48,23 @@ impl App {
             browse_pos: 0,
             progress,
             initial_len: 0,
+            batch_size: DEFAULT_BATCH_SIZE,
             progress_path: String::from("data/progress.json"),
         }
     }
 
-    /// Due reviews first, then up to the remaining daily new-card allowance.
+    /// Due reviews, allowed new, then study-ahead, capped at `batch_size`.
     pub(super) fn start_session(&mut self) {
         let today = today();
-        let (mut reviews, mut new) =
+        let (mut reviews, mut new, mut ahead) =
             partition_due(&self.all_cards, self.selected_level, &self.progress, today);
         let mut rng = rand::rng();
         reviews.shuffle(&mut rng);
         new.shuffle(&mut rng);
+        ahead.shuffle(&mut rng);
         let allowance =
             progress::remaining_new_allowance(&self.progress, today, NEW_CARD_DAILY_LIMIT);
-        self.cards = assemble_session(reviews, new, allowance, SESSION_LIMIT);
+        self.cards = assemble_session(reviews, new, ahead, allowance, self.batch_size);
         self.cards.shuffle(&mut rng);
 
         if self.cards.is_empty() {
@@ -147,5 +150,13 @@ impl App {
 
     pub(super) fn again_remaining(&self) -> usize {
         remaining_again(self.index, self.initial_len, self.cards.len())
+    }
+
+    pub(super) fn bump_batch_size(&mut self, larger: bool) {
+        self.batch_size = if larger {
+            next_batch_size(self.batch_size)
+        } else {
+            prev_batch_size(self.batch_size)
+        };
     }
 }
