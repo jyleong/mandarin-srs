@@ -88,7 +88,7 @@ Text version of the same loop:
 
 | File | Role |
 |------|------|
-| `data/hsk_words.json` | Deck: `chinese`, `pinyin`, `meaning`, `hsk` (1–6) |
+| `data/hsk_words.json` | Deck: `chinese`, `pinyin`, `meaning`, `hsk` (1–6); optional `example` / `example_en` (shown on Reveal) |
 | `data/progress.json` | Per-card `interval_days` and `due_date` (`YYYY-MM-DD`), keyed by `hskN:汉字` |
 
 Word counts (HSK 2.0 exclusive lists): L1 150 · L2 ~150 · L3 300 · L4 ~600 · L5–6 samples.

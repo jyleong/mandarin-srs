@@ -1,13 +1,17 @@
 use serde::Deserialize;
 use std::convert::TryFrom;
 
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Deserialize)]
 pub struct Card {
-    pub id: String,
     pub chinese: String, // 汉字 / the word you show
     pub pinyin: String,  // Hanyu pinyin (hidden during the prompt)
     pub meaning: String, // English gloss (what you type as the answer)
     pub hsk: HskLevel,
+    /// Optional usage sentence (汉字). Hidden until Reveal.
+    #[serde(default)]
+    pub example: Option<String>,
+    #[serde(default)]
+    pub example_en: Option<String>,
 }
 
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Deserialize)]
@@ -77,6 +81,10 @@ pub enum Grade {
 }
 
 impl Card {
+    pub fn id(&self) -> String {
+        format!("hsk{}:{}", self.hsk.as_u8(), self.chinese)
+    }
+
     pub fn meaning_matches(&self, guess: &str) -> bool {
         let guess = normalize_answer(guess);
         if guess.is_empty() {
@@ -100,11 +108,12 @@ mod meaning_tests {
 
     fn card(meaning: &str) -> Card {
         Card {
-            id: "hsk1:x".into(),
             chinese: "x".into(),
             pinyin: "x".into(),
             meaning: meaning.into(),
             hsk: HskLevel::Hsk1,
+            example: None,
+            example_en: None,
         }
     }
 
@@ -147,23 +156,31 @@ impl TryFrom<u8> for HskLevel {
     }
 }
 
-#[derive(Debug, Deserialize)]
-pub struct CardRecord {
-    pub chinese: String,
-    pub pinyin: String,
-    pub meaning: String,
-    pub hsk: HskLevel,
-}
+#[cfg(test)]
+mod json_tests {
+    use super::*;
 
-impl CardRecord {
-    pub fn into_card(self) -> Card {
-        let id = format!("hsk{}:{}", self.hsk.as_u8(), self.chinese);
-        Card {
-            id,
-            chinese: self.chinese,
-            pinyin: self.pinyin,
-            meaning: self.meaning,
-            hsk: self.hsk,
-        }
+    #[test]
+    fn example_fields_optional_on_old_json() {
+        let raw = r#"{"chinese":"爱","pinyin":"ài","meaning":"love","hsk":1}"#;
+        let card: Card = serde_json::from_str(raw).unwrap();
+        assert_eq!(card.id(), "hsk1:爱");
+        assert_eq!(card.example.as_deref(), None);
+        assert_eq!(card.example_en.as_deref(), None);
+    }
+
+    #[test]
+    fn example_fields_deserialize_on_card() {
+        let raw = r#"{
+            "chinese":"爸爸",
+            "pinyin":"bàba",
+            "meaning":"dad; father",
+            "hsk":1,
+            "example":"爸爸，我肚子饿了。",
+            "example_en":"Dad, I'm hungry."
+        }"#;
+        let card: Card = serde_json::from_str(raw).unwrap();
+        assert_eq!(card.example.as_deref(), Some("爸爸，我肚子饿了。"));
+        assert_eq!(card.example_en.as_deref(), Some("Dad, I'm hungry."));
     }
 }

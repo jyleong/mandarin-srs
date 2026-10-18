@@ -90,9 +90,9 @@ impl App {
         let mut new_n = 0;
         let mut ahead_n = 0;
         for card in &session {
-            if progress::is_new(&self.progress, &card.id) {
+            if progress::is_new(&self.progress, &card.id()) {
                 new_n += 1;
-            } else if progress::is_due(&self.progress, &card.id, today) {
+            } else if progress::is_due(&self.progress, &card.id(), today) {
                 review_n += 1;
             } else {
                 ahead_n += 1;
@@ -289,7 +289,7 @@ impl App {
 
         let guess = self.history.last().map(|e| e.guess.as_str()).unwrap_or("");
 
-        let text = Text::from(vec![
+        let mut lines = vec![
             Line::from(Span::styled(
                 verdict,
                 Style::new()
@@ -314,9 +314,11 @@ impl App {
                     Style::new().fg(Color::White).add_modifier(Modifier::BOLD),
                 ),
             ]),
-            Line::from(""),
-            grade_keys_line(self.last_correct == Some(true)),
-        ]);
+        ];
+        lines.extend(example_lines(card));
+        lines.push(Line::from(""));
+        lines.push(grade_keys_line(self.last_correct == Some(true)));
+        let text = Text::from(lines);
 
         let reveal = Paragraph::new(text)
             .block(
@@ -336,7 +338,7 @@ impl App {
             (" ✗  Incorrect ", Color::Red)
         };
 
-        let text = Text::from(vec![
+        let mut lines = vec![
             Line::from(Span::styled(
                 " Browse ",
                 Style::new()
@@ -369,7 +371,9 @@ impl App {
                     Style::new().fg(Color::White).add_modifier(Modifier::BOLD),
                 ),
             ]),
-        ]);
+        ];
+        lines.extend(example_lines(card));
+        let text = Text::from(lines);
 
         let browse = Paragraph::new(text)
             .block(
@@ -452,6 +456,29 @@ impl App {
         .alignment(Alignment::Center);
         frame.render_widget(footer, area);
     }
+}
+
+fn example_lines(card: &Card) -> Vec<Line<'_>> {
+    let Some(zh) = card.example.as_deref().filter(|s| !s.is_empty()) else {
+        return Vec::new();
+    };
+    let mut lines = vec![
+        Line::from(""),
+        Line::from(vec![
+            Span::styled("Example ", Style::new().fg(Color::DarkGray)),
+            Span::styled(zh, Style::new().fg(Color::Cyan)),
+        ]),
+    ];
+    if let Some(en) = card.example_en.as_deref().filter(|s| !s.is_empty()) {
+        lines.push(Line::from(vec![
+            Span::styled("        ", Style::new().fg(Color::DarkGray)),
+            Span::styled(
+                en,
+                Style::new().fg(Color::Gray).add_modifier(Modifier::ITALIC),
+            ),
+        ]));
+    }
+    lines
 }
 
 fn you_typed_line(guess: &str) -> Line<'_> {

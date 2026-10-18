@@ -96,7 +96,7 @@ impl App {
     }
 
     pub(super) fn apply_grade(&mut self, grade: Grade) {
-        let card_id = self.cards[self.index].id.clone();
+        let card_id = self.cards[self.index].id();
         progress::apply_review(&mut self.progress, &card_id, grade, today());
         if grade == Grade::Again {
             requeue_again(&mut self.cards, self.index);

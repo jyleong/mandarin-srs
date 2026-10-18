@@ -38,9 +38,9 @@ pub fn partition_due(
     let mut new = Vec::new();
     let mut ahead = Vec::new();
     for card in cards.iter().filter(|c| c.hsk == level) {
-        if progress::is_new(progress, &card.id) {
+        if progress::is_new(progress, &card.id()) {
             new.push(card.clone());
-        } else if progress::is_due(progress, &card.id, today) {
+        } else if progress::is_due(progress, &card.id(), today) {
             reviews.push(card.clone());
         } else {
             ahead.push(card.clone());
@@ -83,11 +83,12 @@ mod tests {
 
     fn card(hanzi: &str) -> Card {
         Card {
-            id: format!("hsk1:{hanzi}"),
             chinese: hanzi.into(),
             pinyin: "x".into(),
             meaning: "x".into(),
             hsk: HskLevel::Hsk1,
+            example: None,
+            example_en: None,
         }
     }
 
@@ -157,11 +158,12 @@ mod tests {
             card("复"),
             card("未"),
             Card {
-                id: "hsk2:他".into(),
                 chinese: "他".into(),
                 pinyin: "x".into(),
                 meaning: "x".into(),
                 hsk: HskLevel::Hsk2,
+                example: None,
+                example_en: None,
             },
         ];
         let mut progress = ProgressMap::new();
