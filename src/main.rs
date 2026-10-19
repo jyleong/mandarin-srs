@@ -8,7 +8,7 @@ use models::deck::Deck;
 const PROGRESS_PATH: &str = "data/progress.json";
 
 fn main() -> std::io::Result<()> {
-    let deck = Deck::from_json_path("data/hsk_words.json").expect("load deck");
+    let deck = Deck::from_hsk_dir("data").expect("load deck");
     let progress = models::progress::load(PROGRESS_PATH).expect("load progress");
     let session: Vec<Card> = deck.cards.into_iter().collect();
 

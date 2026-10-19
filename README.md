@@ -8,7 +8,7 @@ Built as a small Rust + [ratatui](https://ratatui.rs/) TUI. Deck data is HSK 2.0
 
 - Rust toolchain (edition 2024; `rustup` stable is fine)
 - A terminal that can show CJK (most modern terminals)
-- Run from the **crate root** so `data/hsk_words.json` resolves
+- Run from the **crate root** so `data/hsk1.json` … `hsk6.json` resolve
 
 ## Run
 
@@ -88,7 +88,7 @@ Text version of the same loop:
 
 | File | Role |
 |------|------|
-| `data/hsk_words.json` | Deck: `chinese`, `pinyin`, `meaning`, `hsk` (1–6); optional `example` / `example_en` (shown on Reveal) |
+| `data/hsk1.json` … `hsk6.json` | One file per HSK level: `chinese`, `pinyin`, `meaning`, `hsk`; `example` / `example_en` (shown on Reveal) |
 | `data/progress.json` | Per-card `interval_days` and `due_date` (`YYYY-MM-DD`), keyed by `hskN:汉字` |
 
 Word counts (HSK 2.0 exclusive lists): L1 150 · L2 ~150 · L3 300 · L4 ~600 · L5–6 samples.
