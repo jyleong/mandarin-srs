@@ -27,7 +27,12 @@ jobs:
           name="mandarin-srs-${GITHUB_REF_NAME}-x86_64-unknown-linux-gnu"
           mkdir -p "$name/data"
           cp target/release/mandarin-srs README.md LICENSE "$name/"
-          cp data/hsk_words.json "$name/data/"
+          cp data/hsk1.json "$name/data/"
+          cp data/hsk2.json "$name/data/"
+          cp data/hsk3.json "$name/data/"
+          cp data/hsk4.json "$name/data/"
+          cp data/hsk5.json "$name/data/"
+          cp data/hsk6.json "$name/data/"
           tar -czf "${name}.tar.gz" "$name"
 
       - uses: softprops/action-gh-release@v2
