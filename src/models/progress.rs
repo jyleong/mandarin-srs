@@ -74,9 +74,41 @@ pub fn apply_review(progress: &mut ProgressMap, card_id: &str, grade: Grade, tod
     );
 }
 
+/// Rewrite `hskN:汉字` keys to `tocflN:汉字`. Returns whether anything changed.
+/// On collision, keep the row with the larger `interval_days`.
+pub fn migrate_hsk_keys(progress: ProgressMap) -> (ProgressMap, bool) {
+    let mut changed = false;
+    let mut out = ProgressMap::new();
+    for (key, row) in progress {
+        let new_key = if let Some(rest) = key.strip_prefix("hsk") {
+            changed = true;
+            format!("tocfl{rest}")
+        } else {
+            key
+        };
+        match out.get(&new_key) {
+            Some(existing) if existing.interval_days >= row.interval_days => {}
+            _ => {
+                out.insert(new_key, row);
+            }
+        }
+    }
+    (out, changed)
+}
+
 pub fn load(path: impl AsRef<Path>) -> Result<ProgressMap, Box<dyn std::error::Error>> {
+    let path = path.as_ref();
     match fs::read_to_string(path) {
-        Ok(text) => Ok(serde_json::from_str(&text)?),
+        Ok(text) => {
+            let map: ProgressMap = serde_json::from_str(&text)?;
+            let (map, changed) = migrate_hsk_keys(map);
+            if changed {
+                let bak = Path::new(&format!("{}.bak", path.display())).to_path_buf();
+                fs::copy(path, &bak)?;
+                save(path, &map)?;
+            }
+            Ok(map)
+        }
         Err(e) if e.kind() == io::ErrorKind::NotFound => Ok(HashMap::new()),
         Err(e) => Err(e.into()),
     }
@@ -240,5 +272,45 @@ mod tests {
         );
         apply_review(&mut map, "hsk1:爱", Grade::Good, today);
         assert_eq!(map.get("hsk1:爱").unwrap().introduced_on, None);
+    }
+
+    fn row(days: u32) -> CardProgress {
+        CardProgress {
+            interval_days: days,
+            due_date: d(2026, 10, 30),
+            introduced_on: None,
+        }
+    }
+
+    #[test]
+    fn migrate_rewrites_hsk_prefix_and_leaves_tocfl_keys() {
+        let mut map = ProgressMap::new();
+        map.insert("hsk1:谢谢".into(), row(128));
+        map.insert("tocfl2:阴".into(), row(4));
+        let (out, changed) = migrate_hsk_keys(map);
+        assert!(changed);
+        assert_eq!(out.get("tocfl1:谢谢").unwrap().interval_days, 128);
+        assert!(out.get("hsk1:谢谢").is_none());
+        assert_eq!(out.get("tocfl2:阴").unwrap().interval_days, 4);
+    }
+
+    #[test]
+    fn migrate_is_noop_when_keys_already_tocfl() {
+        let mut map = ProgressMap::new();
+        map.insert("tocfl1:爱".into(), row(2));
+        let (out, changed) = migrate_hsk_keys(map);
+        assert!(!changed);
+        assert_eq!(out.len(), 1);
+        assert!(out.contains_key("tocfl1:爱"));
+    }
+
+    #[test]
+    fn migrate_keeps_higher_interval_on_collision() {
+        let mut map = ProgressMap::new();
+        map.insert("hsk1:爱".into(), row(8));
+        map.insert("tocfl1:爱".into(), row(32));
+        let (out, _) = migrate_hsk_keys(map);
+        assert_eq!(out.get("tocfl1:爱").unwrap().interval_days, 32);
+        assert_eq!(out.len(), 1);
     }
 }

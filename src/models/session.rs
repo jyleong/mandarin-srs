@@ -1,4 +1,4 @@
-use super::card::{Card, HskLevel};
+use super::card::{Card, TocflLevel};
 use super::progress::{self, ProgressMap};
 use chrono::NaiveDate;
 
@@ -30,14 +30,14 @@ pub fn assemble_session(
 /// Reviews: due. New: never graded. Ahead: seen, not due yet.
 pub fn partition_due(
     cards: &[Card],
-    level: HskLevel,
+    level: TocflLevel,
     progress: &ProgressMap,
     today: NaiveDate,
 ) -> (Vec<Card>, Vec<Card>, Vec<Card>) {
     let mut reviews = Vec::new();
     let mut new = Vec::new();
     let mut ahead = Vec::new();
-    for card in cards.iter().filter(|c| c.hsk == level) {
+    for card in cards.iter().filter(|c| c.level == level) {
         if progress::is_new(progress, &card.id()) {
             new.push(card.clone());
         } else if progress::is_due(progress, &card.id(), today) {
@@ -79,14 +79,14 @@ pub fn remaining_again(index: usize, initial_len: usize, queue_len: usize) -> us
 #[cfg(test)]
 mod tests {
     use super::*;
-    use crate::models::card::HskLevel;
+    use crate::models::card::TocflLevel;
 
     fn card(hanzi: &str) -> Card {
         Card {
             chinese: hanzi.into(),
             pinyin: "x".into(),
             meaning: "x".into(),
-            hsk: HskLevel::Hsk1,
+            level: TocflLevel::Tocfl1,
             example: None,
             example_en: None,
         }
@@ -161,14 +161,14 @@ mod tests {
                 chinese: "他".into(),
                 pinyin: "x".into(),
                 meaning: "x".into(),
-                hsk: HskLevel::Hsk2,
+                level: TocflLevel::Tocfl2,
                 example: None,
                 example_en: None,
             },
         ];
         let mut progress = ProgressMap::new();
         progress.insert(
-            "hsk1:复".into(),
+            "tocfl1:复".into(),
             CardProgress {
                 interval_days: 2,
                 due_date: today,
@@ -176,7 +176,7 @@ mod tests {
             },
         );
         progress.insert(
-            "hsk1:未".into(),
+            "tocfl1:未".into(),
             CardProgress {
                 interval_days: 8,
                 due_date: d(2026, 10, 20),
@@ -184,7 +184,7 @@ mod tests {
             },
         );
 
-        let (reviews, new, ahead) = partition_due(&cards, HskLevel::Hsk1, &progress, today);
+        let (reviews, new, ahead) = partition_due(&cards, TocflLevel::Tocfl1, &progress, today);
         assert_eq!(ids(&reviews), ["复"]);
         assert_eq!(ids(&new), ["新"]);
         assert_eq!(ids(&ahead), ["未"]);

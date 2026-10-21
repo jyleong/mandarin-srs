@@ -1,6 +1,6 @@
 use rand::seq::SliceRandom;
 
-use crate::models::card::{Card, Grade, HskLevel};
+use crate::models::card::{Card, Grade, TocflLevel};
 use crate::models::progress::{self, ProgressMap};
 use crate::models::review::ReviewEntry;
 use crate::models::session::{
@@ -22,7 +22,7 @@ pub(super) struct App {
     pub(super) cards: Vec<Card>,
     pub(super) index: usize,
     pub(super) input: String,
-    pub(super) selected_level: HskLevel,
+    pub(super) selected_level: TocflLevel,
     pub(super) phase: Phase,
     pub(super) last_correct: Option<bool>,
     pub(super) history: Vec<ReviewEntry>,
@@ -41,7 +41,7 @@ impl App {
             cards: Vec::new(),
             index: 0,
             input: String::new(),
-            selected_level: HskLevel::Hsk1,
+            selected_level: TocflLevel::Tocfl1,
             phase: Phase::SelectLevel,
             last_correct: None,
             history: Vec::new(),

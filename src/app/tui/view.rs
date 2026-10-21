@@ -3,7 +3,7 @@ use ratatui::style::{Color, Modifier, Style};
 use ratatui::text::{Line, Span, Text};
 use ratatui::widgets::{Block, Borders, Clear, Padding, Paragraph, Wrap};
 
-use crate::models::card::{Card, HskLevel};
+use crate::models::card::{Card, TocflLevel};
 use crate::models::progress;
 use crate::models::session::{NEW_CARD_DAILY_LIMIT, assemble_session, partition_due};
 use crate::utils::date_utils::today;
@@ -79,9 +79,9 @@ impl App {
     }
 
     /// `(reviews, new, ahead, total_at_level)` after cap and `batch_size`.
-    fn session_preview(&self, level: HskLevel) -> (usize, usize, usize, usize) {
+    fn session_preview(&self, level: TocflLevel) -> (usize, usize, usize, usize) {
         let today = today();
-        let total = self.all_cards.iter().filter(|c| c.hsk == level).count();
+        let total = self.all_cards.iter().filter(|c| c.level == level).count();
         let (reviews, new, ahead) = partition_due(&self.all_cards, level, &self.progress, today);
         let allowance =
             progress::remaining_new_allowance(&self.progress, today, NEW_CARD_DAILY_LIMIT);
@@ -134,12 +134,12 @@ impl App {
 
     fn render_select(&self, frame: &mut ratatui::Frame, area: Rect) {
         let levels = [
-            HskLevel::Hsk1,
-            HskLevel::Hsk2,
-            HskLevel::Hsk3,
-            HskLevel::Hsk4,
-            HskLevel::Hsk5,
-            HskLevel::Hsk6,
+            TocflLevel::Tocfl1,
+            TocflLevel::Tocfl2,
+            TocflLevel::Tocfl3,
+            TocflLevel::Tocfl4,
+            TocflLevel::Tocfl5,
+            TocflLevel::Tocfl6,
         ];
 
         let mut lines: Vec<Line> = Vec::new();
@@ -150,7 +150,7 @@ impl App {
             let selected = level == self.selected_level;
 
             let label =
-                format!("  HSK {n}   ({reviews} review · {new} new · {ahead} ahead / {total})");
+                format!("  TOCFL {n}   ({reviews} review · {new} new · {ahead} ahead / {total})");
             let line = if selected {
                 Line::from(vec![
                     Span::styled(
@@ -179,7 +179,7 @@ impl App {
             .alignment(Alignment::Left)
             .block(
                 Block::bordered()
-                    .title(" HSK level ")
+                    .title(" TOCFL level ")
                     .title_alignment(Alignment::Center)
                     .border_style(Style::new().fg(Color::Cyan))
                     .padding(Padding::horizontal(2)),
@@ -190,7 +190,7 @@ impl App {
     fn render_header(&self, frame: &mut ratatui::Frame, area: Rect) {
         let status = match self.phase {
             Phase::Browse => format!(
-                "HSK {} · browse {} / {} answered",
+                "TOCFL {} · browse {} / {} answered",
                 self.selected_level.as_u8(),
                 self.browse_pos + 1,
                 self.history.len()
@@ -199,14 +199,14 @@ impl App {
                 let again = self.again_remaining();
                 if again == 0 {
                     format!(
-                        "HSK {} · card {} / {}",
+                        "TOCFL {} · card {} / {}",
                         self.selected_level.as_u8(),
                         self.index + 1,
                         self.cards.len()
                     )
                 } else {
                     format!(
-                        "HSK {} · card {} / {} · {} again",
+                        "TOCFL {} · card {} / {} · {} again",
                         self.selected_level.as_u8(),
                         self.index + 1,
                         self.cards.len(),
@@ -392,7 +392,7 @@ impl App {
         let text = Text::from(vec![
             Line::from(""),
             Line::from(Span::styled(
-                format!(" HSK {level} session complete "),
+                format!(" TOCFL {level} session complete "),
                 Style::new()
                     .fg(Color::Black)
                     .bg(Color::Cyan)

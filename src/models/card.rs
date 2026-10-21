@@ -6,7 +6,8 @@ pub struct Card {
     pub chinese: String, // 汉字 / the word you show
     pub pinyin: String,  // Hanyu pinyin (hidden during the prompt)
     pub meaning: String, // English gloss (what you type as the answer)
-    pub hsk: HskLevel,
+    #[serde(alias = "hsk")]
+    pub level: TocflLevel,
     /// Optional usage sentence (汉字). Hidden until Reveal.
     #[serde(default)]
     pub example: Option<String>,
@@ -17,57 +18,57 @@ pub struct Card {
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Deserialize)]
 #[serde(try_from = "u8")]
 
-pub enum HskLevel {
-    Hsk1,
-    Hsk2,
-    Hsk3,
-    Hsk4,
-    Hsk5,
-    Hsk6,
+pub enum TocflLevel {
+    Tocfl1,
+    Tocfl2,
+    Tocfl3,
+    Tocfl4,
+    Tocfl5,
+    Tocfl6,
 }
 
-impl HskLevel {
+impl TocflLevel {
     pub fn as_u8(self) -> u8 {
         match self {
-            Self::Hsk1 => 1,
-            Self::Hsk2 => 2,
-            Self::Hsk3 => 3,
-            Self::Hsk4 => 4,
-            Self::Hsk5 => 5,
-            Self::Hsk6 => 6,
+            Self::Tocfl1 => 1,
+            Self::Tocfl2 => 2,
+            Self::Tocfl3 => 3,
+            Self::Tocfl4 => 4,
+            Self::Tocfl5 => 5,
+            Self::Tocfl6 => 6,
         }
     }
 
     pub fn next(self) -> Self {
         match self {
-            Self::Hsk1 => Self::Hsk2,
-            Self::Hsk2 => Self::Hsk3,
-            Self::Hsk3 => Self::Hsk4,
-            Self::Hsk4 => Self::Hsk5,
-            Self::Hsk5 => Self::Hsk6,
-            Self::Hsk6 => Self::Hsk1,
+            Self::Tocfl1 => Self::Tocfl2,
+            Self::Tocfl2 => Self::Tocfl3,
+            Self::Tocfl3 => Self::Tocfl4,
+            Self::Tocfl4 => Self::Tocfl5,
+            Self::Tocfl5 => Self::Tocfl6,
+            Self::Tocfl6 => Self::Tocfl1,
         }
     }
 
     pub fn prev(self) -> Self {
         match self {
-            Self::Hsk1 => Self::Hsk6,
-            Self::Hsk2 => Self::Hsk1,
-            Self::Hsk3 => Self::Hsk2,
-            Self::Hsk4 => Self::Hsk3,
-            Self::Hsk5 => Self::Hsk4,
-            Self::Hsk6 => Self::Hsk5,
+            Self::Tocfl1 => Self::Tocfl6,
+            Self::Tocfl2 => Self::Tocfl1,
+            Self::Tocfl3 => Self::Tocfl2,
+            Self::Tocfl4 => Self::Tocfl3,
+            Self::Tocfl5 => Self::Tocfl4,
+            Self::Tocfl6 => Self::Tocfl5,
         }
     }
 
     pub fn from_digit(d: u8) -> Option<Self> {
         match d {
-            1 => Some(Self::Hsk1),
-            2 => Some(Self::Hsk2),
-            3 => Some(Self::Hsk3),
-            4 => Some(Self::Hsk4),
-            5 => Some(Self::Hsk5),
-            6 => Some(Self::Hsk6),
+            1 => Some(Self::Tocfl1),
+            2 => Some(Self::Tocfl2),
+            3 => Some(Self::Tocfl3),
+            4 => Some(Self::Tocfl4),
+            5 => Some(Self::Tocfl5),
+            6 => Some(Self::Tocfl6),
             _ => None,
         }
     }
@@ -82,7 +83,7 @@ pub enum Grade {
 
 impl Card {
     pub fn id(&self) -> String {
-        format!("hsk{}:{}", self.hsk.as_u8(), self.chinese)
+        format!("tocfl{}:{}", self.level.as_u8(), self.chinese)
     }
 
     pub fn meaning_matches(&self, guess: &str) -> bool {
@@ -111,7 +112,7 @@ mod meaning_tests {
             chinese: "x".into(),
             pinyin: "x".into(),
             meaning: meaning.into(),
-            hsk: HskLevel::Hsk1,
+            level: TocflLevel::Tocfl1,
             example: None,
             example_en: None,
         }
@@ -140,18 +141,18 @@ mod meaning_tests {
     }
 }
 
-impl TryFrom<u8> for HskLevel {
+impl TryFrom<u8> for TocflLevel {
     type Error = String;
 
     fn try_from(value: u8) -> Result<Self, Self::Error> {
         match value {
-            1 => Ok(Self::Hsk1),
-            2 => Ok(Self::Hsk2),
-            3 => Ok(Self::Hsk3),
-            4 => Ok(Self::Hsk4),
-            5 => Ok(Self::Hsk5),
-            6 => Ok(Self::Hsk6),
-            other => Err(format!("invalid hsk level: {other}")),
+            1 => Ok(Self::Tocfl1),
+            2 => Ok(Self::Tocfl2),
+            3 => Ok(Self::Tocfl3),
+            4 => Ok(Self::Tocfl4),
+            5 => Ok(Self::Tocfl5),
+            6 => Ok(Self::Tocfl6),
+            other => Err(format!("invalid TOCFL level: {other}")),
         }
     }
 }
@@ -164,9 +165,17 @@ mod json_tests {
     fn example_fields_optional_on_old_json() {
         let raw = r#"{"chinese":"爱","pinyin":"ài","meaning":"love","hsk":1}"#;
         let card: Card = serde_json::from_str(raw).unwrap();
-        assert_eq!(card.id(), "hsk1:爱");
+        assert_eq!(card.id(), "tocfl1:爱");
         assert_eq!(card.example.as_deref(), None);
         assert_eq!(card.example_en.as_deref(), None);
+    }
+
+    #[test]
+    fn level_field_accepts_level_key() {
+        let raw = r#"{"chinese":"爱","pinyin":"ài","meaning":"love","level":1}"#;
+        let card: Card = serde_json::from_str(raw).unwrap();
+        assert_eq!(card.level, TocflLevel::Tocfl1);
+        assert_eq!(card.id(), "tocfl1:爱");
     }
 
     #[test]

@@ -40,7 +40,7 @@ impl App {
             }
             KeyCode::Char(c) if c.is_ascii_digit() => {
                 if let Some(d) = c.to_digit(10) {
-                    if let Some(level) = crate::models::card::HskLevel::from_digit(d as u8) {
+                    if let Some(level) = crate::models::card::TocflLevel::from_digit(d as u8) {
                         self.selected_level = level;
                     }
                 }

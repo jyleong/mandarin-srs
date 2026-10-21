@@ -2,13 +2,13 @@
 
 A terminal spaced-repetition app for Mandarin: you see **汉字**, type the **English meaning**, then rate how well you knew it. Pinyin and the gloss stay hidden until after you answer.
 
-Built as a small Rust + [ratatui](https://ratatui.rs/) TUI. Deck data is HSK 2.0 vocabulary (levels 1–4 full exclusive lists; 5–6 are samples). Progress is stored locally as JSON.
+Built as a small Rust + [ratatui](https://ratatui.rs/) TUI. The select screen is labeled **TOCFL 1–6**. Word lists are still the old HSK 2.0 exclusive lists (Traditional remap comes later). Progress is stored locally as JSON.
 
 ## Requirements
 
 - Rust toolchain (edition 2024; `rustup` stable is fine)
 - A terminal that can show CJK (most modern terminals)
-- Run from the **crate root** so `data/hsk1.json` … `hsk6.json` resolve
+- Run from the **crate root** so `data/tocfl1.json` … `tocfl6.json` resolve
 
 ## Run
 
@@ -43,13 +43,13 @@ Scheduling (after you press 1/2/3):
 | Good | previous interval × 2 (min 2 days from new) |
 | Easy | previous interval × 4 |
 
-A session is a **batch** of 10 / 20 / 30 / 50 cards (default 50) at the chosen HSK level, shuffled: due **reviews** first, then up to **10 new** cards per calendar day (shared across levels), then **study ahead** (cards not due yet) so you can still start when the due/new queues are empty. Ahead grades still update intervals. Level select shows `review · new · ahead / total`. The quiz header adds `N again` while Again-queued cards are still waiting. Reveal and browse show **You typed** next to the gloss.
+A session is a **batch** of 10 / 20 / 30 / 50 cards (default 50) at the chosen TOCFL level, shuffled: due **reviews** first, then up to **10 new** cards per calendar day (shared across levels), then **study ahead** (cards not due yet) so you can still start when the due/new queues are empty. Ahead grades still update intervals. Level select shows `review · new · ahead / total`. The quiz header adds `N again` while Again-queued cards are still waiting. Reveal and browse show **You typed** next to the gloss.
 
 ## Interaction flow
 
 ```mermaid
 flowchart TD
-  start([cargo run]) --> select[HSK level select]
+  start([cargo run]) --> select[TOCFL level select]
   select -->|Enter, if any due| prompt[Prompt: show 汉字, type English]
   select -->|nothing due| select
   prompt -->|Enter| reveal[Reveal: pinyin + meaning + ✓/✗]
@@ -71,7 +71,7 @@ Text version of the same loop:
   cargo run
       │
       ▼
- ┌─ HSK select (due / total per level) ◄──────────────┐
+ ┌─ TOCFL select (due / total per level) ◄──────────────┐
  │        Enter                                       │
  ▼                                                    │
  Prompt (汉字) ──Enter──► Reveal                      │
@@ -88,10 +88,10 @@ Text version of the same loop:
 
 | File | Role |
 |------|------|
-| `data/hsk1.json` … `hsk6.json` | One file per HSK level: `chinese`, `pinyin`, `meaning`, `hsk`; `example` / `example_en` (shown on Reveal) |
-| `data/progress.json` | Per-card `interval_days` and `due_date` (`YYYY-MM-DD`), keyed by `hskN:汉字` |
+| `data/tocfl1.json` … `tocfl6.json` | One file per labeled level: `chinese`, `pinyin`, `meaning`, `level`; `example` / `example_en` (shown on Reveal) |
+| `data/progress.json` | Per-card `interval_days` and `due_date` (`YYYY-MM-DD`), keyed by `tocflN:汉字`. Old `hskN:` keys are rewritten on load (`progress.json.bak`). |
 
-Word counts (HSK 2.0 exclusive lists): L1 150 · L2 ~150 · L3 300 · L4 ~600 · L5–6 samples.
+Word counts (still HSK 2.0 exclusive lists): L1 150 · L2 ~150 · L3 300 · L4 ~600 · L5–6 samples.
 
 ## Layout (code)
 
