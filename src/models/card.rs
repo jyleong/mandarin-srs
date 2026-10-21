@@ -24,10 +24,20 @@ pub enum TocflLevel {
     Tocfl3,
     Tocfl4,
     Tocfl5,
-    Tocfl6,
+    /// Official Novice 1–2 plus HSK-only leftovers.
+    Extra,
 }
 
 impl TocflLevel {
+    pub const ALL: [Self; 6] = [
+        Self::Tocfl1,
+        Self::Tocfl2,
+        Self::Tocfl3,
+        Self::Tocfl4,
+        Self::Tocfl5,
+        Self::Extra,
+    ];
+
     pub fn as_u8(self) -> u8 {
         match self {
             Self::Tocfl1 => 1,
@@ -35,7 +45,18 @@ impl TocflLevel {
             Self::Tocfl3 => 3,
             Self::Tocfl4 => 4,
             Self::Tocfl5 => 5,
-            Self::Tocfl6 => 6,
+            Self::Extra => 0,
+        }
+    }
+
+    pub fn label(self) -> &'static str {
+        match self {
+            Self::Tocfl1 => "TOCFL 1",
+            Self::Tocfl2 => "TOCFL 2",
+            Self::Tocfl3 => "TOCFL 3",
+            Self::Tocfl4 => "TOCFL 4",
+            Self::Tocfl5 => "TOCFL 5",
+            Self::Extra => "Extra",
         }
     }
 
@@ -45,19 +66,19 @@ impl TocflLevel {
             Self::Tocfl2 => Self::Tocfl3,
             Self::Tocfl3 => Self::Tocfl4,
             Self::Tocfl4 => Self::Tocfl5,
-            Self::Tocfl5 => Self::Tocfl6,
-            Self::Tocfl6 => Self::Tocfl1,
+            Self::Tocfl5 => Self::Extra,
+            Self::Extra => Self::Tocfl1,
         }
     }
 
     pub fn prev(self) -> Self {
         match self {
-            Self::Tocfl1 => Self::Tocfl6,
+            Self::Tocfl1 => Self::Extra,
             Self::Tocfl2 => Self::Tocfl1,
             Self::Tocfl3 => Self::Tocfl2,
             Self::Tocfl4 => Self::Tocfl3,
             Self::Tocfl5 => Self::Tocfl4,
-            Self::Tocfl6 => Self::Tocfl5,
+            Self::Extra => Self::Tocfl5,
         }
     }
 
@@ -68,7 +89,7 @@ impl TocflLevel {
             3 => Some(Self::Tocfl3),
             4 => Some(Self::Tocfl4),
             5 => Some(Self::Tocfl5),
-            6 => Some(Self::Tocfl6),
+            0 | 6 => Some(Self::Extra),
             _ => None,
         }
     }
@@ -83,7 +104,10 @@ pub enum Grade {
 
 impl Card {
     pub fn id(&self) -> String {
-        format!("tocfl{}:{}", self.level.as_u8(), self.chinese)
+        match self.level {
+            TocflLevel::Extra => format!("extra:{}", self.chinese),
+            _ => format!("tocfl{}:{}", self.level.as_u8(), self.chinese),
+        }
     }
 
     pub fn meaning_matches(&self, guess: &str) -> bool {
@@ -146,12 +170,12 @@ impl TryFrom<u8> for TocflLevel {
 
     fn try_from(value: u8) -> Result<Self, Self::Error> {
         match value {
+            0 => Ok(Self::Extra),
             1 => Ok(Self::Tocfl1),
             2 => Ok(Self::Tocfl2),
             3 => Ok(Self::Tocfl3),
             4 => Ok(Self::Tocfl4),
             5 => Ok(Self::Tocfl5),
-            6 => Ok(Self::Tocfl6),
             other => Err(format!("invalid TOCFL level: {other}")),
         }
     }
@@ -176,6 +200,15 @@ mod json_tests {
         let card: Card = serde_json::from_str(raw).unwrap();
         assert_eq!(card.level, TocflLevel::Tocfl1);
         assert_eq!(card.id(), "tocfl1:爱");
+    }
+
+    #[test]
+    fn extra_level_uses_extra_id_prefix() {
+        let raw = r#"{"chinese":"我","pinyin":"wǒ","meaning":"I; me","level":0}"#;
+        let card: Card = serde_json::from_str(raw).unwrap();
+        assert_eq!(card.level, TocflLevel::Extra);
+        assert_eq!(card.id(), "extra:我");
+        assert_eq!(card.level.label(), "Extra");
     }
 
     #[test]

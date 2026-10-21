@@ -1,1210 +1,3296 @@
 [
   {
-    "chinese": "新",
-    "pinyin": "Xīn",
-    "meaning": "abbr. for Xinjiang 疆 or Singapore 坡",
-    "example": "我買了一件新衣服。",
-    "example_en": "I bought a new piece of clothing.",
-    "level": 2
-  },
-  {
-    "chinese": "元",
-    "pinyin": "Yuán",
-    "meaning": "the Yuan or Mongol dynasty (1279-1368)",
-    "example": "這個蘋果兩元。",
-    "example_en": "This apple is two yuan.",
-    "level": 2
-  },
-  {
-    "chinese": "吧",
-    "pinyin": "ba",
-    "meaning": "suggestion particle",
-    "example": "我們走吧。",
-    "example_en": "Let's go.",
-    "level": 2
-  },
-  {
-    "chinese": "便宜",
-    "pinyin": "biàn yí",
-    "meaning": "convenient",
-    "example": "這兒的菜很便宜。",
-    "example_en": "The food here is cheap.",
-    "level": 2
-  },
-  {
-    "chinese": "別",
-    "pinyin": "bié",
-    "meaning": "don't; other",
-    "example": "別說話！",
-    "example_en": "Don't talk!",
-    "level": 2
-  },
-  {
-    "chinese": "報紙",
-    "pinyin": "bàozhǐ",
-    "meaning": "newspaper",
-    "example": "爸爸在看報紙。",
-    "example_en": "Dad is reading the newspaper.",
-    "level": 2
-  },
-  {
-    "chinese": "白",
-    "pinyin": "bái",
-    "meaning": "white",
-    "example": "這件衣服是白色的。",
-    "example_en": "This piece of clothing is white.",
-    "level": 2
-  },
-  {
-    "chinese": "幫助",
-    "pinyin": "bāngzhù",
-    "meaning": "to help",
-    "example": "請幫助我。",
-    "example_en": "Please help me.",
-    "level": 2
-  },
-  {
-    "chinese": "百",
-    "pinyin": "bǎi",
-    "meaning": "hundred",
-    "example": "這本書一百塊。",
-    "example_en": "This book is one hundred yuan.",
-    "level": 2
-  },
-  {
-    "chinese": "比",
-    "pinyin": "bǐ",
-    "meaning": "to compare; than",
-    "example": "他比我高。",
-    "example_en": "He is taller than me.",
-    "level": 2
-  },
-  {
-    "chinese": "船",
-    "pinyin": "chuán",
-    "meaning": "variant of 船",
-    "example": "我們坐船去那兒。",
-    "example_en": "We'll go there by boat.",
-    "level": 2
-  },
-  {
-    "chinese": "穿",
-    "pinyin": "chuān",
-    "meaning": "to wear",
-    "example": "今天很冷，多穿衣服。",
-    "example_en": "It's cold today; wear more clothes.",
-    "level": 2
-  },
-  {
-    "chinese": "唱歌",
-    "pinyin": "chànggē",
-    "meaning": "to sing",
-    "example": "她喜歡唱歌。",
-    "example_en": "She likes to sing.",
-    "level": 2
-  },
-  {
-    "chinese": "長",
-    "pinyin": "cháng",
-    "meaning": "long",
-    "example": "這條路很長。",
-    "example_en": "This road is very long.",
-    "level": 2
-  },
-  {
-    "chinese": "離",
-    "pinyin": "chī",
-    "meaning": "mythical beast (archaic)",
-    "example": "學校離我家很近。",
-    "example_en": "The school is close to my home.",
-    "level": 2
-  },
-  {
-    "chinese": "出",
-    "pinyin": "chū",
-    "meaning": "to go out",
-    "example": "請出去。",
-    "example_en": "Please go out.",
-    "level": 2
-  },
-  {
-    "chinese": "錯",
-    "pinyin": "cuò",
-    "meaning": "wrong; mistake",
-    "example": "對不起，我錯了。",
-    "example_en": "Sorry, I was wrong.",
-    "level": 2
-  },
-  {
-    "chinese": "次",
-    "pinyin": "cì",
-    "meaning": "time (occurrence)",
-    "example": "我去過北京兩次。",
-    "example_en": "I have been to Beijing twice.",
-    "level": 2
-  },
-  {
-    "chinese": "從",
-    "pinyin": "cóng",
-    "meaning": "from",
-    "example": "我從北京來。",
-    "example_en": "I come from Beijing.",
-    "level": 2
-  },
-  {
-    "chinese": "得",
-    "pinyin": "de",
-    "meaning": "structural particle",
-    "example": "她華語說得很好。",
-    "example_en": "She speaks Chinese very well.",
-    "level": 2
-  },
-  {
-    "chinese": "對",
-    "pinyin": "duì",
-    "meaning": "right; toward",
-    "example": "你說得對。",
-    "example_en": "You're right.",
-    "level": 2
-  },
-  {
-    "chinese": "大家",
-    "pinyin": "dàjiā",
-    "meaning": "everyone",
-    "example": "大家都來了。",
-    "example_en": "Everyone is here.",
-    "level": 2
-  },
-  {
-    "chinese": "但是",
-    "pinyin": "dàn shì",
-    "meaning": "but; however",
-    "example": "我想去，但是很累。",
-    "example_en": "I want to go, but I'm tired.",
-    "level": 2
-  },
-  {
-    "chinese": "到",
-    "pinyin": "dào",
-    "meaning": "to arrive; to",
-    "example": "我到學校了。",
-    "example_en": "I have arrived at school.",
-    "level": 2
-  },
-  {
-    "chinese": "第一",
-    "pinyin": "dì-yī",
-    "meaning": "first",
-    "example": "他是第一名。",
-    "example_en": "He is in first place.",
-    "level": 2
-  },
-  {
-    "chinese": "弟弟",
-    "pinyin": "dìdi",
-    "meaning": "younger brother",
-    "example": "我弟弟五歲。",
-    "example_en": "My little brother is five.",
-    "level": 2
-  },
-  {
-    "chinese": "等",
-    "pinyin": "děng",
-    "meaning": "to wait",
-    "example": "請等一下。",
-    "example_en": "Please wait a moment.",
-    "level": 2
-  },
-  {
-    "chinese": "打籃球",
-    "pinyin": "dǎ lánqiú",
-    "meaning": "to play basketball",
-    "example": "下午我們打籃球。",
-    "example_en": "We're playing basketball this afternoon.",
-    "level": 2
-  },
-  {
-    "chinese": "懂",
-    "pinyin": "dǒng",
-    "meaning": "to understand",
-    "example": "你懂嗎？",
-    "example_en": "Do you understand?",
-    "level": 2
-  },
-  {
-    "chinese": "房間",
-    "pinyin": "fángjiān",
-    "meaning": "room",
-    "example": "這個房間很大。",
-    "example_en": "This room is very big.",
-    "level": 2
-  },
-  {
-    "chinese": "服務員",
-    "pinyin": "fúwùyuán",
-    "meaning": "waiter; attendant",
-    "example": "服務員，請給我選單。",
-    "example_en": "Waiter, please give me a menu.",
-    "level": 2
-  },
-  {
-    "chinese": "非常",
-    "pinyin": "fēicháng",
-    "meaning": "extremely; very",
-    "example": "我非常高興。",
-    "example_en": "I am very happy.",
-    "level": 2
+    "chinese": "出生",
+    "pinyin": "chū shēng",
+    "meaning": "to be born",
+    "level": 2,
+    "example": "我出生在北京。",
+    "example_en": "I was born in Beijing."
   },
   {
-    "chinese": "過",
-    "pinyin": "guo",
-    "meaning": "experiential particle",
-    "example": "我去過北京。",
-    "example_en": "I have been to Beijing.",
+    "chinese": "不同",
+    "pinyin": "bùtóng",
+    "meaning": "different; distinct; not the same",
     "level": 2
   },
   {
-    "chinese": "貴",
-    "pinyin": "guì",
-    "meaning": "expensive",
-    "example": "這個太貴了。",
-    "example_en": "This is too expensive.",
+    "chinese": "住址",
+    "pinyin": "zhùzhǐ",
+    "meaning": "address",
     "level": 2
   },
   {
-    "chinese": "告訴",
-    "pinyin": "gàosu",
-    "meaning": "to tell",
-    "example": "請告訴我他的名字。",
-    "example_en": "Please tell me his name.",
+    "chinese": "母語",
+    "pinyin": "mǔyǔ",
+    "meaning": "native language; mother tongue; (linguistics) parent language",
     "level": 2
   },
   {
-    "chinese": "高",
-    "pinyin": "gāo",
-    "meaning": "tall; high",
-    "example": "他很高。",
-    "example_en": "He is very tall.",
+    "chinese": "鐘",
+    "pinyin": "zhōng",
+    "meaning": "a (large) bell (CL:架[jia4]); clock (CL:座[zuo4]); amount of time; o'clock (CL:點|点[dian3],分[fen1],秒[miao3]) (as in 三點鐘|三点钟[san1 dian3 zhong1] \"three o'clock\" or \"three hours\" or 五分鐘|五分钟[wu3 fen1 zhong1] \"five minutes\" etc)",
     "level": 2
   },
   {
-    "chinese": "哥哥",
-    "pinyin": "gēge",
-    "meaning": "older brother",
-    "example": "我哥哥在北京工作。",
-    "example_en": "My older brother works in Beijing.",
-    "level": 2
-  },
-  {
-    "chinese": "給",
-    "pinyin": "gěi",
-    "meaning": "to give",
-    "example": "請給我一杯水。",
-    "example_en": "Please give me a glass of water.",
-    "level": 2
-  },
-  {
-    "chinese": "公斤",
-    "pinyin": "gōng jīn",
-    "meaning": "kilogram (kg)",
-    "example": "這些蘋果兩公斤。",
-    "example_en": "These apples weigh two kilograms.",
-    "level": 2
-  },
-  {
-    "chinese": "公車",
-    "pinyin": "gōngchē",
-    "meaning": "bus",
-    "example": "我坐公車去學校。",
-    "example_en": "I take the bus to school.",
-    "level": 2
-  },
-  {
-    "chinese": "公司",
-    "pinyin": "gōngsī",
-    "meaning": "company",
-    "example": "他在一家公司工作。",
-    "example_en": "He works at a company.",
-    "level": 2
-  },
-  {
-    "chinese": "回答",
-    "pinyin": "huí dá",
-    "meaning": "to reply; to answer; reply; answer",
-    "example": "請回答我的問題。",
-    "example_en": "Please answer my question.",
-    "level": 2
-  },
-  {
-    "chinese": "歡迎",
-    "pinyin": "huān yíng",
-    "meaning": "to welcome; welcome",
-    "example": "歡迎來北京！",
-    "example_en": "Welcome to Beijing!",
-    "level": 2
-  },
-  {
-    "chinese": "火車站",
-    "pinyin": "huǒchēzhàn",
-    "meaning": "train station",
-    "example": "火車站在哪兒？",
-    "example_en": "Where is the train station?",
-    "level": 2
-  },
-  {
-    "chinese": "還",
-    "pinyin": "hái",
-    "meaning": "still; also",
-    "example": "我還有一個問題。",
-    "example_en": "I still have a question.",
-    "level": 2
-  },
-  {
-    "chinese": "孩子",
-    "pinyin": "háizi",
-    "meaning": "child",
-    "example": "那個孩子很高興。",
-    "example_en": "That child is very happy.",
-    "level": 2
-  },
-  {
-    "chinese": "號",
-    "pinyin": "háo",
-    "meaning": "roar; cry",
-    "example": "今天是五號。",
-    "example_en": "Today is the 5th.",
-    "level": 2
-  },
-  {
-    "chinese": "紅",
-    "pinyin": "hóng",
-    "meaning": "red",
-    "example": "我喜歡紅色。",
-    "example_en": "I like red.",
-    "level": 2
-  },
-  {
-    "chinese": "黑",
-    "pinyin": "hēi",
-    "meaning": "black",
-    "example": "那隻貓是黑色的。",
-    "example_en": "That cat is black.",
-    "level": 2
-  },
-  {
-    "chinese": "好吃",
-    "pinyin": "hǎochī",
-    "meaning": "delicious",
-    "example": "這個菜很好吃。",
-    "example_en": "This dish is delicious.",
-    "level": 2
-  },
-  {
-    "chinese": "件",
-    "pinyin": "jiàn",
-    "meaning": "measure word for clothes/matters",
-    "example": "我買了一件衣服。",
-    "example_en": "I bought a piece of clothing.",
-    "level": 2
-  },
-  {
-    "chinese": "教室",
-    "pinyin": "jiàoshì",
-    "meaning": "classroom",
-    "example": "學生們在教室裡。",
-    "example_en": "The students are in the classroom.",
-    "level": 2
-  },
-  {
-    "chinese": "介紹",
-    "pinyin": "jièshào",
-    "meaning": "to introduce",
-    "example": "我來介紹一下我的朋友。",
-    "example_en": "Let me introduce my friend.",
-    "level": 2
-  },
-  {
-    "chinese": "就",
-    "pinyin": "jiù",
-    "meaning": "then; right away",
-    "example": "我現在就去。",
-    "example_en": "I'll go right now.",
-    "level": 2
-  },
-  {
-    "chinese": "姐姐",
-    "pinyin": "jiějie",
-    "meaning": "older sister",
-    "example": "我姐姐是醫生。",
-    "example_en": "My older sister is a doctor.",
-    "level": 2
-  },
-  {
-    "chinese": "覺得",
-    "pinyin": "juéde",
-    "meaning": "to feel; to think",
-    "example": "我覺得今天很冷。",
-    "example_en": "I feel it's very cold today.",
-    "level": 2
-  },
-  {
-    "chinese": "近",
-    "pinyin": "jìn",
-    "meaning": "near",
-    "example": "商店離這兒很近。",
-    "example_en": "The shop is very close to here.",
-    "level": 2
-  },
-  {
-    "chinese": "進",
-    "pinyin": "jìn",
-    "meaning": "to enter",
-    "example": "請進。",
-    "example_en": "Please come in.",
-    "level": 2
-  },
-  {
-    "chinese": "機場",
-    "pinyin": "jīchǎng",
-    "meaning": "airport",
-    "example": "我們去機場。",
-    "example_en": "We're going to the airport.",
-    "level": 2
-  },
-  {
-    "chinese": "雞蛋",
-    "pinyin": "jīdàn",
-    "meaning": "egg",
-    "example": "早飯我吃雞蛋。",
-    "example_en": "I eat eggs for breakfast.",
-    "level": 2
+    "chinese": "傳真",
+    "pinyin": "chuán zhēn",
+    "meaning": "fax; facsimile",
+    "level": 2,
+    "example": "請把檔案傳真給我。",
+    "example_en": "Please fax the document to me."
   },
   {
-    "chinese": "快",
-    "pinyin": "kuài",
-    "meaning": "rapid; quick",
-    "example": "請快點！",
-    "example_en": "Please hurry!",
+    "chinese": "白天",
+    "pinyin": "báitiān",
+    "meaning": "daytime; during the day; day",
     "level": 2
   },
   {
-    "chinese": "快樂",
-    "pinyin": "kuài lè",
-    "meaning": "happy; joyful",
-    "example": "生日快樂！",
-    "example_en": "Happy birthday!",
+    "chinese": "半夜",
+    "pinyin": "bànyè",
+    "meaning": "midnight; in the middle of the night",
     "level": 2
   },
   {
-    "chinese": "課",
-    "pinyin": "kè",
-    "meaning": "subject; course",
-    "example": "上午我有課。",
-    "example_en": "I have class in the morning.",
+    "chinese": "夜晚",
+    "pinyin": "yèwǎn",
+    "meaning": "night; CL:個|个[ge4]",
     "level": 2
   },
   {
-    "chinese": "咖啡",
-    "pinyin": "kā fēi",
-    "meaning": "coffee (loanword)",
-    "example": "我想要一杯咖啡。",
-    "example_en": "I would like a cup of coffee.",
+    "chinese": "日子",
+    "pinyin": "rìzi",
+    "meaning": "day; a (calendar) date; days of one's life",
     "level": 2
   },
   {
-    "chinese": "開始",
-    "pinyin": "kāi shǐ",
-    "meaning": "to begin; beginning",
-    "example": "我們現在開始吧。",
-    "example_en": "Let's start now.",
-    "level": 2
-  },
-  {
-    "chinese": "可能",
-    "pinyin": "kě néng",
-    "meaning": "might (happen); possible",
-    "example": "明天可能下雨。",
-    "example_en": "It might rain tomorrow.",
-    "level": 2
-  },
-  {
-    "chinese": "可以",
-    "pinyin": "kě yǐ",
-    "meaning": "can; may",
-    "example": "我可以進來嗎？",
-    "example_en": "May I come in?",
-    "level": 2
-  },
-  {
-    "chinese": "考試",
-    "pinyin": "kǎo shì",
-    "meaning": "to take an exam; exam",
-    "example": "明天有華語考試。",
-    "example_en": "There is a Chinese test tomorrow.",
-    "level": 2
-  },
-  {
-    "chinese": "兩",
-    "pinyin": "liǎng",
-    "meaning": "two; both",
-    "example": "我要兩個蘋果。",
-    "example_en": "I want two apples.",
-    "level": 2
-  },
-  {
-    "chinese": "路",
-    "pinyin": "lù",
-    "meaning": "road; journey",
-    "example": "這條路很長。",
-    "example_en": "This road is very long.",
-    "level": 2
-  },
-  {
-    "chinese": "累",
-    "pinyin": "lěi",
-    "meaning": "to accumulate; to involve or implicate (Taiwan pr. [lèi])",
-    "example": "我很累。",
-    "example_en": "I am very tired.",
-    "level": 2
-  },
-  {
-    "chinese": "旅遊",
-    "pinyin": "lǚ yóu",
-    "meaning": "trip; journey",
-    "example": "我們去中國旅遊。",
-    "example_en": "We're traveling in China.",
-    "level": 2
+    "chinese": "夜",
+    "pinyin": "yè",
+    "meaning": "variant of 夜",
+    "level": 2,
+    "example": "夜深了，該睡覺了。",
+    "example_en": "It's late at night; time to sleep."
   },
   {
-    "chinese": "賣",
-    "pinyin": "mài",
-    "meaning": "to sell; to betray",
-    "example": "這家商店賣水果。",
-    "example_en": "This shop sells fruit.",
+    "chinese": "春季",
+    "pinyin": "chūnjì",
+    "meaning": "springtime",
     "level": 2
   },
   {
-    "chinese": "慢",
-    "pinyin": "màn",
-    "meaning": "slow",
-    "example": "請說慢一點。",
-    "example_en": "Please speak a bit more slowly.",
+    "chinese": "時",
+    "pinyin": "shí",
+    "meaning": "surname Shi",
     "level": 2
   },
   {
-    "chinese": "忙",
-    "pinyin": "máng",
-    "meaning": "busy; hurriedly",
-    "example": "今天我很忙。",
-    "example_en": "I am very busy today.",
+    "chinese": "不久",
+    "pinyin": "bùjiǔ",
+    "meaning": "not long (after); before too long; soon",
     "level": 2
   },
   {
-    "chinese": "妹妹",
-    "pinyin": "mèi mei",
-    "meaning": "younger sister; young woman",
-    "example": "我妹妹十歲。",
-    "example_en": "My little sister is ten.",
-    "level": 2
+    "chinese": "剛才",
+    "pinyin": "gāng cái",
+    "meaning": "just now; a moment ago",
+    "level": 2,
+    "example": "剛才誰打電話了？",
+    "example_en": "Who called just now?"
   },
   {
-    "chinese": "門",
-    "pinyin": "mén",
-    "meaning": "gate; door",
-    "example": "請關門。",
-    "example_en": "Please close the door.",
+    "chinese": "早點",
+    "pinyin": "zǎodiǎn",
+    "meaning": "breakfast",
     "level": 2
   },
   {
-    "chinese": "每",
-    "pinyin": "měi",
-    "meaning": "each; every",
-    "example": "我每天喝咖啡。",
-    "example_en": "I drink coffee every day.",
-    "level": 2
+    "chinese": "正好",
+    "pinyin": "zhèng hǎo",
+    "meaning": "just (in time); just right",
+    "level": 2,
+    "example": "你來得正好。",
+    "example_en": "You came at just the right time."
   },
   {
-    "chinese": "牛奶",
-    "pinyin": "niú nǎi",
-    "meaning": "cow's milk",
-    "example": "孩子愛喝牛奶。",
-    "example_en": "The child loves to drink milk.",
+    "chinese": "年紀",
+    "pinyin": "niánjì",
+    "meaning": "age; CL:把[ba3],個|个[ge4]",
     "level": 2
   },
   {
     "chinese": "男人",
     "pinyin": "nán rén",
     "meaning": "a man; a male",
+    "level": 2,
     "example": "那個男人是老師。",
-    "example_en": "That man is a teacher.",
-    "level": 2
-  },
-  {
-    "chinese": "您",
-    "pinyin": "nín",
-    "meaning": "you (courteous, as opposed to informal 你)",
-    "example": "您好！",
-    "example_en": "Hello! (polite)",
-    "level": 2
+    "example_en": "That man is a teacher."
   },
   {
     "chinese": "女人",
     "pinyin": "nǚ rén",
     "meaning": "woman",
+    "level": 2,
     "example": "那個女人是醫生。",
-    "example_en": "That woman is a doctor.",
+    "example_en": "That woman is a doctor."
+  },
+  {
+    "chinese": "父親",
+    "pinyin": "fù qīn",
+    "meaning": "father; also pr. [fù qin]",
+    "level": 2,
+    "example": "我父親在銀行工作。",
+    "example_en": "My father works at a bank."
+  },
+  {
+    "chinese": "母親",
+    "pinyin": "mǔ qīn",
+    "meaning": "mother; also pr. [mǔ qin]",
+    "level": 2,
+    "example": "我母親是醫生。",
+    "example_en": "My mother is a doctor."
+  },
+  {
+    "chinese": "父母",
+    "pinyin": "fùmǔ",
+    "meaning": "father and mother; parents",
     "level": 2
   },
   {
-    "chinese": "票",
-    "pinyin": "piào",
-    "meaning": "ticket; ballot",
-    "example": "我買了兩張電影票。",
-    "example_en": "I bought two movie tickets.",
+    "chinese": "外公",
+    "pinyin": "wàigōng",
+    "meaning": "(coll.) mother's father; maternal grandfather",
     "level": 2
   },
   {
-    "chinese": "旁邊",
-    "pinyin": "páng biān",
-    "meaning": "side; adjacent place",
-    "example": "貓在桌子旁邊。",
-    "example_en": "The cat is next to the table.",
+    "chinese": "外婆",
+    "pinyin": "wàipó",
+    "meaning": "(coll.) mother's mother; maternal grandmother",
     "level": 2
   },
   {
-    "chinese": "跑步",
-    "pinyin": "pǎo bù",
-    "meaning": "to run; to jog",
-    "example": "早上我去跑步。",
-    "example_en": "I go running in the morning.",
+    "chinese": "伯伯",
+    "pinyin": "bóbo, bó",
+    "meaning": "father's elder brother; uncle",
     "level": 2
   },
   {
-    "chinese": "千",
-    "pinyin": "qiān",
-    "meaning": "thousand",
-    "example": "這本書一千塊。",
-    "example_en": "This book is one thousand yuan.",
+    "chinese": "伯父",
+    "pinyin": "bófù",
+    "meaning": "father's elder brother; term of respect for older man; CL:個|个[ge4]",
     "level": 2
   },
   {
-    "chinese": "晴",
-    "pinyin": "qíng",
-    "meaning": "clear; fine (weather)",
-    "example": "今天天氣很晴。",
-    "example_en": "It's very sunny today.",
+    "chinese": "伯母",
+    "pinyin": "bómǔ",
+    "meaning": "wife of father's elder brother; aunt; (polite form of address for a woman who is about the age of one's mother)",
     "level": 2
   },
   {
-    "chinese": "去年",
-    "pinyin": "qù nián",
-    "meaning": "last year",
-    "example": "我去年去了北京。",
-    "example_en": "I went to Beijing last year.",
+    "chinese": "叔叔",
+    "pinyin": "shū shu",
+    "meaning": "father's younger brother; uncle",
+    "level": 2,
+    "example": "叔叔在北京工作。",
+    "example_en": "Uncle works in Beijing."
+  },
+  {
+    "chinese": "姑姑",
+    "pinyin": "gūgu",
+    "meaning": "paternal aunt; CL:個|个[ge4]",
     "level": 2
   },
   {
-    "chinese": "妻子",
-    "pinyin": "qī zǐ",
-    "meaning": "wife and children",
-    "example": "他的妻子是老師。",
-    "example_en": "His wife is a teacher.",
+    "chinese": "孫女",
+    "pinyin": "sūnnǚ",
+    "meaning": "son's daughter; granddaughter",
     "level": 2
   },
   {
-    "chinese": "起床",
-    "pinyin": "qǐ chuáng",
-    "meaning": "to get out of bed; to get up",
-    "example": "我七點起床。",
-    "example_en": "I get up at seven.",
+    "chinese": "孫子",
+    "pinyin": "sūn zi",
+    "meaning": "grandson; son's son",
+    "level": 2,
+    "example": "奶奶很愛她的孫子。",
+    "example_en": "Grandma loves her grandson."
+  },
+  {
+    "chinese": "關係",
+    "pinyin": "guān xi",
+    "meaning": "relation; relationship",
+    "level": 2,
+    "example": "我們關係很好。",
+    "example_en": "We have a good relationship."
+  },
+  {
+    "chinese": "害怕",
+    "pinyin": "hài pà",
+    "meaning": "to be afraid; to be scared",
+    "level": 2,
+    "example": "她害怕狗。",
+    "example_en": "She is afraid of dogs."
+  },
+  {
+    "chinese": "開心",
+    "pinyin": "kāi xīn",
+    "meaning": "to feel happy; to rejoice",
+    "level": 2,
+    "example": "孩子們很開心。",
+    "example_en": "The children are happy."
+  },
+  {
+    "chinese": "擔心",
+    "pinyin": "dānxīn",
+    "meaning": "to worry",
+    "level": 2,
+    "example": "別擔心，沒問題。",
+    "example_en": "Don't worry, it's fine."
+  },
+  {
+    "chinese": "傷心",
+    "pinyin": "shāng xīn",
+    "meaning": "to grieve; to be broken-hearted",
+    "level": 2,
+    "example": "別傷心了。",
+    "example_en": "Don't be sad."
+  },
+  {
+    "chinese": "美麗",
+    "pinyin": "měi lì",
+    "meaning": "beautiful",
+    "level": 2,
+    "example": "這兒的風景很美麗。",
+    "example_en": "The scenery here is beautiful."
+  },
+  {
+    "chinese": "帥",
+    "pinyin": "shuài",
+    "meaning": "(bound form) commander-in-chief; (bound form) to lead; to command",
+    "level": 2,
+    "example": "那個演員很帥。",
+    "example_en": "That actor is handsome."
+  },
+  {
+    "chinese": "笨",
+    "pinyin": "bèn",
+    "meaning": "stupid",
+    "level": 2,
+    "example": "我不是笨，只是沒學過。",
+    "example_en": "I'm not stupid, I just haven't learned it."
+  },
+  {
+    "chinese": "認真",
+    "pinyin": "rèn zhēn",
+    "meaning": "conscientious; earnest",
+    "level": 2,
+    "example": "請認真聽老師講。",
+    "example_en": "Please listen to the teacher carefully."
+  },
+  {
+    "chinese": "敢",
+    "pinyin": "gǎn",
+    "meaning": "to dare; daring",
+    "level": 2,
+    "example": "我不敢一個人走夜路。",
+    "example_en": "I don't dare walk at night alone."
+  },
+  {
+    "chinese": "急",
+    "pinyin": "jí",
+    "meaning": "urgent; pressing; rapid",
     "level": 2
   },
   {
-    "chinese": "讓",
-    "pinyin": "ràng",
-    "meaning": "to yield; to permit",
-    "example": "請讓我看看。",
-    "example_en": "Please let me have a look.",
+    "chinese": "禮貌",
+    "pinyin": "lǐ mào",
+    "meaning": "courtesy; politeness; manners; courteous; polite",
+    "level": 2,
+    "example": "對人要有禮貌。",
+    "example_en": "You should be polite to people."
+  },
+  {
+    "chinese": "害羞",
+    "pinyin": "hài xiū",
+    "meaning": "shy; embarrassed",
+    "level": 2,
+    "example": "她有點兒害羞。",
+    "example_en": "She is a bit shy."
+  },
+  {
+    "chinese": "關心",
+    "pinyin": "guān xīn",
+    "meaning": "to be concerned about; to care about",
+    "level": 2,
+    "example": "老師很關心學生。",
+    "example_en": "The teacher cares about the students."
+  },
+  {
+    "chinese": "心情",
+    "pinyin": "xīn qíng",
+    "meaning": "mood; frame of mind",
+    "level": 2,
+    "example": "今天我心情很好。",
+    "example_en": "I'm in a good mood today."
+  },
+  {
+    "chinese": "幸福",
+    "pinyin": "xìng fú",
+    "meaning": "happiness; happy",
+    "level": 2,
+    "example": "他們生活得很幸福。",
+    "example_en": "They live very happily."
+  },
+  {
+    "chinese": "差",
+    "pinyin": "chà",
+    "meaning": "poor; to differ",
+    "level": 2,
+    "example": "我的華語還差得很遠。",
+    "example_en": "My Chinese is still far from good."
+  },
+  {
+    "chinese": "兄弟",
+    "pinyin": "xiōng dì",
+    "meaning": "brothers; younger brother",
+    "level": 2,
+    "example": "他們是親兄弟。",
+    "example_en": "They are brothers."
+  },
+  {
+    "chinese": "阿姨",
+    "pinyin": "ā yí",
+    "meaning": "maternal aunt; step-mother",
+    "level": 2,
+    "example": "李阿姨住在我家旁邊。",
+    "example_en": "Auntie Li lives next to us."
+  },
+  {
+    "chinese": "身邊",
+    "pinyin": "shēnbiān",
+    "meaning": "at one's side; on hand",
     "level": 2
   },
   {
-    "chinese": "上班",
-    "pinyin": "shàng bān",
-    "meaning": "to go to work; to be on duty",
-    "example": "爸爸九點上班。",
-    "example_en": "Dad starts work at nine.",
+    "chinese": "身高",
+    "pinyin": "shēngāo",
+    "meaning": "(a person's) height",
     "level": 2
   },
   {
-    "chinese": "事情",
-    "pinyin": "shì qing",
-    "meaning": "affair; matter; thing; business",
-    "example": "我有一點兒事情。",
-    "example_en": "I have something to take care of.",
+    "chinese": "長大",
+    "pinyin": "zhǎngdà",
+    "meaning": "to grow up",
     "level": 2
   },
   {
-    "chinese": "時間",
-    "pinyin": "shí jiān",
-    "meaning": "time; period",
-    "example": "你有時間嗎？",
-    "example_en": "Do you have time?",
+    "chinese": "經理",
+    "pinyin": "jīng lǐ",
+    "meaning": "manager; director",
+    "level": 2,
+    "example": "我想見經理。",
+    "example_en": "I want to see the manager."
+  },
+  {
+    "chinese": "教書",
+    "pinyin": "jiāoshū",
+    "meaning": "to work as a teacher; to teach (in a school)",
     "level": 2
   },
   {
-    "chinese": "身體",
-    "pinyin": "shēn tǐ",
-    "meaning": "the body; one's health",
-    "example": "你身體怎麼樣？",
-    "example_en": "How is your health?",
+    "chinese": "開會",
+    "pinyin": "kāihuì",
+    "meaning": "to hold or attend a meeting",
     "level": 2
   },
   {
-    "chinese": "生病",
-    "pinyin": "shēng bìng",
-    "meaning": "to fall ill",
-    "example": "他生病了。",
-    "example_en": "He is sick.",
+    "chinese": "加班",
+    "pinyin": "jiā bān",
+    "meaning": "to work overtime",
+    "level": 2,
+    "example": "今晚我要加班。",
+    "example_en": "I have to work overtime tonight."
+  },
+  {
+    "chinese": "危險",
+    "pinyin": "wēi xiǎn",
+    "meaning": "danger; dangerous",
+    "level": 2,
+    "example": "這條路有點兒危險。",
+    "example_en": "This road is a bit dangerous."
+  },
+  {
+    "chinese": "安全",
+    "pinyin": "ānquán",
+    "meaning": "safe; safety",
+    "level": 2,
+    "example": "注意安全！",
+    "example_en": "Pay attention to safety!"
+  },
+  {
+    "chinese": "成功",
+    "pinyin": "chénggōng",
+    "meaning": "success; to succeed",
+    "level": 2,
+    "example": "祝你成功！",
+    "example_en": "I wish you success!"
+  },
+  {
+    "chinese": "報告",
+    "pinyin": "bàogào",
+    "meaning": "report; to report",
+    "level": 2,
+    "example": "他做了一個報告。",
+    "example_en": "He gave a report."
+  },
+  {
+    "chinese": "資料",
+    "pinyin": "zī liào",
+    "meaning": "material; resources",
+    "level": 2,
+    "example": "請看這些資料。",
+    "example_en": "Please look at these materials."
+  },
+  {
+    "chinese": "管理",
+    "pinyin": "guǎn lǐ",
+    "meaning": "to supervise; to manage",
+    "level": 2,
+    "example": "他管理這個部門。",
+    "example_en": "He manages this department."
+  },
+  {
+    "chinese": "做法",
+    "pinyin": "zuòfǎ",
+    "meaning": "way of handling sth; method for making; work method",
     "level": 2
   },
   {
-    "chinese": "生日",
-    "pinyin": "shēng rì",
-    "meaning": "birthday",
-    "example": "今天是我的生日。",
-    "example_en": "Today is my birthday.",
+    "chinese": "看法",
+    "pinyin": "kàn fǎ",
+    "meaning": "way of looking at a thing; view",
+    "level": 2,
+    "example": "你有什麼看法？",
+    "example_en": "What's your view?"
+  },
+  {
+    "chinese": "辦",
+    "pinyin": "bàn",
+    "meaning": "to take care of (a matter); to deal with (a task, procedure etc); to organize (an event); to establish; to set up; to manage; to run (an enterprise); (law) to handle; to investigate; to prosecute (a case or suspect)",
     "level": 2
   },
   {
-    "chinese": "手錶",
-    "pinyin": "shǒu biǎo",
-    "meaning": "wristwatch",
-    "example": "這塊手錶很貴。",
-    "example_en": "This watch is expensive.",
+    "chinese": "打工",
+    "pinyin": "dǎgōng",
+    "meaning": "to work a temporary or casual job; (of students) to have a job outside of class time, or during vacation",
     "level": 2
   },
   {
-    "chinese": "手機",
-    "pinyin": "shǒu jī",
-    "meaning": "cell phone; mobile phone",
-    "example": "我的手機在桌子上。",
-    "example_en": "My phone is on the table.",
+    "chinese": "選",
+    "pinyin": "xuǎn",
+    "meaning": "to choose; to pick; to select",
     "level": 2
   },
   {
-    "chinese": "所以",
-    "pinyin": "suǒ yǐ",
-    "meaning": "therefore; as a result",
-    "example": "下雨了，所以我不去。",
-    "example_en": "It's raining, so I'm not going.",
+    "chinese": "嚴重",
+    "pinyin": "yán zhòng",
+    "meaning": "grave; serious",
+    "level": 2,
+    "example": "這個問題很嚴重。",
+    "example_en": "This problem is serious."
+  },
+  {
+    "chinese": "正式",
+    "pinyin": "zhèng shì",
+    "meaning": "formal; official",
+    "level": 2,
+    "example": "這是一份正式檔案。",
+    "example_en": "This is an official document."
+  },
+  {
+    "chinese": "查",
+    "pinyin": "chá",
+    "meaning": "to research; to check; to investigate",
     "level": 2
   },
   {
-    "chinese": "送",
-    "pinyin": "sòng",
-    "meaning": "to send; to deliver; to transmit; to give (as a present)",
-    "example": "我送你一本書。",
-    "example_en": "I'll give you a book.",
+    "chinese": "考",
+    "pinyin": "kǎo",
+    "meaning": "to check; to verify; to test",
     "level": 2
   },
   {
-    "chinese": "跳舞",
-    "pinyin": "tiào wǔ",
-    "meaning": "to dance",
-    "example": "她喜歡跳舞。",
-    "example_en": "She likes to dance.",
+    "chinese": "例如",
+    "pinyin": "lì rú",
+    "meaning": "for example; for instance; such as",
+    "level": 2,
+    "example": "我喜歡運動，例如游泳。",
+    "example_en": "I like sports, for example swimming."
+  },
+  {
+    "chinese": "例(子)",
+    "pinyin": "lì(zi)",
+    "meaning": "(no English gloss)",
+    "level": 2
+  },
+  {
+    "chinese": "題目",
+    "pinyin": "tímù",
+    "meaning": "subject; title; topic; exercise or exam question (CL:道[dao4])",
     "level": 2
   },
   {
     "chinese": "題",
     "pinyin": "tí",
     "meaning": "topic; problem for discussion",
+    "level": 2,
     "example": "這道題很難。",
-    "example_en": "This question is hard.",
+    "example_en": "This question is hard."
+  },
+  {
+    "chinese": "答案",
+    "pinyin": "dá àn",
+    "meaning": "answer; solution",
+    "level": 2,
+    "example": "你知道答案嗎？",
+    "example_en": "Do you know the answer?"
+  },
+  {
+    "chinese": "念書",
+    "pinyin": "niànshū",
+    "meaning": "to read; to study; to attend school",
     "level": 2
   },
   {
-    "chinese": "它",
-    "pinyin": "tā",
-    "meaning": "it",
-    "example": "它是我的貓。",
-    "example_en": "It is my cat.",
+    "chinese": "歷史",
+    "pinyin": "lì shǐ",
+    "meaning": "history",
+    "level": 2,
+    "example": "我對中國歷史很感興趣。",
+    "example_en": "I'm very interested in Chinese history."
+  },
+  {
+    "chinese": "數學",
+    "pinyin": "shù xué",
+    "meaning": "mathematics; mathematical",
+    "level": 2,
+    "example": "我不太喜歡數學。",
+    "example_en": "I don't really like math."
+  },
+  {
+    "chinese": "書法",
+    "pinyin": "shūfǎ",
+    "meaning": "calligraphy; handwriting; penmanship",
     "level": 2
   },
   {
-    "chinese": "踢",
-    "pinyin": "tī",
-    "meaning": "to kick; to play (e.g. soccer)",
-    "example": "孩子們在踢足球。",
-    "example_en": "The children are playing soccer.",
+    "chinese": "英語",
+    "pinyin": "Yīngyǔ",
+    "meaning": "English (language)",
     "level": 2
   },
   {
-    "chinese": "外",
-    "pinyin": "wài",
-    "meaning": "outside; in addition",
-    "example": "他在門外。",
-    "example_en": "He is outside the door.",
+    "chinese": "作文",
+    "pinyin": "zuòwén",
+    "meaning": "to write an essay; composition (student essay); CL:篇[pian1]",
     "level": 2
+  },
+  {
+    "chinese": "漢字",
+    "pinyin": "hànzì",
+    "meaning": "Chinese character(s)",
+    "level": 2
+  },
+  {
+    "chinese": "詞",
+    "pinyin": "cí",
+    "meaning": "word; statement; speech; lyrics; a form of lyric poetry, flourishing in the Song dynasty 宋朝[Song4 chao2] (CL:首[shou3])",
+    "level": 2
+  },
+  {
+    "chinese": "文法",
+    "pinyin": "wénfǎ",
+    "meaning": "grammar",
+    "level": 2
+  },
+  {
+    "chinese": "加上",
+    "pinyin": "jiāshàng",
+    "meaning": "to add; plus; in addition; moreover",
+    "level": 2
+  },
+  {
+    "chinese": "減",
+    "pinyin": "jiǎn",
+    "meaning": "to lower; to decrease; to reduce",
+    "level": 2
+  },
+  {
+    "chinese": "乘",
+    "pinyin": "chéng",
+    "meaning": "surname Cheng",
+    "level": 2
+  },
+  {
+    "chinese": "除",
+    "pinyin": "chú",
+    "meaning": "to get rid of; to remove; to exclude",
+    "level": 2
+  },
+  {
+    "chinese": "國小",
+    "pinyin": "guóxiǎo",
+    "meaning": "elementary school (Tw); abbr. for 國民小學|国民小学[guo2 min2 xiao3 xue2]",
+    "level": 2
+  },
+  {
+    "chinese": "中學",
+    "pinyin": "zhōngxué",
+    "meaning": "middle school",
+    "level": 2
+  },
+  {
+    "chinese": "學院",
+    "pinyin": "xuéyuàn",
+    "meaning": "college; educational institute; school",
+    "level": 2
+  },
+  {
+    "chinese": "大學生",
+    "pinyin": "dàxuéshēng",
+    "meaning": "university student; college student",
+    "level": 2
+  },
+  {
+    "chinese": "教授",
+    "pinyin": "jiào shòu",
+    "meaning": "professor; to instruct",
+    "level": 2,
+    "example": "王教授在大學教書。",
+    "example_en": "Professor Wang teaches at the university."
+  },
+  {
+    "chinese": "放假",
+    "pinyin": "fàngjià",
+    "meaning": "to have a holiday or vacation",
+    "level": 2
+  },
+  {
+    "chinese": "春假",
+    "pinyin": "chūnjià",
+    "meaning": "spring break",
+    "level": 2
+  },
+  {
+    "chinese": "暑假",
+    "pinyin": "shǔjià",
+    "meaning": "summer vacation; CL:個|个[ge4]",
+    "level": 2
+  },
+  {
+    "chinese": "寒假",
+    "pinyin": "hán jià",
+    "meaning": "winter vacation",
+    "level": 2,
+    "example": "寒假你回家嗎？",
+    "example_en": "Are you going home for winter break?"
+  },
+  {
+    "chinese": "假",
+    "pinyin": "gēi",
+    "meaning": "used in 掰",
+    "level": 2,
+    "example": "這雙鞋是假的。",
+    "example_en": "These shoes are fake."
+  },
+  {
+    "chinese": "畢業",
+    "pinyin": "bìyè",
+    "meaning": "to graduate",
+    "level": 2,
+    "example": "我明年畢業。",
+    "example_en": "I graduate next year."
+  },
+  {
+    "chinese": "學期",
+    "pinyin": "xuéqí",
+    "meaning": "term; semester; CL:個|个[ge4]",
+    "level": 2
+  },
+  {
+    "chinese": "服務",
+    "pinyin": "fúwù",
+    "meaning": "to serve; service; CL:項|项[xiang4]",
+    "level": 2
+  },
+  {
+    "chinese": "室友",
+    "pinyin": "shìyǒu",
+    "meaning": "roommate",
+    "level": 2
+  },
+  {
+    "chinese": "操場",
+    "pinyin": "cāochǎng",
+    "meaning": "playground; sports field; drill ground",
+    "level": 2
+  },
+  {
+    "chinese": "校園",
+    "pinyin": "xiàoyuán",
+    "meaning": "campus",
+    "level": 2
+  },
+  {
+    "chinese": "位子",
+    "pinyin": "wèizi",
+    "meaning": "place; seat",
+    "level": 2
+  },
+  {
+    "chinese": "書桌",
+    "pinyin": "shūzhuō",
+    "meaning": "desk; CL:張|张[zhang1]",
+    "level": 2
+  },
+  {
+    "chinese": "書包",
+    "pinyin": "shūbāo",
+    "meaning": "schoolbag; satchel; bookbag",
+    "level": 2
+  },
+  {
+    "chinese": "書架",
+    "pinyin": "shūjià",
+    "meaning": "bookshelf; CL:個|个[ge4]",
+    "level": 2
+  },
+  {
+    "chinese": "本子",
+    "pinyin": "běnzi",
+    "meaning": "book; notebook; Japanese-style self-published comic (esp. an erotic one), aka \"dōjinshi\"",
+    "level": 2
+  },
+  {
+    "chinese": "尺",
+    "pinyin": "chǐ",
+    "meaning": "a Chinese foot; one-third of a meter; a ruler",
+    "level": 2
+  },
+  {
+    "chinese": "討論",
+    "pinyin": "tǎo lùn",
+    "meaning": "to discuss; to talk over",
+    "level": 2,
+    "example": "我們討論一下這個問題。",
+    "example_en": "Let's discuss this problem."
+  },
+  {
+    "chinese": "同意",
+    "pinyin": "tóng yì",
+    "meaning": "to agree; to consent",
+    "level": 2,
+    "example": "我同意你的看法。",
+    "example_en": "I agree with your view."
+  },
+  {
+    "chinese": "瞭解",
+    "pinyin": "liǎo jiě",
+    "meaning": "to understand; to realize",
+    "level": 2,
+    "example": "我想瞭解中國文化。",
+    "example_en": "I want to understand Chinese culture."
+  },
+  {
+    "chinese": "無聊",
+    "pinyin": "wú liáo",
+    "meaning": "bored; boring",
+    "level": 2,
+    "example": "一個人在家很無聊。",
+    "example_en": "It's boring to be home alone."
+  },
+  {
+    "chinese": "有趣",
+    "pinyin": "yǒu qù",
+    "meaning": "interesting; fascinating",
+    "level": 2,
+    "example": "這個故事很有趣。",
+    "example_en": "This story is interesting."
+  },
+  {
+    "chinese": "有意思",
+    "pinyin": "yǒuyìsi",
+    "meaning": "interesting; meaningful; enjoyable",
+    "level": 2
+  },
+  {
+    "chinese": "原因",
+    "pinyin": "yuán yīn",
+    "meaning": "cause; origin",
+    "level": 2,
+    "example": "你知道原因嗎？",
+    "example_en": "Do you know the reason?"
+  },
+  {
+    "chinese": "遍",
+    "pinyin": "biàn",
+    "meaning": "time (once through)",
+    "level": 2,
+    "example": "請再說一遍。",
+    "example_en": "Please say it again."
+  },
+  {
+    "chinese": "改",
+    "pinyin": "gǎi",
+    "meaning": "to change; to alter; to transform",
+    "level": 2
+  },
+  {
+    "chinese": "忘記",
+    "pinyin": "wàng jì",
+    "meaning": "to forget",
+    "level": 2,
+    "example": "我忘記帶鑰匙了。",
+    "example_en": "I forgot to bring my keys."
+  },
+  {
+    "chinese": "程度",
+    "pinyin": "chéngdù",
+    "meaning": "degree; level; extent",
+    "level": 2
+  },
+  {
+    "chinese": "趕快",
+    "pinyin": "gǎnkuài",
+    "meaning": "quickly; at once",
+    "level": 2
+  },
+  {
+    "chinese": "以上",
+    "pinyin": "yǐshàng",
+    "meaning": "that level or higher; that amount or more; the above-mentioned; (used to indicate that one has completed one's remarks) That is all.",
+    "level": 2
+  },
+  {
+    "chinese": "以下",
+    "pinyin": "yǐxià",
+    "meaning": "that level or lower; that amount or less; the following",
+    "level": 2
+  },
+  {
+    "chinese": "意見",
+    "pinyin": "yì jiàn",
+    "meaning": "idea; opinion",
+    "level": 2,
+    "example": "你有什麼意見？",
+    "example_en": "What's your opinion?"
+  },
+  {
+    "chinese": "用功",
+    "pinyin": "yònggōng",
+    "meaning": "diligent; industrious (in one's studies); to study hard",
+    "level": 2
+  },
+  {
+    "chinese": "研究",
+    "pinyin": "yánjiù",
+    "meaning": "research; a study; CL:項|项[xiang4]",
+    "level": 2
+  },
+  {
+    "chinese": "教育",
+    "pinyin": "jiào yù",
+    "meaning": "to educate; to teach",
+    "level": 2,
+    "example": "教育對孩子很重要。",
+    "example_en": "Education is important for children."
+  },
+  {
+    "chinese": "選擇",
+    "pinyin": "xuǎn zé",
+    "meaning": "to select; to pick",
+    "level": 2,
+    "example": "你可以自己選擇。",
+    "example_en": "You can choose for yourself."
+  },
+  {
+    "chinese": "建議",
+    "pinyin": "jiàn yì",
+    "meaning": "to propose; to suggest; to recommend; proposal; suggestion; recommendation",
+    "level": 2,
+    "example": "我有一個建議。",
+    "example_en": "I have a suggestion."
+  },
+  {
+    "chinese": "知識",
+    "pinyin": "zhī shi",
+    "meaning": "knowledge; intellectual",
+    "level": 2,
+    "example": "我們要多學知識。",
+    "example_en": "We should learn more knowledge."
+  },
+  {
+    "chinese": "座",
+    "pinyin": "zuò",
+    "meaning": "seat; base",
+    "level": 2,
+    "example": "這座山很高。",
+    "example_en": "This mountain is very high."
+  },
+  {
+    "chinese": "臥室",
+    "pinyin": "wòshì",
+    "meaning": "bedroom; CL:間|间[jian1]",
+    "level": 2
+  },
+  {
+    "chinese": "臥房",
+    "pinyin": "wòfáng",
+    "meaning": "bedroom",
+    "level": 2
+  },
+  {
+    "chinese": "浴室",
+    "pinyin": "yùshì",
+    "meaning": "bathroom; shower room (CL:間|间[jian1]); bathhouse",
+    "level": 2
+  },
+  {
+    "chinese": "院(子)",
+    "pinyin": "yuàn(zi)",
+    "meaning": "(no English gloss)",
+    "level": 2
+  },
+  {
+    "chinese": "書房",
+    "pinyin": "shūfáng",
+    "meaning": "study (room); studio; CL:間|间[jian1]",
+    "level": 2
+  },
+  {
+    "chinese": "洗衣機",
+    "pinyin": "xǐ yī jī",
+    "meaning": "washing machine; washer",
+    "level": 2,
+    "example": "衣服在洗衣機裡。",
+    "example_en": "The clothes are in the washing machine."
+  },
+  {
+    "chinese": "餐桌",
+    "pinyin": "cānzhuō",
+    "meaning": "dining table; dinner table; CL:張|张[zhang1]",
+    "level": 2
+  },
+  {
+    "chinese": "打開",
+    "pinyin": "dǎkāi",
+    "meaning": "to open; to show (a ticket); to turn on",
+    "level": 2
+  },
+  {
+    "chinese": "箱",
+    "pinyin": "xiāng, xiāng(zi)",
+    "meaning": "box; trunk; chest",
+    "level": 2
+  },
+  {
+    "chinese": "層",
+    "pinyin": "céng",
+    "meaning": "floor; layer",
+    "level": 2,
+    "example": "我住在三層。",
+    "example_en": "I live on the third floor."
+  },
+  {
+    "chinese": "櫃(子)",
+    "pinyin": "guì(zi)",
+    "meaning": "(no English gloss)",
+    "level": 2
+  },
+  {
+    "chinese": "大門",
+    "pinyin": "dàmén",
+    "meaning": "the Doors, US rock band",
+    "level": 2
+  },
+  {
+    "chinese": "鄰居",
+    "pinyin": "lín jū",
+    "meaning": "neighbor; next door",
+    "level": 2,
+    "example": "我的鄰居很友好。",
+    "example_en": "My neighbor is very friendly."
+  },
+  {
+    "chinese": "熱鬧",
+    "pinyin": "rè nao",
+    "meaning": "bustling with noise and excitement; lively",
+    "level": 2,
+    "example": "夜市很熱鬧。",
+    "example_en": "The night market is lively."
+  },
+  {
+    "chinese": "吵",
+    "pinyin": "chǎo",
+    "meaning": "to quarrel; to make a noise",
+    "level": 2,
+    "example": "請不要吵。",
+    "example_en": "Please don't make noise."
+  },
+  {
+    "chinese": "亂",
+    "pinyin": "luàn",
+    "meaning": "in confusion or disorder; in a confused state of mind",
+    "level": 2,
+    "example": "房間裡有點兒亂。",
+    "example_en": "The room is a bit messy."
+  },
+  {
+    "chinese": "房東",
+    "pinyin": "fángdōng",
+    "meaning": "landlord",
+    "level": 2
+  },
+  {
+    "chinese": "房屋",
+    "pinyin": "fángwū",
+    "meaning": "house; building; CL:所[suo3],套[tao4]",
+    "level": 2
+  },
+  {
+    "chinese": "搬家",
+    "pinyin": "bānjiā",
+    "meaning": "to move house; to relocate; to remove (sth)",
+    "level": 2
+  },
+  {
+    "chinese": "開水",
+    "pinyin": "kāishuǐ",
+    "meaning": "boiled water; boiling water",
+    "level": 2
+  },
+  {
+    "chinese": "鄉下",
+    "pinyin": "xiāngxià",
+    "meaning": "countryside; rural area; CL:個|个[ge4]",
+    "level": 2
+  },
+  {
+    "chinese": "傘",
+    "pinyin": "sǎn",
+    "meaning": "umbrella; parasol",
+    "level": 2,
+    "example": "下雨了，帶把傘吧。",
+    "example_en": "It's raining; bring an umbrella."
+  },
+  {
+    "chinese": "朵",
+    "pinyin": "duǒ",
+    "meaning": "flower; earlobe",
+    "level": 2,
+    "example": "她買了一朵花。",
+    "example_en": "She bought a flower."
+  },
+  {
+    "chinese": "蚊(子)",
+    "pinyin": "wén(zi)",
+    "meaning": "(no English gloss)",
+    "level": 2
+  },
+  {
+    "chinese": "自然",
+    "pinyin": "zì rán",
+    "meaning": "nature; natural",
+    "level": 2,
+    "example": "我喜歡大自然。",
+    "example_en": "I like nature."
+  },
+  {
+    "chinese": "月亮",
+    "pinyin": "yuè liang",
+    "meaning": "the moon",
+    "level": 2,
+    "example": "今晚的月亮很圓。",
+    "example_en": "The moon is very round tonight."
+  },
+  {
+    "chinese": "星星",
+    "pinyin": "xīngxing",
+    "meaning": "(coll.) a star; the stars in the sky",
+    "level": 2
+  },
+  {
+    "chinese": "環境",
+    "pinyin": "huán jìng",
+    "meaning": "environment; circumstances",
+    "level": 2,
+    "example": "這兒的環境很好。",
+    "example_en": "The environment here is very nice."
+  },
+  {
+    "chinese": "晴天",
+    "pinyin": "qíngtiān",
+    "meaning": "clear sky; sunny day",
+    "level": 2
+  },
+  {
+    "chinese": "暖和",
+    "pinyin": "nuǎn huo",
+    "meaning": "warm; nice and warm",
+    "level": 2,
+    "example": "春天天氣暖和了。",
+    "example_en": "The weather is warmer in spring."
+  },
+  {
+    "chinese": "涼快",
+    "pinyin": "liáng kuai",
+    "meaning": "nice and cold; pleasantly cool",
+    "level": 2,
+    "example": "晚上比較涼快。",
+    "example_en": "It's cooler in the evening."
+  },
+  {
+    "chinese": "涼",
+    "pinyin": "liáng",
+    "meaning": "the five Liang of the Sixteen Kingdoms, namely: Former Liang 前涼|前凉 (314-376), Later Liang 後涼|后凉 (386-403), Northern Liang 北涼|北凉 (398-439), Southern Liang 南涼|南凉[Nan2 Liang2] (397-414), Western Liang 西涼|西凉 (400-421)",
+    "level": 2
+  },
+  {
+    "chinese": "乾",
+    "pinyin": "gān",
+    "meaning": "surname Gan",
+    "level": 2
+  },
+  {
+    "chinese": "濕",
+    "pinyin": "shī",
+    "meaning": "moist; wet",
+    "level": 2
+  },
+  {
+    "chinese": "度",
+    "pinyin": "dù",
+    "meaning": "to pass; to spend (time); measure",
+    "level": 2
+  },
+  {
+    "chinese": "颱風",
+    "pinyin": "táifēng",
+    "meaning": "typhoon",
+    "level": 2
+  },
+  {
+    "chinese": "季節",
+    "pinyin": "jì jié",
+    "meaning": "time; season",
+    "level": 2,
+    "example": "我最喜歡秋天這個季節。",
+    "example_en": "Autumn is my favorite season."
+  },
+  {
+    "chinese": "環保",
+    "pinyin": "huánbǎo",
+    "meaning": "environmental protection; environmentally friendly; abbr. for 環境保護|环境保护[huan2 jing4 bao3 hu4]",
+    "level": 2
+  },
+  {
+    "chinese": "垃圾",
+    "pinyin": "lèsè",
+    "meaning": "trash; refuse; garbage",
+    "level": 2
+  },
+  {
+    "chinese": "汙染",
+    "pinyin": "wū rǎn",
+    "meaning": "to pollute; to contaminate (lit. and fig.)",
+    "level": 2,
+    "example": "我們不要汙染環境。",
+    "example_en": "We shouldn't pollute the environment."
+  },
+  {
+    "chinese": "底",
+    "pinyin": "de",
+    "meaning": "(equivalent to 的 as possessive particle)",
+    "level": 2,
+    "example": "杯子底有點兒髒。",
+    "example_en": "The bottom of the cup is a bit dirty."
+  },
+  {
+    "chinese": "底下",
+    "pinyin": "dǐxia",
+    "meaning": "the location below sth; afterwards",
+    "level": 2
+  },
+  {
+    "chinese": "內",
+    "pinyin": "nèi",
+    "meaning": "inside; inner",
+    "level": 2,
+    "example": "請在教室內安靜。",
+    "example_en": "Please be quiet inside the classroom."
+  },
+  {
+    "chinese": "深",
+    "pinyin": "shēn",
+    "meaning": "old variant of 深",
+    "level": 2,
+    "example": "這條河很深。",
+    "example_en": "This river is very deep."
+  },
+  {
+    "chinese": "淺",
+    "pinyin": "qiǎn",
+    "meaning": "shallow; light (color)",
+    "level": 2
+  },
+  {
+    "chinese": "發生",
+    "pinyin": "fā shēng",
+    "meaning": "to happen; to occur; to take place; to break out",
+    "level": 2,
+    "example": "昨天發生了一件事。",
+    "example_en": "Something happened yesterday."
+  },
+  {
+    "chinese": "照顧",
+    "pinyin": "zhào gu",
+    "meaning": "to take care of; to show consideration",
+    "level": 2,
+    "example": "請照顧好自己。",
+    "example_en": "Please take good care of yourself."
+  },
+  {
+    "chinese": "生活",
+    "pinyin": "shēng huó",
+    "meaning": "to live; life",
+    "level": 2,
+    "example": "我在北京生活。",
+    "example_en": "I live in Beijing."
+  },
+  {
+    "chinese": "日記",
+    "pinyin": "rì jì",
+    "meaning": "diary",
+    "level": 2,
+    "example": "我每天寫日記。",
+    "example_en": "I write in a diary every day."
+  },
+  {
+    "chinese": "流",
+    "pinyin": "liú",
+    "meaning": "to flow; to disseminate; to circulate or spread",
+    "level": 2
+  },
+  {
+    "chinese": "流汗",
+    "pinyin": "liúhàn",
+    "meaning": "to sweat",
+    "level": 2
+  },
+  {
+    "chinese": "夢",
+    "pinyin": "mèng",
+    "meaning": "dream; (bound form) to dream",
+    "level": 2,
+    "example": "我做了一個奇怪的夢。",
+    "example_en": "I had a strange dream."
+  },
+  {
+    "chinese": "枕頭",
+    "pinyin": "zhěntou",
+    "meaning": "pillow",
+    "level": 2
+  },
+  {
+    "chinese": "鬧鐘",
+    "pinyin": "nàozhōng",
+    "meaning": "alarm clock",
+    "level": 2
+  },
+  {
+    "chinese": "拖鞋",
+    "pinyin": "tuōxié",
+    "meaning": "slippers; sandals; flip-flops",
+    "level": 2
+  },
+  {
+    "chinese": "毛巾",
+    "pinyin": "máo jīn",
+    "meaning": "towel",
+    "level": 2,
+    "example": "請給我一條毛巾。",
+    "example_en": "Please give me a towel."
+  },
+  {
+    "chinese": "刷",
+    "pinyin": "shuā",
+    "meaning": "to brush; to paint",
+    "level": 2,
+    "example": "我每天刷兩次牙。",
+    "example_en": "I brush my teeth twice a day."
+  },
+  {
+    "chinese": "肥皂",
+    "pinyin": "féizào",
+    "meaning": "soap; CL:塊|块[kuai4],條|条[tiao2]",
+    "level": 2
+  },
+  {
+    "chinese": "牙膏",
+    "pinyin": "yá gāo",
+    "meaning": "toothpaste",
+    "level": 2,
+    "example": "牙膏用完了。",
+    "example_en": "The toothpaste is used up."
+  },
+  {
+    "chinese": "衛生紙",
+    "pinyin": "wèishēngzhǐ",
+    "meaning": "toilet paper; tissues",
+    "level": 2
+  },
+  {
+    "chinese": "籃(子)",
+    "pinyin": "lán(zi)",
+    "meaning": "(no English gloss)",
+    "level": 2
+  },
+  {
+    "chinese": "假日",
+    "pinyin": "jiàrì",
+    "meaning": "a holiday; a day off",
+    "level": 2
+  },
+  {
+    "chinese": "結束",
+    "pinyin": "jié shù",
+    "meaning": "termination; to finish",
+    "level": 2,
+    "example": "會議結束了。",
+    "example_en": "The meeting is over."
   },
   {
     "chinese": "完",
     "pinyin": "wán",
     "meaning": "to finish; to be over",
+    "level": 2,
     "example": "我做完了。",
-    "example_en": "I have finished.",
+    "example_en": "I have finished."
+  },
+  {
+    "chinese": "散步",
+    "pinyin": "sàn bù",
+    "meaning": "to take a walk; to go for a walk",
+    "level": 2,
+    "example": "晚飯後我們去散步。",
+    "example_en": "We go for a walk after dinner."
+  },
+  {
+    "chinese": "慢跑",
+    "pinyin": "mànpǎo",
+    "meaning": "jogging; to jog; to canter",
     "level": 2
   },
   {
-    "chinese": "玩",
-    "pinyin": "wán",
-    "meaning": "to play; to have fun",
-    "example": "週末我們去玩。",
-    "example_en": "We're going out to have fun this weekend.",
+    "chinese": "野餐",
+    "pinyin": "yěcān",
+    "meaning": "picnic; to have a picnic",
     "level": 2
   },
   {
-    "chinese": "問",
-    "pinyin": "wèn",
-    "meaning": "to ask; to inquire",
-    "example": "我想問一個問題。",
-    "example_en": "I want to ask a question.",
+    "chinese": "爬",
+    "pinyin": "pá",
+    "meaning": "to crawl; to climb; to get up or sit up",
     "level": 2
   },
   {
-    "chinese": "問題",
-    "pinyin": "wèn tí",
-    "meaning": "question; problem",
-    "example": "我有一個問題。",
-    "example_en": "I have a question.",
+    "chinese": "拍",
+    "pinyin": "pāi",
+    "meaning": "to pat; to clap",
+    "level": 2,
+    "example": "我拍了一張照片。",
+    "example_en": "I took a photo."
+  },
+  {
+    "chinese": "抓",
+    "pinyin": "zhuā",
+    "meaning": "to grab; to catch; to arrest",
     "level": 2
   },
   {
-    "chinese": "為",
-    "pinyin": "wéi",
-    "meaning": "as (in the capacity of); to take sth as",
-    "example": "我為你高興。",
-    "example_en": "I'm happy for you.",
+    "chinese": "座位",
+    "pinyin": "zuò wèi",
+    "meaning": "seat",
+    "level": 2,
+    "example": "請坐這個座位。",
+    "example_en": "Please take this seat."
+  },
+  {
+    "chinese": "新聞",
+    "pinyin": "xīn wén",
+    "meaning": "news",
+    "level": 2,
+    "example": "我每天看新聞。",
+    "example_en": "I watch the news every day."
+  },
+  {
+    "chinese": "體育",
+    "pinyin": "tǐ yù",
+    "meaning": "sports; physical education",
+    "level": 2,
+    "example": "我喜歡體育課。",
+    "example_en": "I like PE class."
+  },
+  {
+    "chinese": "經常",
+    "pinyin": "jīng cháng",
+    "meaning": "frequently; constantly; regularly; often; day-to-day; everyday; daily",
+    "level": 2,
+    "example": "我經常去圖書館。",
+    "example_en": "I often go to the library."
+  },
+  {
+    "chinese": "雜誌",
+    "pinyin": "zá zhì",
+    "meaning": "magazine",
+    "level": 2,
+    "example": "我在看一本雜誌。",
+    "example_en": "I'm reading a magazine."
+  },
+  {
+    "chinese": "美術",
+    "pinyin": "měishù",
+    "meaning": "art; fine arts; painting",
     "level": 2
   },
   {
-    "chinese": "晚上",
-    "pinyin": "wǎn shang",
-    "meaning": "evening; night",
-    "example": "晚上我們看電視。",
-    "example_en": "We watch TV in the evening.",
+    "chinese": "畫家",
+    "pinyin": "huàjiā",
+    "meaning": "painter; CL:個|个[ge4]",
     "level": 2
   },
   {
-    "chinese": "向",
-    "pinyin": "xiàng",
-    "meaning": "towards; to face",
-    "example": "請向老師問好。",
-    "example_en": "Please say hello to the teacher.",
+    "chinese": "興趣",
+    "pinyin": "xìng qù",
+    "meaning": "interest (desire to know about sth); interest (thing in which one is interested); hobby",
+    "level": 2,
+    "example": "我對音樂有興趣。",
+    "example_en": "I have an interest in music."
+  },
+  {
+    "chinese": "收",
+    "pinyin": "shōu",
+    "meaning": "to receive; to accept",
+    "level": 2,
+    "example": "我收到了你的信。",
+    "example_en": "I received your letter."
+  },
+  {
+    "chinese": "談",
+    "pinyin": "tán",
+    "meaning": "to speak; to talk",
+    "level": 2,
+    "example": "我們談談這個問題。",
+    "example_en": "Let's talk about this issue."
+  },
+  {
+    "chinese": "聊",
+    "pinyin": "liáo",
+    "meaning": "(coll.) to chat; (literary) temporarily; for a while; (literary) somewhat; slightly",
     "level": 2
   },
   {
-    "chinese": "笑",
-    "pinyin": "xiào",
-    "meaning": "old variant of 笑",
-    "example": "他笑了。",
-    "example_en": "He smiled.",
+    "chinese": "遲到",
+    "pinyin": "chídào",
+    "meaning": "to be late",
+    "level": 2,
+    "example": "對不起，我遲到了。",
+    "example_en": "Sorry, I'm late."
+  },
+  {
+    "chinese": "樂器",
+    "pinyin": "yuèqì",
+    "meaning": "musical instrument; CL:件[jian4]",
     "level": 2
   },
   {
-    "chinese": "休息",
-    "pinyin": "xiū xi",
-    "meaning": "rest; to rest",
-    "example": "我想休息一下。",
-    "example_en": "I want to rest a bit.",
+    "chinese": "吉他",
+    "pinyin": "jítā",
+    "meaning": "(loanword) guitar; CL:把[ba3]",
     "level": 2
   },
   {
-    "chinese": "小時",
-    "pinyin": "xiǎo shí",
-    "meaning": "hour",
-    "example": "我等了一個小時。",
-    "example_en": "I waited for an hour.",
+    "chinese": "可怕",
+    "pinyin": "kěpà",
+    "meaning": "awful; dreadful; fearful",
     "level": 2
   },
   {
-    "chinese": "雪",
-    "pinyin": "xuě",
-    "meaning": "snow; (literary) to wipe away (a humiliation etc)",
-    "example": "昨天下雪了。",
-    "example_en": "It snowed yesterday.",
+    "chinese": "輕鬆",
+    "pinyin": "qīng sōng",
+    "meaning": "light; gentle",
+    "level": 2,
+    "example": "今天的考試很輕鬆。",
+    "example_en": "Today's test was easy."
+  },
+  {
+    "chinese": "情形",
+    "pinyin": "qíngxíng",
+    "meaning": "circumstances; situation; state of affairs",
     "level": 2
   },
   {
-    "chinese": "姓",
-    "pinyin": "xìng",
-    "meaning": "family name; surname",
-    "example": "您貴姓？",
-    "example_en": "What is your surname?",
+    "chinese": "消息",
+    "pinyin": "xiāoxí",
+    "meaning": "(piece of) news; information; message; CL:條|条[tiao2]",
     "level": 2
   },
   {
-    "chinese": "西瓜",
-    "pinyin": "xī guā",
-    "meaning": "watermelon",
-    "example": "夏天我愛吃西瓜。",
-    "example_en": "I love eating watermelon in summer.",
+    "chinese": "看起來",
+    "pinyin": "kànqǐlái",
+    "meaning": "seemingly; apparently; looks as if; appears to be; gives the impression that; seems on the face of it to be",
     "level": 2
   },
   {
-    "chinese": "希望",
-    "pinyin": "xī wàng",
-    "meaning": "to hope; a hope; a wish",
-    "example": "我希望明天不下雨。",
-    "example_en": "I hope it doesn't rain tomorrow.",
+    "chinese": "舞",
+    "pinyin": "wǔ",
+    "meaning": "to dance; to wield; to brandish",
     "level": 2
   },
   {
-    "chinese": "洗",
-    "pinyin": "xǐ",
-    "meaning": "to wash; to bathe; to develop (photographs)",
-    "example": "我去洗手。",
-    "example_en": "I'm going to wash my hands.",
+    "chinese": "游",
+    "pinyin": "yóu",
+    "meaning": "surname You",
     "level": 2
   },
   {
-    "chinese": "遠",
-    "pinyin": "yuǎn",
-    "meaning": "far; distant",
-    "example": "火車站離這兒很遠。",
-    "example_en": "The train station is far from here.",
+    "chinese": "游泳池",
+    "pinyin": "yóuyǒngchí",
+    "meaning": "swimming pool",
     "level": 2
   },
   {
-    "chinese": "藥",
-    "pinyin": "yào",
-    "meaning": "leaf of the iris; variant of 药",
-    "example": "你該吃藥了。",
-    "example_en": "You should take your medicine.",
+    "chinese": "遊戲",
+    "pinyin": "yóu xì",
+    "meaning": "game; to play",
+    "level": 2,
+    "example": "孩子們在玩遊戲。",
+    "example_en": "The children are playing a game."
+  },
+  {
+    "chinese": "茶館",
+    "pinyin": "cháguǎn, cháguǎnr",
+    "meaning": "teahouse; CL:家[jia1]",
     "level": 2
   },
   {
-    "chinese": "顏色",
-    "pinyin": "yán sè",
-    "meaning": "color; countenance",
-    "example": "你喜歡什麼顏色？",
-    "example_en": "What color do you like?",
+    "chinese": "門票",
+    "pinyin": "ménpiào",
+    "meaning": "ticket (for theater, cinema etc)",
     "level": 2
   },
   {
-    "chinese": "羊肉",
-    "pinyin": "yáng ròu",
-    "meaning": "mutton; goat meat",
-    "example": "我不吃羊肉。",
-    "example_en": "I don't eat mutton.",
+    "chinese": "陪",
+    "pinyin": "péi",
+    "meaning": "to accompany; to keep sb company",
+    "level": 2,
+    "example": "我陪你去醫院。",
+    "example_en": "I'll go to the hospital with you."
+  },
+  {
+    "chinese": "利用",
+    "pinyin": "lì yòng",
+    "meaning": "to exploit; to make use of",
+    "level": 2,
+    "example": "我們要利用好時間。",
+    "example_en": "We should make good use of time."
+  },
+  {
+    "chinese": "好處",
+    "pinyin": "hǎo chǔ",
+    "meaning": "easy to get along with",
+    "level": 2,
+    "example": "運動對身體有好處。",
+    "example_en": "Exercise is good for the body."
+  },
+  {
+    "chinese": "壞處",
+    "pinyin": "huàichù",
+    "meaning": "harm; troubles; CL:個|个[ge4]",
     "level": 2
   },
   {
-    "chinese": "意思",
-    "pinyin": "yì si",
-    "meaning": "idea; opinion",
-    "example": "這個字是什麼意思？",
-    "example_en": "What does this character mean?",
+    "chinese": "目的",
+    "pinyin": "mù dì",
+    "meaning": "purpose; aim; goal; target; objective",
+    "level": 2,
+    "example": "你來中國的目的是什麼？",
+    "example_en": "What is your purpose in coming to China?"
+  },
+  {
+    "chinese": "要求",
+    "pinyin": "yāo qiú",
+    "meaning": "to request; to require",
+    "level": 2,
+    "example": "老師對我們要求很嚴。",
+    "example_en": "The teacher is strict with us."
+  },
+  {
+    "chinese": "合作",
+    "pinyin": "hé zuò",
+    "meaning": "to cooperate; to collaborate",
+    "level": 2,
+    "example": "我們合作得很好。",
+    "example_en": "We cooperate well."
+  },
+  {
+    "chinese": "主人",
+    "pinyin": "zhǔrén",
+    "meaning": "owner; host; master",
     "level": 2
   },
   {
-    "chinese": "右邊",
-    "pinyin": "yòu bian",
-    "meaning": "right side; right, to the right",
-    "example": "商店在右邊。",
-    "example_en": "The shop is on the right.",
+    "chinese": "請客",
+    "pinyin": "qǐng kè",
+    "meaning": "to give a dinner party; to entertain guests",
+    "level": 2,
+    "example": "今天我請客。",
+    "example_en": "It's my treat today."
+  },
+  {
+    "chinese": "約",
+    "pinyin": "yuē",
+    "meaning": "to make an appointment; to invite; approximately",
     "level": 2
   },
   {
-    "chinese": "游泳",
-    "pinyin": "yóu yǒng",
-    "meaning": "swimming; to swim",
-    "example": "夏天我去游泳。",
-    "example_en": "I go swimming in summer.",
+    "chinese": "約會",
+    "pinyin": "yuē huì",
+    "meaning": "appointment; engagement",
+    "level": 2,
+    "example": "我們有一個約會。",
+    "example_en": "We have a date."
+  },
+  {
+    "chinese": "派對",
+    "pinyin": "pàiduì",
+    "meaning": "(loanword) party",
     "level": 2
   },
   {
-    "chinese": "運動",
-    "pinyin": "yùn dòng",
-    "meaning": "to move; to exercise",
-    "example": "我喜歡運動。",
-    "example_en": "I like sports.",
+    "chinese": "祝",
+    "pinyin": "zhù",
+    "meaning": "to pray for; to wish (sb bon voyage, happy birthday etc)",
+    "level": 2,
+    "example": "祝你生日快樂！",
+    "example_en": "Happy birthday!"
+  },
+  {
+    "chinese": "留",
+    "pinyin": "liú",
+    "meaning": "old variant of 留",
+    "level": 2,
+    "example": "請留在這兒。",
+    "example_en": "Please stay here."
+  },
+  {
+    "chinese": "封",
+    "pinyin": "fēng",
+    "meaning": "surname Feng",
     "level": 2
   },
   {
-    "chinese": "魚",
-    "pinyin": "yú",
-    "meaning": "fish",
-    "example": "這條魚很好吃。",
-    "example_en": "This fish is delicious.",
+    "chinese": "信箱",
+    "pinyin": "xìnxiāng",
+    "meaning": "mailbox; post office box",
     "level": 2
   },
   {
-    "chinese": "要",
-    "pinyin": "yāo",
-    "meaning": "(bound form) to demand; to coerce",
-    "example": "我要一杯茶。",
-    "example_en": "I want a cup of tea.",
+    "chinese": "郵票",
+    "pinyin": "yóupiào",
+    "meaning": "(postage) stamp; CL:枚[mei2],張|张[zhang1]",
     "level": 2
   },
   {
-    "chinese": "也",
-    "pinyin": "yě",
-    "meaning": "(adverb) also; both ... and ... (before predicates only)",
-    "example": "我也是學生。",
-    "example_en": "I am a student too.",
+    "chinese": "回信",
+    "pinyin": "huíxìn",
+    "meaning": "to reply; to write back; letter written in reply",
     "level": 2
   },
   {
-    "chinese": "一起",
-    "pinyin": "yī qǐ",
-    "meaning": "in the same place; together",
-    "example": "我們一起去吧。",
-    "example_en": "Let's go together.",
+    "chinese": "郵件",
+    "pinyin": "yóujiàn",
+    "meaning": "mail; post; email",
     "level": 2
   },
   {
-    "chinese": "陰",
-    "pinyin": "yīn",
-    "meaning": "overcast (weather); cloudy",
-    "example": "今天是陰天。",
-    "example_en": "It's cloudy today.",
+    "chinese": "弄",
+    "pinyin": "lòng",
+    "meaning": "lane; alley",
+    "level": 2,
+    "example": "別弄壞了電腦。",
+    "example_en": "Don't break the computer."
+  },
+  {
+    "chinese": "放心",
+    "pinyin": "fàng xīn",
+    "meaning": "to feel relieved; to feel reassured",
+    "level": 2,
+    "example": "你放心吧，我會小心的。",
+    "example_en": "Don't worry, I'll be careful."
+  },
+  {
+    "chinese": "偷",
+    "pinyin": "tōu",
+    "meaning": "to steal; (bound form) thief; (bound form) secretly; on the sly",
     "level": 2
   },
   {
-    "chinese": "因為",
-    "pinyin": "yīn wèi",
-    "meaning": "because; owing to",
-    "example": "因為下雨，所以我在家。",
-    "example_en": "Because it's raining, I'm at home.",
+    "chinese": "滿",
+    "pinyin": "Mǎn",
+    "meaning": "Manchu ethnic group",
+    "level": 2,
+    "example": "杯子已經滿了。",
+    "example_en": "The cup is already full."
+  },
+  {
+    "chinese": "丟",
+    "pinyin": "diū",
+    "meaning": "to lose; to put aside",
+    "level": 2,
+    "example": "我把手機丟了。",
+    "example_en": "I lost my phone."
+  },
+  {
+    "chinese": "換",
+    "pinyin": "huàn",
+    "meaning": "to exchange; to change (clothes etc)",
+    "level": 2,
+    "example": "我想換衣服。",
+    "example_en": "I want to change clothes."
+  },
+  {
+    "chinese": "一塊",
+    "pinyin": "yīkuài, yīkuàir",
+    "meaning": "a piece; a chunk; (fig.) (coll.) (typically preceded by a specifier such as 這|这[zhe4]) aspect; area; dimension (Example: 情感這一塊|情感这一块[qing2 gan3 zhe4 yi1 kuai4] \"the emotional aspect (of it)\"); (coll.) one yuan; a dollar",
     "level": 2
   },
   {
-    "chinese": "眼睛",
-    "pinyin": "yǎn jing",
-    "meaning": "eye",
-    "example": "他的眼睛很大。",
-    "example_en": "His eyes are very big.",
+    "chinese": "同時",
+    "pinyin": "tóng shí",
+    "meaning": "at the same time; simultaneously",
+    "level": 2,
+    "example": "他同時學華語和英語。",
+    "example_en": "He studies Chinese and English at the same time."
+  },
+  {
+    "chinese": "保護",
+    "pinyin": "bǎohù",
+    "meaning": "to protect",
+    "level": 2,
+    "example": "我們要保護環境。",
+    "example_en": "We should protect the environment."
+  },
+  {
+    "chinese": "出門",
+    "pinyin": "chūmén",
+    "meaning": "to go out; to leave home; to go on a journey",
     "level": 2
   },
   {
-    "chinese": "已經",
-    "pinyin": "yǐ jīng",
-    "meaning": "already",
-    "example": "我已經吃飯了。",
-    "example_en": "I have already eaten.",
+    "chinese": "現代",
+    "pinyin": "xiàn dài",
+    "meaning": "modern times; modern age",
+    "level": 2,
+    "example": "這是一座現代化的城市。",
+    "example_en": "This is a modern city."
+  },
+  {
+    "chinese": "傳統",
+    "pinyin": "chuán tǒng",
+    "meaning": "tradition; traditional",
+    "level": 2,
+    "example": "春節是中國的傳統節日。",
+    "example_en": "Spring Festival is a traditional Chinese holiday."
+  },
+  {
+    "chinese": "除夕",
+    "pinyin": "Chúxì",
+    "meaning": "lunar New Year's Eve",
     "level": 2
   },
   {
-    "chinese": "丈夫",
-    "pinyin": "zhàng fu",
-    "meaning": "husband",
-    "example": "她的丈夫是醫生。",
-    "example_en": "Her husband is a doctor.",
+    "chinese": "春節",
+    "pinyin": "Chūnjié",
+    "meaning": "Spring Festival (Chinese New Year)",
     "level": 2
   },
   {
-    "chinese": "正在",
-    "pinyin": "zhèng zài",
-    "meaning": "just at (that time); right in (that place)",
-    "example": "他正在看書。",
-    "example_en": "He is reading right now.",
+    "chinese": "節日",
+    "pinyin": "jié rì",
+    "meaning": "holiday; festival",
+    "level": 2,
+    "example": "春節是中國最重要的節日。",
+    "example_en": "Spring Festival is China's most important holiday."
+  },
+  {
+    "chinese": "帶來",
+    "pinyin": "dàilái",
+    "meaning": "to bring; (fig.) to bring about; to produce",
     "level": 2
   },
   {
-    "chinese": "張",
-    "pinyin": "zhāng",
-    "meaning": "to open up; to spread",
-    "example": "我買了兩張票。",
-    "example_en": "I bought two tickets.",
+    "chinese": "當中",
+    "pinyin": "dāngzhōng",
+    "meaning": "among; in the middle; in the center",
     "level": 2
   },
   {
-    "chinese": "著",
-    "pinyin": "zhāo",
-    "meaning": "(chess) move; trick",
-    "example": "他看著電視。",
-    "example_en": "He is watching TV.",
+    "chinese": "法律",
+    "pinyin": "fǎ lǜ",
+    "meaning": "law",
+    "level": 2,
+    "example": "每個人都要遵守法律。",
+    "example_en": "Everyone must obey the law."
+  },
+  {
+    "chinese": "方面",
+    "pinyin": "fāng miàn",
+    "meaning": "respect; aspect",
+    "level": 2,
+    "example": "在這方面我還要學習。",
+    "example_en": "I still need to learn in this area."
+  },
+  {
+    "chinese": "開玩笑",
+    "pinyin": "kāi wán xiào",
+    "meaning": "to play a joke; to make fun of",
+    "level": 2,
+    "example": "我只是開玩笑。",
+    "example_en": "I was only joking."
+  },
+  {
+    "chinese": "可惜",
+    "pinyin": "kě xī",
+    "meaning": "it is a pity; what a pity",
+    "level": 2,
+    "example": "真可惜，我沒看成。",
+    "example_en": "What a pity I didn't get to see it."
+  },
+  {
+    "chinese": "老太太",
+    "pinyin": "lǎotàitai",
+    "meaning": "elderly lady (respectful); esteemed mother; CL:位[wei4]",
     "level": 2
   },
   {
-    "chinese": "真",
-    "pinyin": "zhēn",
-    "meaning": "really; truly",
-    "example": "這真好吃！",
-    "example_en": "This is really delicious!",
+    "chinese": "有名",
+    "pinyin": "yǒu míng",
+    "meaning": "famous; well-known",
+    "level": 2,
+    "example": "這家飯館很有名。",
+    "example_en": "This restaurant is famous."
+  },
+  {
+    "chinese": "自由",
+    "pinyin": "zì yóu",
+    "meaning": "freedom; liberty; free; unrestricted",
+    "level": 2,
+    "example": "我喜歡自由的生活。",
+    "example_en": "I like a free life."
+  },
+  {
+    "chinese": "社會",
+    "pinyin": "shè huì",
+    "meaning": "society",
+    "level": 2,
+    "example": "我們生活在這個社會里。",
+    "example_en": "We live in this society."
+  },
+  {
+    "chinese": "時差",
+    "pinyin": "shíchā",
+    "meaning": "time difference; time lag; jet lag",
     "level": 2
   },
   {
-    "chinese": "知道",
-    "pinyin": "zhī dào",
-    "meaning": "to know; to become aware of; also pr. [zhī dao]",
-    "example": "我不知道。",
-    "example_en": "I don't know.",
+    "chinese": "市區",
+    "pinyin": "shìqū",
+    "meaning": "urban district; downtown; city center",
     "level": 2
   },
   {
-    "chinese": "找",
-    "pinyin": "zhǎo",
-    "meaning": "to try to find; to look for",
-    "example": "我在找我的手機。",
-    "example_en": "I'm looking for my phone.",
+    "chinese": "溫泉",
+    "pinyin": "wēnquán",
+    "meaning": "see 溫泉縣|温泉县[Wen1 quan2 Xian4]",
     "level": 2
   },
   {
-    "chinese": "準備",
-    "pinyin": "zhǔn bèi",
-    "meaning": "preparation; to prepare",
-    "example": "我準備去北京。",
-    "example_en": "I'm getting ready to go to Beijing.",
+    "chinese": "公路",
+    "pinyin": "gōnglù",
+    "meaning": "highway; road; CL:條|条[tiao2]",
     "level": 2
   },
   {
-    "chinese": "最",
-    "pinyin": "zuì",
-    "meaning": "variant of 最",
-    "example": "這是最好的蘋果。",
-    "example_en": "These are the best apples.",
+    "chinese": "速度",
+    "pinyin": "sù dù",
+    "meaning": "speed; rate",
+    "level": 2,
+    "example": "車的速度太快了。",
+    "example_en": "The car's speed is too fast."
+  },
+  {
+    "chinese": "到處",
+    "pinyin": "dào chù",
+    "meaning": "everywhere",
+    "level": 2,
+    "example": "春天到處都是花。",
+    "example_en": "In spring there are flowers everywhere."
+  },
+  {
+    "chinese": "地點",
+    "pinyin": "dìdiǎn",
+    "meaning": "place; site; location",
     "level": 2
   },
   {
-    "chinese": "左邊",
-    "pinyin": "zuǒ bian",
-    "meaning": "left; the left side",
-    "example": "醫院在左邊。",
-    "example_en": "The hospital is on the left.",
+    "chinese": "巴士",
+    "pinyin": "bāshì",
+    "meaning": "bus (loanword); motor coach",
     "level": 2
   },
   {
-    "chinese": "再",
-    "pinyin": "zài",
-    "meaning": "again; once more; re-; second; another",
-    "example": "請再說一次。",
-    "example_en": "Please say it again.",
+    "chinese": "加油",
+    "pinyin": "jiāyóu",
+    "meaning": "to add oil; to top up with gas; to refuel; to accelerate; to step on the gas; (fig.) to make an extra effort; to cheer sb on",
     "level": 2
   },
   {
-    "chinese": "腳踏車",
-    "pinyin": "jiǎotàchē",
-    "meaning": "bicycle; bike",
-    "example": "我騎腳踏車去學校。",
-    "example_en": "I ride a bike to school.",
+    "chinese": "摩托車",
+    "pinyin": "mótuōchē, jīchē",
+    "meaning": "(loanword) motorbike; motorcycle; CL:輛|辆[liang4],部[bu4]",
     "level": 2
   },
   {
-    "chinese": "早上",
-    "pinyin": "zǎo shang",
-    "meaning": "early morning",
-    "example": "早上我喝牛奶。",
-    "example_en": "I drink milk in the morning.",
+    "chinese": "船",
+    "pinyin": "chuán",
+    "meaning": "variant of 船",
+    "level": 2,
+    "example": "我們坐船去那兒。",
+    "example_en": "We'll go there by boat."
+  },
+  {
+    "chinese": "地鐵",
+    "pinyin": "dìtiě",
+    "meaning": "underground railway; subway; subway train",
     "level": 2
   },
   {
-    "chinese": "走",
-    "pinyin": "zǒu",
-    "meaning": "to walk; to go",
-    "example": "我們走吧。",
-    "example_en": "Let's go.",
+    "chinese": "捷運",
+    "pinyin": "jiéyùn",
+    "meaning": "underground railway; subway; subway train",
+    "level": 2,
+    "example": "我坐捷運去公司。",
+    "example_en": "I take the subway to the office."
+  },
+  {
+    "chinese": "停車場",
+    "pinyin": "tíngchēchǎng",
+    "meaning": "parking lot; car park",
+    "level": 2
+  },
+  {
+    "chinese": "月台",
+    "pinyin": "yuètái",
+    "meaning": "(no English gloss)",
+    "level": 2
+  },
+  {
+    "chinese": "搭",
+    "pinyin": "dā",
+    "meaning": "to put up; to build (scaffolding)",
+    "level": 2,
+    "example": "我可以搭你的車嗎？",
+    "example_en": "Can I catch a ride with you?"
+  },
+  {
+    "chinese": "飛",
+    "pinyin": "fēi",
+    "meaning": "to fly",
+    "level": 2
+  },
+  {
+    "chinese": "這些",
+    "pinyin": "zhèxiē",
+    "meaning": "these",
+    "level": 2
+  },
+  {
+    "chinese": "那些",
+    "pinyin": "nàxiē",
+    "meaning": "those",
+    "level": 2
+  },
+  {
+    "chinese": "東方",
+    "pinyin": "dōngfāng",
+    "meaning": "the East; the Orient; two-character surname Dongfang",
+    "level": 2
+  },
+  {
+    "chinese": "非洲",
+    "pinyin": "Fēizhōu",
+    "meaning": "Africa; abbr. for 阿非利加洲[A1 fei1 li4 jia1 Zhou1]",
+    "level": 2
+  },
+  {
+    "chinese": "美洲",
+    "pinyin": "Měizhōu",
+    "meaning": "America (including North, Central and South America); the Americas; abbr. for 亞美利加洲|亚美利加洲[Ya4 mei3 li4 jia1 Zhou1]",
+    "level": 2
+  },
+  {
+    "chinese": "歐洲",
+    "pinyin": "Oū zhōu",
+    "meaning": "Europe (abbr. for 欧罗巴洲)",
+    "level": 2,
+    "example": "我去過歐洲。",
+    "example_en": "I have been to Europe."
+  },
+  {
+    "chinese": "亞洲",
+    "pinyin": "Yà zhōu",
+    "meaning": "Asia (abbr. for 亚细亚洲)",
+    "level": 2,
+    "example": "中國在亞洲。",
+    "example_en": "China is in Asia."
+  },
+  {
+    "chinese": "大陸",
+    "pinyin": "dàlù",
+    "meaning": "mainland China (reference to the PRC)",
+    "level": 2
+  },
+  {
+    "chinese": "動",
+    "pinyin": "dòng",
+    "meaning": "(of sth) to move; to set in movement; to displace",
+    "level": 2
+  },
+  {
+    "chinese": "起",
+    "pinyin": "qǐ",
+    "meaning": "to rise; to raise; to get up",
+    "level": 2
+  },
+  {
+    "chinese": "停",
+    "pinyin": "tíng",
+    "meaning": "to stop; to halt; to park (a car)",
+    "level": 2
+  },
+  {
+    "chinese": "中心",
+    "pinyin": "zhōng xīn",
+    "meaning": "center; heart",
+    "level": 2,
+    "example": "商店在市中心。",
+    "example_en": "The shop is in the city center."
+  },
+  {
+    "chinese": "簽證",
+    "pinyin": "qiān zhèng",
+    "meaning": "visa; to issue a visa",
+    "level": 2,
+    "example": "我去辦簽證。",
+    "example_en": "I'm going to get a visa."
+  },
+  {
+    "chinese": "行李",
+    "pinyin": "xínglǐ",
+    "meaning": "luggage; CL:件[jian4]",
+    "level": 2
+  },
+  {
+    "chinese": "背包",
+    "pinyin": "bēibāo",
+    "meaning": "knapsack; rucksack; infantry pack",
+    "level": 2
+  },
+  {
+    "chinese": "鎖",
+    "pinyin": "suǒ",
+    "meaning": "to lock; to lock up; a lock (CL:把[ba3])",
+    "level": 2
+  },
+  {
+    "chinese": "入口",
+    "pinyin": "rù kǒu",
+    "meaning": "entrance; to import",
+    "level": 2,
+    "example": "博物館的入口在這兒。",
+    "example_en": "The museum entrance is here."
+  },
+  {
+    "chinese": "出口",
+    "pinyin": "chūkǒu",
+    "meaning": "an exit; CL:個|个[ge4]; to speak",
+    "level": 2
+  },
+  {
+    "chinese": "油",
+    "pinyin": "yóu",
+    "meaning": "oil; fat; grease",
+    "level": 2
+  },
+  {
+    "chinese": "鑰匙",
+    "pinyin": "yào shi",
+    "meaning": "key",
+    "level": 2,
+    "example": "我找不到鑰匙了。",
+    "example_en": "I can't find the keys."
+  },
+  {
+    "chinese": "方向",
+    "pinyin": "fāng xiàng",
+    "meaning": "direction; orientation",
+    "level": 2,
+    "example": "我們走錯方向了。",
+    "example_en": "We went the wrong direction."
+  },
+  {
+    "chinese": "交通",
+    "pinyin": "jiāo tōng",
+    "meaning": "to be connected; traffic",
+    "level": 2,
+    "example": "這個城市的交通很方便。",
+    "example_en": "Transportation in this city is convenient."
+  },
+  {
+    "chinese": "標準",
+    "pinyin": "biāozhǔn",
+    "meaning": "standard",
+    "level": 2,
+    "example": "他的普通話很標準。",
+    "example_en": "His Mandarin is very standard."
+  },
+  {
+    "chinese": "拍照",
+    "pinyin": "pāizhào",
+    "meaning": "to take a picture",
+    "level": 2
+  },
+  {
+    "chinese": "腿",
+    "pinyin": "tuǐ",
+    "meaning": "leg",
+    "level": 2,
+    "example": "我的腿有點兒疼。",
+    "example_en": "My leg hurts a bit."
+  },
+  {
+    "chinese": "背",
+    "pinyin": "bèi",
+    "meaning": "back; to recite",
+    "level": 2,
+    "example": "他把書包背在身上。",
+    "example_en": "He carries the bag on his back."
+  },
+  {
+    "chinese": "脖(子)",
+    "pinyin": "bó(zi)",
+    "meaning": "(no English gloss)",
+    "level": 2
+  },
+  {
+    "chinese": "汗",
+    "pinyin": "hán",
+    "meaning": "see 汗, 汗国",
+    "level": 2,
+    "example": "他出了很多汗。",
+    "example_en": "He sweated a lot."
+  },
+  {
+    "chinese": "臉色",
+    "pinyin": "liǎnsè",
+    "meaning": "complexion; look",
+    "level": 2
+  },
+  {
+    "chinese": "救護車",
+    "pinyin": "jiùhùchē",
+    "meaning": "ambulance; CL:輛|辆[liang4]",
+    "level": 2
+  },
+  {
+    "chinese": "咳嗽",
+    "pinyin": "ké sou",
+    "meaning": "to cough",
+    "level": 2,
+    "example": "他咳嗽得很厲害。",
+    "example_en": "He is coughing badly."
+  },
+  {
+    "chinese": "發燒",
+    "pinyin": "fā shāo",
+    "meaning": "to have a high temperature (from illness); to have a fever",
+    "level": 2,
+    "example": "他發燒了，得休息。",
+    "example_en": "He has a fever and needs to rest."
+  },
+  {
+    "chinese": "頭痛",
+    "pinyin": "tóutòng",
+    "meaning": "to have a headache",
+    "level": 2
+  },
+  {
+    "chinese": "疼",
+    "pinyin": "téng",
+    "meaning": "(it) hurts; sore; to love dearly",
+    "level": 2,
+    "example": "我頭疼。",
+    "example_en": "I have a headache."
+  },
+  {
+    "chinese": "保險",
+    "pinyin": "bǎoxiǎn",
+    "meaning": "insurance",
+    "level": 2,
+    "example": "出門最好買保險。",
+    "example_en": "It's best to buy insurance when you travel."
+  },
+  {
+    "chinese": "掛號",
+    "pinyin": "guàhào",
+    "meaning": "to register (at a hospital etc); to send by registered mail",
+    "level": 2
+  },
+  {
+    "chinese": "牙刷",
+    "pinyin": "yáshuā",
+    "meaning": "toothbrush; CL:把[ba3]",
+    "level": 2
+  },
+  {
+    "chinese": "藥房",
+    "pinyin": "yàofáng",
+    "meaning": "pharmacy; drugstore; dispensary",
+    "level": 2
+  },
+  {
+    "chinese": "救命",
+    "pinyin": "jiùmìng",
+    "meaning": "to save sb's life; (interj.) Help!; Save me!",
+    "level": 2
+  },
+  {
+    "chinese": "影響",
+    "pinyin": "yǐng xiǎng",
+    "meaning": "influence; effect",
+    "level": 2,
+    "example": "睡眠會影響健康。",
+    "example_en": "Sleep affects health."
+  },
+  {
+    "chinese": "感覺",
+    "pinyin": "gǎn jué",
+    "meaning": "feeling; impression; sensation; to feel; to perceive",
+    "level": 2,
+    "example": "我感覺不太舒服。",
+    "example_en": "I don't feel very well."
+  },
+  {
+    "chinese": "精神",
+    "pinyin": "jīng shén",
+    "meaning": "spirit; mind",
+    "level": 2,
+    "example": "他看起來很有精神。",
+    "example_en": "He looks very energetic."
+  },
+  {
+    "chinese": "正常",
+    "pinyin": "zhèng cháng",
+    "meaning": "regular; normal",
+    "level": 2,
+    "example": "一切都很正常。",
+    "example_en": "Everything is normal."
+  },
+  {
+    "chinese": "有錢",
+    "pinyin": "yǒuqián",
+    "meaning": "well-off; wealthy",
+    "level": 2
+  },
+  {
+    "chinese": "生意",
+    "pinyin": "shēngyì",
+    "meaning": "life force; vitality",
+    "level": 2
+  },
+  {
+    "chinese": "商人",
+    "pinyin": "shāngrén",
+    "meaning": "merchant; businessman",
+    "level": 2
+  },
+  {
+    "chinese": "老闆娘",
+    "pinyin": "lǎobǎnniáng",
+    "meaning": "female proprietor; lady boss; boss's wife",
+    "level": 2
+  },
+  {
+    "chinese": "店員",
+    "pinyin": "diànyuán",
+    "meaning": "shop assistant; store clerk",
+    "level": 2
+  },
+  {
+    "chinese": "訂",
+    "pinyin": "dìng",
+    "meaning": "to agree; to conclude; to draw up",
+    "level": 2
+  },
+  {
+    "chinese": "訂位",
+    "pinyin": "dìngwèi",
+    "meaning": "to reserve a seat; to book a table; reservation",
+    "level": 2
+  },
+  {
+    "chinese": "得到",
+    "pinyin": "dédào",
+    "meaning": "to get; to obtain; to receive",
+    "level": 2
+  },
+  {
+    "chinese": "困難",
+    "pinyin": "kùn nan",
+    "meaning": "difficult; challenging",
+    "level": 2,
+    "example": "遇到困難不要怕。",
+    "example_en": "Don't be afraid when you meet difficulties."
+  },
+  {
+    "chinese": "百貨公司",
+    "pinyin": "bǎihuògōngsī",
+    "meaning": "department store",
+    "level": 2
+  },
+  {
+    "chinese": "夜市",
+    "pinyin": "yèshì",
+    "meaning": "night market",
+    "level": 2
+  },
+  {
+    "chinese": "逛",
+    "pinyin": "guàng",
+    "meaning": "to stroll; to visit",
+    "level": 2,
+    "example": "週末我們去逛街。",
+    "example_en": "We're going shopping this weekend."
+  },
+  {
+    "chinese": "逛街",
+    "pinyin": "guàngjiē",
+    "meaning": "to take a walk; to window-shop; to stroll down the street",
+    "level": 2
+  },
+  {
+    "chinese": "排隊",
+    "pinyin": "páiduì",
+    "meaning": "to line up",
+    "level": 2
+  },
+  {
+    "chinese": "客滿",
+    "pinyin": "kèmǎn",
+    "meaning": "to have a full house; to be sold out; no vacancy",
+    "level": 2
+  },
+  {
+    "chinese": "刷卡",
+    "pinyin": "shuākǎ",
+    "meaning": "to use a credit card (or swipe card, smart card etc)",
+    "level": 2
+  },
+  {
+    "chinese": "提",
+    "pinyin": "dī",
+    "meaning": "used in 防 and 溜",
+    "level": 2,
+    "example": "請把箱子提起來。",
+    "example_en": "Please lift the suitcase."
+  },
+  {
+    "chinese": "流行",
+    "pinyin": "liú xíng",
+    "meaning": "(of a contagious disease etc) to spread; to propagate",
+    "level": 2,
+    "example": "這首歌現在很流行。",
+    "example_en": "This song is very popular now."
+  },
+  {
+    "chinese": "藍色",
+    "pinyin": "lánsè",
+    "meaning": "blue (color)",
+    "level": 2
+  },
+  {
+    "chinese": "綠色",
+    "pinyin": "lǜsè",
+    "meaning": "green",
+    "level": 2
+  },
+  {
+    "chinese": "紅色",
+    "pinyin": "hóngsè",
+    "meaning": "red (color); revolutionary",
+    "level": 2
+  },
+  {
+    "chinese": "黑色",
+    "pinyin": "hēisè",
+    "meaning": "black",
+    "level": 2
+  },
+  {
+    "chinese": "毛衣",
+    "pinyin": "máoyī",
+    "meaning": "(wool) sweater; CL:件[jian4]",
+    "level": 2
+  },
+  {
+    "chinese": "雨衣",
+    "pinyin": "yǔyī",
+    "meaning": "raincoat; CL:件[jian4]",
+    "level": 2
+  },
+  {
+    "chinese": "內衣",
+    "pinyin": "nèiyī",
+    "meaning": "undergarment; underwear; CL:件[jian4]",
+    "level": 2
+  },
+  {
+    "chinese": "上衣",
+    "pinyin": "shàngyī",
+    "meaning": "jacket; upper outer garment; CL:件[jian4]",
+    "level": 2
+  },
+  {
+    "chinese": "皮鞋",
+    "pinyin": "píxié",
+    "meaning": "leather shoes",
+    "level": 2
+  },
+  {
+    "chinese": "手套",
+    "pinyin": "shǒutào",
+    "meaning": "glove; mitten; CL:雙|双[shuang1],隻|只[zhi1]",
+    "level": 2
+  },
+  {
+    "chinese": "口袋",
+    "pinyin": "kǒudài",
+    "meaning": "pocket; bag; sack",
+    "level": 2
+  },
+  {
+    "chinese": "小費",
+    "pinyin": "xiǎofèi",
+    "meaning": "tip; gratuity",
+    "level": 2
+  },
+  {
+    "chinese": "打折",
+    "pinyin": "dǎ zhé",
+    "meaning": "to give a discount",
+    "level": 2,
+    "example": "這件衣服打折。",
+    "example_en": "This clothing is on sale."
+  },
+  {
+    "chinese": "零錢",
+    "pinyin": "língqián",
+    "meaning": "change (of money); small change; pocket money",
+    "level": 2
+  },
+  {
+    "chinese": "零用錢",
+    "pinyin": "língyòngqián",
+    "meaning": "pocket money; allowance; spending money",
+    "level": 2
+  },
+  {
+    "chinese": "存",
+    "pinyin": "cún",
+    "meaning": "to exist; to deposit; to store",
+    "level": 2
+  },
+  {
+    "chinese": "毛",
+    "pinyin": "máo",
+    "meaning": "surname Mao",
+    "level": 2
+  },
+  {
+    "chinese": "高級",
+    "pinyin": "gāojí",
+    "meaning": "high level; high grade; advanced",
+    "level": 2
+  },
+  {
+    "chinese": "一般",
+    "pinyin": "yī bān",
+    "meaning": "same; ordinary",
+    "level": 2,
+    "example": "我一般七點起床。",
+    "example_en": "I usually get up at seven."
+  },
+  {
+    "chinese": "合適",
+    "pinyin": "hé shì",
+    "meaning": "suitable; fitting",
+    "level": 2,
+    "example": "這件衣服很合適。",
+    "example_en": "This clothing fits well."
+  },
+  {
+    "chinese": "適合",
+    "pinyin": "shì hé",
+    "meaning": "to fit; to suit",
+    "level": 2,
+    "example": "這件衣服很適合你。",
+    "example_en": "This clothing suits you well."
+  },
+  {
+    "chinese": "圓",
+    "pinyin": "yuán",
+    "meaning": "circle; round",
+    "level": 2,
+    "example": "這個蘋果很圓。",
+    "example_en": "This apple is very round."
+  },
+  {
+    "chinese": "光",
+    "pinyin": "guāng",
+    "meaning": "light; ray; bright; shiny",
+    "level": 2,
+    "example": "房間裡的光不夠。",
+    "example_en": "There isn't enough light in the room."
+  },
+  {
+    "chinese": "死",
+    "pinyin": "sǐ",
+    "meaning": "to die; impassable",
+    "level": 2,
+    "example": "那盆花死了。",
+    "example_en": "That potted plant died."
+  },
+  {
+    "chinese": "髒",
+    "pinyin": "zàng",
+    "meaning": "viscera; (anatomy) organ",
+    "level": 2,
+    "example": "衣服髒了。",
+    "example_en": "The clothes are dirty."
+  },
+  {
+    "chinese": "破",
+    "pinyin": "pò",
+    "meaning": "broken; damaged",
+    "level": 2,
+    "example": "褲子破了。",
+    "example_en": "The pants are torn."
+  },
+  {
+    "chinese": "袋",
+    "pinyin": "dài",
+    "meaning": "pouch; bag; sack",
+    "level": 2
+  },
+  {
+    "chinese": "套",
+    "pinyin": "tào",
+    "meaning": "to cover; to encase",
+    "level": 2,
+    "example": "我買了一套新衣服。",
+    "example_en": "I bought a new set of clothes."
+  },
+  {
+    "chinese": "沙拉",
+    "pinyin": "shālā",
+    "meaning": "(loanword) salad",
+    "level": 2
+  },
+  {
+    "chinese": "牛排",
+    "pinyin": "niúpái",
+    "meaning": "steak",
+    "level": 2
+  },
+  {
+    "chinese": "海鮮",
+    "pinyin": "hǎixiān",
+    "meaning": "seafood",
+    "level": 2
+  },
+  {
+    "chinese": "火腿",
+    "pinyin": "huǒtuǐ",
+    "meaning": "ham; CL:個|个[ge4]",
+    "level": 2
+  },
+  {
+    "chinese": "熱狗",
+    "pinyin": "règǒu",
+    "meaning": "hot dog (loanword)",
+    "level": 2
+  },
+  {
+    "chinese": "饅頭",
+    "pinyin": "mántou",
+    "meaning": "steamed bun",
+    "level": 2
+  },
+  {
+    "chinese": "米",
+    "pinyin": "mǐ",
+    "meaning": "rice; meter (classifier)",
+    "level": 2,
+    "example": "我買了五米布。",
+    "example_en": "I bought five meters of cloth."
+  },
+  {
+    "chinese": "豆腐",
+    "pinyin": "dòufu",
+    "meaning": "tofu; bean curd",
+    "level": 2
+  },
+  {
+    "chinese": "橘(子)",
+    "pinyin": "jú(zi)",
+    "meaning": "(no English gloss)",
+    "level": 2
+  },
+  {
+    "chinese": "葡萄",
+    "pinyin": "pú tao",
+    "meaning": "grape",
+    "level": 2,
+    "example": "這些葡萄很甜。",
+    "example_en": "These grapes are very sweet."
+  },
+  {
+    "chinese": "芒果",
+    "pinyin": "mángguǒ",
+    "meaning": "(loanword) mango",
+    "level": 2
+  },
+  {
+    "chinese": "烏龍茶",
+    "pinyin": "wūlóngchá",
+    "meaning": "oolong tea",
+    "level": 2
+  },
+  {
+    "chinese": "豆漿",
+    "pinyin": "dòujiāng",
+    "meaning": "soy milk",
+    "level": 2
+  },
+  {
+    "chinese": "可樂",
+    "pinyin": "kělè",
+    "meaning": "amusing; entertaining; (loanword) cola",
+    "level": 2
+  },
+  {
+    "chinese": "奶茶",
+    "pinyin": "nǎichá",
+    "meaning": "milk tea",
+    "level": 2
+  },
+  {
+    "chinese": "汽水",
+    "pinyin": "qìshuǐ",
+    "meaning": "soda pop; carbonated soft drink",
+    "level": 2
+  },
+  {
+    "chinese": "冰塊",
+    "pinyin": "bīngkuài, bīngkuàir",
+    "meaning": "ice cube; ice chunk",
+    "level": 2
+  },
+  {
+    "chinese": "甜點",
+    "pinyin": "tiándiǎn",
+    "meaning": "dessert",
+    "level": 2
+  },
+  {
+    "chinese": "餅乾",
+    "pinyin": "bǐnggān",
+    "meaning": "biscuit; cookie",
+    "level": 2,
+    "example": "孩子愛吃餅乾。",
+    "example_en": "The child loves cookies."
+  },
+  {
+    "chinese": "鹽",
+    "pinyin": "yán",
+    "meaning": "salt",
+    "level": 2,
+    "example": "菜裡鹽放多了。",
+    "example_en": "There's too much salt in the dish."
+  },
+  {
+    "chinese": "味",
+    "pinyin": "wèi, wèir",
+    "meaning": "taste; smell; (fig.) (bound form) flavor; character; atmosphere; (TCM) classifier for ingredients of a medicine prescription",
+    "level": 2
+  },
+  {
+    "chinese": "聞",
+    "pinyin": "wén",
+    "meaning": "surname Wen",
+    "level": 2
+  },
+  {
+    "chinese": "臭",
+    "pinyin": "chòu",
+    "meaning": "stench; smelly; to smell (bad)",
+    "level": 2
+  },
+  {
+    "chinese": "口",
+    "pinyin": "kǒu",
+    "meaning": "mouth; classifier for things with mouths (people, domestic animals, cannons, wells etc)",
+    "level": 2,
+    "example": "我家有三口人。",
+    "example_en": "There are three people in my family."
+  },
+  {
+    "chinese": "罐",
+    "pinyin": "guàn",
+    "meaning": "can; jar; pot",
+    "level": 2
+  },
+  {
+    "chinese": "顆",
+    "pinyin": "kē",
+    "meaning": "classifier for small spheres, pearls, corn grains, teeth, hearts, satellites etc",
+    "level": 2,
+    "example": "天上有一顆星星。",
+    "example_en": "There is a star in the sky."
+  },
+  {
+    "chinese": "任何",
+    "pinyin": "rèn hé",
+    "meaning": "any; whatever",
+    "level": 2,
+    "example": "任何人都要遵守規定。",
+    "example_en": "Anyone must follow the rules."
+  },
+  {
+    "chinese": "許多",
+    "pinyin": "xǔ duō",
+    "meaning": "many; a lot of",
+    "level": 2,
+    "example": "公園裡有許多人。",
+    "example_en": "There are many people in the park."
+  },
+  {
+    "chinese": "新鮮",
+    "pinyin": "xīn xiān",
+    "meaning": "fresh (experience, food etc); freshness",
+    "level": 2,
+    "example": "這些蔬菜很新鮮。",
+    "example_en": "These vegetables are fresh."
+  },
+  {
+    "chinese": "熟",
+    "pinyin": "shóu",
+    "meaning": "ripe; mature; thoroughly cooked; done; familiar; acquainted",
+    "level": 2
+  },
+  {
+    "chinese": "炒",
+    "pinyin": "chǎo",
+    "meaning": "to sauté; to stir-fry; to speculate (in real estate etc); to scalp; to hype up",
+    "level": 2
+  },
+  {
+    "chinese": "炸",
+    "pinyin": "zhá",
+    "meaning": "to deep fry; (coll.) to blanch (a vegetable); Taiwan pr. [zha4]",
+    "level": 2
+  },
+  {
+    "chinese": "嚐",
+    "pinyin": "cháng",
+    "meaning": "to taste",
+    "level": 2,
+    "example": "你嚐嚐這個菜。",
+    "example_en": "Try this dish."
+  },
+  {
+    "chinese": "裝",
+    "pinyin": "zhuāng",
+    "meaning": "adornment; to adorn",
+    "level": 2,
+    "example": "請把衣服裝進箱子。",
+    "example_en": "Please pack the clothes into the suitcase."
+  },
+  {
+    "chinese": "不用",
+    "pinyin": "bùyòng",
+    "meaning": "need not",
+    "level": 2
+  },
+  {
+    "chinese": "不但",
+    "pinyin": "bù dàn",
+    "meaning": "not only (... but also ...)",
+    "level": 2,
+    "example": "她不但會華語，還會英語。",
+    "example_en": "She not only knows Chinese, but also English."
+  },
+  {
+    "chinese": "不必",
+    "pinyin": "bùbì",
+    "meaning": "need not; does not have to; not necessarily",
+    "level": 2
+  },
+  {
+    "chinese": "不得了",
+    "pinyin": "bùdéliǎo",
+    "meaning": "desperately serious; disastrous; extremely",
+    "level": 2
+  },
+  {
+    "chinese": "不管",
+    "pinyin": "bùguǎn",
+    "meaning": "no matter",
+    "level": 2,
+    "example": "不管怎麼樣，我都會來。",
+    "example_en": "No matter what, I will come."
+  },
+  {
+    "chinese": "只好",
+    "pinyin": "zhǐ hǎo",
+    "meaning": "to have no other option but to ...; to have to; to be forced to",
+    "level": 2,
+    "example": "沒有車，我只好走路。",
+    "example_en": "There was no car, so I had to walk."
+  },
+  {
+    "chinese": "或",
+    "pinyin": "huò",
+    "meaning": "maybe; perhaps; might",
+    "level": 2
+  },
+  {
+    "chinese": "而且",
+    "pinyin": "ér qiě",
+    "meaning": "(not only ...) but also; moreover",
+    "level": 2,
+    "example": "這件衣服便宜而且好看。",
+    "example_en": "This clothing is cheap and also looks good."
+  },
+  {
+    "chinese": "原來",
+    "pinyin": "yuán lái",
+    "meaning": "original; former",
+    "level": 2,
+    "example": "原來你在這兒。",
+    "example_en": "So you were here."
+  },
+  {
+    "chinese": "也許",
+    "pinyin": "yě xǔ",
+    "meaning": "perhaps; maybe",
+    "level": 2,
+    "example": "也許他會來。",
+    "example_en": "Maybe he will come."
+  },
+  {
+    "chinese": "必須",
+    "pinyin": "bìxū",
+    "meaning": "must",
+    "level": 2,
+    "example": "你必須按時來。",
+    "example_en": "You must come on time."
+  },
+  {
+    "chinese": "多麼",
+    "pinyin": "duō me",
+    "meaning": "how (wonderful etc); what (a great idea etc)",
+    "level": 2,
+    "example": "這兒的風景多麼美啊！",
+    "example_en": "How beautiful the scenery is here!"
+  },
+  {
+    "chinese": "這樣",
+    "pinyin": "zhèyàng",
+    "meaning": "this way; like this; so; (before a noun) this kind of; such",
+    "level": 2
+  },
+  {
+    "chinese": "那樣",
+    "pinyin": "nàyàng",
+    "meaning": "that kind; that sort",
+    "level": 2
+  },
+  {
+    "chinese": "別的",
+    "pinyin": "biéde",
+    "meaning": "else; other",
+    "level": 2
+  },
+  {
+    "chinese": "除了",
+    "pinyin": "chúle",
+    "meaning": "except; besides",
+    "level": 2,
+    "example": "除了華語，我還學英語。",
+    "example_en": "Besides Chinese, I also study English."
+  },
+  {
+    "chinese": "從來",
+    "pinyin": "cóng lái",
+    "meaning": "always; at all times",
+    "level": 2,
+    "example": "我從來沒去過那兒。",
+    "example_en": "I have never been there."
+  },
+  {
+    "chinese": "大概",
+    "pinyin": "dà gài",
+    "meaning": "roughly; probably",
+    "level": 2,
+    "example": "大概三點到。",
+    "example_en": "We'll arrive around three."
+  },
+  {
+    "chinese": "還好",
+    "pinyin": "háihǎo",
+    "meaning": "not bad; pretty good; fortunately; luckily",
+    "level": 2
+  },
+  {
+    "chinese": "極",
+    "pinyin": "jí",
+    "meaning": "extremely; pole (geography, physics)",
+    "level": 2,
+    "example": "這兒的風景美極了。",
+    "example_en": "The scenery here is extremely beautiful."
+  },
+  {
+    "chinese": "接著",
+    "pinyin": "jiē zhe",
+    "meaning": "to catch and hold on; to continue",
+    "level": 2,
+    "example": "請接著說。",
+    "example_en": "Please continue."
+  },
+  {
+    "chinese": "結果",
+    "pinyin": "jiē guǒ",
+    "meaning": "to bear fruit",
+    "level": 2,
+    "example": "考試結果還沒出來。",
+    "example_en": "The test results aren't out yet."
+  },
+  {
+    "chinese": "立刻",
+    "pinyin": "lìkè",
+    "meaning": "immediately; at once; right away",
+    "level": 2
+  },
+  {
+    "chinese": "沒想到",
+    "pinyin": "méi xiǎngdào",
+    "meaning": "didn't expect",
+    "level": 2
+  },
+  {
+    "chinese": "其實",
+    "pinyin": "qí shí",
+    "meaning": "actually; in fact; really",
+    "level": 2,
+    "example": "其實我早就知道了。",
+    "example_en": "Actually I already knew."
+  },
+  {
+    "chinese": "其中",
+    "pinyin": "qí zhōng",
+    "meaning": "among; in",
+    "level": 2,
+    "example": "其中有我認識的人。",
+    "example_en": "Among them are people I know."
+  },
+  {
+    "chinese": "完全",
+    "pinyin": "wán quán",
+    "meaning": "complete; whole; totally; entirely",
+    "level": 2,
+    "example": "我完全同意。",
+    "example_en": "I completely agree."
+  },
+  {
+    "chinese": "相當",
+    "pinyin": "xiāng dāng",
+    "meaning": "equivalent to; appropriate",
+    "level": 2,
+    "example": "他的華語相當好。",
+    "example_en": "His Chinese is quite good."
+  },
+  {
+    "chinese": "一切",
+    "pinyin": "yī qiè",
+    "meaning": "everything; every",
+    "level": 2,
+    "example": "一切都會好的。",
+    "example_en": "Everything will be fine."
+  },
+  {
+    "chinese": "已",
+    "pinyin": "yǐ",
+    "meaning": "already; (bound form) to stop; to cease; to end; (literary) thereafter; afterward",
+    "level": 2
+  },
+  {
+    "chinese": "尤其",
+    "pinyin": "yóu qí",
+    "meaning": "especially; particularly",
+    "level": 2,
+    "example": "我喜歡水果，尤其是蘋果。",
+    "example_en": "I like fruit, especially apples."
+  },
+  {
+    "chinese": "越",
+    "pinyin": "Yuè",
+    "meaning": "generic word for peoples or states of south China or south Asia at different historical periods",
+    "level": 2,
+    "example": "他越跑越快。",
+    "example_en": "The more he runs, the faster he gets."
+  },
+  {
+    "chinese": "整",
+    "pinyin": "zhěng",
+    "meaning": "(bound form) whole; complete; entire; (before a measure word) whole; (before or after number + measure word) exactly; (bound form) in good order; tidy; neat; (bound form) to put in order; to straighten",
+    "level": 2
+  },
+  {
+    "chinese": "正",
+    "pinyin": "zhēng",
+    "meaning": "first month of the lunar year",
+    "level": 2,
+    "example": "他正在吃飯。",
+    "example_en": "He is eating right now."
+  },
+  {
+    "chinese": "只要",
+    "pinyin": "zhǐ yào",
+    "meaning": "if only; so long as",
+    "level": 2,
+    "example": "只要努力，就能進步。",
+    "example_en": "As long as you work hard, you can improve."
+  },
+  {
+    "chinese": "最好",
+    "pinyin": "zuì hǎo",
+    "meaning": "best; (you) had better (do what we suggest)",
+    "level": 2,
+    "example": "你最好早點兒來。",
+    "example_en": "You'd better come a bit early."
+  },
+  {
+    "chinese": "同樣",
+    "pinyin": "tóngyàng",
+    "meaning": "same; equal; similar; similarly; also; too",
+    "level": 2
+  },
+  {
+    "chinese": "空",
+    "pinyin": "kōng",
+    "meaning": "empty; air; sky",
+    "level": 2
+  },
+  {
+    "chinese": "連",
+    "pinyin": "lián",
+    "meaning": "to link; to join",
+    "level": 2,
+    "example": "連小孩都會這個問題。",
+    "example_en": "Even a child can do this question."
+  },
+  {
+    "chinese": "倍",
+    "pinyin": "bèi",
+    "meaning": "times (multiplier)",
+    "level": 2,
+    "example": "今年的學生比去年多一倍。",
+    "example_en": "There are twice as many students this year as last year."
+  },
+  {
+    "chinese": "包括",
+    "pinyin": "bāo kuò",
+    "meaning": "to comprise; to include",
+    "level": 2,
+    "example": "價格包括早飯。",
+    "example_en": "The price includes breakfast."
+  },
+  {
+    "chinese": "步",
+    "pinyin": "bù",
+    "meaning": "surname Bu",
+    "level": 2
+  },
+  {
+    "chinese": "當時",
+    "pinyin": "dāng shí",
+    "meaning": "then; at that time",
+    "level": 2,
+    "example": "當時我在北京。",
+    "example_en": "I was in Beijing at that time."
+  },
+  {
+    "chinese": "等到",
+    "pinyin": "děngdào",
+    "meaning": "to wait until; by the time when (sth is ready etc)",
+    "level": 2
+  },
+  {
+    "chinese": "煩",
+    "pinyin": "fán",
+    "meaning": "to feel vexed; to bother; to trouble",
+    "level": 2
+  },
+  {
+    "chinese": "剛好",
+    "pinyin": "gānghǎo",
+    "meaning": "just; exactly; to happen to be",
+    "level": 2
+  },
+  {
+    "chinese": "或者",
+    "pinyin": "huò zhě",
+    "meaning": "or; possibly; maybe; perhaps",
+    "level": 2,
+    "example": "你喝茶或者喝咖啡？",
+    "example_en": "Will you have tea or coffee?"
+  },
+  {
+    "chinese": "哇",
+    "pinyin": "wā",
+    "meaning": "Wow!; sound of a child's crying",
+    "level": 2,
+    "example": "哇，太漂亮了！",
+    "example_en": "Wow, so beautiful!"
+  },
+  {
+    "chinese": "需",
+    "pinyin": "xū",
+    "meaning": "to require; to need; to want",
+    "level": 2
+  },
+  {
+    "chinese": "須",
+    "pinyin": "xū",
+    "meaning": "must; to have to; to wait",
+    "level": 2
+  },
+  {
+    "chinese": "直接",
+    "pinyin": "zhí jiē",
+    "meaning": "direct (opposite: indirect 间接); immediate",
+    "level": 2,
+    "example": "請直接跟我說。",
+    "example_en": "Please tell me directly."
+  },
+  {
+    "chinese": "總",
+    "pinyin": "zǒng",
+    "meaning": "(bound form) general; overall; to sum up; in every case; always; invariably",
+    "level": 2
+  },
+  {
+    "chinese": "泡",
+    "pinyin": "pào",
+    "meaning": "puffed; swollen; spongy; small lake (esp. in place names); classifier for urine or feces",
+    "level": 2
+  },
+  {
+    "chinese": "且",
+    "pinyin": "qiě",
+    "meaning": "and; moreover; yet",
+    "level": 2
+  },
+  {
+    "chinese": "比方",
+    "pinyin": "bǐfāng",
+    "meaning": "analogy; illustrative example; for instance",
+    "level": 2
+  },
+  {
+    "chinese": "比方說",
+    "pinyin": "bǐfāngshuō",
+    "meaning": "for example; for instance",
+    "level": 2
+  },
+  {
+    "chinese": "傳",
+    "pinyin": "chuán",
+    "meaning": "to pass on; to spread; to transmit",
+    "level": 2
+  },
+  {
+    "chinese": "另",
+    "pinyin": "lìng",
+    "meaning": "other; another; separate",
+    "level": 2
+  },
+  {
+    "chinese": "另外",
+    "pinyin": "lìng wài",
+    "meaning": "additional; in addition",
+    "level": 2,
+    "example": "另外，我還有一個問題。",
+    "example_en": "Besides that, I have another question."
+  },
+  {
+    "chinese": "左右",
+    "pinyin": "zuǒ yòu",
+    "meaning": "left and right; nearby",
+    "level": 2,
+    "example": "我三點左右到。",
+    "example_en": "I'll arrive around three."
+  },
+  {
+    "chinese": "當",
+    "pinyin": "dāng",
+    "meaning": "(onom.) dong; ding dong (bell)",
+    "level": 2,
+    "example": "我當過老師。",
+    "example_en": "I used to be a teacher."
+  },
+  {
+    "chinese": "類",
+    "pinyin": "lèi",
+    "meaning": "kind; type",
+    "level": 2,
+    "example": "這是同一類問題。",
+    "example_en": "This is the same kind of problem."
+  },
+  {
+    "chinese": "樣",
+    "pinyin": "yàng",
+    "meaning": "manner; pattern; way",
     "level": 2
   }
 ]

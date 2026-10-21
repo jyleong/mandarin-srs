@@ -133,24 +133,16 @@ impl App {
     }
 
     fn render_select(&self, frame: &mut ratatui::Frame, area: Rect) {
-        let levels = [
-            TocflLevel::Tocfl1,
-            TocflLevel::Tocfl2,
-            TocflLevel::Tocfl3,
-            TocflLevel::Tocfl4,
-            TocflLevel::Tocfl5,
-            TocflLevel::Tocfl6,
-        ];
-
         let mut lines: Vec<Line> = Vec::new();
         lines.push(Line::from(""));
-        for level in levels {
-            let n = level.as_u8();
+        for level in TocflLevel::ALL {
             let (reviews, new, ahead, total) = self.session_preview(level);
             let selected = level == self.selected_level;
 
-            let label =
-                format!("  TOCFL {n}   ({reviews} review · {new} new · {ahead} ahead / {total})");
+            let label = format!(
+                "  {}   ({reviews} review · {new} new · {ahead} ahead / {total})",
+                level.label()
+            );
             let line = if selected {
                 Line::from(vec![
                     Span::styled(
@@ -179,7 +171,7 @@ impl App {
             .alignment(Alignment::Left)
             .block(
                 Block::bordered()
-                    .title(" TOCFL level ")
+                    .title(" TOCFL / Extra ")
                     .title_alignment(Alignment::Center)
                     .border_style(Style::new().fg(Color::Cyan))
                     .padding(Padding::horizontal(2)),
@@ -190,8 +182,8 @@ impl App {
     fn render_header(&self, frame: &mut ratatui::Frame, area: Rect) {
         let status = match self.phase {
             Phase::Browse => format!(
-                "TOCFL {} · browse {} / {} answered",
-                self.selected_level.as_u8(),
+                "{} · browse {} / {} answered",
+                self.selected_level.label(),
                 self.browse_pos + 1,
                 self.history.len()
             ),
@@ -199,15 +191,15 @@ impl App {
                 let again = self.again_remaining();
                 if again == 0 {
                     format!(
-                        "TOCFL {} · card {} / {}",
-                        self.selected_level.as_u8(),
+                        "{} · card {} / {}",
+                        self.selected_level.label(),
                         self.index + 1,
                         self.cards.len()
                     )
                 } else {
                     format!(
-                        "TOCFL {} · card {} / {} · {} again",
-                        self.selected_level.as_u8(),
+                        "{} · card {} / {} · {} again",
+                        self.selected_level.label(),
                         self.index + 1,
                         self.cards.len(),
                         again
@@ -387,12 +379,10 @@ impl App {
 
     fn render_summary(&self, frame: &mut ratatui::Frame, area: Rect) {
         let (answered, correct, wrong) = self.session_counts();
-        let level = self.selected_level.as_u8();
-
         let text = Text::from(vec![
             Line::from(""),
             Line::from(Span::styled(
-                format!(" TOCFL {level} session complete "),
+                format!(" {} session complete ", self.selected_level.label()),
                 Style::new()
                     .fg(Color::Black)
                     .bg(Color::Cyan)
@@ -439,7 +429,7 @@ impl App {
                 if reviews + new + ahead == 0 {
                     "[ ] batch   ·   no cards to start   ·   Esc / Ctrl+Q quit"
                 } else {
-                    "[ ] / h l batch   ·   ↑↓ / k j move   ·   1-6 jump   ·   Enter start   ·   Esc / Ctrl+Q quit"
+                    "[ ] / h l batch   ·   ↑↓ / k j move   ·   1-5 jump · 6 Extra   ·   Enter start   ·   Esc / Ctrl+Q quit"
                 }
             }
             Phase::Prompt => "Enter submit   ·   Backspace delete   ·   Esc / Ctrl+Q quit",
