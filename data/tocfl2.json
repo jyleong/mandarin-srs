@@ -3,7 +3,7 @@
     "chinese": "新",
     "pinyin": "Xīn",
     "meaning": "abbr. for Xinjiang 疆 or Singapore 坡",
-    "example": "我买了一件新衣服。",
+    "example": "我買了一件新衣服。",
     "example_en": "I bought a new piece of clothing.",
     "level": 2
   },
@@ -11,7 +11,7 @@
     "chinese": "元",
     "pinyin": "Yuán",
     "meaning": "the Yuan or Mongol dynasty (1279-1368)",
-    "example": "这个苹果两元。",
+    "example": "這個蘋果兩元。",
     "example_en": "This apple is two yuan.",
     "level": 2
   },
@@ -19,7 +19,7 @@
     "chinese": "吧",
     "pinyin": "ba",
     "meaning": "suggestion particle",
-    "example": "我们走吧。",
+    "example": "我們走吧。",
     "example_en": "Let's go.",
     "level": 2
   },
@@ -27,23 +27,23 @@
     "chinese": "便宜",
     "pinyin": "biàn yí",
     "meaning": "convenient",
-    "example": "这儿的菜很便宜。",
+    "example": "這兒的菜很便宜。",
     "example_en": "The food here is cheap.",
     "level": 2
   },
   {
-    "chinese": "别",
+    "chinese": "別",
     "pinyin": "bié",
     "meaning": "don't; other",
-    "example": "别说话！",
+    "example": "別說話！",
     "example_en": "Don't talk!",
     "level": 2
   },
   {
-    "chinese": "报纸",
+    "chinese": "報紙",
     "pinyin": "bàozhǐ",
     "meaning": "newspaper",
-    "example": "爸爸在看报纸。",
+    "example": "爸爸在看報紙。",
     "example_en": "Dad is reading the newspaper.",
     "level": 2
   },
@@ -51,15 +51,15 @@
     "chinese": "白",
     "pinyin": "bái",
     "meaning": "white",
-    "example": "这件衣服是白色的。",
+    "example": "這件衣服是白色的。",
     "example_en": "This piece of clothing is white.",
     "level": 2
   },
   {
-    "chinese": "帮助",
+    "chinese": "幫助",
     "pinyin": "bāngzhù",
     "meaning": "to help",
-    "example": "请帮助我。",
+    "example": "請幫助我。",
     "example_en": "Please help me.",
     "level": 2
   },
@@ -67,7 +67,7 @@
     "chinese": "百",
     "pinyin": "bǎi",
     "meaning": "hundred",
-    "example": "这本书一百块。",
+    "example": "這本書一百塊。",
     "example_en": "This book is one hundred yuan.",
     "level": 2
   },
@@ -83,7 +83,7 @@
     "chinese": "船",
     "pinyin": "chuán",
     "meaning": "variant of 船",
-    "example": "我们坐船去那儿。",
+    "example": "我們坐船去那兒。",
     "example_en": "We'll go there by boat.",
     "level": 2
   },
@@ -99,23 +99,23 @@
     "chinese": "唱歌",
     "pinyin": "chànggē",
     "meaning": "to sing",
-    "example": "她喜欢唱歌。",
+    "example": "她喜歡唱歌。",
     "example_en": "She likes to sing.",
     "level": 2
   },
   {
-    "chinese": "长",
+    "chinese": "長",
     "pinyin": "cháng",
     "meaning": "long",
-    "example": "这条路很长。",
+    "example": "這條路很長。",
     "example_en": "This road is very long.",
     "level": 2
   },
   {
-    "chinese": "离",
+    "chinese": "離",
     "pinyin": "chī",
     "meaning": "mythical beast (archaic)",
-    "example": "学校离我家很近。",
+    "example": "學校離我家很近。",
     "example_en": "The school is close to my home.",
     "level": 2
   },
@@ -123,15 +123,15 @@
     "chinese": "出",
     "pinyin": "chū",
     "meaning": "to go out",
-    "example": "请出去。",
+    "example": "請出去。",
     "example_en": "Please go out.",
     "level": 2
   },
   {
-    "chinese": "错",
+    "chinese": "錯",
     "pinyin": "cuò",
     "meaning": "wrong; mistake",
-    "example": "对不起，我错了。",
+    "example": "對不起，我錯了。",
     "example_en": "Sorry, I was wrong.",
     "level": 2
   },
@@ -139,15 +139,15 @@
     "chinese": "次",
     "pinyin": "cì",
     "meaning": "time (occurrence)",
-    "example": "我去过北京两次。",
+    "example": "我去過北京兩次。",
     "example_en": "I have been to Beijing twice.",
     "level": 2
   },
   {
-    "chinese": "从",
+    "chinese": "從",
     "pinyin": "cóng",
     "meaning": "from",
-    "example": "我从北京来。",
+    "example": "我從北京來。",
     "example_en": "I come from Beijing.",
     "level": 2
   },
@@ -155,15 +155,15 @@
     "chinese": "得",
     "pinyin": "de",
     "meaning": "structural particle",
-    "example": "她汉语说得很好。",
+    "example": "她華語說得很好。",
     "example_en": "She speaks Chinese very well.",
     "level": 2
   },
   {
-    "chinese": "对",
+    "chinese": "對",
     "pinyin": "duì",
     "meaning": "right; toward",
-    "example": "你说得对。",
+    "example": "你說得對。",
     "example_en": "You're right.",
     "level": 2
   },
@@ -171,7 +171,7 @@
     "chinese": "大家",
     "pinyin": "dàjiā",
     "meaning": "everyone",
-    "example": "大家都来了。",
+    "example": "大家都來了。",
     "example_en": "Everyone is here.",
     "level": 2
   },
@@ -187,7 +187,7 @@
     "chinese": "到",
     "pinyin": "dào",
     "meaning": "to arrive; to",
-    "example": "我到学校了。",
+    "example": "我到學校了。",
     "example_en": "I have arrived at school.",
     "level": 2
   },
@@ -203,7 +203,7 @@
     "chinese": "弟弟",
     "pinyin": "dìdi",
     "meaning": "younger brother",
-    "example": "我弟弟五岁。",
+    "example": "我弟弟五歲。",
     "example_en": "My little brother is five.",
     "level": 2
   },
@@ -211,15 +211,15 @@
     "chinese": "等",
     "pinyin": "děng",
     "meaning": "to wait",
-    "example": "请等一下。",
+    "example": "請等一下。",
     "example_en": "Please wait a moment.",
     "level": 2
   },
   {
-    "chinese": "打篮球",
+    "chinese": "打籃球",
     "pinyin": "dǎ lánqiú",
     "meaning": "to play basketball",
-    "example": "下午我们打篮球。",
+    "example": "下午我們打籃球。",
     "example_en": "We're playing basketball this afternoon.",
     "level": 2
   },
@@ -227,23 +227,23 @@
     "chinese": "懂",
     "pinyin": "dǒng",
     "meaning": "to understand",
-    "example": "你懂吗？",
+    "example": "你懂嗎？",
     "example_en": "Do you understand?",
     "level": 2
   },
   {
-    "chinese": "房间",
+    "chinese": "房間",
     "pinyin": "fángjiān",
     "meaning": "room",
-    "example": "这个房间很大。",
+    "example": "這個房間很大。",
     "example_en": "This room is very big.",
     "level": 2
   },
   {
-    "chinese": "服务员",
+    "chinese": "服務員",
     "pinyin": "fúwùyuán",
     "meaning": "waiter; attendant",
-    "example": "服务员，请给我菜单。",
+    "example": "服務員，請給我選單。",
     "example_en": "Waiter, please give me a menu.",
     "level": 2
   },
@@ -251,31 +251,31 @@
     "chinese": "非常",
     "pinyin": "fēicháng",
     "meaning": "extremely; very",
-    "example": "我非常高兴。",
+    "example": "我非常高興。",
     "example_en": "I am very happy.",
     "level": 2
   },
   {
-    "chinese": "过",
+    "chinese": "過",
     "pinyin": "guo",
     "meaning": "experiential particle",
-    "example": "我去过北京。",
+    "example": "我去過北京。",
     "example_en": "I have been to Beijing.",
     "level": 2
   },
   {
-    "chinese": "贵",
+    "chinese": "貴",
     "pinyin": "guì",
     "meaning": "expensive",
-    "example": "这个太贵了。",
+    "example": "這個太貴了。",
     "example_en": "This is too expensive.",
     "level": 2
   },
   {
-    "chinese": "告诉",
+    "chinese": "告訴",
     "pinyin": "gàosu",
     "meaning": "to tell",
-    "example": "请告诉我他的名字。",
+    "example": "請告訴我他的名字。",
     "example_en": "Please tell me his name.",
     "level": 2
   },
@@ -296,10 +296,10 @@
     "level": 2
   },
   {
-    "chinese": "给",
+    "chinese": "給",
     "pinyin": "gěi",
     "meaning": "to give",
-    "example": "请给我一杯水。",
+    "example": "請給我一杯水。",
     "example_en": "Please give me a glass of water.",
     "level": 2
   },
@@ -307,15 +307,15 @@
     "chinese": "公斤",
     "pinyin": "gōng jīn",
     "meaning": "kilogram (kg)",
-    "example": "这些苹果两公斤。",
+    "example": "這些蘋果兩公斤。",
     "example_en": "These apples weigh two kilograms.",
     "level": 2
   },
   {
-    "chinese": "公共汽车",
-    "pinyin": "gōnggòng qìchē",
+    "chinese": "公車",
+    "pinyin": "gōngchē",
     "meaning": "bus",
-    "example": "我坐公共汽车去学校。",
+    "example": "我坐公車去學校。",
     "example_en": "I take the bus to school.",
     "level": 2
   },
@@ -331,31 +331,31 @@
     "chinese": "回答",
     "pinyin": "huí dá",
     "meaning": "to reply; to answer; reply; answer",
-    "example": "请回答我的问题。",
+    "example": "請回答我的問題。",
     "example_en": "Please answer my question.",
     "level": 2
   },
   {
-    "chinese": "欢迎",
+    "chinese": "歡迎",
     "pinyin": "huān yíng",
     "meaning": "to welcome; welcome",
-    "example": "欢迎来北京！",
+    "example": "歡迎來北京！",
     "example_en": "Welcome to Beijing!",
     "level": 2
   },
   {
-    "chinese": "火车站",
+    "chinese": "火車站",
     "pinyin": "huǒchēzhàn",
     "meaning": "train station",
-    "example": "火车站在哪儿？",
+    "example": "火車站在哪兒？",
     "example_en": "Where is the train station?",
     "level": 2
   },
   {
-    "chinese": "还",
+    "chinese": "還",
     "pinyin": "hái",
     "meaning": "still; also",
-    "example": "我还有一个问题。",
+    "example": "我還有一個問題。",
     "example_en": "I still have a question.",
     "level": 2
   },
@@ -363,23 +363,23 @@
     "chinese": "孩子",
     "pinyin": "háizi",
     "meaning": "child",
-    "example": "那个孩子很高兴。",
+    "example": "那個孩子很高興。",
     "example_en": "That child is very happy.",
     "level": 2
   },
   {
-    "chinese": "号",
+    "chinese": "號",
     "pinyin": "háo",
     "meaning": "roar; cry",
-    "example": "今天是五号。",
+    "example": "今天是五號。",
     "example_en": "Today is the 5th.",
     "level": 2
   },
   {
-    "chinese": "红",
+    "chinese": "紅",
     "pinyin": "hóng",
     "meaning": "red",
-    "example": "我喜欢红色。",
+    "example": "我喜歡紅色。",
     "example_en": "I like red.",
     "level": 2
   },
@@ -387,7 +387,7 @@
     "chinese": "黑",
     "pinyin": "hēi",
     "meaning": "black",
-    "example": "那只猫是黑色的。",
+    "example": "那隻貓是黑色的。",
     "example_en": "That cat is black.",
     "level": 2
   },
@@ -395,7 +395,7 @@
     "chinese": "好吃",
     "pinyin": "hǎochī",
     "meaning": "delicious",
-    "example": "这个菜很好吃。",
+    "example": "這個菜很好吃。",
     "example_en": "This dish is delicious.",
     "level": 2
   },
@@ -403,7 +403,7 @@
     "chinese": "件",
     "pinyin": "jiàn",
     "meaning": "measure word for clothes/matters",
-    "example": "我买了一件衣服。",
+    "example": "我買了一件衣服。",
     "example_en": "I bought a piece of clothing.",
     "level": 2
   },
@@ -411,15 +411,15 @@
     "chinese": "教室",
     "pinyin": "jiàoshì",
     "meaning": "classroom",
-    "example": "学生们在教室里。",
+    "example": "學生們在教室裡。",
     "example_en": "The students are in the classroom.",
     "level": 2
   },
   {
-    "chinese": "介绍",
+    "chinese": "介紹",
     "pinyin": "jièshào",
     "meaning": "to introduce",
-    "example": "我来介绍一下我的朋友。",
+    "example": "我來介紹一下我的朋友。",
     "example_en": "Let me introduce my friend.",
     "level": 2
   },
@@ -427,7 +427,7 @@
     "chinese": "就",
     "pinyin": "jiù",
     "meaning": "then; right away",
-    "example": "我现在就去。",
+    "example": "我現在就去。",
     "example_en": "I'll go right now.",
     "level": 2
   },
@@ -435,15 +435,15 @@
     "chinese": "姐姐",
     "pinyin": "jiějie",
     "meaning": "older sister",
-    "example": "我姐姐是医生。",
+    "example": "我姐姐是醫生。",
     "example_en": "My older sister is a doctor.",
     "level": 2
   },
   {
-    "chinese": "觉得",
+    "chinese": "覺得",
     "pinyin": "juéde",
     "meaning": "to feel; to think",
-    "example": "我觉得今天很冷。",
+    "example": "我覺得今天很冷。",
     "example_en": "I feel it's very cold today.",
     "level": 2
   },
@@ -451,31 +451,31 @@
     "chinese": "近",
     "pinyin": "jìn",
     "meaning": "near",
-    "example": "商店离这儿很近。",
+    "example": "商店離這兒很近。",
     "example_en": "The shop is very close to here.",
     "level": 2
   },
   {
-    "chinese": "进",
+    "chinese": "進",
     "pinyin": "jìn",
     "meaning": "to enter",
-    "example": "请进。",
+    "example": "請進。",
     "example_en": "Please come in.",
     "level": 2
   },
   {
-    "chinese": "机场",
+    "chinese": "機場",
     "pinyin": "jīchǎng",
     "meaning": "airport",
-    "example": "我们去机场。",
+    "example": "我們去機場。",
     "example_en": "We're going to the airport.",
     "level": 2
   },
   {
-    "chinese": "鸡蛋",
+    "chinese": "雞蛋",
     "pinyin": "jīdàn",
     "meaning": "egg",
-    "example": "早饭我吃鸡蛋。",
+    "example": "早飯我吃雞蛋。",
     "example_en": "I eat eggs for breakfast.",
     "level": 2
   },
@@ -483,23 +483,23 @@
     "chinese": "快",
     "pinyin": "kuài",
     "meaning": "rapid; quick",
-    "example": "请快点！",
+    "example": "請快點！",
     "example_en": "Please hurry!",
     "level": 2
   },
   {
-    "chinese": "快乐",
+    "chinese": "快樂",
     "pinyin": "kuài lè",
     "meaning": "happy; joyful",
-    "example": "生日快乐！",
+    "example": "生日快樂！",
     "example_en": "Happy birthday!",
     "level": 2
   },
   {
-    "chinese": "课",
+    "chinese": "課",
     "pinyin": "kè",
     "meaning": "subject; course",
-    "example": "上午我有课。",
+    "example": "上午我有課。",
     "example_en": "I have class in the morning.",
     "level": 2
   },
@@ -512,10 +512,10 @@
     "level": 2
   },
   {
-    "chinese": "开始",
+    "chinese": "開始",
     "pinyin": "kāi shǐ",
     "meaning": "to begin; beginning",
-    "example": "我们现在开始吧。",
+    "example": "我們現在開始吧。",
     "example_en": "Let's start now.",
     "level": 2
   },
@@ -531,23 +531,23 @@
     "chinese": "可以",
     "pinyin": "kě yǐ",
     "meaning": "can; may",
-    "example": "我可以进来吗？",
+    "example": "我可以進來嗎？",
     "example_en": "May I come in?",
     "level": 2
   },
   {
-    "chinese": "考试",
+    "chinese": "考試",
     "pinyin": "kǎo shì",
     "meaning": "to take an exam; exam",
-    "example": "明天有汉语考试。",
+    "example": "明天有華語考試。",
     "example_en": "There is a Chinese test tomorrow.",
     "level": 2
   },
   {
-    "chinese": "两",
+    "chinese": "兩",
     "pinyin": "liǎng",
     "meaning": "two; both",
-    "example": "我要两个苹果。",
+    "example": "我要兩個蘋果。",
     "example_en": "I want two apples.",
     "level": 2
   },
@@ -555,7 +555,7 @@
     "chinese": "路",
     "pinyin": "lù",
     "meaning": "road; journey",
-    "example": "这条路很长。",
+    "example": "這條路很長。",
     "example_en": "This road is very long.",
     "level": 2
   },
@@ -568,18 +568,18 @@
     "level": 2
   },
   {
-    "chinese": "旅游",
+    "chinese": "旅遊",
     "pinyin": "lǚ yóu",
     "meaning": "trip; journey",
-    "example": "我们去中国旅游。",
+    "example": "我們去中國旅遊。",
     "example_en": "We're traveling in China.",
     "level": 2
   },
   {
-    "chinese": "卖",
+    "chinese": "賣",
     "pinyin": "mài",
     "meaning": "to sell; to betray",
-    "example": "这家商店卖水果。",
+    "example": "這家商店賣水果。",
     "example_en": "This shop sells fruit.",
     "level": 2
   },
@@ -587,7 +587,7 @@
     "chinese": "慢",
     "pinyin": "màn",
     "meaning": "slow",
-    "example": "请说慢一点。",
+    "example": "請說慢一點。",
     "example_en": "Please speak a bit more slowly.",
     "level": 2
   },
@@ -603,15 +603,15 @@
     "chinese": "妹妹",
     "pinyin": "mèi mei",
     "meaning": "younger sister; young woman",
-    "example": "我妹妹十岁。",
+    "example": "我妹妹十歲。",
     "example_en": "My little sister is ten.",
     "level": 2
   },
   {
-    "chinese": "门",
+    "chinese": "門",
     "pinyin": "mén",
     "meaning": "gate; door",
-    "example": "请关门。",
+    "example": "請關門。",
     "example_en": "Please close the door.",
     "level": 2
   },
@@ -627,7 +627,7 @@
     "chinese": "牛奶",
     "pinyin": "niú nǎi",
     "meaning": "cow's milk",
-    "example": "孩子爱喝牛奶。",
+    "example": "孩子愛喝牛奶。",
     "example_en": "The child loves to drink milk.",
     "level": 2
   },
@@ -635,7 +635,7 @@
     "chinese": "男人",
     "pinyin": "nán rén",
     "meaning": "a man; a male",
-    "example": "那个男人是老师。",
+    "example": "那個男人是老師。",
     "example_en": "That man is a teacher.",
     "level": 2
   },
@@ -651,7 +651,7 @@
     "chinese": "女人",
     "pinyin": "nǚ rén",
     "meaning": "woman",
-    "example": "那个女人是医生。",
+    "example": "那個女人是醫生。",
     "example_en": "That woman is a doctor.",
     "level": 2
   },
@@ -659,15 +659,15 @@
     "chinese": "票",
     "pinyin": "piào",
     "meaning": "ticket; ballot",
-    "example": "我买了两张电影票。",
+    "example": "我買了兩張電影票。",
     "example_en": "I bought two movie tickets.",
     "level": 2
   },
   {
-    "chinese": "旁边",
+    "chinese": "旁邊",
     "pinyin": "páng biān",
     "meaning": "side; adjacent place",
-    "example": "猫在桌子旁边。",
+    "example": "貓在桌子旁邊。",
     "example_en": "The cat is next to the table.",
     "level": 2
   },
@@ -683,7 +683,7 @@
     "chinese": "千",
     "pinyin": "qiān",
     "meaning": "thousand",
-    "example": "这本书一千块。",
+    "example": "這本書一千塊。",
     "example_en": "This book is one thousand yuan.",
     "level": 2
   },
@@ -691,7 +691,7 @@
     "chinese": "晴",
     "pinyin": "qíng",
     "meaning": "clear; fine (weather)",
-    "example": "今天天气很晴。",
+    "example": "今天天氣很晴。",
     "example_en": "It's very sunny today.",
     "level": 2
   },
@@ -707,7 +707,7 @@
     "chinese": "妻子",
     "pinyin": "qī zǐ",
     "meaning": "wife and children",
-    "example": "他的妻子是老师。",
+    "example": "他的妻子是老師。",
     "example_en": "His wife is a teacher.",
     "level": 2
   },
@@ -715,15 +715,15 @@
     "chinese": "起床",
     "pinyin": "qǐ chuáng",
     "meaning": "to get out of bed; to get up",
-    "example": "我七点起床。",
+    "example": "我七點起床。",
     "example_en": "I get up at seven.",
     "level": 2
   },
   {
-    "chinese": "让",
+    "chinese": "讓",
     "pinyin": "ràng",
     "meaning": "to yield; to permit",
-    "example": "请让我看看。",
+    "example": "請讓我看看。",
     "example_en": "Please let me have a look.",
     "level": 2
   },
@@ -731,7 +731,7 @@
     "chinese": "上班",
     "pinyin": "shàng bān",
     "meaning": "to go to work; to be on duty",
-    "example": "爸爸九点上班。",
+    "example": "爸爸九點上班。",
     "example_en": "Dad starts work at nine.",
     "level": 2
   },
@@ -739,23 +739,23 @@
     "chinese": "事情",
     "pinyin": "shì qing",
     "meaning": "affair; matter; thing; business",
-    "example": "我有一点儿事情。",
+    "example": "我有一點兒事情。",
     "example_en": "I have something to take care of.",
     "level": 2
   },
   {
-    "chinese": "时间",
+    "chinese": "時間",
     "pinyin": "shí jiān",
     "meaning": "time; period",
-    "example": "你有时间吗？",
+    "example": "你有時間嗎？",
     "example_en": "Do you have time?",
     "level": 2
   },
   {
-    "chinese": "身体",
+    "chinese": "身體",
     "pinyin": "shēn tǐ",
     "meaning": "the body; one's health",
-    "example": "你身体怎么样？",
+    "example": "你身體怎麼樣？",
     "example_en": "How is your health?",
     "level": 2
   },
@@ -776,18 +776,18 @@
     "level": 2
   },
   {
-    "chinese": "手表",
+    "chinese": "手錶",
     "pinyin": "shǒu biǎo",
     "meaning": "wristwatch",
-    "example": "这块手表很贵。",
+    "example": "這塊手錶很貴。",
     "example_en": "This watch is expensive.",
     "level": 2
   },
   {
-    "chinese": "手机",
+    "chinese": "手機",
     "pinyin": "shǒu jī",
     "meaning": "cell phone; mobile phone",
-    "example": "我的手机在桌子上。",
+    "example": "我的手機在桌子上。",
     "example_en": "My phone is on the table.",
     "level": 2
   },
@@ -803,7 +803,7 @@
     "chinese": "送",
     "pinyin": "sòng",
     "meaning": "to send; to deliver; to transmit; to give (as a present)",
-    "example": "我送你一本书。",
+    "example": "我送你一本書。",
     "example_en": "I'll give you a book.",
     "level": 2
   },
@@ -811,15 +811,15 @@
     "chinese": "跳舞",
     "pinyin": "tiào wǔ",
     "meaning": "to dance",
-    "example": "她喜欢跳舞。",
+    "example": "她喜歡跳舞。",
     "example_en": "She likes to dance.",
     "level": 2
   },
   {
-    "chinese": "题",
+    "chinese": "題",
     "pinyin": "tí",
     "meaning": "topic; problem for discussion",
-    "example": "这道题很难。",
+    "example": "這道題很難。",
     "example_en": "This question is hard.",
     "level": 2
   },
@@ -827,7 +827,7 @@
     "chinese": "它",
     "pinyin": "tā",
     "meaning": "it",
-    "example": "它是我的猫。",
+    "example": "它是我的貓。",
     "example_en": "It is my cat.",
     "level": 2
   },
@@ -835,7 +835,7 @@
     "chinese": "踢",
     "pinyin": "tī",
     "meaning": "to kick; to play (e.g. soccer)",
-    "example": "孩子们在踢足球。",
+    "example": "孩子們在踢足球。",
     "example_en": "The children are playing soccer.",
     "level": 2
   },
@@ -843,7 +843,7 @@
     "chinese": "外",
     "pinyin": "wài",
     "meaning": "outside; in addition",
-    "example": "他在门外。",
+    "example": "他在門外。",
     "example_en": "He is outside the door.",
     "level": 2
   },
@@ -859,31 +859,31 @@
     "chinese": "玩",
     "pinyin": "wán",
     "meaning": "to play; to have fun",
-    "example": "周末我们去玩。",
+    "example": "週末我們去玩。",
     "example_en": "We're going out to have fun this weekend.",
     "level": 2
   },
   {
-    "chinese": "问",
+    "chinese": "問",
     "pinyin": "wèn",
     "meaning": "to ask; to inquire",
-    "example": "我想问一个问题。",
+    "example": "我想問一個問題。",
     "example_en": "I want to ask a question.",
     "level": 2
   },
   {
-    "chinese": "问题",
+    "chinese": "問題",
     "pinyin": "wèn tí",
     "meaning": "question; problem",
-    "example": "我有一个问题。",
+    "example": "我有一個問題。",
     "example_en": "I have a question.",
     "level": 2
   },
   {
-    "chinese": "为",
+    "chinese": "為",
     "pinyin": "wéi",
     "meaning": "as (in the capacity of); to take sth as",
-    "example": "我为你高兴。",
+    "example": "我為你高興。",
     "example_en": "I'm happy for you.",
     "level": 2
   },
@@ -891,7 +891,7 @@
     "chinese": "晚上",
     "pinyin": "wǎn shang",
     "meaning": "evening; night",
-    "example": "晚上我们看电视。",
+    "example": "晚上我們看電視。",
     "example_en": "We watch TV in the evening.",
     "level": 2
   },
@@ -899,7 +899,7 @@
     "chinese": "向",
     "pinyin": "xiàng",
     "meaning": "towards; to face",
-    "example": "请向老师问好。",
+    "example": "請向老師問好。",
     "example_en": "Please say hello to the teacher.",
     "level": 2
   },
@@ -920,10 +920,10 @@
     "level": 2
   },
   {
-    "chinese": "小时",
+    "chinese": "小時",
     "pinyin": "xiǎo shí",
     "meaning": "hour",
-    "example": "我等了一个小时。",
+    "example": "我等了一個小時。",
     "example_en": "I waited for an hour.",
     "level": 2
   },
@@ -939,7 +939,7 @@
     "chinese": "姓",
     "pinyin": "xìng",
     "meaning": "family name; surname",
-    "example": "您贵姓？",
+    "example": "您貴姓？",
     "example_en": "What is your surname?",
     "level": 2
   },
@@ -947,7 +947,7 @@
     "chinese": "西瓜",
     "pinyin": "xī guā",
     "meaning": "watermelon",
-    "example": "夏天我爱吃西瓜。",
+    "example": "夏天我愛吃西瓜。",
     "example_en": "I love eating watermelon in summer.",
     "level": 2
   },
@@ -968,26 +968,26 @@
     "level": 2
   },
   {
-    "chinese": "远",
+    "chinese": "遠",
     "pinyin": "yuǎn",
     "meaning": "far; distant",
-    "example": "火车站离这儿很远。",
+    "example": "火車站離這兒很遠。",
     "example_en": "The train station is far from here.",
     "level": 2
   },
   {
-    "chinese": "药",
+    "chinese": "藥",
     "pinyin": "yào",
     "meaning": "leaf of the iris; variant of 药",
-    "example": "你该吃药了。",
+    "example": "你該吃藥了。",
     "example_en": "You should take your medicine.",
     "level": 2
   },
   {
-    "chinese": "颜色",
+    "chinese": "顏色",
     "pinyin": "yán sè",
     "meaning": "color; countenance",
-    "example": "你喜欢什么颜色？",
+    "example": "你喜歡什麼顏色？",
     "example_en": "What color do you like?",
     "level": 2
   },
@@ -1003,15 +1003,15 @@
     "chinese": "意思",
     "pinyin": "yì si",
     "meaning": "idea; opinion",
-    "example": "这个字是什么意思？",
+    "example": "這個字是什麼意思？",
     "example_en": "What does this character mean?",
     "level": 2
   },
   {
-    "chinese": "右边",
+    "chinese": "右邊",
     "pinyin": "yòu bian",
     "meaning": "right side; right, to the right",
-    "example": "商店在右边。",
+    "example": "商店在右邊。",
     "example_en": "The shop is on the right.",
     "level": 2
   },
@@ -1024,18 +1024,18 @@
     "level": 2
   },
   {
-    "chinese": "运动",
+    "chinese": "運動",
     "pinyin": "yùn dòng",
     "meaning": "to move; to exercise",
-    "example": "我喜欢运动。",
+    "example": "我喜歡運動。",
     "example_en": "I like sports.",
     "level": 2
   },
   {
-    "chinese": "鱼",
+    "chinese": "魚",
     "pinyin": "yú",
     "meaning": "fish",
-    "example": "这条鱼很好吃。",
+    "example": "這條魚很好吃。",
     "example_en": "This fish is delicious.",
     "level": 2
   },
@@ -1051,7 +1051,7 @@
     "chinese": "也",
     "pinyin": "yě",
     "meaning": "(adverb) also; both ... and ... (before predicates only)",
-    "example": "我也是学生。",
+    "example": "我也是學生。",
     "example_en": "I am a student too.",
     "level": 2
   },
@@ -1059,23 +1059,23 @@
     "chinese": "一起",
     "pinyin": "yī qǐ",
     "meaning": "in the same place; together",
-    "example": "我们一起去吧。",
+    "example": "我們一起去吧。",
     "example_en": "Let's go together.",
     "level": 2
   },
   {
-    "chinese": "阴",
+    "chinese": "陰",
     "pinyin": "yīn",
     "meaning": "overcast (weather); cloudy",
-    "example": "今天是阴天。",
+    "example": "今天是陰天。",
     "example_en": "It's cloudy today.",
     "level": 2
   },
   {
-    "chinese": "因为",
+    "chinese": "因為",
     "pinyin": "yīn wèi",
     "meaning": "because; owing to",
-    "example": "因为下雨，所以我在家。",
+    "example": "因為下雨，所以我在家。",
     "example_en": "Because it's raining, I'm at home.",
     "level": 2
   },
@@ -1088,10 +1088,10 @@
     "level": 2
   },
   {
-    "chinese": "已经",
+    "chinese": "已經",
     "pinyin": "yǐ jīng",
     "meaning": "already",
-    "example": "我已经吃饭了。",
+    "example": "我已經吃飯了。",
     "example_en": "I have already eaten.",
     "level": 2
   },
@@ -1099,7 +1099,7 @@
     "chinese": "丈夫",
     "pinyin": "zhàng fu",
     "meaning": "husband",
-    "example": "她的丈夫是医生。",
+    "example": "她的丈夫是醫生。",
     "example_en": "Her husband is a doctor.",
     "level": 2
   },
@@ -1107,23 +1107,23 @@
     "chinese": "正在",
     "pinyin": "zhèng zài",
     "meaning": "just at (that time); right in (that place)",
-    "example": "他正在看书。",
+    "example": "他正在看書。",
     "example_en": "He is reading right now.",
     "level": 2
   },
   {
-    "chinese": "张",
+    "chinese": "張",
     "pinyin": "zhāng",
     "meaning": "to open up; to spread",
-    "example": "我买了两张票。",
+    "example": "我買了兩張票。",
     "example_en": "I bought two tickets.",
     "level": 2
   },
   {
-    "chinese": "着",
+    "chinese": "著",
     "pinyin": "zhāo",
     "meaning": "(chess) move; trick",
-    "example": "他看着电视。",
+    "example": "他看著電視。",
     "example_en": "He is watching TV.",
     "level": 2
   },
@@ -1131,7 +1131,7 @@
     "chinese": "真",
     "pinyin": "zhēn",
     "meaning": "really; truly",
-    "example": "这真好吃！",
+    "example": "這真好吃！",
     "example_en": "This is really delicious!",
     "level": 2
   },
@@ -1147,15 +1147,15 @@
     "chinese": "找",
     "pinyin": "zhǎo",
     "meaning": "to try to find; to look for",
-    "example": "我在找我的手机。",
+    "example": "我在找我的手機。",
     "example_en": "I'm looking for my phone.",
     "level": 2
   },
   {
-    "chinese": "准备",
+    "chinese": "準備",
     "pinyin": "zhǔn bèi",
     "meaning": "preparation; to prepare",
-    "example": "我准备去北京。",
+    "example": "我準備去北京。",
     "example_en": "I'm getting ready to go to Beijing.",
     "level": 2
   },
@@ -1163,15 +1163,15 @@
     "chinese": "最",
     "pinyin": "zuì",
     "meaning": "variant of 最",
-    "example": "这是最好的苹果。",
+    "example": "這是最好的蘋果。",
     "example_en": "These are the best apples.",
     "level": 2
   },
   {
-    "chinese": "左边",
+    "chinese": "左邊",
     "pinyin": "zuǒ bian",
     "meaning": "left; the left side",
-    "example": "医院在左边。",
+    "example": "醫院在左邊。",
     "example_en": "The hospital is on the left.",
     "level": 2
   },
@@ -1179,15 +1179,15 @@
     "chinese": "再",
     "pinyin": "zài",
     "meaning": "again; once more; re-; second; another",
-    "example": "请再说一次。",
+    "example": "請再說一次。",
     "example_en": "Please say it again.",
     "level": 2
   },
   {
-    "chinese": "自行车",
-    "pinyin": "zì xíng chē",
+    "chinese": "腳踏車",
+    "pinyin": "jiǎotàchē",
     "meaning": "bicycle; bike",
-    "example": "我骑自行车去学校。",
+    "example": "我騎腳踏車去學校。",
     "example_en": "I ride a bike to school.",
     "level": 2
   },
@@ -1203,7 +1203,7 @@
     "chinese": "走",
     "pinyin": "zǒu",
     "meaning": "to walk; to go",
-    "example": "我们走吧。",
+    "example": "我們走吧。",
     "example_en": "Let's go.",
     "level": 2
   }

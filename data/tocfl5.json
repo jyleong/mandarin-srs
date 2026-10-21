@@ -3,7 +3,7 @@
     "chinese": "朝",
     "pinyin": "Cháo",
     "meaning": "abbr. for 朝鲜 Korea",
-    "example": "太阳朝东边升起。",
+    "example": "太陽朝東邊升起。",
     "example_en": "The sun rises toward the east.",
     "level": 5
   },
@@ -11,7 +11,7 @@
     "chinese": "非",
     "pinyin": "Fēi",
     "meaning": "abbr. for 洲, Africa",
-    "example": "你非去不可吗？",
+    "example": "你非去不可嗎？",
     "example_en": "Do you really have to go?",
     "level": 5
   },
@@ -27,15 +27,15 @@
     "chinese": "克",
     "pinyin": "Kè",
     "meaning": "abbr. for 克罗地亚, Croatia; (Tw) abbr. for 克罗埃西亚, Croatia",
-    "example": "这个苹果一百克。",
+    "example": "這個蘋果一百克。",
     "example_en": "This apple is 100 grams.",
     "level": 5
   },
   {
-    "chinese": "时代",
+    "chinese": "時代",
     "pinyin": "Shí dài",
     "meaning": "Time, US weekly news magazine",
-    "example": "我们生活在一个新的时代。",
+    "example": "我們生活在一個新的時代。",
     "example_en": "We live in a new era.",
     "level": 5
   },
@@ -43,7 +43,7 @@
     "chinese": "直",
     "pinyin": "Zhí",
     "meaning": "Zhi (c. 2000 BC), fifth of the legendary Flame Emperors 帝 descended from Shennong 神农 Farmer God",
-    "example": "这条路很直。",
+    "example": "這條路很直。",
     "example_en": "This road is very straight.",
     "level": 5
   },
@@ -51,23 +51,23 @@
     "chinese": "便",
     "pinyin": "biàn",
     "meaning": "convenient; then",
-    "example": "有空便来。",
+    "example": "有空便來。",
     "example_en": "Come when you have time.",
     "level": 5
   },
   {
-    "chinese": "辩论",
+    "chinese": "辯論",
     "pinyin": "biànlùn",
     "meaning": "debate",
-    "example": "他们在辩论这个问题。",
+    "example": "他們在辯論這個問題。",
     "example_en": "They are debating this issue.",
     "level": 5
   },
   {
-    "chinese": "编辑",
+    "chinese": "編輯",
     "pinyin": "biānjí",
     "meaning": "to edit; editor",
-    "example": "他是一名编辑。",
+    "example": "他是一名編輯。",
     "example_en": "He is an editor.",
     "level": 5
   },
@@ -75,31 +75,31 @@
     "chinese": "鞭炮",
     "pinyin": "biānpào",
     "meaning": "firecracker",
-    "example": "春节我们放鞭炮。",
+    "example": "春節我們放鞭炮。",
     "example_en": "We set off firecrackers at Spring Festival.",
     "level": 5
   },
   {
-    "chinese": "标点",
+    "chinese": "標點",
     "pinyin": "biāodiǎn",
     "meaning": "punctuation",
-    "example": "请注意标点符号。",
+    "example": "請注意標點符號。",
     "example_en": "Please pay attention to punctuation.",
     "level": 5
   },
   {
-    "chinese": "标志",
+    "chinese": "標誌",
     "pinyin": "biāozhì",
     "meaning": "sign; symbol",
-    "example": "这是一个交通标志。",
+    "example": "這是一個交通標誌。",
     "example_en": "This is a traffic sign.",
     "level": 5
   },
   {
-    "chinese": "表达",
+    "chinese": "表達",
     "pinyin": "biǎodá",
     "meaning": "to express",
-    "example": "我不知道怎么表达。",
+    "example": "我不知道怎麼表達。",
     "example_en": "I don't know how to express it.",
     "level": 5
   },
@@ -107,7 +107,7 @@
     "chinese": "表面",
     "pinyin": "biǎomiàn",
     "meaning": "surface",
-    "example": "表面看起来很简单。",
+    "example": "表面看起來很簡單。",
     "example_en": "On the surface it looks simple.",
     "level": 5
   },
@@ -115,7 +115,7 @@
     "chinese": "表明",
     "pinyin": "biǎomíng",
     "meaning": "to make clear",
-    "example": "这些数字表明问题很严重。",
+    "example": "這些數字表明問題很嚴重。",
     "example_en": "These numbers show the problem is serious.",
     "level": 5
   },
@@ -128,10 +128,10 @@
     "level": 5
   },
   {
-    "chinese": "表现",
+    "chinese": "表現",
     "pinyin": "biǎoxiàn",
     "meaning": "to show; performance",
-    "example": "他在学校表现很好。",
+    "example": "他在學校表現很好。",
     "example_en": "He performs well at school.",
     "level": 5
   },
@@ -147,23 +147,23 @@
     "chinese": "傍晚",
     "pinyin": "bàngwǎn",
     "meaning": "dusk; evening",
-    "example": "傍晚我们去散步。",
+    "example": "傍晚我們去散步。",
     "example_en": "We go for a walk in the evening.",
     "level": 5
   },
   {
-    "chinese": "办理",
+    "chinese": "辦理",
     "pinyin": "bànlǐ",
     "meaning": "to handle (formalities)",
-    "example": "我去银行办理业务。",
+    "example": "我去銀行辦理業務。",
     "example_en": "I'm going to the bank to handle some business.",
     "level": 5
   },
   {
-    "chinese": "报告",
+    "chinese": "報告",
     "pinyin": "bàogào",
     "meaning": "report; to report",
-    "example": "他做了一个报告。",
+    "example": "他做了一個報告。",
     "example_en": "He gave a report.",
     "level": 5
   },
@@ -171,7 +171,7 @@
     "chinese": "薄",
     "pinyin": "báo",
     "meaning": "thin",
-    "example": "这本书很薄。",
+    "example": "這本書很薄。",
     "example_en": "This book is very thin.",
     "level": 5
   },
@@ -179,7 +179,7 @@
     "chinese": "背",
     "pinyin": "bèi",
     "meaning": "back; to recite",
-    "example": "他把书包背在身上。",
+    "example": "他把書包背在身上。",
     "example_en": "He carries the bag on his back.",
     "level": 5
   },
@@ -187,7 +187,7 @@
     "chinese": "背景",
     "pinyin": "bèijǐng",
     "meaning": "background",
-    "example": "请介绍一下你的背景。",
+    "example": "請介紹一下你的背景。",
     "example_en": "Please introduce your background.",
     "level": 5
   },
@@ -195,15 +195,15 @@
     "chinese": "被子",
     "pinyin": "bèizi",
     "meaning": "quilt",
-    "example": "冬天要盖厚被子。",
+    "example": "冬天要蓋厚被子。",
     "example_en": "You need a thick quilt in winter.",
     "level": 5
   },
   {
-    "chinese": "毕竟",
+    "chinese": "畢竟",
     "pinyin": "bìjìng",
     "meaning": "after all",
-    "example": "他毕竟还是个孩子。",
+    "example": "他畢竟還是個孩子。",
     "example_en": "He is a child after all.",
     "level": 5
   },
@@ -211,7 +211,7 @@
     "chinese": "避免",
     "pinyin": "bìmiǎn",
     "meaning": "to avoid",
-    "example": "我们要避免这个问题。",
+    "example": "我們要避免這個問題。",
     "example_en": "We should avoid this problem.",
     "level": 5
   },
@@ -219,7 +219,7 @@
     "chinese": "必然",
     "pinyin": "bìrán",
     "meaning": "inevitable",
-    "example": "努力学习，进步是必然的。",
+    "example": "努力學習，進步是必然的。",
     "example_en": "If you study hard, progress is inevitable.",
     "level": 5
   },
@@ -227,23 +227,23 @@
     "chinese": "必要",
     "pinyin": "bìyào",
     "meaning": "necessary",
-    "example": "没有必要着急。",
+    "example": "沒有必要著急。",
     "example_en": "There's no need to worry.",
     "level": 5
   },
   {
-    "chinese": "不断",
+    "chinese": "不斷",
     "pinyin": "bù duàn",
     "meaning": "unceasing; uninterrupted",
-    "example": "汉语水平在不断提高。",
+    "example": "華語水平在不斷提高。",
     "example_en": "My Chinese keeps improving.",
     "level": 5
   },
   {
-    "chinese": "部门",
+    "chinese": "部門",
     "pinyin": "bù mén",
     "meaning": "department; branch",
-    "example": "你在哪个部门工作？",
+    "example": "你在哪個部門工作？",
     "example_en": "Which department do you work in?",
     "level": 5
   },
@@ -251,7 +251,7 @@
     "chinese": "包裹",
     "pinyin": "bāoguǒ",
     "meaning": "parcel; package",
-    "example": "我收到一个包裹。",
+    "example": "我收到一個包裹。",
     "example_en": "I received a package.",
     "level": 5
   },
@@ -259,7 +259,7 @@
     "chinese": "包含",
     "pinyin": "bāohán",
     "meaning": "to contain",
-    "example": "价格包含早饭。",
+    "example": "價格包含早飯。",
     "example_en": "The price includes breakfast.",
     "level": 5
   },
@@ -267,15 +267,15 @@
     "chinese": "包括",
     "pinyin": "bāokuò",
     "meaning": "to include",
-    "example": "价格包括早饭。",
+    "example": "價格包括早飯。",
     "example_en": "The price includes breakfast.",
     "level": 5
   },
   {
-    "chinese": "悲观",
+    "chinese": "悲觀",
     "pinyin": "bēiguān",
     "meaning": "pessimistic",
-    "example": "不要太悲观。",
+    "example": "不要太悲觀。",
     "example_en": "Don't be too pessimistic.",
     "level": 5
   },
@@ -283,23 +283,23 @@
     "chinese": "本科",
     "pinyin": "běnkē",
     "meaning": "undergraduate",
-    "example": "他是本科毕业。",
+    "example": "他是本科畢業。",
     "example_en": "He has a bachelor's degree.",
     "level": 5
   },
   {
-    "chinese": "本领",
+    "chinese": "本領",
     "pinyin": "běnlǐng",
     "meaning": "ability; skill",
-    "example": "他有很多本领。",
+    "example": "他有很多本領。",
     "example_en": "He has many skills.",
     "level": 5
   },
   {
-    "chinese": "本质",
+    "chinese": "本質",
     "pinyin": "běnzhì",
     "meaning": "essence; nature",
-    "example": "我们要看问题的本质。",
+    "example": "我們要看問題的本質。",
     "example_en": "We should look at the essence of the problem.",
     "level": 5
   },
@@ -307,31 +307,31 @@
     "chinese": "冰激凌",
     "pinyin": "bīngjīlíng",
     "meaning": "ice cream",
-    "example": "夏天我爱吃冰激凌。",
+    "example": "夏天我愛吃冰激凌。",
     "example_en": "I love ice cream in summer.",
     "level": 5
   },
   {
-    "chinese": "摆",
+    "chinese": "擺",
     "pinyin": "bǎi",
     "meaning": "to put; to sway",
-    "example": "请把花摆在桌子上。",
+    "example": "請把花擺在桌子上。",
     "example_en": "Please put the flowers on the table.",
     "level": 5
   },
   {
-    "chinese": "宝",
+    "chinese": "寶",
     "pinyin": "bǎo",
     "meaning": "treasure",
-    "example": "健康是最重要的宝。",
+    "example": "健康是最重要的寶。",
     "example_en": "Health is the most important treasure.",
     "level": 5
   },
   {
-    "chinese": "宝贝",
+    "chinese": "寶貝",
     "pinyin": "bǎobèi",
     "meaning": "baby; treasure",
-    "example": "这是我的宝贝女儿。",
+    "example": "這是我的寶貝女兒。",
     "example_en": "This is my precious daughter.",
     "level": 5
   },
@@ -339,23 +339,23 @@
     "chinese": "保持",
     "pinyin": "bǎochí",
     "meaning": "to maintain",
-    "example": "请保持安静。",
+    "example": "請保持安靜。",
     "example_en": "Please keep quiet.",
     "level": 5
   },
   {
-    "chinese": "保存",
+    "chinese": "儲存",
     "pinyin": "bǎocún",
     "meaning": "to preserve",
-    "example": "这些文件要保存好。",
+    "example": "這些檔案要儲存好。",
     "example_en": "These documents should be kept safely.",
     "level": 5
   },
   {
-    "chinese": "宝贵",
+    "chinese": "寶貴",
     "pinyin": "bǎoguì",
     "meaning": "valuable",
-    "example": "时间很宝贵。",
+    "example": "時間很寶貴。",
     "example_en": "Time is precious.",
     "level": 5
   },
@@ -363,15 +363,15 @@
     "chinese": "保留",
     "pinyin": "bǎoliú",
     "meaning": "to retain",
-    "example": "我想保留这个习惯。",
+    "example": "我想保留這個習慣。",
     "example_en": "I want to keep this habit.",
     "level": 5
   },
   {
-    "chinese": "保险",
+    "chinese": "保險",
     "pinyin": "bǎoxiǎn",
     "meaning": "insurance",
-    "example": "出门最好买保险。",
+    "example": "出門最好買保險。",
     "example_en": "It's best to buy insurance when you travel.",
     "level": 5
   },
@@ -379,7 +379,7 @@
     "chinese": "把握",
     "pinyin": "bǎwò",
     "meaning": "to grasp; assurance",
-    "example": "我有把握通过考试。",
+    "example": "我有把握透過考試。",
     "example_en": "I'm confident I can pass the test.",
     "level": 5
   },
@@ -387,7 +387,7 @@
     "chinese": "比如",
     "pinyin": "bǐ rú",
     "meaning": "for example; for instance",
-    "example": "我喜欢水果，比如苹果。",
+    "example": "我喜歡水果，比如蘋果。",
     "example_en": "I like fruit, for example apples.",
     "level": 5
   },
@@ -400,18 +400,18 @@
     "level": 5
   },
   {
-    "chinese": "传统",
+    "chinese": "傳統",
     "pinyin": "chuán tǒng",
     "meaning": "tradition; traditional",
-    "example": "春节是中国的传统节日。",
+    "example": "春節是中國的傳統節日。",
     "example_en": "Spring Festival is a traditional Chinese holiday.",
     "level": 5
   },
   {
-    "chinese": "承认",
+    "chinese": "承認",
     "pinyin": "chéng rèn",
     "meaning": "to admit; to concede",
-    "example": "他承认自己错了。",
+    "example": "他承認自己錯了。",
     "example_en": "He admitted he was wrong.",
     "level": 5
   },
@@ -419,63 +419,63 @@
     "chinese": "重",
     "pinyin": "chóng",
     "meaning": "to repeat; repetition",
-    "example": "这个箱子很重。",
+    "example": "這個箱子很重。",
     "example_en": "This box is heavy.",
     "level": 5
   },
   {
-    "chinese": "冲",
+    "chinese": "衝",
     "pinyin": "chōng",
     "meaning": "(of water) to dash against; to mix with water",
-    "example": "他冲出了大门。",
+    "example": "他衝出了大門。",
     "example_en": "He rushed out the gate.",
     "level": 5
   },
   {
-    "chinese": "充满",
+    "chinese": "充滿",
     "pinyin": "chōng mǎn",
     "meaning": "full of; brimming with",
-    "example": "房间里充满了阳光。",
+    "example": "房間裡充滿了陽光。",
     "example_en": "The room is full of sunlight.",
     "level": 5
   },
   {
-    "chinese": "产品",
+    "chinese": "產品",
     "pinyin": "chǎn pǐn",
     "meaning": "goods; merchandise",
-    "example": "这是我们公司的产品。",
+    "example": "這是我們公司的產品。",
     "example_en": "This is our company's product.",
     "level": 5
   },
   {
-    "chinese": "产生",
+    "chinese": "產生",
     "pinyin": "chǎn shēng",
     "meaning": "to arise; to come into being; to come about",
-    "example": "这个问题产生了很多讨论。",
+    "example": "這個問題產生了很多討論。",
     "example_en": "This issue produced a lot of discussion.",
     "level": 5
   },
   {
-    "chinese": "处理",
+    "chinese": "處理",
     "pinyin": "chǔ lǐ",
     "meaning": "to handle; to deal with; to punish",
-    "example": "这件事我来处理。",
+    "example": "這件事我來處理。",
     "example_en": "I'll handle this matter.",
     "level": 5
   },
   {
-    "chinese": "错误",
+    "chinese": "錯誤",
     "pinyin": "cuò wù",
     "meaning": "mistaken; false; wrong; error; mistake",
-    "example": "这是一个错误。",
+    "example": "這是一個錯誤。",
     "example_en": "This is a mistake.",
     "level": 5
   },
   {
-    "chinese": "曾经",
+    "chinese": "曾經",
     "pinyin": "céng jīng",
     "meaning": "once; already",
-    "example": "我曾经去过北京。",
+    "example": "我曾經去過北京。",
     "example_en": "I have been to Beijing before.",
     "level": 5
   },
@@ -483,55 +483,55 @@
     "chinese": "存在",
     "pinyin": "cún zài",
     "meaning": "to exist; to be",
-    "example": "这个问题仍然存在。",
+    "example": "這個問題仍然存在。",
     "example_en": "This problem still exists.",
     "level": 5
   },
   {
-    "chinese": "参与",
+    "chinese": "參與",
     "pinyin": "cān yù",
     "meaning": "to participate (in sth)",
-    "example": "欢迎大家参与讨论。",
+    "example": "歡迎大家參與討論。",
     "example_en": "Everyone is welcome to join the discussion.",
     "level": 5
   },
   {
-    "chinese": "对方",
+    "chinese": "對方",
     "pinyin": "duì fāng",
     "meaning": "the other person; the other side; the other party",
-    "example": "请尊重对方。",
+    "example": "請尊重對方。",
     "example_en": "Please respect the other person.",
     "level": 5
   },
   {
-    "chinese": "对于",
+    "chinese": "對於",
     "pinyin": "duì yú",
     "meaning": "regarding; as far as (sth) is concerned; with regard to",
-    "example": "对于这个问题，我有不同看法。",
+    "example": "對於這個問題，我有不同看法。",
     "example_en": "I have a different view on this issue.",
     "level": 5
   },
   {
-    "chinese": "达到",
+    "chinese": "達到",
     "pinyin": "dá dào",
     "meaning": "to reach; to achieve; to attain",
-    "example": "我们达到了目标。",
+    "example": "我們達到了目標。",
     "example_en": "We reached the goal.",
     "level": 5
   },
   {
-    "chinese": "地区",
+    "chinese": "地區",
     "pinyin": "dì qū",
     "meaning": "local; regional",
-    "example": "这个地区很安全。",
+    "example": "這個地區很安全。",
     "example_en": "This area is very safe.",
     "level": 5
   },
   {
-    "chinese": "的确",
+    "chinese": "的確",
     "pinyin": "dí què",
     "meaning": "really; indeed",
-    "example": "他的确很努力。",
+    "example": "他的確很努力。",
     "example_en": "He really does work hard.",
     "level": 5
   },
@@ -539,7 +539,7 @@
     "chinese": "提",
     "pinyin": "dī",
     "meaning": "used in 防 and 溜",
-    "example": "请把箱子提起来。",
+    "example": "請把箱子提起來。",
     "example_en": "Please lift the suitcase.",
     "level": 5
   },
@@ -547,15 +547,15 @@
     "chinese": "倒",
     "pinyin": "dǎo",
     "meaning": "to fall; to collapse; to lie horizontally; to fail; to go bankrupt",
-    "example": "小心，别倒了。",
+    "example": "小心，別倒了。",
     "example_en": "Careful, don't fall over.",
     "level": 5
   },
   {
-    "chinese": "导致",
+    "chinese": "導致",
     "pinyin": "dǎo zhì",
     "meaning": "to lead to; to create",
-    "example": "下雨导致比赛取消了。",
+    "example": "下雨導致比賽取消了。",
     "example_en": "The rain caused the match to be canceled.",
     "level": 5
   },
@@ -563,7 +563,7 @@
     "chinese": "翻",
     "pinyin": "fān",
     "meaning": "to turn over; to flip over",
-    "example": "请把书翻到第十页。",
+    "example": "請把書翻到第十頁。",
     "example_en": "Please turn to page ten.",
     "level": 5
   },
@@ -571,7 +571,7 @@
     "chinese": "方式",
     "pinyin": "fāng shì",
     "meaning": "way; manner; style; mode; pattern",
-    "example": "我们用这种方式联系。",
+    "example": "我們用這種方式聯絡。",
     "example_en": "We contact each other this way.",
     "level": 5
   },
@@ -579,31 +579,31 @@
     "chinese": "分析",
     "pinyin": "fēn xī",
     "meaning": "to analyze; analysis",
-    "example": "请分析一下原因。",
+    "example": "請分析一下原因。",
     "example_en": "Please analyze the reason.",
     "level": 5
   },
   {
-    "chinese": "反应",
+    "chinese": "反應",
     "pinyin": "fǎn yìng",
     "meaning": "to react; to respond",
-    "example": "他的反应很快。",
+    "example": "他的反應很快。",
     "example_en": "His reaction is very fast.",
     "level": 5
   },
   {
-    "chinese": "冠军",
+    "chinese": "冠軍",
     "pinyin": "guàn jūn",
     "meaning": "champion",
-    "example": "他们得了冠军。",
+    "example": "他們得了冠軍。",
     "example_en": "They won the championship.",
     "level": 5
   },
   {
-    "chinese": "个人",
+    "chinese": "個人",
     "pinyin": "gè rén",
     "meaning": "individual; personal",
-    "example": "这是我个人的看法。",
+    "example": "這是我個人的看法。",
     "example_en": "This is my personal view.",
     "level": 5
   },
@@ -619,7 +619,7 @@
     "chinese": "根",
     "pinyin": "gēn",
     "meaning": "root; basis",
-    "example": "这棵树的根很深。",
+    "example": "這棵樹的根很深。",
     "example_en": "This tree's roots are very deep.",
     "level": 5
   },
@@ -643,15 +643,15 @@
     "chinese": "搞",
     "pinyin": "gǎo",
     "meaning": "to do; to make",
-    "example": "你在搞什么？",
+    "example": "你在搞什麼？",
     "example_en": "What are you up to?",
     "level": 5
   },
   {
-    "chinese": "恢复",
+    "chinese": "恢復",
     "pinyin": "huī fù",
     "meaning": "to reinstate; to resume",
-    "example": "他的身体恢复了。",
+    "example": "他的身體恢復了。",
     "example_en": "His health has recovered.",
     "level": 5
   },
@@ -659,15 +659,15 @@
     "chinese": "合作",
     "pinyin": "hé zuò",
     "meaning": "to cooperate; to collaborate",
-    "example": "我们合作得很好。",
+    "example": "我們合作得很好。",
     "example_en": "We cooperate well.",
     "level": 5
   },
   {
-    "chinese": "价值",
+    "chinese": "價值",
     "pinyin": "jià zhí",
     "meaning": "value; worth",
-    "example": "这本书很有价值。",
+    "example": "這本書很有價值。",
     "example_en": "This book is very valuable.",
     "level": 5
   },
@@ -675,15 +675,15 @@
     "chinese": "建立",
     "pinyin": "jiàn lì",
     "meaning": "to establish; to set up",
-    "example": "我们建立了友谊。",
+    "example": "我們建立了友誼。",
     "example_en": "We built a friendship.",
     "level": 5
   },
   {
-    "chinese": "建议",
+    "chinese": "建議",
     "pinyin": "jiàn yì",
     "meaning": "to propose; to suggest; to recommend; proposal; suggestion; recommendation",
-    "example": "我有一个建议。",
+    "example": "我有一個建議。",
     "example_en": "I have a suggestion.",
     "level": 5
   },
@@ -699,39 +699,39 @@
     "chinese": "家庭",
     "pinyin": "jiā tíng",
     "meaning": "family; household",
-    "example": "我有一个幸福的家庭。",
+    "example": "我有一個幸福的家庭。",
     "example_en": "I have a happy family.",
     "level": 5
   },
   {
-    "chinese": "节",
+    "chinese": "節",
     "pinyin": "jiē",
     "meaning": "see 节骨眼",
-    "example": "这是一节汉语课。",
+    "example": "這是一節華語課。",
     "example_en": "This is a Chinese class period.",
     "level": 5
   },
   {
-    "chinese": "接着",
+    "chinese": "接著",
     "pinyin": "jiē zhe",
     "meaning": "to catch and hold on; to continue",
-    "example": "请接着说。",
+    "example": "請接著說。",
     "example_en": "Please continue.",
     "level": 5
   },
   {
-    "chinese": "绝对",
+    "chinese": "絕對",
     "pinyin": "jué duì",
     "meaning": "absolute; unconditional",
-    "example": "我绝对不会忘记。",
+    "example": "我絕對不會忘記。",
     "example_en": "I will absolutely not forget.",
     "level": 5
   },
   {
-    "chinese": "记录",
+    "chinese": "記錄",
     "pinyin": "jì lù",
     "meaning": "to record; record (written account)",
-    "example": "请记录这些数字。",
+    "example": "請記錄這些數字。",
     "example_en": "Please record these numbers.",
     "level": 5
   },
@@ -739,7 +739,7 @@
     "chinese": "集中",
     "pinyin": "jí zhōng",
     "meaning": "to concentrate; to centralize",
-    "example": "请集中注意力。",
+    "example": "請集中注意力。",
     "example_en": "Please concentrate.",
     "level": 5
   },
@@ -747,7 +747,7 @@
     "chinese": "基本",
     "pinyin": "jī běn",
     "meaning": "basic; fundamental",
-    "example": "我基本听懂了。",
+    "example": "我基本聽懂了。",
     "example_en": "I basically understood.",
     "level": 5
   },
@@ -755,15 +755,15 @@
     "chinese": "居然",
     "pinyin": "jū rán",
     "meaning": "unexpectedly; to one's surprise",
-    "example": "他居然忘了带护照。",
+    "example": "他居然忘了帶護照。",
     "example_en": "He actually forgot his passport.",
     "level": 5
   },
   {
-    "chinese": "看来",
+    "chinese": "看來",
     "pinyin": "kàn lai",
     "meaning": "apparently; it seems that",
-    "example": "看来今天要下雨。",
+    "example": "看來今天要下雨。",
     "example_en": "It looks like it will rain today.",
     "level": 5
   },
@@ -771,47 +771,47 @@
     "chinese": "控制",
     "pinyin": "kòng zhì",
     "meaning": "to control",
-    "example": "请控制你的声音。",
+    "example": "請控制你的聲音。",
     "example_en": "Please control your voice.",
     "level": 5
   },
   {
-    "chinese": "开心",
+    "chinese": "開心",
     "pinyin": "kāi xīn",
     "meaning": "to feel happy; to rejoice",
-    "example": "孩子们很开心。",
+    "example": "孩子們很開心。",
     "example_en": "The children are happy.",
     "level": 5
   },
   {
-    "chinese": "颗",
+    "chinese": "顆",
     "pinyin": "kē",
     "meaning": "classifier for small spheres, pearls, corn grains, teeth, hearts, satellites etc",
-    "example": "天上有一颗星星。",
+    "example": "天上有一顆星星。",
     "example_en": "There is a star in the sky.",
     "level": 5
   },
   {
-    "chinese": "空间",
+    "chinese": "空間",
     "pinyin": "kōng jiān",
     "meaning": "space; room; (fig.) scope; leeway",
-    "example": "房间里没有空间了。",
+    "example": "房間裡沒有空間了。",
     "example_en": "There's no space left in the room.",
     "level": 5
   },
   {
-    "chinese": "来自",
+    "chinese": "來自",
     "pinyin": "lái zì",
     "meaning": "to come from (a place); From: (in email header)",
-    "example": "我来自美国。",
+    "example": "我來自美國。",
     "example_en": "I come from the United States.",
     "level": 5
   },
   {
-    "chinese": "类",
+    "chinese": "類",
     "pinyin": "lèi",
     "meaning": "kind; type",
-    "example": "这是同一类问题。",
+    "example": "這是同一類問題。",
     "example_en": "This is the same kind of problem.",
     "level": 5
   },
@@ -819,7 +819,7 @@
     "chinese": "力量",
     "pinyin": "lì liang",
     "meaning": "power; force",
-    "example": "团结就是力量。",
+    "example": "團結就是力量。",
     "example_en": "Unity is strength.",
     "level": 5
   },
@@ -827,15 +827,15 @@
     "chinese": "利用",
     "pinyin": "lì yòng",
     "meaning": "to exploit; to make use of",
-    "example": "我们要利用好时间。",
+    "example": "我們要利用好時間。",
     "example_en": "We should make good use of time.",
     "level": 5
   },
   {
-    "chinese": "老板",
+    "chinese": "老闆",
     "pinyin": "lǎo bǎn",
     "meaning": "variant of 老板",
-    "example": "老板今天不在。",
+    "example": "老闆今天不在。",
     "example_en": "The boss isn't in today.",
     "level": 5
   },
@@ -843,23 +843,23 @@
     "chinese": "理由",
     "pinyin": "lǐ yóu",
     "meaning": "reason; grounds",
-    "example": "你有什么理由？",
+    "example": "你有什麼理由？",
     "example_en": "What reason do you have?",
     "level": 5
   },
   {
-    "chinese": "领导",
+    "chinese": "領導",
     "pinyin": "lǐng dǎo",
     "meaning": "lead; leading",
-    "example": "领导在开会。",
+    "example": "領導在開會。",
     "example_en": "The leader is in a meeting.",
     "level": 5
   },
   {
-    "chinese": "面对",
+    "chinese": "面對",
     "pinyin": "miàn duì",
     "meaning": "to face; to confront",
-    "example": "我们要面对这个问题。",
+    "example": "我們要面對這個問題。",
     "example_en": "We have to face this problem.",
     "level": 5
   },
@@ -867,23 +867,23 @@
     "chinese": "秒",
     "pinyin": "miǎo",
     "meaning": "second (unit of time); arc second (angular measurement unit)",
-    "example": "请等三十秒。",
+    "example": "請等三十秒。",
     "example_en": "Please wait thirty seconds.",
     "level": 5
   },
   {
-    "chinese": "明显",
+    "chinese": "明顯",
     "pinyin": "míng xiǎn",
     "meaning": "clear; distinct",
-    "example": "进步很明显。",
+    "example": "進步很明顯。",
     "example_en": "The progress is obvious.",
     "level": 5
   },
   {
-    "chinese": "目标",
+    "chinese": "目標",
     "pinyin": "mù biāo",
     "meaning": "target; goal",
-    "example": "我的目标是学好汉语。",
+    "example": "我的目標是學好華語。",
     "example_en": "My goal is to learn Chinese well.",
     "level": 5
   },
@@ -899,7 +899,7 @@
     "chinese": "某",
     "pinyin": "mǒu",
     "meaning": "some; a certain",
-    "example": "某个人给你打电话了。",
+    "example": "某個人給你打電話了。",
     "example_en": "Someone called you.",
     "level": 5
   },
@@ -931,23 +931,23 @@
     "chinese": "拍",
     "pinyin": "pāi",
     "meaning": "to pat; to clap",
-    "example": "我拍了一张照片。",
+    "example": "我拍了一張照片。",
     "example_en": "I took a photo.",
     "level": 5
   },
   {
-    "chinese": "抢",
+    "chinese": "搶",
     "pinyin": "qiāng",
     "meaning": "(literary) to knock against (esp. to knock one's head on the ground in grief or rage)",
-    "example": "别抢，排队！",
+    "example": "別搶，排隊！",
     "example_en": "Don't rush; line up!",
     "level": 5
   },
   {
-    "chinese": "确定",
+    "chinese": "確定",
     "pinyin": "què dìng",
     "meaning": "definite; certain",
-    "example": "时间还没确定。",
+    "example": "時間還沒確定。",
     "example_en": "The time isn't confirmed yet.",
     "level": 5
   },
@@ -955,23 +955,23 @@
     "chinese": "期待",
     "pinyin": "qī dài",
     "meaning": "to look forward to; to await",
-    "example": "我期待见到你。",
+    "example": "我期待見到你。",
     "example_en": "I look forward to seeing you.",
     "level": 5
   },
   {
-    "chinese": "亲爱",
+    "chinese": "親愛",
     "pinyin": "qīn ài",
     "meaning": "dear; beloved",
-    "example": "亲爱的朋友，你好！",
+    "example": "親愛的朋友，你好！",
     "example_en": "Dear friend, hello!",
     "level": 5
   },
   {
-    "chinese": "人类",
+    "chinese": "人類",
     "pinyin": "rén lèi",
     "meaning": "humanity; human race",
-    "example": "语言是人类的工具。",
+    "example": "語言是人類的工具。",
     "example_en": "Language is a tool of humankind.",
     "level": 5
   },
@@ -979,7 +979,7 @@
     "chinese": "人生",
     "pinyin": "rén shēng",
     "meaning": "life (one's time on earth)",
-    "example": "人生很短，要好好过。",
+    "example": "人生很短，要好好過。",
     "example_en": "Life is short; live it well.",
     "level": 5
   },
@@ -987,15 +987,15 @@
     "chinese": "人物",
     "pinyin": "rén wù",
     "meaning": "person; personage; figure (esp. sb of importance); character (in a play, novel etc)",
-    "example": "他是历史上的重要人物。",
+    "example": "他是歷史上的重要人物。",
     "example_en": "He is an important figure in history.",
     "level": 5
   },
   {
-    "chinese": "人员",
+    "chinese": "人員",
     "pinyin": "rén yuán",
     "meaning": "staff; crew",
-    "example": "公司需要更多人员。",
+    "example": "公司需要更多人員。",
     "example_en": "The company needs more staff.",
     "level": 5
   },
@@ -1003,23 +1003,23 @@
     "chinese": "如何",
     "pinyin": "rú hé",
     "meaning": "how; what way",
-    "example": "我们应该如何解决？",
+    "example": "我們應該如何解決？",
     "example_en": "How should we solve this?",
     "level": 5
   },
   {
-    "chinese": "设计",
+    "chinese": "設計",
     "pinyin": "shè jì",
     "meaning": "to design; to plan; design; plan",
-    "example": "谁设计了这座楼？",
+    "example": "誰設計了這座樓？",
     "example_en": "Who designed this building?",
     "level": 5
   },
   {
-    "chinese": "胜利",
+    "chinese": "勝利",
     "pinyin": "shèng lì",
     "meaning": "victory",
-    "example": "这是一次很大的胜利。",
+    "example": "這是一次很大的勝利。",
     "example_en": "This is a big victory.",
     "level": 5
   },
@@ -1032,26 +1032,26 @@
     "level": 5
   },
   {
-    "chinese": "事实",
+    "chinese": "事實",
     "pinyin": "shì shí",
     "meaning": "fact",
-    "example": "事实就是这样。",
+    "example": "事實就是這樣。",
     "example_en": "That's the fact.",
     "level": 5
   },
   {
-    "chinese": "实现",
+    "chinese": "實現",
     "pinyin": "shí xiàn",
     "meaning": "to achieve; to implement",
-    "example": "我实现了自己的目标。",
+    "example": "我實現了自己的目標。",
     "example_en": "I achieved my goal.",
     "level": 5
   },
   {
-    "chinese": "杀",
+    "chinese": "殺",
     "pinyin": "shā",
     "meaning": "to kill; to murder",
-    "example": "电影里有人被杀了。",
+    "example": "電影裡有人被殺了。",
     "example_en": "Someone was killed in the movie.",
     "level": 5
   },
@@ -1059,7 +1059,7 @@
     "chinese": "身份",
     "pinyin": "shēn fèn",
     "meaning": "identity; aspect of one's identity (i.e. sth that one is – mayor, father, permanent resident etc)",
-    "example": "请出示你的身份证件。",
+    "example": "請出示你的身份證件。",
     "example_en": "Please show your ID.",
     "level": 5
   },
@@ -1067,7 +1067,7 @@
     "chinese": "失去",
     "pinyin": "shī qù",
     "meaning": "to lose",
-    "example": "我失去了这个机会。",
+    "example": "我失去了這個機會。",
     "example_en": "I lost this opportunity.",
     "level": 5
   },
@@ -1075,23 +1075,23 @@
     "chinese": "傻",
     "pinyin": "shǎ",
     "meaning": "foolish",
-    "example": "别犯傻了。",
+    "example": "別犯傻了。",
     "example_en": "Don't be silly.",
     "level": 5
   },
   {
-    "chinese": "手术",
+    "chinese": "手術",
     "pinyin": "shǒu shù",
     "meaning": "(surgical) operation; surgery",
-    "example": "他昨天做了手术。",
+    "example": "他昨天做了手術。",
     "example_en": "He had surgery yesterday.",
     "level": 5
   },
   {
-    "chinese": "属于",
+    "chinese": "屬於",
     "pinyin": "shǔ yú",
     "meaning": "to be classified as; to belong to",
-    "example": "这本书属于图书馆。",
+    "example": "這本書屬於圖書館。",
     "example_en": "This book belongs to the library.",
     "level": 5
   },
@@ -1099,7 +1099,7 @@
     "chinese": "所",
     "pinyin": "suǒ",
     "meaning": "actually; place",
-    "example": "这是我所知道的。",
+    "example": "這是我所知道的。",
     "example_en": "This is what I know.",
     "level": 5
   },
@@ -1107,7 +1107,7 @@
     "chinese": "似乎",
     "pinyin": "sì hū",
     "meaning": "it seems; seemingly; as if",
-    "example": "他似乎不太高兴。",
+    "example": "他似乎不太高興。",
     "example_en": "He doesn't seem very happy.",
     "level": 5
   },
@@ -1115,7 +1115,7 @@
     "chinese": "套",
     "pinyin": "tào",
     "meaning": "to cover; to encase",
-    "example": "我买了一套新衣服。",
+    "example": "我買了一套新衣服。",
     "example_en": "I bought a new set of clothes.",
     "level": 5
   },
@@ -1123,23 +1123,23 @@
     "chinese": "痛苦",
     "pinyin": "tòng kǔ",
     "meaning": "pain; suffering",
-    "example": "分手让他很痛苦。",
+    "example": "分手讓他很痛苦。",
     "example_en": "The breakup made him miserable.",
     "level": 5
   },
   {
-    "chinese": "同时",
+    "chinese": "同時",
     "pinyin": "tóng shí",
     "meaning": "at the same time; simultaneously",
-    "example": "他同时学汉语和英语。",
+    "example": "他同時學華語和英語。",
     "example_en": "He studies Chinese and English at the same time.",
     "level": 5
   },
   {
-    "chinese": "投资",
+    "chinese": "投資",
     "pinyin": "tóu zī",
     "meaning": "investment; to invest",
-    "example": "他想投资这家公司。",
+    "example": "他想投資這家公司。",
     "example_en": "He wants to invest in this company.",
     "level": 5
   },
@@ -1147,15 +1147,15 @@
     "chinese": "完美",
     "pinyin": "wán měi",
     "meaning": "perfect",
-    "example": "没有完美的计划。",
+    "example": "沒有完美的計劃。",
     "example_en": "There is no perfect plan.",
     "level": 5
   },
   {
-    "chinese": "未来",
+    "chinese": "未來",
     "pinyin": "wèi lái",
     "meaning": "future; tomorrow",
-    "example": "我对未来很有信心。",
+    "example": "我對未來很有信心。",
     "example_en": "I'm confident about the future.",
     "level": 5
   },
@@ -1163,7 +1163,7 @@
     "chinese": "位置",
     "pinyin": "wèi zhi",
     "meaning": "position; place",
-    "example": "请坐这个位置。",
+    "example": "請坐這個位置。",
     "example_en": "Please take this seat.",
     "level": 5
   },
@@ -1171,47 +1171,47 @@
     "chinese": "唯一",
     "pinyin": "wéi yī",
     "meaning": "only; sole",
-    "example": "这是唯一的办法。",
+    "example": "這是唯一的辦法。",
     "example_en": "This is the only way.",
     "level": 5
   },
   {
-    "chinese": "文件",
+    "chinese": "檔案",
     "pinyin": "wén jiàn",
     "meaning": "document; file",
-    "example": "请看这些文件。",
+    "example": "請看這些檔案。",
     "example_en": "Please look at these files.",
     "level": 5
   },
   {
-    "chinese": "伟大",
+    "chinese": "偉大",
     "pinyin": "wěi dà",
     "meaning": "huge; great; grand; worthy of the greatest admiration; important (contribution etc)",
-    "example": "这是一项伟大的工作。",
+    "example": "這是一項偉大的工作。",
     "example_en": "This is a great piece of work.",
     "level": 5
   },
   {
-    "chinese": "现实",
+    "chinese": "現實",
     "pinyin": "xiàn shí",
     "meaning": "reality; actuality",
-    "example": "我们必须面对现实。",
+    "example": "我們必須面對現實。",
     "example_en": "We must face reality.",
     "level": 5
   },
   {
-    "chinese": "项目",
+    "chinese": "專案",
     "pinyin": "xiàng mù",
     "meaning": "item; project",
-    "example": "这是一个新项目。",
+    "example": "這是一個新專案。",
     "example_en": "This is a new project.",
     "level": 5
   },
   {
-    "chinese": "相当",
+    "chinese": "相當",
     "pinyin": "xiāng dāng",
     "meaning": "equivalent to; appropriate",
-    "example": "他的汉语相当好。",
+    "example": "他的華語相當好。",
     "example_en": "His Chinese is quite good.",
     "level": 5
   },
@@ -1219,23 +1219,23 @@
     "chinese": "兄弟",
     "pinyin": "xiōng dì",
     "meaning": "brothers; younger brother",
-    "example": "他们是亲兄弟。",
+    "example": "他們是親兄弟。",
     "example_en": "They are brothers.",
     "level": 5
   },
   {
-    "chinese": "显然",
+    "chinese": "顯然",
     "pinyin": "xiǎn rán",
     "meaning": "clearly; evidently; obviously",
-    "example": "显然他不知道。",
+    "example": "顯然他不知道。",
     "example_en": "Obviously he doesn't know.",
     "level": 5
   },
   {
-    "chinese": "显示",
+    "chinese": "顯示",
     "pinyin": "xiǎn shì",
     "meaning": "to show; to illustrate",
-    "example": "电脑显示有一个错误。",
+    "example": "電腦顯示有一個錯誤。",
     "example_en": "The computer shows an error.",
     "level": 5
   },
@@ -1243,7 +1243,7 @@
     "chinese": "享受",
     "pinyin": "xiǎng shòu",
     "meaning": "to enjoy; to live it up",
-    "example": "我喜欢享受安静。",
+    "example": "我喜歡享受安靜。",
     "example_en": "I like enjoying the quiet.",
     "level": 5
   },
@@ -1251,55 +1251,55 @@
     "chinese": "系",
     "pinyin": "xì",
     "meaning": "to connect; to relate to",
-    "example": "他系着一条红领带。",
+    "example": "他在中文系讀書。",
     "example_en": "He is wearing a red tie.",
     "level": 5
   },
   {
-    "chinese": "系统",
+    "chinese": "系統",
     "pinyin": "xì tǒng",
     "meaning": "system",
-    "example": "电脑系统出问题了。",
+    "example": "電腦系統出問題了。",
     "example_en": "There's a problem with the computer system.",
     "level": 5
   },
   {
-    "chinese": "信息",
+    "chinese": "資訊",
     "pinyin": "xìn xī",
     "meaning": "information; news",
-    "example": "我收到一条信息。",
+    "example": "我收到一條資訊。",
     "example_en": "I received a message.",
     "level": 5
   },
   {
-    "chinese": "行动",
+    "chinese": "行動",
     "pinyin": "xíng dòng",
     "meaning": "operation; action",
-    "example": "我们应该马上行动。",
+    "example": "我們應該馬上行動。",
     "example_en": "We should act right away.",
     "level": 5
   },
   {
-    "chinese": "行为",
+    "chinese": "行為",
     "pinyin": "xíng wéi",
     "meaning": "action; conduct",
-    "example": "这种行为不对。",
+    "example": "這種行為不對。",
     "example_en": "This kind of behavior is wrong.",
     "level": 5
   },
   {
-    "chinese": "训练",
+    "chinese": "訓練",
     "pinyin": "xùn liàn",
     "meaning": "to train; to drill",
-    "example": "运动员每天训练。",
+    "example": "運動員每天訓練。",
     "example_en": "Athletes train every day.",
     "level": 5
   },
   {
-    "chinese": "寻找",
+    "chinese": "尋找",
     "pinyin": "xún zhǎo",
     "meaning": "to seek; to look for",
-    "example": "我在寻找我的钥匙。",
+    "example": "我在尋找我的鑰匙。",
     "example_en": "I'm looking for my keys.",
     "level": 5
   },
@@ -1307,7 +1307,7 @@
     "chinese": "心理",
     "pinyin": "xīn lǐ",
     "meaning": "psychology; mentality",
-    "example": "这是一个心理问题。",
+    "example": "這是一個心理問題。",
     "example_en": "This is a psychological issue.",
     "level": 5
   },
@@ -1323,15 +1323,15 @@
     "chinese": "夜",
     "pinyin": "yè",
     "meaning": "variant of 夜",
-    "example": "夜深了，该睡觉了。",
+    "example": "夜深了，該睡覺了。",
     "example_en": "It's late at night; time to sleep.",
     "level": 5
   },
   {
-    "chinese": "意义",
+    "chinese": "意義",
     "pinyin": "yì yì",
     "meaning": "sense; meaning",
-    "example": "学习汉语很有意义。",
+    "example": "學習華語很有意義。",
     "example_en": "Studying Chinese is meaningful.",
     "level": 5
   },
@@ -1339,7 +1339,7 @@
     "chinese": "一旦",
     "pinyin": "yī dàn",
     "meaning": "in case (sth happens); if",
-    "example": "一旦开始，就不要停。",
+    "example": "一旦開始，就不要停。",
     "example_en": "Once you start, don't stop.",
     "level": 5
   },
@@ -1347,55 +1347,55 @@
     "chinese": "以及",
     "pinyin": "yǐ jí",
     "meaning": "as well as; too",
-    "example": "我喜欢苹果以及香蕉。",
+    "example": "我喜歡蘋果以及香蕉。",
     "example_en": "I like apples as well as bananas.",
     "level": 5
   },
   {
-    "chinese": "以来",
+    "chinese": "以來",
     "pinyin": "yǐ lái",
     "meaning": "since (a previous event)",
-    "example": "今年以来我一直在北京。",
+    "example": "今年以來我一直在北京。",
     "example_en": "I've been in Beijing since the start of this year.",
     "level": 5
   },
   {
-    "chinese": "状况",
+    "chinese": "狀況",
     "pinyin": "zhuàng kuàng",
     "meaning": "condition; state; situation",
-    "example": "你的身体状况怎么样？",
+    "example": "你的身體狀況怎麼樣？",
     "example_en": "How is your physical condition?",
     "level": 5
   },
   {
-    "chinese": "状态",
+    "chinese": "狀態",
     "pinyin": "zhuàng tài",
     "meaning": "condition; state; state of affairs",
-    "example": "他今天的状态很好。",
+    "example": "他今天的狀態很好。",
     "example_en": "He's in a good state today.",
     "level": 5
   },
   {
-    "chinese": "专家",
+    "chinese": "專家",
     "pinyin": "zhuān jiā",
     "meaning": "expert; specialist",
-    "example": "他是汉语专家。",
+    "example": "他是華語專家。",
     "example_en": "He is a Chinese language expert.",
     "level": 5
   },
   {
-    "chinese": "装",
+    "chinese": "裝",
     "pinyin": "zhuāng",
     "meaning": "adornment; to adorn",
-    "example": "请把衣服装进箱子。",
+    "example": "請把衣服裝進箱子。",
     "example_en": "Please pack the clothes into the suitcase.",
     "level": 5
   },
   {
-    "chinese": "战争",
+    "chinese": "戰爭",
     "pinyin": "zhàn zhēng",
     "meaning": "war; conflict",
-    "example": "人们不喜欢战争。",
+    "example": "人們不喜歡戰爭。",
     "example_en": "People don't like war.",
     "level": 5
   },
@@ -1403,7 +1403,7 @@
     "chinese": "政府",
     "pinyin": "zhèng fǔ",
     "meaning": "government",
-    "example": "政府很关心这个问题。",
+    "example": "政府很關心這個問題。",
     "example_en": "The government cares about this issue.",
     "level": 5
   },
@@ -1416,26 +1416,26 @@
     "level": 5
   },
   {
-    "chinese": "治疗",
+    "chinese": "治療",
     "pinyin": "zhì liáo",
     "meaning": "to treat (an illness); medical treatment",
-    "example": "他正在接受治疗。",
+    "example": "他正在接受治療。",
     "example_en": "He is receiving treatment.",
     "level": 5
   },
   {
-    "chinese": "执行",
+    "chinese": "執行",
     "pinyin": "zhí xíng",
     "meaning": "to implement; to carry out",
-    "example": "请执行这个计划。",
+    "example": "請執行這個計劃。",
     "example_en": "Please carry out this plan.",
     "level": 5
   },
   {
-    "chinese": "真实",
+    "chinese": "真實",
     "pinyin": "zhēn shí",
     "meaning": "true; real",
-    "example": "这是一个真实的故事。",
+    "example": "這是一個真實的故事。",
     "example_en": "This is a true story.",
     "level": 5
   },
@@ -1443,15 +1443,15 @@
     "chinese": "正",
     "pinyin": "zhēng",
     "meaning": "first month of the lunar year",
-    "example": "他正在吃饭。",
+    "example": "他正在吃飯。",
     "example_en": "He is eating right now.",
     "level": 5
   },
   {
-    "chinese": "整个",
+    "chinese": "整個",
     "pinyin": "zhěng gè",
     "meaning": "whole; entire",
-    "example": "整个城市都很安静。",
+    "example": "整個城市都很安靜。",
     "example_en": "The whole city is quiet.",
     "level": 5
   },
@@ -1467,15 +1467,15 @@
     "chinese": "作品",
     "pinyin": "zuò pǐn",
     "meaning": "work (of art); opus",
-    "example": "这是他的作品。",
+    "example": "這是他的作品。",
     "example_en": "This is his work.",
     "level": 5
   },
   {
-    "chinese": "作为",
+    "chinese": "作為",
     "pinyin": "zuò wéi",
     "meaning": "one's conduct; deed",
-    "example": "作为学生，你应该努力。",
+    "example": "作為學生，你應該努力。",
     "example_en": "As a student, you should work hard.",
     "level": 5
   },
@@ -1483,15 +1483,15 @@
     "chinese": "造成",
     "pinyin": "zào chéng",
     "meaning": "to bring about; to create",
-    "example": "大雨造成了很多问题。",
+    "example": "大雨造成了很多問題。",
     "example_en": "The heavy rain caused many problems.",
     "level": 5
   },
   {
-    "chinese": "则",
+    "chinese": "則",
     "pinyin": "zé",
     "meaning": "(literary) (conjunction used to express contrast with a previous clause) but; then",
-    "example": "他不来，我则自己去。",
+    "example": "他不來，我則自己去。",
     "example_en": "If he doesn't come, then I'll go myself.",
     "level": 5
   },
@@ -1499,47 +1499,47 @@
     "chinese": "自由",
     "pinyin": "zì yóu",
     "meaning": "freedom; liberty; free; unrestricted",
-    "example": "我喜欢自由的生活。",
+    "example": "我喜歡自由的生活。",
     "example_en": "I like a free life.",
     "level": 5
   },
   {
-    "chinese": "资料",
+    "chinese": "資料",
     "pinyin": "zī liào",
     "meaning": "material; resources",
-    "example": "请看这些资料。",
+    "example": "請看這些資料。",
     "example_en": "Please look at these materials.",
     "level": 5
   },
   {
-    "chinese": "总统",
+    "chinese": "總統",
     "pinyin": "zǒng tǒng",
     "meaning": "president (of a country)",
-    "example": "总统发表了讲话。",
+    "example": "總統發表了講話。",
     "example_en": "The president gave a speech.",
     "level": 5
   },
   {
-    "chinese": "爱护",
+    "chinese": "愛護",
     "pinyin": "àihù",
     "meaning": "to cherish; to take care of",
-    "example": "我们要爱护环境。",
+    "example": "我們要愛護環境。",
     "example_en": "We should take care of the environment.",
     "level": 5
   },
   {
-    "chinese": "爱惜",
+    "chinese": "愛惜",
     "pinyin": "àixī",
     "meaning": "to treasure",
-    "example": "请爱惜你的身体。",
+    "example": "請愛惜你的身體。",
     "example_en": "Please take care of your body.",
     "level": 5
   },
   {
-    "chinese": "爱心",
+    "chinese": "愛心",
     "pinyin": "àixīn",
     "meaning": "compassion; loving heart",
-    "example": "她很有爱心。",
+    "example": "她很有愛心。",
     "example_en": "She is very caring.",
     "level": 5
   },
@@ -1547,7 +1547,7 @@
     "chinese": "岸",
     "pinyin": "àn",
     "meaning": "bank; shore",
-    "example": "我们在河岸散步。",
+    "example": "我們在河岸散步。",
     "example_en": "We walk along the river bank.",
     "level": 5
   },
@@ -1555,15 +1555,15 @@
     "chinese": "暗",
     "pinyin": "àn",
     "meaning": "dark; secret",
-    "example": "房间里很暗。",
+    "example": "房間裡很暗。",
     "example_en": "It's dark in the room.",
     "level": 5
   },
   {
-    "chinese": "昂扬",
+    "chinese": "昂揚",
     "pinyin": "ángyáng",
     "meaning": "high-spirited",
-    "example": "队员们情绪很昂扬。",
+    "example": "隊員們情緒很昂揚。",
     "example_en": "The players' spirits are high.",
     "level": 5
   },
@@ -1571,7 +1571,7 @@
     "chinese": "熬",
     "pinyin": "áo",
     "meaning": "to endure; to stew",
-    "example": "汤要熬很长时间。",
+    "example": "湯要熬很長時間。",
     "example_en": "The soup needs to simmer a long time.",
     "level": 5
   },
@@ -1579,7 +1579,7 @@
     "chinese": "唉",
     "pinyin": "āi",
     "meaning": "sigh (interjection)",
-    "example": "唉，又迟到了。",
+    "example": "唉，又遲到了。",
     "example_en": "Sigh, late again.",
     "level": 5
   },
@@ -1592,10 +1592,10 @@
     "level": 5
   },
   {
-    "chinese": "安装",
+    "chinese": "安裝",
     "pinyin": "ānzhuāng",
     "meaning": "to install",
-    "example": "请帮我安装这个软件。",
+    "example": "請幫我安裝這個軟體。",
     "example_en": "Please help me install this software.",
     "level": 5
   }

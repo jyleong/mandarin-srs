@@ -2,7 +2,7 @@
 
 A terminal spaced-repetition app for Mandarin: you see **汉字**, type the **English meaning**, then rate how well you knew it. Pinyin and the gloss stay hidden until after you answer.
 
-Built as a small Rust + [ratatui](https://ratatui.rs/) TUI. The select screen is labeled **TOCFL 1–6**. Word lists are still the old HSK 2.0 exclusive lists (Traditional remap comes later). Progress is stored locally as JSON.
+Built as a small Rust + [ratatui](https://ratatui.rs/) TUI. The select screen is labeled **TOCFL 1–6**. Headwords and examples are **Taiwan Traditional** (OpenCC `s2twp`, plus a few lexical swaps such as 捷運 / 華語). The *membership* of each level is still the old HSK 2.0 lists until a later remap. Progress is stored locally as JSON.
 
 ## Requirements
 
@@ -89,7 +89,8 @@ Text version of the same loop:
 | File | Role |
 |------|------|
 | `data/tocfl1.json` … `tocfl6.json` | One file per labeled level: `chinese`, `pinyin`, `meaning`, `level`; `example` / `example_en` (shown on Reveal) |
-| `data/progress.json` | Per-card `interval_days` and `due_date` (`YYYY-MM-DD`), keyed by `tocflN:汉字`. Old `hskN:` keys are rewritten on load (`progress.json.bak`). |
+| `data/id_map.json` | Old card id → new id (script / wording). Applied when loading progress. |
+| `data/progress.json` | Per-card `interval_days` and `due_date` (`YYYY-MM-DD`), keyed by `tocflN:漢字`. Old `hskN:` or Simplified keys are rewritten on load (`progress.json.bak`). |
 
 Word counts (still HSK 2.0 exclusive lists): L1 150 · L2 ~150 · L3 300 · L4 ~600 · L5–6 samples.
 

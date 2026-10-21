@@ -96,13 +96,54 @@ pub fn migrate_hsk_keys(progress: ProgressMap) -> (ProgressMap, bool) {
     (out, changed)
 }
 
+/// Apply `old_id → new_id` (script / lexical remap). Collision: keep higher interval.
+pub fn migrate_ids(progress: ProgressMap, id_map: &HashMap<String, String>) -> (ProgressMap, bool) {
+    if id_map.is_empty() {
+        return (progress, false);
+    }
+    let mut changed = false;
+    let mut out = ProgressMap::new();
+    for (key, row) in progress {
+        let new_key = match id_map.get(&key) {
+            Some(mapped) if mapped != &key => {
+                changed = true;
+                mapped.clone()
+            }
+            _ => key,
+        };
+        match out.get(&new_key) {
+            Some(existing) if existing.interval_days >= row.interval_days => {}
+            _ => {
+                out.insert(new_key, row);
+            }
+        }
+    }
+    (out, changed)
+}
+
+pub fn load_id_map(
+    path: impl AsRef<Path>,
+) -> Result<HashMap<String, String>, Box<dyn std::error::Error>> {
+    match fs::read_to_string(path) {
+        Ok(text) => Ok(serde_json::from_str(&text)?),
+        Err(e) if e.kind() == io::ErrorKind::NotFound => Ok(HashMap::new()),
+        Err(e) => Err(e.into()),
+    }
+}
+
 pub fn load(path: impl AsRef<Path>) -> Result<ProgressMap, Box<dyn std::error::Error>> {
     let path = path.as_ref();
     match fs::read_to_string(path) {
         Ok(text) => {
             let map: ProgressMap = serde_json::from_str(&text)?;
-            let (map, changed) = migrate_hsk_keys(map);
-            if changed {
+            let (map, changed_hsk) = migrate_hsk_keys(map);
+            let id_map_path = path
+                .parent()
+                .unwrap_or_else(|| Path::new("."))
+                .join("id_map.json");
+            let id_map = load_id_map(id_map_path)?;
+            let (map, changed_ids) = migrate_ids(map, &id_map);
+            if changed_hsk || changed_ids {
                 let bak = Path::new(&format!("{}.bak", path.display())).to_path_buf();
                 fs::copy(path, &bak)?;
                 save(path, &map)?;
@@ -311,6 +352,33 @@ mod tests {
         map.insert("tocfl1:爱".into(), row(32));
         let (out, _) = migrate_hsk_keys(map);
         assert_eq!(out.get("tocfl1:爱").unwrap().interval_days, 32);
+        assert_eq!(out.len(), 1);
+    }
+
+    #[test]
+    fn migrate_ids_rewrites_keys_from_map() {
+        let mut map = ProgressMap::new();
+        map.insert("tocfl1:谢谢".into(), row(128));
+        map.insert("tocfl2:阴".into(), row(4));
+        let mut ids = HashMap::new();
+        ids.insert("tocfl1:谢谢".into(), "tocfl1:謝謝".into());
+        ids.insert("tocfl2:阴".into(), "tocfl2:陰".into());
+        let (out, changed) = migrate_ids(map, &ids);
+        assert!(changed);
+        assert_eq!(out.get("tocfl1:謝謝").unwrap().interval_days, 128);
+        assert!(out.get("tocfl1:谢谢").is_none());
+        assert!(out.contains_key("tocfl2:陰"));
+    }
+
+    #[test]
+    fn migrate_ids_keeps_higher_interval_on_collision() {
+        let mut map = ProgressMap::new();
+        map.insert("tocfl1:爱".into(), row(8));
+        map.insert("tocfl1:愛".into(), row(32));
+        let mut ids = HashMap::new();
+        ids.insert("tocfl1:爱".into(), "tocfl1:愛".into());
+        let (out, _) = migrate_ids(map, &ids);
+        assert_eq!(out.get("tocfl1:愛").unwrap().interval_days, 32);
         assert_eq!(out.len(), 1);
     }
 }

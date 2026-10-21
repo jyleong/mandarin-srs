@@ -39,16 +39,16 @@ mod tests {
             .find(|c| c.chinese == "爸爸")
             .expect("爸爸 in TOCFL 1");
         assert_eq!(baba.level, TocflLevel::Tocfl1);
-        assert_eq!(baba.example.as_deref(), Some("爸爸，我肚子饿了。"));
+        assert_eq!(baba.example.as_deref(), Some("爸爸，我肚子餓了。"));
         assert_eq!(baba.example_en.as_deref(), Some("Dad, I'm hungry."));
 
         let idiom = deck
             .cards
             .iter()
-            .find(|c| c.chinese == "半途而废")
-            .expect("半途而废 in TOCFL 6");
+            .find(|c| c.chinese == "半途而廢")
+            .expect("半途而廢 in TOCFL 6");
         assert_eq!(idiom.level, TocflLevel::Tocfl6);
-        assert!(idiom.example.as_ref().unwrap().contains("半途而废"));
+        assert!(idiom.example.as_ref().unwrap().contains("半途而廢"));
     }
 
     #[test]
