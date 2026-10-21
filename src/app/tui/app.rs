@@ -41,7 +41,7 @@ impl App {
             cards: Vec::new(),
             index: 0,
             input: String::new(),
-            selected_level: TocflLevel::Tocfl1,
+            selected_level: TocflLevel::Novice1,
             phase: Phase::SelectLevel,
             last_correct: None,
             history: Vec::new(),

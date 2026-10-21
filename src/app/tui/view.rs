@@ -134,13 +134,12 @@ impl App {
 
     fn render_select(&self, frame: &mut ratatui::Frame, area: Rect) {
         let mut lines: Vec<Line> = Vec::new();
-        lines.push(Line::from(""));
         for level in TocflLevel::ALL {
             let (reviews, new, ahead, total) = self.session_preview(level);
             let selected = level == self.selected_level;
 
             let label = format!(
-                "  {}   ({reviews} review · {new} new · {ahead} ahead / {total})",
+                "  {:<9}  ({reviews} review · {new} new · {ahead} ahead / {total})",
                 level.label()
             );
             let line = if selected {
@@ -164,14 +163,13 @@ impl App {
                 ])
             };
             lines.push(line);
-            lines.push(Line::from(""));
         }
 
         let list = Paragraph::new(Text::from(lines))
             .alignment(Alignment::Left)
             .block(
                 Block::bordered()
-                    .title(" TOCFL / Extra ")
+                    .title(" Level ")
                     .title_alignment(Alignment::Center)
                     .border_style(Style::new().fg(Color::Cyan))
                     .padding(Padding::horizontal(2)),
@@ -429,7 +427,7 @@ impl App {
                 if reviews + new + ahead == 0 {
                     "[ ] batch   ·   no cards to start   ·   Esc / Ctrl+Q quit"
                 } else {
-                    "[ ] / h l batch   ·   ↑↓ / k j move   ·   1-5 jump · 6 Extra   ·   Enter start   ·   Esc / Ctrl+Q quit"
+                    "[ ] / h l batch   ·   ↑↓ / k j · n Novice · 1-5 TOCFL · 6 Extra   ·   Enter   ·   Esc / Ctrl+Q"
                 }
             }
             Phase::Prompt => "Enter submit   ·   Backspace delete   ·   Esc / Ctrl+Q quit",

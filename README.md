@@ -2,13 +2,13 @@
 
 A terminal spaced-repetition app for Mandarin: you see **汉字**, type the **English meaning**, then rate how well you knew it. Pinyin and the gloss stay hidden until after you answer.
 
-Built as a small Rust + [ratatui](https://ratatui.rs/) TUI. The select screen is **TOCFL 1–5** (official 八千詞 Levels 1–5) plus **Extra** (Novice 1–2 and leftover HSK-only words). Headwords and examples are **Taiwan Traditional**. Progress is stored locally as JSON.
+Built as a small Rust + [ratatui](https://ratatui.rs/) TUI. The select screen is **Novice 1–2**, **TOCFL 1–5** (official 八千詞), and **Extra** (HSK-only leftovers with no TOCFL twin). Headwords and examples are **Taiwan Traditional**. Progress is stored locally as JSON.
 
 ## Requirements
 
 - Rust toolchain (edition 2024; `rustup` stable is fine)
 - A terminal that can show CJK (most modern terminals)
-- Run from the **crate root** so `data/tocfl1.json` … `tocfl5.json` and `data/extra.json` resolve
+- Run from the **crate root** so `data/novice1.json`, `novice2.json`, `tocfl1.json` … `tocfl5.json`, and `extra.json` resolve
 
 ## Run
 
@@ -26,7 +26,7 @@ cargo test    # domain tests (matching, intervals, due dates)
 
 | Where | Keys |
 |-------|------|
-| **Level select** | `↑` `↓` / `j` `k` · `1`–`5` TOCFL · `6` Extra · `[` `]` / `h` `l` batch (10/20/30/50) · `Enter` start |
+| **Level select** | `↑` `↓` / `j` `k` · `n` Novice · `1`–`5` TOCFL · `6` Extra · `7`/`8` Novice 1/2 · `[` `]` / `h` `l` batch (10/20/30/50) · `Enter` start |
 | **Prompt** | type English · `Enter` check · `Backspace` |
 | **Reveal** | `1` / `a` Again · `2` / `g` Good · `3` / `e` Easy · `←` browse |
 | **Browse** | `←` `→` history (read-only) · `→` past last returns to reveal/quiz |
@@ -43,13 +43,13 @@ Scheduling (after you press 1/2/3):
 | Good | previous interval × 2 (min 2 days from new) |
 | Easy | previous interval × 4 |
 
-A session is a **batch** of 10 / 20 / 30 / 50 cards (default 50) at the chosen TOCFL band or Extra, shuffled: due **reviews** first, then up to **10 new** cards per calendar day (shared across levels), then **study ahead** (cards not due yet) so you can still start when the due/new queues are empty. Ahead grades still update intervals. Level select shows `review · new · ahead / total`. The quiz header adds `N again` while Again-queued cards are still waiting. Reveal and browse show **You typed** next to the gloss.
+A session is a **batch** of 10 / 20 / 30 / 50 cards (default 50) at the chosen band, shuffled: due **reviews** first, then up to **10 new** cards per calendar day (shared across levels), then **study ahead** (cards not due yet) so you can still start when the due/new queues are empty. Ahead grades still update intervals. Level select shows `review · new · ahead / total`. The quiz header adds `N again` while Again-queued cards are still waiting. Reveal and browse show **You typed** next to the gloss.
 
 ## Interaction flow
 
 ```mermaid
 flowchart TD
-  start([cargo run]) --> select[TOCFL level select]
+  start([cargo run]) --> select[level select]
   select -->|Enter, if any due| prompt[Prompt: show 汉字, type English]
   select -->|nothing due| select
   prompt -->|Enter| reveal[Reveal: pinyin + meaning + ✓/✗]
@@ -71,7 +71,7 @@ Text version of the same loop:
   cargo run
       │
       ▼
- ┌─ TOCFL / Extra select (due / total per level) ◄──────┐
+ ┌─ Novice / TOCFL / Extra select (due / total) ◄───────┐
  │        Enter                                       │
  ▼                                                    │
  Prompt (汉字) ──Enter──► Reveal                      │
@@ -88,12 +88,13 @@ Text version of the same loop:
 
 | File | Role |
 |------|------|
-| `data/tocfl1.json` … `tocfl5.json` | Official TOCFL Levels 1–5: `chinese`, `pinyin`, `meaning`, `level`; optional `example` / `example_en` |
-| `data/extra.json` | Novice 1–2 plus HSK-only leftovers (`level` 0, ids `extra:漢字`) |
+| `data/novice1.json`, `novice2.json` | Official 準備級 1–2 (`level` 7–8, ids `novice1:` / `novice2:`) |
+| `data/tocfl1.json` … `tocfl5.json` | Official TOCFL Levels 1–5 (`level` 1–5, ids `tocflN:漢字`) |
+| `data/extra.json` | HSK-only leftovers (`level` 0, ids `extra:漢字`) |
 | `data/id_map.json` | Old card id → new id (script, wording, or re-level). Applied when loading progress. |
-| `data/progress.json` | Per-card `interval_days` and `due_date` (`YYYY-MM-DD`), keyed by `tocflN:漢字` or `extra:漢字`. Older keys are rewritten on load (`progress.json.bak`). |
+| `data/progress.json` | Per-card `interval_days` and `due_date` (`YYYY-MM-DD`), keyed by `noviceN:`, `tocflN:`, or `extra:`. Older keys are rewritten on load (`progress.json.bak`). |
 
-Word counts (unique Traditional, first official band wins): Extra 496 · L1 339 · L2 477 · L3 1091 · L4 2200 · L5 2661 (7264 total). New official words use CC-CEDICT glosses; inherited HSK rows keep their examples.
+Word counts (unique Traditional, first official band wins): Novice 1 160 · Novice 2 233 · L1 339 · L2 477 · L3 1091 · L4 2200 · L5 2661 · Extra 103 (7264 total). New official words use CC-CEDICT glosses; inherited rows keep their examples. Deck JSON uses a `level` field (the old `hsk` key is not read).
 
 ## Layout (code)
 

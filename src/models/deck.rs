@@ -9,11 +9,13 @@ pub struct Deck {
 }
 
 impl Deck {
-    /// Load `tocfl1.json` … `tocfl5.json` and `extra.json` from a directory.
+    /// Load Novice, TOCFL 1–5, then Extra leftovers.
     pub fn from_tocfl_dir(dir: impl AsRef<Path>) -> Result<Self, Box<dyn std::error::Error>> {
         let dir = dir.as_ref();
         let mut cards = Vec::new();
         let names = [
+            "novice1.json",
+            "novice2.json",
             "tocfl1.json",
             "tocfl2.json",
             "tocfl3.json",
@@ -45,11 +47,19 @@ mod tests {
             .cards
             .iter()
             .find(|c| c.chinese == "爸爸")
-            .expect("爸爸 in Extra (Novice)");
-        assert_eq!(baba.level, TocflLevel::Extra);
-        assert_eq!(baba.id(), "extra:爸爸");
+            .expect("爸爸 in Novice 1");
+        assert_eq!(baba.level, TocflLevel::Novice1);
+        assert_eq!(baba.id(), "novice1:爸爸");
         assert_eq!(baba.example.as_deref(), Some("爸爸，我肚子餓了。"));
         assert_eq!(baba.example_en.as_deref(), Some("Dad, I'm hungry."));
+
+        let love = deck
+            .cards
+            .iter()
+            .find(|c| c.chinese == "愛")
+            .expect("愛 in Novice 2");
+        assert_eq!(love.level, TocflLevel::Novice2);
+        assert_eq!(love.id(), "novice2:愛");
 
         let mrt = deck
             .cards
@@ -64,7 +74,13 @@ mod tests {
             .find(|c| c.chinese == "半途而廢")
             .expect("半途而廢 in Extra (HSK-only)");
         assert_eq!(idiom.level, TocflLevel::Extra);
+        assert_eq!(idiom.id(), "extra:半途而廢");
         assert!(idiom.example.as_ref().unwrap().contains("半途而廢"));
+
+        let mut ids = std::collections::HashSet::new();
+        for card in &deck.cards {
+            assert!(ids.insert(card.id()), "duplicate id {}", card.id());
+        }
     }
 
     #[test]

@@ -1,6 +1,6 @@
 use ratatui::crossterm::event::{KeyCode, KeyEvent, KeyModifiers};
 
-use crate::models::card::Grade;
+use crate::models::card::{Grade, TocflLevel};
 
 use super::app::{App, Phase};
 
@@ -38,9 +38,16 @@ impl App {
                 self.bump_batch_size(false);
                 false
             }
+            KeyCode::Char('n') => {
+                self.selected_level = match self.selected_level {
+                    TocflLevel::Novice1 => TocflLevel::Novice2,
+                    _ => TocflLevel::Novice1,
+                };
+                false
+            }
             KeyCode::Char(c) if c.is_ascii_digit() => {
                 if let Some(d) = c.to_digit(10) {
-                    if let Some(level) = crate::models::card::TocflLevel::from_digit(d as u8) {
+                    if let Some(level) = TocflLevel::from_digit(d as u8) {
                         self.selected_level = level;
                     }
                 }

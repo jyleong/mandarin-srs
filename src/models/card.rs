@@ -6,7 +6,6 @@ pub struct Card {
     pub chinese: String, // 汉字 / the word you show
     pub pinyin: String,  // Hanyu pinyin (hidden during the prompt)
     pub meaning: String, // English gloss (what you type as the answer)
-    #[serde(alias = "hsk")]
     pub level: TocflLevel,
     /// Optional usage sentence (汉字). Hidden until Reveal.
     #[serde(default)]
@@ -19,17 +18,23 @@ pub struct Card {
 #[serde(try_from = "u8")]
 
 pub enum TocflLevel {
+    /// Official 準備級 1. JSON `7`.
+    Novice1,
+    /// Official 準備級 2. JSON `8`.
+    Novice2,
     Tocfl1,
     Tocfl2,
     Tocfl3,
     Tocfl4,
     Tocfl5,
-    /// Official Novice 1–2 plus HSK-only leftovers.
+    /// HSK-only leftovers with no TOCFL twin. JSON `0`.
     Extra,
 }
 
 impl TocflLevel {
-    pub const ALL: [Self; 6] = [
+    pub const ALL: [Self; 8] = [
+        Self::Novice1,
+        Self::Novice2,
         Self::Tocfl1,
         Self::Tocfl2,
         Self::Tocfl3,
@@ -45,12 +50,16 @@ impl TocflLevel {
             Self::Tocfl3 => 3,
             Self::Tocfl4 => 4,
             Self::Tocfl5 => 5,
+            Self::Novice1 => 7,
+            Self::Novice2 => 8,
             Self::Extra => 0,
         }
     }
 
     pub fn label(self) -> &'static str {
         match self {
+            Self::Novice1 => "Novice 1",
+            Self::Novice2 => "Novice 2",
             Self::Tocfl1 => "TOCFL 1",
             Self::Tocfl2 => "TOCFL 2",
             Self::Tocfl3 => "TOCFL 3",
@@ -62,18 +71,22 @@ impl TocflLevel {
 
     pub fn next(self) -> Self {
         match self {
+            Self::Novice1 => Self::Novice2,
+            Self::Novice2 => Self::Tocfl1,
             Self::Tocfl1 => Self::Tocfl2,
             Self::Tocfl2 => Self::Tocfl3,
             Self::Tocfl3 => Self::Tocfl4,
             Self::Tocfl4 => Self::Tocfl5,
             Self::Tocfl5 => Self::Extra,
-            Self::Extra => Self::Tocfl1,
+            Self::Extra => Self::Novice1,
         }
     }
 
     pub fn prev(self) -> Self {
         match self {
-            Self::Tocfl1 => Self::Extra,
+            Self::Novice1 => Self::Extra,
+            Self::Novice2 => Self::Novice1,
+            Self::Tocfl1 => Self::Novice2,
             Self::Tocfl2 => Self::Tocfl1,
             Self::Tocfl3 => Self::Tocfl2,
             Self::Tocfl4 => Self::Tocfl3,
@@ -90,6 +103,8 @@ impl TocflLevel {
             4 => Some(Self::Tocfl4),
             5 => Some(Self::Tocfl5),
             0 | 6 => Some(Self::Extra),
+            7 => Some(Self::Novice1),
+            8 => Some(Self::Novice2),
             _ => None,
         }
     }
@@ -105,6 +120,8 @@ pub enum Grade {
 impl Card {
     pub fn id(&self) -> String {
         match self.level {
+            TocflLevel::Novice1 => format!("novice1:{}", self.chinese),
+            TocflLevel::Novice2 => format!("novice2:{}", self.chinese),
             TocflLevel::Extra => format!("extra:{}", self.chinese),
             _ => format!("tocfl{}:{}", self.level.as_u8(), self.chinese),
         }
@@ -176,6 +193,8 @@ impl TryFrom<u8> for TocflLevel {
             3 => Ok(Self::Tocfl3),
             4 => Ok(Self::Tocfl4),
             5 => Ok(Self::Tocfl5),
+            7 => Ok(Self::Novice1),
+            8 => Ok(Self::Novice2),
             other => Err(format!("invalid TOCFL level: {other}")),
         }
     }
@@ -187,11 +206,17 @@ mod json_tests {
 
     #[test]
     fn example_fields_optional_on_old_json() {
-        let raw = r#"{"chinese":"爱","pinyin":"ài","meaning":"love","hsk":1}"#;
+        let raw = r#"{"chinese":"爱","pinyin":"ài","meaning":"love","level":1}"#;
         let card: Card = serde_json::from_str(raw).unwrap();
         assert_eq!(card.id(), "tocfl1:爱");
         assert_eq!(card.example.as_deref(), None);
         assert_eq!(card.example_en.as_deref(), None);
+    }
+
+    #[test]
+    fn hsk_field_is_not_accepted() {
+        let raw = r#"{"chinese":"爱","pinyin":"ài","meaning":"love","hsk":1}"#;
+        assert!(serde_json::from_str::<Card>(raw).is_err());
     }
 
     #[test]
@@ -204,11 +229,27 @@ mod json_tests {
 
     #[test]
     fn extra_level_uses_extra_id_prefix() {
-        let raw = r#"{"chinese":"我","pinyin":"wǒ","meaning":"I; me","level":0}"#;
+        let raw = r#"{"chinese":"北京","pinyin":"Běijīng","meaning":"Beijing","level":0}"#;
         let card: Card = serde_json::from_str(raw).unwrap();
         assert_eq!(card.level, TocflLevel::Extra);
-        assert_eq!(card.id(), "extra:我");
+        assert_eq!(card.id(), "extra:北京");
         assert_eq!(card.level.label(), "Extra");
+    }
+
+    #[test]
+    fn novice_levels_use_novice_id_prefix() {
+        let n1: Card =
+            serde_json::from_str(r#"{"chinese":"我","pinyin":"wǒ","meaning":"I; me","level":7}"#)
+                .unwrap();
+        assert_eq!(n1.level, TocflLevel::Novice1);
+        assert_eq!(n1.id(), "novice1:我");
+        assert_eq!(n1.level.label(), "Novice 1");
+
+        let n2: Card =
+            serde_json::from_str(r#"{"chinese":"愛","pinyin":"ài","meaning":"love","level":8}"#)
+                .unwrap();
+        assert_eq!(n2.level, TocflLevel::Novice2);
+        assert_eq!(n2.id(), "novice2:愛");
     }
 
     #[test]
@@ -217,7 +258,7 @@ mod json_tests {
             "chinese":"爸爸",
             "pinyin":"bàba",
             "meaning":"dad; father",
-            "hsk":1,
+            "level":1,
             "example":"爸爸，我肚子饿了。",
             "example_en":"Dad, I'm hungry."
         }"#;
