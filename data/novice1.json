@@ -35,13 +35,17 @@
     "chinese": "你們",
     "pinyin": "nǐmen",
     "meaning": "you (plural)",
-    "level": 7
+    "level": 7,
+    "example": "你們是學生嗎？",
+    "example_en": "Are you (plural) students?"
   },
   {
     "chinese": "他們",
     "pinyin": "tāmen",
     "meaning": "they; them",
-    "level": 7
+    "level": 7,
+    "example": "他們在吃飯。",
+    "example_en": "They are eating."
   },
   {
     "chinese": "您",
@@ -63,7 +67,9 @@
     "chinese": "姓名",
     "pinyin": "xìngmíng",
     "meaning": "surname and given name; full name",
-    "level": 7
+    "level": 7,
+    "example": "請寫下你的姓名。",
+    "example_en": "Please write down your full name."
   },
   {
     "chinese": "人",
@@ -77,7 +83,9 @@
     "chinese": "國",
     "pinyin": "guó",
     "meaning": "surname Guo",
-    "level": 7
+    "level": 7,
+    "example": "中國是一個大國。",
+    "example_en": "China is a large country."
   },
   {
     "chinese": "中國",
@@ -91,19 +99,25 @@
     "chinese": "美國",
     "pinyin": "Měiguó",
     "meaning": "United States; USA; US",
-    "level": 7
+    "level": 7,
+    "example": "他從美國來。",
+    "example_en": "He comes from the United States."
   },
   {
     "chinese": "日本",
     "pinyin": "Rìběn",
     "meaning": "Japan",
-    "level": 7
+    "level": 7,
+    "example": "我想去日本玩。",
+    "example_en": "I want to go to Japan."
   },
   {
     "chinese": "台灣",
     "pinyin": "Táiwān",
     "meaning": "variant of 臺灣|台湾[Tai2 wan1]",
-    "level": 7
+    "level": 7,
+    "example": "我住在台灣。",
+    "example_en": "I live in Taiwan."
   },
   {
     "chinese": "名字",
@@ -125,7 +139,9 @@
     "chinese": "電話",
     "pinyin": "diànhuà",
     "meaning": "telephone; CL:部[bu4]; phone call",
-    "level": 7
+    "level": 7,
+    "example": "請給我打電話。",
+    "example_en": "Please give me a call."
   },
   {
     "chinese": "時間",
@@ -155,7 +171,9 @@
     "chinese": "今年",
     "pinyin": "jīnnián",
     "meaning": "this year",
-    "level": 7
+    "level": 7,
+    "example": "今年我二十歲。",
+    "example_en": "I am twenty this year."
   },
   {
     "chinese": "今天",
@@ -392,8 +410,10 @@
   {
     "chinese": "小孩(子)",
     "pinyin": "xiǎohái(zi)",
-    "meaning": "(no English gloss)",
-    "level": 7
+    "meaning": "child; kid",
+    "level": 7,
+    "example": "她帶了兩個小孩(子)來。",
+    "example_en": "She brought two children."
   },
   {
     "chinese": "的",
@@ -407,7 +427,9 @@
     "chinese": "第",
     "pinyin": "dì",
     "meaning": "(prefix indicating ordinal number, as in 第六[di4 liu4] \"sixth\"); (literary) grades in which successful candidates in the imperial examinations were placed; (old) residence of a high official",
-    "level": 7
+    "level": 7,
+    "example": "他是第一名。",
+    "example_en": "He is in first place."
   },
   {
     "chinese": "分",
@@ -597,7 +619,9 @@
     "chinese": "大學",
     "pinyin": "dàxué",
     "meaning": "the Great Learning, one of the Four Books 四書|四书[Si4 shu1] in Confucianism",
-    "level": 7
+    "level": 7,
+    "example": "他在大學念書。",
+    "example_en": "He studies at university."
   },
   {
     "chinese": "學校",
@@ -635,13 +659,17 @@
     "chinese": "筆",
     "pinyin": "bǐ",
     "meaning": "writing brush; writing implement (pen, pencil etc) (CL:支[zhi1],枝[zhi1]); brushstroke; stroke (in painting or calligraphy); (bound form) style of writing; literary manner; technique of brushwork",
-    "level": 7
+    "level": 7,
+    "example": "我沒有筆。",
+    "example_en": "I don't have a pen."
   },
   {
     "chinese": "學",
     "pinyin": "xué",
     "meaning": "to learn; to study; to imitate",
-    "level": 7
+    "level": 7,
+    "example": "我想學中文。",
+    "example_en": "I want to study Chinese."
   },
   {
     "chinese": "問",
@@ -655,7 +683,9 @@
     "chinese": "說",
     "pinyin": "shuō",
     "meaning": "to speak; to talk; to say; to explain; to comment; to scold; to tell off",
-    "level": 7
+    "level": 7,
+    "example": "請你再說一次。",
+    "example_en": "Please say it again."
   },
   {
     "chinese": "寫",
@@ -701,7 +731,9 @@
     "chinese": "上課",
     "pinyin": "shàngkè",
     "meaning": "to go to class; to attend class; to go to teach a class",
-    "level": 7
+    "level": 7,
+    "example": "我們九點上課。",
+    "example_en": "We have class at nine."
   },
   {
     "chinese": "知道",
@@ -739,7 +771,9 @@
     "chinese": "早",
     "pinyin": "zǎo",
     "meaning": "early; morning; Good morning!",
-    "level": 7
+    "level": 7,
+    "example": "今天早上很早。",
+    "example_en": "It was very early this morning."
   },
   {
     "chinese": "再",
@@ -921,7 +955,9 @@
     "chinese": "請問",
     "pinyin": "qǐngwèn",
     "meaning": "Excuse me, may I ask...?",
-    "level": 7
+    "level": 7,
+    "example": "請問，洗手間在哪裡？",
+    "example_en": "Excuse me, where is the restroom?"
   },
   {
     "chinese": "這",
@@ -950,8 +986,10 @@
   {
     "chinese": "車(子)",
     "pinyin": "chē(zi)",
-    "meaning": "(no English gloss)",
-    "level": 7
+    "meaning": "car; vehicle",
+    "level": 7,
+    "example": "外面有一輛車(子)。",
+    "example_en": "There is a car outside."
   },
   {
     "chinese": "到",
@@ -989,25 +1027,33 @@
     "chinese": "這裡",
     "pinyin": "zhèlǐ, zhèr",
     "meaning": "here",
-    "level": 7
+    "level": 7,
+    "example": "請坐在這裡。",
+    "example_en": "Please sit here."
   },
   {
     "chinese": "那裡",
     "pinyin": "nàlǐ, nàr",
     "meaning": "there; that place",
-    "level": 7
+    "level": 7,
+    "example": "書在那裡。",
+    "example_en": "The book is over there."
   },
   {
     "chinese": "哪裡",
     "pinyin": "nǎlǐ, nǎr",
     "meaning": "where?; somewhere; anywhere",
-    "level": 7
+    "level": 7,
+    "example": "你住在哪裡？",
+    "example_en": "Where do you live?"
   },
   {
     "chinese": "開車",
     "pinyin": "kāichē",
     "meaning": "to drive a car (or train etc); (slang) to post sexual content online; to make a sexual joke",
-    "level": 7
+    "level": 7,
+    "example": "爸爸會開車。",
+    "example_en": "Dad can drive."
   },
   {
     "chinese": "錢",
@@ -1125,7 +1171,9 @@
     "chinese": "飯",
     "pinyin": "fàn",
     "meaning": "cooked rice; CL:碗[wan3]; meal",
-    "level": 7
+    "level": 7,
+    "example": "我吃飯了。",
+    "example_en": "I have eaten."
   },
   {
     "chinese": "吃",
@@ -1227,6 +1275,8 @@
     "chinese": "沒有",
     "pinyin": "méiyǒu",
     "meaning": "haven't; hasn't; doesn't exist",
-    "level": 7
+    "level": 7,
+    "example": "我沒有錢。",
+    "example_en": "I don't have any money."
   }
 ]
