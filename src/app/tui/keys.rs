@@ -5,7 +5,8 @@ use crate::models::card::{Grade, TocflLevel};
 use super::app::{App, Phase};
 
 impl App {
-    /// Returns `true` when the session should end.
+    /// `true` = quit process (`tui::run` break). Session abandon = `return_to_select`;
+    /// session complete = `Phase::Summary`.
     pub(super) fn handle_key(&mut self, key: KeyEvent) -> bool {
         if is_ctrl_q(key) {
             return true;
@@ -57,14 +58,17 @@ impl App {
                 self.start_session();
                 false
             }
-            KeyCode::Esc => true,
+            KeyCode::Esc => false,
             _ => false,
         }
     }
 
     fn handle_prompt_key(&mut self, code: KeyCode) -> bool {
         match code {
-            KeyCode::Esc => true,
+            KeyCode::Esc => {
+                self.return_to_select();
+                false
+            }
             KeyCode::Enter => {
                 self.check_answer();
                 false
@@ -83,7 +87,10 @@ impl App {
 
     fn handle_reveal_key(&mut self, code: KeyCode) -> bool {
         match code {
-            KeyCode::Esc => true,
+            KeyCode::Esc => {
+                self.return_to_select();
+                false
+            }
             KeyCode::Char('1') | KeyCode::Char('a') => {
                 self.apply_grade(Grade::Again);
                 false
@@ -110,7 +117,10 @@ impl App {
 
     fn handle_browse_key(&mut self, code: KeyCode) -> bool {
         match code {
-            KeyCode::Esc => true,
+            KeyCode::Esc => {
+                self.return_to_select();
+                false
+            }
             KeyCode::Left => {
                 if self.browse_pos > 0 {
                     self.browse_pos -= 1;
@@ -129,14 +139,9 @@ impl App {
         }
     }
 
-    fn handle_summary_key(&mut self, code: KeyCode) -> bool {
-        match code {
-            KeyCode::Esc => true,
-            _ => {
-                self.return_to_select();
-                false
-            }
-        }
+    fn handle_summary_key(&mut self, _code: KeyCode) -> bool {
+        self.return_to_select();
+        false
     }
 }
 

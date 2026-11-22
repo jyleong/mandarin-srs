@@ -83,7 +83,7 @@ impl App {
     /// Type-in check only — no SRS write yet (that happens on 1/2/3 in Reveal).
     pub(super) fn check_answer(&mut self) {
         let card = &self.cards[self.index];
-        let correct = card.meaning_matches(&self.input);
+        let correct = card.check_matches(&self.input);
 
         self.history.push(ReviewEntry {
             card_index: self.index,

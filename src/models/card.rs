@@ -138,10 +138,120 @@ impl Card {
             .filter(|s| !s.is_empty())
             .any(|alt| alt.eq_ignore_ascii_case(&guess))
     }
+
+    pub fn pinyin_matches(&self, guess: &str) -> bool {
+        let guess_n = normalize_pinyin(guess);
+        if guess_n.is_empty() {
+            return false;
+        }
+        pinyin_alternatives(&self.pinyin)
+            .into_iter()
+            .map(|alt| normalize_pinyin(&alt))
+            .any(|alt| !alt.is_empty() && alt == guess_n)
+    }
+
+    pub fn check_matches(&self, guess: &str) -> bool {
+        self.meaning_matches(guess) || self.pinyin_matches(guess)
+    }
 }
 
 fn normalize_answer(s: &str) -> String {
     s.split_whitespace().collect::<Vec<_>>().join(" ")
+}
+
+fn pinyin_alternatives(field: &str) -> Vec<String> {
+    let mut out = Vec::new();
+    for segment in field.split(',') {
+        let segment = segment.trim();
+        if segment.is_empty() {
+            continue;
+        }
+        let keep: String = segment.chars().filter(|&c| c != '(' && c != ')').collect();
+        let drop = strip_paren_bodies(segment);
+        if !keep.is_empty() {
+            out.push(keep.clone());
+        }
+        if !drop.is_empty() && drop != keep {
+            out.push(drop);
+        }
+    }
+    out
+}
+
+fn strip_paren_bodies(s: &str) -> String {
+    let mut out = String::new();
+    let mut depth = 0i32;
+    for c in s.chars() {
+        match c {
+            '(' => depth += 1,
+            ')' => depth = (depth - 1).max(0),
+            _ if depth == 0 => out.push(c),
+            _ => {}
+        }
+    }
+    out
+}
+
+fn map_pinyin_letter(c: char) -> Option<char> {
+    match c {
+        'a' | 'ā' | 'á' | 'ǎ' | 'à' => Some('a'),
+        'e' | 'ē' | 'é' | 'ě' | 'è' => Some('e'),
+        'i' | 'ī' | 'í' | 'ǐ' | 'ì' => Some('i'),
+        'o' | 'ō' | 'ó' | 'ǒ' | 'ò' => Some('o'),
+        'u' | 'ū' | 'ú' | 'ǔ' | 'ù' => Some('u'),
+        'ü' | 'ǖ' | 'ǘ' | 'ǚ' | 'ǜ' => Some('v'),
+        'b'..='z' => Some(c),
+        _ => None,
+    }
+}
+
+fn rewrite_ue_after_ln(s: &str) -> String {
+    let bytes = s.as_bytes();
+    let mut out = String::with_capacity(s.len());
+    let mut i = 0;
+    while i < bytes.len() {
+        let ln = bytes[i] == b'l' || bytes[i] == b'n';
+        if ln && i + 2 < bytes.len() && bytes[i + 1] == b'u' && bytes[i + 2] == b'e' {
+            out.push(bytes[i] as char);
+            out.push('v');
+            out.push('e');
+            i += 3;
+        } else {
+            out.push(bytes[i] as char);
+            i += 1;
+        }
+    }
+    out
+}
+
+fn normalize_pinyin(s: &str) -> String {
+    let lower: String = s.chars().flat_map(char::to_lowercase).collect();
+    let replaced = lower.replace("u:", "v");
+    let chars: Vec<char> = replaced.chars().collect();
+    let mut letters = String::new();
+    let mut i = 0;
+    while i < chars.len() {
+        let c = chars[i];
+        if c == 'u' && chars.get(i + 1) == Some(&'\u{0308}') {
+            letters.push('v');
+            i += 2;
+            continue;
+        }
+        if matches!(
+            c,
+            '\u{0304}' | '\u{0301}' | '\u{030c}' | '\u{0300}' | '\u{0308}'
+        ) || c.is_whitespace()
+            || matches!(c, '1'..='5' | '\'' | '-' | '(' | ')')
+        {
+            i += 1;
+            continue;
+        }
+        if let Some(letter) = map_pinyin_letter(c) {
+            letters.push(letter);
+        }
+        i += 1;
+    }
+    rewrite_ue_after_ln(&letters)
 }
 
 #[cfg(test)]
@@ -179,6 +289,209 @@ mod meaning_tests {
     #[test]
     fn empty_guess_does_not_match() {
         assert!(!card("hello").meaning_matches("   "));
+    }
+}
+
+#[cfg(test)]
+mod pinyin_tests {
+    use super::*;
+
+    fn card_pinyin(pinyin: &str) -> Card {
+        Card {
+            chinese: "x".into(),
+            pinyin: pinyin.into(),
+            meaning: "x".into(),
+            level: TocflLevel::Tocfl1,
+            example: None,
+            example_en: None,
+        }
+    }
+
+    fn card_both(meaning: &str, pinyin: &str) -> Card {
+        Card {
+            chinese: "x".into(),
+            pinyin: pinyin.into(),
+            meaning: meaning.into(),
+            level: TocflLevel::Tocfl1,
+            example: None,
+            example_en: None,
+        }
+    }
+
+    #[test]
+    fn tone_mark_numbered_and_bare_are_equal() {
+        let c = card_pinyin("nǐ");
+        for guess in ["nǐ", "ni3", "ni", "NI", "n i"] {
+            assert!(c.pinyin_matches(guess), "{guess}");
+        }
+    }
+
+    #[test]
+    fn spaces_in_field_and_guess_ignored() {
+        let c = card_pinyin("wǒ men");
+        for guess in ["women", "wo3 men", "wo men"] {
+            assert!(c.pinyin_matches(guess), "{guess}");
+        }
+    }
+
+    #[test]
+    fn numbered_tones_multi_syllable() {
+        let c = card_pinyin("nǐhǎo");
+        assert!(c.pinyin_matches("ni3hao"));
+        assert!(c.pinyin_matches("ni3hao3"));
+    }
+
+    #[test]
+    fn numbered_tones_spaced_field() {
+        let c = card_pinyin("wǒ men");
+        assert!(c.pinyin_matches("wo3men"));
+        assert!(c.pinyin_matches("wo3 men2"));
+    }
+
+    #[test]
+    fn ue_v_u_colon_equivalent() {
+        let c = card_pinyin("nǚ");
+        for guess in ["nǚ", "nv", "nu:", "nv3", "nu:3", "nü"] {
+            assert!(c.pinyin_matches(guess), "{guess}");
+        }
+    }
+
+    #[test]
+    fn space_and_ue() {
+        let c = card_pinyin("nǚ ér");
+        for guess in ["nver", "nu:er", "nv er"] {
+            assert!(c.pinyin_matches(guess), "{guess}");
+        }
+    }
+
+    #[test]
+    fn plain_u_does_not_match_ue() {
+        let c = card_pinyin("nǚ");
+        assert!(!c.pinyin_matches("nu"));
+        assert!(!c.pinyin_matches("nu3"));
+    }
+
+    #[test]
+    fn lu_does_not_match_lv() {
+        let c = card_pinyin("lǚ");
+        assert!(!c.pinyin_matches("lu"));
+        assert!(!c.pinyin_matches("lu3"));
+    }
+
+    #[test]
+    fn lue_family() {
+        let c = card_pinyin("lüè");
+        for guess in ["lue", "lve", "lu:e", "lüe"] {
+            assert!(c.pinyin_matches(guess), "{guess}");
+        }
+    }
+
+    #[test]
+    fn nue_family() {
+        let c = card_pinyin("nüèdài");
+        for guess in ["nuedai", "nvedai", "nue4dai"] {
+            assert!(c.pinyin_matches(guess), "{guess}");
+        }
+    }
+
+    #[test]
+    fn ue_after_jqxy_stays_ue() {
+        let c = card_pinyin("jué");
+        assert!(c.pinyin_matches("jue"));
+        assert!(!c.pinyin_matches("jve"));
+    }
+
+    #[test]
+    fn field_mixed_case() {
+        let c = card_pinyin("Xīngqítiān");
+        assert!(c.pinyin_matches("xingqitian"));
+        assert!(c.pinyin_matches("XINGQITIAN"));
+    }
+
+    #[test]
+    fn comma_alternatives() {
+        let c = card_pinyin("zhèlǐ, zhèr");
+        assert!(c.pinyin_matches("zheli"));
+        assert!(c.pinyin_matches("zher"));
+        assert!(c.pinyin_matches("zhe3r"));
+    }
+
+    #[test]
+    fn comma_does_not_accept_other() {
+        let c = card_pinyin("zhèlǐ, zhèr");
+        assert!(!c.pinyin_matches("zhe"));
+        assert!(!c.pinyin_matches("zhelizher"));
+    }
+
+    #[test]
+    fn empty_guess_never_matches_pinyin() {
+        let c = card_pinyin("nǐ");
+        assert!(!c.pinyin_matches(""));
+        assert!(!c.pinyin_matches("   "));
+        assert!(!c.pinyin_matches("123"));
+    }
+
+    #[test]
+    fn apostrophe_optional() {
+        let c = card_pinyin("fǎn'ér");
+        assert!(c.pinyin_matches("faner"));
+        assert!(c.pinyin_matches("fan'er"));
+        assert!(c.pinyin_matches("fan er"));
+    }
+
+    #[test]
+    fn hyphen_optional() {
+        let c = card_pinyin("dì-yī");
+        assert!(c.pinyin_matches("diyi"));
+        assert!(c.pinyin_matches("di-yi"));
+    }
+
+    #[test]
+    fn parenthetical_optional() {
+        let c = card_pinyin("xiǎohái(zi)");
+        assert!(c.pinyin_matches("xiaohai"));
+        assert!(c.pinyin_matches("xiaohaizi"));
+    }
+
+    #[test]
+    fn parenthetical_plus_comma() {
+        let c = card_pinyin("shǒuzhǐ(tou), zhǐtou");
+        assert!(c.pinyin_matches("shouzhi"));
+        assert!(c.pinyin_matches("shouzhitou"));
+        assert!(c.pinyin_matches("zhitou"));
+    }
+
+    #[test]
+    fn fork_does_not_match_inner_only() {
+        let c = card_pinyin("chē(zi)");
+        assert!(!c.pinyin_matches("zi"));
+    }
+
+    #[test]
+    fn not_substring() {
+        let c = card_pinyin("nǐmen");
+        assert!(!c.pinyin_matches("ni"));
+    }
+
+    #[test]
+    fn extra_or_missing_letters() {
+        let c = card_pinyin("nǐ");
+        assert!(!c.pinyin_matches("n"));
+        assert!(!c.pinyin_matches("nii"));
+    }
+
+    #[test]
+    fn check_matches_ors_meaning_and_pinyin() {
+        let c = card_both("you", "nǐ");
+        assert!(c.check_matches("you"));
+        assert!(c.check_matches("ni3"));
+        assert!(!c.check_matches("me"));
+    }
+
+    #[test]
+    fn nfd_tone_mark() {
+        let c = card_pinyin("nǐ");
+        assert!(c.pinyin_matches("ni\u{030c}"));
     }
 }
 

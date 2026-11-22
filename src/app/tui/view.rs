@@ -246,7 +246,7 @@ impl App {
         let caret = "▌";
         let line = Line::from(vec![
             Span::styled(
-                "  English  ",
+                "  English or pinyin  ",
                 Style::new()
                     .fg(Color::Black)
                     .bg(Color::Yellow)
@@ -425,15 +425,21 @@ impl App {
             Phase::SelectLevel => {
                 let (reviews, new, ahead, _) = self.session_preview(self.selected_level);
                 if reviews + new + ahead == 0 {
-                    "[ ] batch   ·   no cards to start   ·   Esc / Ctrl+Q quit"
+                    "[ ] batch   ·   no cards to start   ·   Ctrl+Q quit"
                 } else {
-                    "[ ] / h l batch   ·   ↑↓ / k j · n Novice · 1-5 TOCFL · 6 Extra   ·   Enter   ·   Esc / Ctrl+Q"
+                    "[ ] / h l batch   ·   ↑↓ / k j · n Novice · 1-5 TOCFL · 6 Extra   ·   Enter   ·   Ctrl+Q quit"
                 }
             }
-            Phase::Prompt => "Enter submit   ·   Backspace delete   ·   Esc / Ctrl+Q quit",
-            Phase::Reveal => "1 Again  ·  2 Good  ·  3 Easy  ·  ← browse  ·  Esc / Ctrl+Q quit",
-            Phase::Browse => "← previous   ·   → next (past end → quiz)   ·   Esc / Ctrl+Q quit",
-            Phase::Summary => "Enter / any key → level select   ·   Esc / Ctrl+Q quit",
+            Phase::Prompt => {
+                "Enter submit   ·   Backspace delete   ·   Esc level select   ·   Ctrl+Q quit"
+            }
+            Phase::Reveal => {
+                "1 Again  ·  2 Good  ·  3 Easy  ·  ← browse  ·  Esc level select  ·  Ctrl+Q quit"
+            }
+            Phase::Browse => {
+                "← previous   ·   → next (past end → quiz)   ·   Esc level select   ·   Ctrl+Q quit"
+            }
+            Phase::Summary => "any key / Esc → level select   ·   Ctrl+Q quit",
         };
         let footer = Paragraph::new(Line::from(Span::styled(
             help,

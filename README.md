@@ -27,13 +27,13 @@ cargo test    # domain tests (matching, intervals, due dates)
 | Where | Keys |
 |-------|------|
 | **Level select** | `↑` `↓` / `j` `k` · `n` Novice · `1`–`5` TOCFL · `6` Extra · `7`/`8` Novice 1/2 · `[` `]` / `h` `l` batch (10/20/30/50) · `Enter` start |
-| **Prompt** | type English · `Enter` check · `Backspace` |
-| **Reveal** | `1` / `a` Again · `2` / `g` Good · `3` / `e` Easy · `←` browse |
-| **Browse** | `←` `→` history (read-only) · `→` past last returns to reveal/quiz |
-| **Summary** | any key → level select |
-| **Anywhere** | `Esc` or `Ctrl+Q` quit |
+| **Prompt** | type English or pinyin · `Enter` check · `Backspace` · `Esc` level select |
+| **Reveal** | `1` / `a` Again · `2` / `g` Good · `3` / `e` Easy · `←` browse · `Esc` level select |
+| **Browse** | `←` `→` history (read-only) · `→` past last returns to reveal/quiz · `Esc` level select |
+| **Summary** | any key / `Esc` → level select |
+| **Anywhere** | `Ctrl+Q` quit |
 
-Answers are lenient: case, extra spaces, and either side of a `;` gloss (`dad` or `father`).
+A check is ✓ if it matches any `;` gloss (`dad` or `father`) or the card’s pinyin (tones, numbering, spaces, and `ü`/`v`/`u:` ignored; `lue` counts as `lüe`). Empty is always wrong. The check only paints ✓/✗; you still grade with 1/2/3.
 
 Scheduling (after you press 1/2/3):
 
@@ -50,19 +50,24 @@ A session is a **batch** of 10 / 20 / 30 / 50 cards (default 50) at the chosen b
 ```mermaid
 flowchart TD
   start([cargo run]) --> select[level select]
-  select -->|Enter, if any due| prompt[Prompt: show 汉字, type English]
+  select -->|Enter, if any due| prompt[Prompt: show 汉字, type English or pinyin]
   select -->|nothing due| select
   prompt -->|Enter| reveal[Reveal: pinyin + meaning + ✓/✗]
+  prompt -->|Esc| select
   reveal -->|1 Again / 2 Good / 3 Easy| save[Save interval + due_date]
   reveal -->|left arrow| browse[Browse session history]
+  reveal -->|Esc| select
   browse -->|left / right| browse
   browse -->|right past last| reveal
+  browse -->|Esc| select
   save -->|more cards| prompt
   save -->|session done| summary[Summary: answered / correct / wrong]
-  summary -->|any key| select
-  select -->|Esc / Ctrl+Q| exit([quit])
-  prompt -->|Esc / Ctrl+Q| exit
-  reveal -->|Esc / Ctrl+Q| exit
+  summary -->|any key / Esc| select
+  select -->|Ctrl+Q| exit([quit])
+  prompt -->|Ctrl+Q| exit
+  reveal -->|Ctrl+Q| exit
+  browse -->|Ctrl+Q| exit
+  summary -->|Ctrl+Q| exit
 ```
 
 Text version of the same loop:
